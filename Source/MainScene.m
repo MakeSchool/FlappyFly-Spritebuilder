@@ -13,6 +13,12 @@ static const CGFloat scrollSpeed = 80.f;
 static const CGFloat firstObstaclePosition = 280.f;
 static const CGFloat distanceBetweenObstacles = 160.f;
 
+typedef NS_ENUM(NSInteger, DrawingOrder) {
+    DrawingOrderPipes,
+    DrawingOrderGround,
+    DrawingOrdeHero
+};
+
 @implementation MainScene {
     CCSprite *_hero;
     CCPhysicsNode *_physicsNode;
@@ -28,8 +34,21 @@ static const CGFloat distanceBetweenObstacles = 160.f;
 
 
 - (void)didLoadFromCCB {
-    _grounds = @[_ground1, _ground2];
     self.userInteractionEnabled = TRUE;
+    
+    _grounds = @[_ground1, _ground2];
+    
+    for (CCNode *ground in _grounds) {
+        // set collision txpe
+        ground.physicsBody.collisionType = @"level";
+        ground.zOrder = DrawingOrderGround;
+    }
+    
+    // set this class as delegate
+    _physicsNode.collisionDelegate = self;
+    // set collision txpe
+    _hero.physicsBody.collisionType = @"hero";
+    _hero.zOrder = DrawingOrdeHero;
     
     _obstacles = [NSMutableArray array];
     [self spawnNewObstacle];
@@ -49,6 +68,7 @@ static const CGFloat distanceBetweenObstacles = 160.f;
     Obstacle *obstacle = (Obstacle *)[CCBReader load:@"Obstacle"];
     obstacle.position = ccp(previousObstacleXPosition + distanceBetweenObstacles, 0);
     [obstacle setupRandomPosition];
+    obstacle.zOrder = DrawingOrderPipes;
     [_physicsNode addChild:obstacle];
     [_obstacles addObject:obstacle];
 }
@@ -57,6 +77,12 @@ static const CGFloat distanceBetweenObstacles = 160.f;
     [_hero.physicsBody applyImpulse:ccp(0, 400.f)];
     [_hero.physicsBody applyAngularImpulse:10000.f];
     _sinceTouch = 0.f;
+}
+
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero level:(CCNode *)level {
+    NSLog(@"Game Over");
+    
+    return TRUE;
 }
 
 - (void)update:(CCTime)delta {

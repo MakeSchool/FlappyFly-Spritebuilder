@@ -24,6 +24,14 @@ static const CGFloat pipeDistance = 142.f;
 // calculate the end of the range of top pipe
 static const CGFloat maximumYPositionTopPipe = maximumYPositionBottomPipe - pipeDistance;
 
+- (void)didLoadFromCCB {
+    _topPipe.physicsBody.collisionType = @"level";
+    _topPipe.physicsBody.sensor = TRUE;
+    
+    _bottomPipe.physicsBody.collisionType = @"level";
+    _bottomPipe.physicsBody.sensor = TRUE;
+}
+
 - (void)setupRandomPosition {
     // value between 0.f and 1.f
     CGFloat random = ((double)arc4random() / ARC4RANDOM_MAX);
