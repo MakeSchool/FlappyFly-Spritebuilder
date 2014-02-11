@@ -13,11 +13,29 @@ static const CGFloat scrollSpeed = 80.f;
 @implementation MainScene {
     CCSprite *_hero;
     CCPhysicsNode *_physicsNode;
+    
+    CCNode *_ground1;
+    CCNode *_ground2;
+    NSArray *_grounds;
+}
+
+- (void)didLoadFromCCB {
+    _grounds = @[_ground1, _ground2];
 }
 
 - (void)update:(CCTime)delta {
     _hero.physicsBody.velocity = ccp(scrollSpeed, _hero.physicsBody.velocity.y);
     _physicsNode.position = ccp(_physicsNode.position.x - (scrollSpeed *delta), _physicsNode.position.y);
+    
+    // loop the ground
+    for (CCNode *ground in _grounds) {
+        CGPoint groundWorldPosition = [_physicsNode convertToWorldSpace:ground.position];
+        CGPoint groundScreenPosition = [self convertToNodeSpace:groundWorldPosition];
+        
+        if (groundScreenPosition.x <= (-1 * ground.contentSize.width)) {
+            ground.position = ccp(ground.position.x + 2 * ground.contentSize.width, ground.position.y);
+        }
+    }
 }
 
 @end
