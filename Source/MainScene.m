@@ -65,22 +65,7 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     [self spawnNewObstacle];
 }
 
-- (void)spawnNewObstacle {
-    CCNode *previousObstacle = [_obstacles lastObject];
-    CGFloat previousObstacleXPosition = previousObstacle.position.x;
-    
-    if (!previousObstacle) {
-        // this is the first obstacle
-        previousObstacleXPosition = firstObstaclePosition;
-    }
-    
-    Obstacle *obstacle = (Obstacle *)[CCBReader load:@"Obstacle"];
-    obstacle.position = ccp(previousObstacleXPosition + distanceBetweenObstacles, 0);
-    [obstacle setupRandomPosition];
-    obstacle.zOrder = DrawingOrderPipes;
-    [_physicsNode addChild:obstacle];
-    [_obstacles addObject:obstacle];
-}
+#pragma mark - Touch Handling
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
     if (!_gameOver) {
@@ -89,6 +74,8 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
         _sinceTouch = 0.f;
     }
 }
+
+#pragma mark - CCPhysicsCollisionDelegate
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero level:(CCNode *)level {
     [self gameOver];
@@ -103,6 +90,8 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     
     return TRUE;
 }
+
+#pragma mark - Game Actions
 
 - (void)gameOver {
     if (!_gameOver) {
@@ -127,6 +116,27 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     CCScene *scene = [CCBReader loadAsScene:@"MainScene"];
     [[CCDirector sharedDirector] replaceScene:scene];
 }
+
+#pragma mark - Obstacle Spawning
+
+- (void)spawnNewObstacle {
+    CCNode *previousObstacle = [_obstacles lastObject];
+    CGFloat previousObstacleXPosition = previousObstacle.position.x;
+    
+    if (!previousObstacle) {
+        // this is the first obstacle
+        previousObstacleXPosition = firstObstaclePosition;
+    }
+    
+    Obstacle *obstacle = (Obstacle *)[CCBReader load:@"Obstacle"];
+    obstacle.position = ccp(previousObstacleXPosition + distanceBetweenObstacles, 0);
+    [obstacle setupRandomPosition];
+    obstacle.zOrder = DrawingOrderPipes;
+    [_physicsNode addChild:obstacle];
+    [_obstacles addObject:obstacle];
+}
+
+#pragma mark - Update
 
 - (void)update:(CCTime)delta {
     // clamp velocity
