@@ -34,9 +34,9 @@
 				<key>displayName</key>
 				<string>pipe_bottom</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_bottomPipe</string>
 				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>properties</key>
 				<array>
 					<dict>
@@ -121,9 +121,9 @@
 				<key>displayName</key>
 				<string>pipe_top</string>
 				<key>memberVarAssignmentName</key>
-				<string></string>
+				<string>_topPipe</string>
 				<key>memberVarAssignmentType</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>properties</key>
 				<array>
 					<dict>
@@ -273,12 +273,10 @@
 						</array>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>Obstacle</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>

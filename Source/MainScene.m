@@ -7,6 +7,7 @@
 //
 
 #import "MainScene.h"
+#import "Obstacle.h"
 
 static const CGFloat scrollSpeed = 80.f;
 static const CGFloat firstObstaclePosition = 280.f;
@@ -45,8 +46,9 @@ static const CGFloat distanceBetweenObstacles = 160.f;
         previousObstacleXPosition = firstObstaclePosition;
     }
     
-    CCNode *obstacle = [CCBReader load:@"Obstacle"];
+    Obstacle *obstacle = (Obstacle *)[CCBReader load:@"Obstacle"];
     obstacle.position = ccp(previousObstacleXPosition + distanceBetweenObstacles, 0);
+    [obstacle setupRandomPosition];
     [_physicsNode addChild:obstacle];
     [_obstacles addObject:obstacle];
 }
@@ -88,6 +90,27 @@ static const CGFloat distanceBetweenObstacles = 160.f;
         if (groundScreenPosition.x <= (-1 * ground.contentSize.width)) {
             ground.position = ccp(ground.position.x + 2 * ground.contentSize.width, ground.position.y);
         }
+    }
+    
+    
+    NSMutableArray *offScreenObstacles = nil;
+    
+    for (CCNode *obstacle in _obstacles) {
+        CGPoint obstacleWorldPosition = [_physicsNode convertToWorldSpace:obstacle.position];
+        CGPoint obstacleScreenPosition = [self convertToNodeSpace:obstacleWorldPosition];
+        if (obstacleScreenPosition.x < -obstacle.contentSize.width) {
+            if (!offScreenObstacles) {
+                offScreenObstacles = [NSMutableArray array];
+            }
+            [offScreenObstacles addObject:obstacle];
+        }
+    }
+    
+    for (CCNode *obstacleToRemove in offScreenObstacles) {
+        [obstacleToRemove removeFromParent];
+        [_obstacles removeObject:obstacleToRemove];
+        // for each removed obstacle, add a new one
+        [self spawnNewObstacle];
     }
 }
 
