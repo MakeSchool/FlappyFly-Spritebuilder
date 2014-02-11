@@ -30,6 +30,8 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
     NSTimeInterval _sinceTouch;
     
     NSMutableArray *_obstacles;
+    
+    CCButton *_restartButton;
 }
 
 
@@ -81,8 +83,14 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero level:(CCNode *)level {
     NSLog(@"Game Over");
+    _restartButton.visible = TRUE;
     
     return TRUE;
+}
+
+- (void)restart {
+    CCScene *scene = [CCBReader loadAsScene:@"MainScene"];
+    [[CCDirector sharedDirector] replaceScene:scene];
 }
 
 - (void)update:(CCTime)delta {
