@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionJumpBy.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionJumpBy</TokenIdentifier>
+			<Abstract type="html">This action moves the target simulating a parabolic jump movement by modifying its position attribute.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="36"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionJumpBy/actionWithDuration:position:height:jumps:</TokenIdentifier>
+			<Abstract type="html">Creates the action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration position:(CGPoint)position height:(CCTime)height jumps:(NSUInteger)jumps</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>position</Name>
+					<Abstract type="html">Delta position.</Abstract>
+				</Parameter><Parameter>
+					<Name>height</Name>
+					<Abstract type="html">Height of jump.</Abstract>
+				</Parameter><Parameter>
+					<Name>jumps</Name>
+					<Abstract type="html">Number of jumps to perform.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New jump action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:position:height:jumps:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionJumpBy/initWithDuration:position:height:jumps:</TokenIdentifier>
+			<Abstract type="html">Initializes the action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration position:(CGPoint)position height:(CCTime)height jumps:(NSUInteger)jumps</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>position</Name>
+					<Abstract type="html">Delta position.</Abstract>
+				</Parameter><Parameter>
+					<Name>height</Name>
+					<Abstract type="html">Height of jump.</Abstract>
+				</Parameter><Parameter>
+					<Name>jumps</Name>
+					<Abstract type="html">Number of jumps to perform.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New jump action</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:position:height:jumps:</Anchor>
+            <NodeRef refid="36"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

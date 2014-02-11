@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionEaseBounceIn.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionEaseBounceIn</TokenIdentifier>
+			<Abstract type="html">This action will start the specified action with a bounce effect.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,325 @@
+TObjectiveChipmunk
+v6
+r1
+cCheck dependencies
+cCompileC build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkBody.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkBody.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkShape.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkShape.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkConstraint.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkConstraint.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkMultiGrab.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkMultiGrab.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkSpace.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkSpace.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a normal armv7
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk
+c00000000528134750000000000000110
+t1384199285
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/SDKSettings.plist
+c00000000523A1FE6000000000000036B
+t1379540966
+s875
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c000000005281345100000000000001A0
+t1384199249
+s416
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/include/module.map
+c00000000523A20070000000000000AC9
+t1379540999
+s2761
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkBody.m
+c00000000524DF13D00000000000015BC
+t1380839741
+s5564
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkConstraint.m
+c00000000524DF13D0000000000002F98
+t1380839741
+s12184
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkMultiGrab.m
+c00000000524DF13D0000000000001B6F
+t1380839741
+s7023
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkShape.m
+c00000000524DF13D0000000000001F37
+t1380839741
+s7991
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkSpace.m
+c00000000524DF13D0000000000004396
+t1380839741
+s17302
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkBody.o
+t1384388798
+s60740
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkConstraint.o
+t1384388798
+s127740
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkMultiGrab.o
+t1384388798
+s71328
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkShape.o
+t1384388798
+s78752
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkSpace.o
+t1384388798
+s88384
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ObjectiveChipmunk.LinkFileList
+c00000000528418BE00000000000003D2
+t1384388798
+s978
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libChipmunk-iPhone.a
+c00000000528418BE00000000000B6958
+t1384388798
+s747864
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a
+t2
+s0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies8baa533e5034b841^c710543e5034b841^---0#1#1#--18"Check dependencies36"92047FB6-3420-42D7-8CF9-BCF0D929756D-
+
+CCompileC build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkBody.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkBody.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s406081598.328835
+e406081598.924991
+r1
+xCompileC
+xbuild/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkBody.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkBody.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkBody.m
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ObjectiveChipmunk.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk_private.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk_types.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpVect.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpBB.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpTransform.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSpatialIndex.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpBody.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPolyShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpArbiter.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpConstraint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPinJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSlideJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPivotJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpGrooveJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpDampedSpring.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpDampedRotarySpring.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpRotaryLimitJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpRatchetJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpGearJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSimpleMotor.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSpace.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkBody.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkConstraint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkSpace.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkMultiGrab.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection127"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkBody.m310"[1mCompileC[0m build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkBody.o [1m/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkBody.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler3d43543e5034b841^4fceec3e5034b841^---0#0#1#-19%DVTDocumentLocation2@126"file:///Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkBody.m0000000000000000^4511"[1mCompileC[0m build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkBody.o [1m/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkBody.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/Lidholt/.apportable/SDK/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/platform-tools:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/tools:/Users/Lidholt/dcf/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=146 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fmodules -fmodules-cache-path=/var/folders/sr/6ky2sdf13m14vlp4zl6ns8880000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/../include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/DerivedSources/armv7 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/DerivedSources -Wall -W -Wno-unused-parameter -Werror -Wnewline-eof -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos -DDEBUG -ffast-math -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkBody.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkBody.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkBody.m -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkBody.o36"E0F93980-7D83-46E3-BA20-D412DBED07A1-
+bBA538F3F-BB51-40D1-885B-A67F76C4A9BB
+
+CCompileC build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkConstraint.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkConstraint.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s406081598.329254
+e406081598.974971
+r1
+xCompileC
+xbuild/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkConstraint.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkConstraint.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkConstraint.m
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ObjectiveChipmunk.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk_private.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk_types.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpVect.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpBB.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpTransform.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSpatialIndex.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpBody.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPolyShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpArbiter.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpConstraint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPinJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSlideJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPivotJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpGrooveJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpDampedSpring.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpDampedRotarySpring.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpRotaryLimitJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpRatchetJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpGearJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSimpleMotor.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSpace.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkBody.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkConstraint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkSpace.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkMultiGrab.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection133"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkConstraint.m322"[1mCompileC[0m build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkConstraint.o [1m/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkConstraint.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler7a6f543e5034b841^7097f93e5034b841^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkConstraint.m0000000000000000^4547"[1mCompileC[0m build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkConstraint.o [1m/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkConstraint.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/Lidholt/.apportable/SDK/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/platform-tools:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/tools:/Users/Lidholt/dcf/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=146 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fmodules -fmodules-cache-path=/var/folders/sr/6ky2sdf13m14vlp4zl6ns8880000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/../include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/DerivedSources/armv7 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/DerivedSources -Wall -W -Wno-unused-parameter -Werror -Wnewline-eof -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos -DDEBUG -ffast-math -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkConstraint.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkConstraint.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkConstraint.m -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkConstraint.o36"5004DC2E-E849-420C-856F-4C3B8D745CBE-
+bBA538F3F-BB51-40D1-885B-A67F76C4A9BB
+
+CCompileC build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkMultiGrab.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkMultiGrab.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s406081598.329526
+e406081598.785238
+r1
+xCompileC
+xbuild/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkMultiGrab.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkMultiGrab.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkMultiGrab.m
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkMultiGrab.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ObjectiveChipmunk.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk_types.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpVect.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpBB.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpTransform.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSpatialIndex.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpBody.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPolyShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpArbiter.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpConstraint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPinJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSlideJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPivotJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpGrooveJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpDampedSpring.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpDampedRotarySpring.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpRotaryLimitJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpRatchetJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpGearJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSimpleMotor.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSpace.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkBody.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkConstraint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkSpace.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection132"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkMultiGrab.m320"[1mCompileC[0m build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkMultiGrab.o [1m/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkMultiGrab.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler2976543e5034b841^d907c93e5034b841^---0#0#1#-19%DVTDocumentLocation2@131"file:///Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkMultiGrab.m0000000000000000^4541"[1mCompileC[0m build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkMultiGrab.o [1m/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkMultiGrab.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/Lidholt/.apportable/SDK/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/platform-tools:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/tools:/Users/Lidholt/dcf/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=146 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fmodules -fmodules-cache-path=/var/folders/sr/6ky2sdf13m14vlp4zl6ns8880000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/../include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/DerivedSources/armv7 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/DerivedSources -Wall -W -Wno-unused-parameter -Werror -Wnewline-eof -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos -DDEBUG -ffast-math -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkMultiGrab.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkMultiGrab.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkMultiGrab.m -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkMultiGrab.o36"0E5069F7-C041-48AB-9CF0-E902FA7EFC56-
+bBA538F3F-BB51-40D1-885B-A67F76C4A9BB
+
+CCompileC build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkShape.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkShape.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s406081598.329037
+e406081598.938953
+r1
+xCompileC
+xbuild/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkShape.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkShape.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkShape.m
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ObjectiveChipmunk.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk_private.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk_types.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpVect.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpBB.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpTransform.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSpatialIndex.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpBody.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPolyShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpArbiter.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpConstraint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPinJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSlideJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPivotJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpGrooveJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpDampedSpring.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpDampedRotarySpring.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpRotaryLimitJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpRatchetJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpGearJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSimpleMotor.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSpace.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkBody.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkConstraint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkSpace.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkMultiGrab.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkShape.m312"[1mCompileC[0m build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkShape.o [1m/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkShape.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler0454543e5034b841^9e5ff03e5034b841^---0#0#1#-19%DVTDocumentLocation2@127"file:///Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkShape.m0000000000000000^4517"[1mCompileC[0m build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkShape.o [1m/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkShape.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/Lidholt/.apportable/SDK/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/platform-tools:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/tools:/Users/Lidholt/dcf/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=146 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fmodules -fmodules-cache-path=/var/folders/sr/6ky2sdf13m14vlp4zl6ns8880000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/../include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/DerivedSources/armv7 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/DerivedSources -Wall -W -Wno-unused-parameter -Werror -Wnewline-eof -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos -DDEBUG -ffast-math -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkShape.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkShape.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkShape.m -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkShape.o36"38C99EBF-4A69-497D-8CF3-2A4B368A15D8-
+bBA538F3F-BB51-40D1-885B-A67F76C4A9BB
+
+CCompileC build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkSpace.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkSpace.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s406081598.329810
+e406081598.946525
+r1
+xCompileC
+xbuild/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkSpace.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkSpace.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkSpace.m
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ObjectiveChipmunk.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk_private.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/chipmunk_types.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpVect.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpBB.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpTransform.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSpatialIndex.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpBody.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPolyShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpArbiter.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpConstraint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPinJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSlideJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpPivotJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpGrooveJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpDampedSpring.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpDampedRotarySpring.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpRotaryLimitJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpRatchetJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpGearJoint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSimpleMotor.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/include/chipmunk/cpSpace.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkBody.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkShape.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkConstraint.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkSpace.h
+d/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkMultiGrab.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkSpace.m312"[1mCompileC[0m build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkSpace.o [1m/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkSpace.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compilerd788543e5034b841^764ff23e5034b841^---0#0#1#-19%DVTDocumentLocation2@127"file:///Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkSpace.m0000000000000000^4517"[1mCompileC[0m build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkSpace.o [1m/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkSpace.m[0m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/Lidholt/.apportable/SDK/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/platform-tools:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/tools:/Users/Lidholt/dcf/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=146 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -fcolor-diagnostics -std=c99 -fmodules -fmodules-cache-path=/var/folders/sr/6ky2sdf13m14vlp4zl6ns8880000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/ObjectiveChipmunk-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/../include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/DerivedSources/armv7 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/DerivedSources -Wall -W -Wno-unused-parameter -Werror -Wnewline-eof -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos -DDEBUG -ffast-math -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkSpace.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkSpace.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkSpace.m -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ChipmunkSpace.o36"59A750B4-3EDF-40C9-B96D-097E4A9BA82E-
+bBA538F3F-BB51-40D1-885B-A67F76C4A9BB
+
+CLibtool /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a normal armv7
+s406081598.975647
+e406081599.011329
+r1
+xLibtool
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a
+xnormal
+xarmv7
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"[1mLibtool[0m build/Debug-iphoneos/libObjectiveChipmunk.a normal armv772"[1mLibtool[0m build/Debug-iphoneos/libObjectiveChipmunk.a normal armv728d6f93e5034b841^b8e6023f5034b841^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#1#--1339"[1mLibtool[0m build/Debug-iphoneos/libObjectiveChipmunk.a normal armv7    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/Lidholt/.apportable/SDK/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/platform-tools:/Users/Lidholt/dcf/toolchain/macosx/android-sdk/tools:/Users/Lidholt/dcf/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only armv7 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk -L/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos -filelist /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Chipmunk7.build/Debug-iphoneos/ObjectiveChipmunk.build/Objects-normal/armv7/ObjectiveChipmunk.LinkFileList -ObjC -lChipmunk-iPhone -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a36"DAF4F28A-2C17-41FB-B2F9-97718E13C175-
+bBA538F3F-BB51-40D1-885B-A67F76C4A9BB
+

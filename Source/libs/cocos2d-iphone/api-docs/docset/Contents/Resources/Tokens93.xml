@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCSpriteBatchNode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCSpriteBatchNode</TokenIdentifier>
+			<Abstract type="html">A CCSpriteBatchNode offers improved rendering performance for multiple sprite rendering by utilising a single OpenGL call to render all sprites from one (and only one) texture (one image file, one texture atlas), often knows as a &apos;batch draw&apos;.</Abstract>
+			<DeclaredIn>CCSpriteBatchNode.h</DeclaredIn>
+            
+			
+			<NodeRef refid="93"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSpriteBatchNode/setBlendFunc:</TokenIdentifier>
+			<Abstract type="html">Blend mode.</Abstract>
+			<DeclaredIn>CCSpriteBatchNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) ccBlendFunc blendFunc</Declaration>
+			
+			
+			<Anchor>//api/name/blendFunc</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSpriteBatchNode/blendFunc</TokenIdentifier>
+			<Abstract type="html">Blend mode.</Abstract>
+			<DeclaredIn>CCSpriteBatchNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) ccBlendFunc blendFunc</Declaration>
+			
+			
+			<Anchor>//api/name/blendFunc</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSpriteBatchNode/blendFunc</TokenIdentifier>
+			<Abstract type="html">Blend mode.</Abstract>
+			<DeclaredIn>CCSpriteBatchNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) ccBlendFunc blendFunc</Declaration>
+			
+			
+			<Anchor>//api/name/blendFunc</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCSpriteBatchNode/batchNodeWithTexture:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a batch node with the specified texture value.</Abstract>
+			<DeclaredIn>CCSpriteBatchNode.h</DeclaredIn>
+			
+			<Declaration>+ (id)batchNodeWithTexture:(CCTexture *)tex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tex</Name>
+					<Abstract type="html">Texture to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCSpriteBatchNode Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/batchNodeWithTexture:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCSpriteBatchNode/batchNodeWithFile:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a batch node with the specified image file value.</Abstract>
+			<DeclaredIn>CCSpriteBatchNode.h</DeclaredIn>
+			
+			<Declaration>+ (id)batchNodeWithFile:(NSString *)fileImage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fileImage</Name>
+					<Abstract type="html">Image file name.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCSpriteBatchNode Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/batchNodeWithFile:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSpriteBatchNode/initWithTexture:capacity:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a batch node with the specified texture and capacity values.</Abstract>
+			<DeclaredIn>CCSpriteBatchNode.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithTexture:(CCTexture *)tex capacity:(NSUInteger)capacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tex</Name>
+					<Abstract type="html">Texture to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>capacity</Name>
+					<Abstract type="html">Initial capacity.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCSpriteBatchNode Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTexture:capacity:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSpriteBatchNode/initWithFile:capacity:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a batch node with the specified texture and capacity values.</Abstract>
+			<DeclaredIn>CCSpriteBatchNode.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFile:(NSString *)fileImage capacity:(NSUInteger)capacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fileImage</Name>
+					<Abstract type="html">Image file name.</Abstract>
+				</Parameter><Parameter>
+					<Name>capacity</Name>
+					<Abstract type="html">Initial capacity.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCSpriteBatchNode Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFile:capacity:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSpriteBatchNode/removeChild:cleanup:</TokenIdentifier>
+			<Abstract type="html">Removes a sprite from the batch node.</Abstract>
+			<DeclaredIn>CCSpriteBatchNode.h</DeclaredIn>
+			
+			<Declaration>- (void)removeChild:(CCSprite *)sprite cleanup:(BOOL)doCleanup</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sprite</Name>
+					<Abstract type="html">Sprite reference.</Abstract>
+				</Parameter><Parameter>
+					<Name>doCleanup</Name>
+					<Abstract type="html">Perform additional cleanup.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeChild:cleanup:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

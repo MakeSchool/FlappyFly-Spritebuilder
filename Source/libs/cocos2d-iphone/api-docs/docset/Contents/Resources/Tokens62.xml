@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCButton.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCButton</TokenIdentifier>
+			<Abstract type="html">The CCButton represents a button on the screen. The button is presented with a stretchable background image and/or a title label. Different images, colors and opacity can be set for each of the buttons different states.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+            
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCButton/buttonWithTitle:</TokenIdentifier>
+			<Abstract type="html">Creates a new button with a title and no background. Uses default font and font size.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>+ (id)buttonWithTitle:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title text of the button.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new button.</Abstract></ReturnValue>
+			<Anchor>//api/name/buttonWithTitle:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCButton/buttonWithTitle:fontName:fontSize:</TokenIdentifier>
+			<Abstract type="html">Creates a new button with a title and no background.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>+ (id)buttonWithTitle:(NSString *)title fontName:(NSString *)fontName fontSize:(float)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title text of the button.</Abstract>
+				</Parameter><Parameter>
+					<Name>fontName</Name>
+					<Abstract type="html">Name of the TTF font to use for the title label.</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">Font size for the title label.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new button.</Abstract></ReturnValue>
+			<Anchor>//api/name/buttonWithTitle:fontName:fontSize:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCButton/buttonWithTitle:spriteFrame:</TokenIdentifier>
+			<Abstract type="html">Creates a new button with the specified title for the label and sprite frame for its background.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>+ (id)buttonWithTitle:(NSString *)title spriteFrame:(CCSpriteFrame *)spriteFrame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title text of the button.</Abstract>
+				</Parameter><Parameter>
+					<Name>spriteFrame</Name>
+					<Abstract type="html">Stretchable background image.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new button.</Abstract></ReturnValue>
+			<Anchor>//api/name/buttonWithTitle:spriteFrame:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCButton/buttonWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</TokenIdentifier>
+			<Abstract type="html">Creates a new button with the speicified title for the label, sprite frames for its background in different states.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>+ (id)buttonWithTitle:(NSString *)title spriteFrame:(CCSpriteFrame *)spriteFrame highlightedSpriteFrame:(CCSpriteFrame *)highlighted disabledSpriteFrame:(CCSpriteFrame *)disabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title text of the button.</Abstract>
+				</Parameter><Parameter>
+					<Name>spriteFrame</Name>
+					<Abstract type="html">Stretchable background image for the normal state.</Abstract>
+				</Parameter><Parameter>
+					<Name>highlighted</Name>
+					<Abstract type="html">Stretchable background image for the highlighted state.</Abstract>
+				</Parameter><Parameter>
+					<Name>disabled</Name>
+					<Abstract type="html">Stretchable background image for the disabled state.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new button.</Abstract></ReturnValue>
+			<Anchor>//api/name/buttonWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/initWithTitle:</TokenIdentifier>
+			<Abstract type="html">Initializes a new button with a title and no background. Uses default font and font size.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithTitle:(NSString *)title</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title text of the button.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new button.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTitle:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/initWithTitle:fontName:fontSize:</TokenIdentifier>
+			<Abstract type="html">Initializes a new button with a title and no background.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithTitle:(NSString *)title fontName:(NSString *)fontName fontSize:(float)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title text of the button.</Abstract>
+				</Parameter><Parameter>
+					<Name>fontName</Name>
+					<Abstract type="html">Name of the TTF font to use for the title label.</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">Font size for the title label.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new button.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTitle:fontName:fontSize:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/initWithTitle:spriteFrame:</TokenIdentifier>
+			<Abstract type="html">Initializes a new button with the specified title for the label and sprite frame for its background.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithTitle:(NSString *)title spriteFrame:(CCSpriteFrame *)spriteFrame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title text of the button.</Abstract>
+				</Parameter><Parameter>
+					<Name>spriteFrame</Name>
+					<Abstract type="html">Stretchable background image.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new button.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTitle:spriteFrame:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/initWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</TokenIdentifier>
+			<Abstract type="html">Initializes a new button with the speicified title for the label, sprite frames for its background in different states.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithTitle:(NSString *)title spriteFrame:(CCSpriteFrame *)spriteFrame highlightedSpriteFrame:(CCSpriteFrame *)highlighted disabledSpriteFrame:(CCSpriteFrame *)disabled</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract type="html">The title text of the button.</Abstract>
+				</Parameter><Parameter>
+					<Name>spriteFrame</Name>
+					<Abstract type="html">Stretchable background image for the normal state.</Abstract>
+				</Parameter><Parameter>
+					<Name>highlighted</Name>
+					<Abstract type="html">Stretchable background image for the highlighted state.</Abstract>
+				</Parameter><Parameter>
+					<Name>disabled</Name>
+					<Abstract type="html">Stretchable background image for the disabled state.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A new button.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/setBackgroundColor:forState:</TokenIdentifier>
+			<Abstract type="html">Sets the background color for the specified state. The color is multiplied into the background sprite frame.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (void)setBackgroundColor:(CCColor *)color forState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color applied to background image.</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to apply the color to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBackgroundColor:forState:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/backgroundColorForState:</TokenIdentifier>
+			<Abstract type="html">Gets the background color for the specified state.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (CCColor *)backgroundColorForState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to get the color for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Background color.</Abstract></ReturnValue>
+			<Anchor>//api/name/backgroundColorForState:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/setBackgroundOpacity:forState:</TokenIdentifier>
+			<Abstract type="html">Sets the background&apos;s opacity for the specified state.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (void)setBackgroundOpacity:(CGFloat)opacity forState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>opacity</Name>
+					<Abstract type="html">Opacity to apply to the background image</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to apply the opacity to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBackgroundOpacity:forState:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/backgroundOpacityForState:</TokenIdentifier>
+			<Abstract type="html">Gets the background opacity for the specified state.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (CGFloat)backgroundOpacityForState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to get the opacity for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Opacity.</Abstract></ReturnValue>
+			<Anchor>//api/name/backgroundOpacityForState:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/setColor:</TokenIdentifier>
+			<Abstract type="html">Will set the label&apos;s color for the normal state.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (void)setColor:(CCColor *)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color applied to the label.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setColor:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/setLabelColor:forState:</TokenIdentifier>
+			<Abstract type="html">Sets the label&apos;s color for the specified state.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (void)setLabelColor:(CCColor *)color forState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color applied to the label.</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to set the color for.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLabelColor:forState:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/labelColorForState:</TokenIdentifier>
+			<Abstract type="html">Gets the label&apos;s color for the specified state.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (CCColor *)labelColorForState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to get the color for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Label color.</Abstract></ReturnValue>
+			<Anchor>//api/name/labelColorForState:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/setLabelOpacity:forState:</TokenIdentifier>
+			<Abstract type="html">Sets the label&apos;s opacity for the specified state.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (void)setLabelOpacity:(CGFloat)opacity forState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>opacity</Name>
+					<Abstract type="html">Opacity applied to the label.</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to set the opacity for.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setLabelOpacity:forState:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/labelOpacityForState:</TokenIdentifier>
+			<Abstract type="html">Gets the label&apos;s opacity for the specified state.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (CGFloat)labelOpacityForState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to get the opacity for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Label opacity.</Abstract></ReturnValue>
+			<Anchor>//api/name/labelOpacityForState:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/setBackgroundSpriteFrame:forState:</TokenIdentifier>
+			<Abstract type="html">Sets the background&apos;s sprite frame for the specified state. The sprite frame will be stretched to the preferred size of the label. If set to NULL no background will be drawn.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (void)setBackgroundSpriteFrame:(CCSpriteFrame *)spriteFrame forState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>spriteFrame</Name>
+					<Abstract type="html">Sprite frame to use for drawing the background.</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to set the background for.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBackgroundSpriteFrame:forState:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCButton/backgroundSpriteFrameForState:</TokenIdentifier>
+			<Abstract type="html">Gets the background&apos;s sprite frame for the specified state.</Abstract>
+			<DeclaredIn>CCButton.h</DeclaredIn>
+			
+			<Declaration>- (CCSpriteFrame *)backgroundSpriteFrameForState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to get the sprite frame for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Background sprite frame.</Abstract></ReturnValue>
+			<Anchor>//api/name/backgroundSpriteFrameForState:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

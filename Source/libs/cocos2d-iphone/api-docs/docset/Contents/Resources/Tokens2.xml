@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionBezierBy.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionBezierBy</TokenIdentifier>
+			<Abstract type="html">This action that moves the target with a cubic Bezier curve by a certain distance.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionBezierBy/actionWithDuration:bezier:</TokenIdentifier>
+			<Abstract type="html">Creates the action with a duration and a bezier configuration.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)t bezier:(ccBezierConfig)c</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>t</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>c</Name>
+					<Abstract type="html">Bezier configuration.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New bezier action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:bezier:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionBezierBy/initWithDuration:bezier:</TokenIdentifier>
+			<Abstract type="html">Initializes the action with a duration and a bezier configuration.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)t bezier:(ccBezierConfig)c</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>t</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>c</Name>
+					<Abstract type="html">Bezier configuration.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New bezier action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:bezier:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

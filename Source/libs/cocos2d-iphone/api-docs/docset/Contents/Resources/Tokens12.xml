@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionEase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionEase</TokenIdentifier>
+			<Abstract type="html">CCActionEase adds the ability to modify existing actions to create more realistic effects.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionEase/actionWithAction:</TokenIdentifier>
+			<Abstract type="html">Creates a new basic ease action.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithAction:(CCActionInterval *)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Interval action.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New ease action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithAction:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionEase/initWithAction:</TokenIdentifier>
+			<Abstract type="html">Initializes a new basic ease action.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithAction:(CCActionInterval *)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Interval action.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New ease action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAction:</Anchor>
+            <NodeRef refid="12"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

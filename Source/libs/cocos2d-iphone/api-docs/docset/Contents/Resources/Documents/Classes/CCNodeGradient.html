@@ -1,0 +1,875 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CCNodeGradient Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Cocos2D 3.0 </a></h1>
+				<a id="developerHome" href="../index.html">Cocos2D</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CCNodeGradient Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/compressedInterpolation">&nbsp;&nbsp;&nbsp;&nbsp;compressedInterpolation</option>
+	
+	<option value="//api/name/endColor">&nbsp;&nbsp;&nbsp;&nbsp;endColor</option>
+	
+	<option value="//api/name/endOpacity">&nbsp;&nbsp;&nbsp;&nbsp;endOpacity</option>
+	
+	<option value="//api/name/startColor">&nbsp;&nbsp;&nbsp;&nbsp;startColor</option>
+	
+	<option value="//api/name/startOpacity">&nbsp;&nbsp;&nbsp;&nbsp;startOpacity</option>
+	
+	<option value="//api/name/vector">&nbsp;&nbsp;&nbsp;&nbsp;vector</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/nodeWithColor:fadingTo:">&nbsp;&nbsp;&nbsp;&nbsp;+ nodeWithColor:fadingTo:</option>
+	
+	<option value="//api/name/nodeWithColor:fadingTo:alongVector:">&nbsp;&nbsp;&nbsp;&nbsp;+ nodeWithColor:fadingTo:alongVector:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithColor:fadingTo:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithColor:fadingTo:</option>
+	
+	<option value="//api/name/initWithColor:fadingTo:alongVector:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithColor:fadingTo:alongVector:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a CCNodeGradient Object">Creating a CCNodeGradient Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a CCNodeGradient Object">Initializing a CCNodeGradient Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing CCNodeGradient Attributes">Accessing CCNodeGradient Attributes</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/compressedInterpolation">compressedInterpolation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endColor">endColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endOpacity">endOpacity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startColor">startColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startOpacity">startOpacity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/vector">vector</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nodeWithColor:fadingTo:">nodeWithColor:fadingTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/nodeWithColor:fadingTo:alongVector:">nodeWithColor:fadingTo:alongVector:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithColor:fadingTo:">initWithColor:fadingTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithColor:fadingTo:alongVector:">initWithColor:fadingTo:alongVector:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CCNodeGradient Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CCNodeGradient Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CCNodeColor.html">CCNodeColor</a> : <a href="../Classes/CCNode.html">CCNode</a> : <a href="../Classes/CCResponder.html">CCResponder</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CCNodeColor.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>CCNodeGradient is a subclass of <a href="../Classes/CCNodeColor.html">CCNodeColor</a> that draws gradients across the background.</p>
+
+<p>All features from <a href="../Classes/CCNodeColor.html">CCNodeColor</a> are valid, plus the following new features:
+- direction
+- final color
+- interpolation mode</p>
+
+<p>Color is interpolated between the <a href="#//api/name/startColor">startColor</a> and <a href="#//api/name/endColor">endColor</a> along the given <a href="#//api/name/vector">vector</a> (starting at the origin, ending at the terminus).</p>
+
+<p>If no <a href="#//api/name/vector">vector</a> is supplied, it defaults to (0, -1) &ndash; a fade from top to bottom.</p>
+
+<p>If &lsquo;compressedInterpolation&rsquo; is disabled, you will not see either the start or end color for non-cardinal vectors; a smooth gradient implying both end points will be still be drawn, however.</p>
+
+<p>If &lsquo; compressedInterpolation&rsquo; is enabled (default mode) you will see both the start and end colors of the gradient.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating a CCNodeGradient Object" name="task_Creating a CCNodeGradient Object"></a>
+						<h3 class="subsubtitle task-title">Creating a CCNodeGradient Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nodeWithColor:fadingTo:">+&nbsp;nodeWithColor:fadingTo:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/nodeWithColor:fadingTo:alongVector:">+&nbsp;nodeWithColor:fadingTo:alongVector:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initializing a CCNodeGradient Object" name="task_Initializing a CCNodeGradient Object"></a>
+						<h3 class="subsubtitle task-title">Initializing a CCNodeGradient Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithColor:fadingTo:">&ndash;&nbsp;initWithColor:fadingTo:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithColor:fadingTo:alongVector:">&ndash;&nbsp;initWithColor:fadingTo:alongVector:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing CCNodeGradient Attributes" name="task_Accessing CCNodeGradient Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing CCNodeGradient Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startColor">&nbsp;&nbsp;startColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endColor">&nbsp;&nbsp;endColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startOpacity">&nbsp;&nbsp;startOpacity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endOpacity">&nbsp;&nbsp;endOpacity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/vector">&nbsp;&nbsp;vector</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/compressedInterpolation">&nbsp;&nbsp;compressedInterpolation</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/compressedInterpolation" title="compressedInterpolation"></a>
+	<h3 class="subsubtitle method-title">compressedInterpolation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not the interpolation will be compressed in order to display all the colors of the gradient both in canonical and non canonical vectors.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) BOOL compressedInterpolation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Default: YES.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCNodeColor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endColor" title="endColor"></a>
+	<h3 class="subsubtitle method-title">endColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The ending color.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) CCColor *endColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCNodeColor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endOpacity" title="endOpacity"></a>
+	<h3 class="subsubtitle method-title">endOpacity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The ending color.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) CGFloat endOpacity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCNodeColor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startColor" title="startColor"></a>
+	<h3 class="subsubtitle method-title">startColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The starting color.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) CCColor *startColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCNodeColor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startOpacity" title="startOpacity"></a>
+	<h3 class="subsubtitle method-title">startOpacity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The starting opacity.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) CGFloat startOpacity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCNodeColor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/vector" title="vector"></a>
+	<h3 class="subsubtitle method-title">vector</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The vector along which to fade color.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) CGPoint vector</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCNodeColor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/nodeWithColor:fadingTo:" title="nodeWithColor:fadingTo:"></a>
+	<h3 class="subsubtitle method-title">nodeWithColor:fadingTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a full-screen <a href="../Classes/CCNode.html">CCNode</a> with a gradient between start and end color values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)nodeWithColor:(CCColor *)<em>start</em> fadingTo:(CCColor *)<em>end</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>start</em></dt>
+			<dd><p>Start color.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>end</em></dt>
+			<dd><p>End color.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCNodeGradient Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCNodeColor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/nodeWithColor:fadingTo:alongVector:" title="nodeWithColor:fadingTo:alongVector:"></a>
+	<h3 class="subsubtitle method-title">nodeWithColor:fadingTo:alongVector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a full-screen <a href="../Classes/CCNode.html">CCNode</a> with a gradient between start and end color values with gradient direction <a href="#//api/name/vector">vector</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)nodeWithColor:(CCColor *)<em>start</em> fadingTo:(CCColor *)<em>end</em> alongVector:(CGPoint)<em>v</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>start</em></dt>
+			<dd><p>Start color.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>end</em></dt>
+			<dd><p>End color.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>v</em></dt>
+			<dd><p>Direction <a href="#//api/name/vector">vector</a> for gradient.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCNodeGradient Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCNodeColor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithColor:fadingTo:" title="initWithColor:fadingTo:"></a>
+	<h3 class="subsubtitle method-title">initWithColor:fadingTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a full-screen <a href="../Classes/CCNode.html">CCNode</a> with a gradient between start and end color values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithColor:(CCColor *)<em>start</em> fadingTo:(CCColor *)<em>end</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>start</em></dt>
+			<dd><p>Start color.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>end</em></dt>
+			<dd><p>End color.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized CCNodeGradient Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCNodeColor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithColor:fadingTo:alongVector:" title="initWithColor:fadingTo:alongVector:"></a>
+	<h3 class="subsubtitle method-title">initWithColor:fadingTo:alongVector:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a full-screen <a href="../Classes/CCNode.html">CCNode</a> with a gradient between start and end color values with gradient direction <a href="#//api/name/vector">vector</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithColor:(CCColor *)<em>start</em> fadingTo:(CCColor *)<em>end</em> alongVector:(CGPoint)<em>v</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>start</em></dt>
+			<dd><p>Start color.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>end</em></dt>
+			<dd><p>End color.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>v</em></dt>
+			<dd><p>Direction <a href="#//api/name/vector">vector</a> for gradient.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized CCNodeGradient Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCNodeColor.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Cocos2D. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

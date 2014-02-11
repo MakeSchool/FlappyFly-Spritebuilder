@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCAppDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCAppDelegate</TokenIdentifier>
+			<Abstract type="html">Most Cocos2d apps should override the CCAppDelegate, it serves as the apps starting point. By the very least, the startScene method should be overridden to return the first scene the app should display. To further customize the behavior of Cocos2d, such as the screen mode of pixel format, override the applicaton:didFinishLaunchingWithOptions: method.</Abstract>
+			<DeclaredIn>CCAppDelegate.h</DeclaredIn>
+            
+			
+			<NodeRef refid="61"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAppDelegate/setWindow:</TokenIdentifier>
+			<Abstract type="html">The window used to display the Cocos2d content.</Abstract>
+			<DeclaredIn>CCAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIWindow *window</Declaration>
+			
+			
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAppDelegate/window</TokenIdentifier>
+			<Abstract type="html">The window used to display the Cocos2d content.</Abstract>
+			<DeclaredIn>CCAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIWindow *window</Declaration>
+			
+			
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCAppDelegate/window</TokenIdentifier>
+			<Abstract type="html">The window used to display the Cocos2d content.</Abstract>
+			<DeclaredIn>CCAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) UIWindow *window</Declaration>
+			
+			
+			<Anchor>//api/name/window</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAppDelegate/setNavController:</TokenIdentifier>
+			<Abstract type="html">The navigation controller that Cocos2d is using.</Abstract>
+			<DeclaredIn>CCAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) CCNavigationController *navController</Declaration>
+			
+			
+			<Anchor>//api/name/navController</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAppDelegate/navController</TokenIdentifier>
+			<Abstract type="html">The navigation controller that Cocos2d is using.</Abstract>
+			<DeclaredIn>CCAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) CCNavigationController *navController</Declaration>
+			
+			
+			<Anchor>//api/name/navController</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCAppDelegate/navController</TokenIdentifier>
+			<Abstract type="html">The navigation controller that Cocos2d is using.</Abstract>
+			<DeclaredIn>CCAppDelegate.h</DeclaredIn>
+			
+			<Declaration>@property (atomic, readonly) CCNavigationController *navController</Declaration>
+			
+			
+			<Anchor>//api/name/navController</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAppDelegate/startScene</TokenIdentifier>
+			<Abstract type="html">Override this method to return the first scene that Cocos2d should display.</Abstract>
+			<DeclaredIn>CCAppDelegate.h</DeclaredIn>
+			
+			<Declaration>- (CCScene *)startScene</Declaration>
+			
+			<ReturnValue><Abstract type="html">Starting scene for your app.</Abstract></ReturnValue>
+			<Anchor>//api/name/startScene</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAppDelegate/setupCocos2dWithOptions:</TokenIdentifier>
+			<Abstract type="html">This method is normally called from the applicaton:didFinishLaunchingWithOptions: method. It will configure Cocos2d with the options that you provide. You can leave out any of the options and Cocos2d will use the default values.</Abstract>
+			<DeclaredIn>CCAppDelegate.h</DeclaredIn>
+			
+			<Declaration>- (void)setupCocos2dWithOptions:(NSDictionary *)config</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>config</Name>
+					<Abstract type="html">Dictionary with options for configuring Cocos2d.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setupCocos2dWithOptions:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,3005 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CCPhysicsBody Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Cocos2D 3.0 </a></h1>
+				<a id="developerHome" href="../index.html">Cocos2D</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CCPhysicsBody Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/absolutePosition">&nbsp;&nbsp;&nbsp;&nbsp;absolutePosition</option>
+	
+	<option value="//api/name/absoluteRadians">&nbsp;&nbsp;&nbsp;&nbsp;absoluteRadians</option>
+	
+	<option value="//api/name/absoluteTransform">&nbsp;&nbsp;&nbsp;&nbsp;absoluteTransform</option>
+	
+	<option value="//api/name/affectedByGravity">&nbsp;&nbsp;&nbsp;&nbsp;affectedByGravity</option>
+	
+	<option value="//api/name/allowsRotation">&nbsp;&nbsp;&nbsp;&nbsp;allowsRotation</option>
+	
+	<option value="//api/name/angularVelocity">&nbsp;&nbsp;&nbsp;&nbsp;angularVelocity</option>
+	
+	<option value="//api/name/area">&nbsp;&nbsp;&nbsp;&nbsp;area</option>
+	
+	<option value="//api/name/body">&nbsp;&nbsp;&nbsp;&nbsp;body</option>
+	
+	<option value="//api/name/chipmunkObjects">&nbsp;&nbsp;&nbsp;&nbsp;chipmunkObjects</option>
+	
+	<option value="//api/name/collisionCategories">&nbsp;&nbsp;&nbsp;&nbsp;collisionCategories</option>
+	
+	<option value="//api/name/collisionGroup">&nbsp;&nbsp;&nbsp;&nbsp;collisionGroup</option>
+	
+	<option value="//api/name/collisionMask">&nbsp;&nbsp;&nbsp;&nbsp;collisionMask</option>
+	
+	<option value="//api/name/collisionType">&nbsp;&nbsp;&nbsp;&nbsp;collisionType</option>
+	
+	<option value="//api/name/density">&nbsp;&nbsp;&nbsp;&nbsp;density</option>
+	
+	<option value="//api/name/elasticity">&nbsp;&nbsp;&nbsp;&nbsp;elasticity</option>
+	
+	<option value="//api/name/force">&nbsp;&nbsp;&nbsp;&nbsp;force</option>
+	
+	<option value="//api/name/friction">&nbsp;&nbsp;&nbsp;&nbsp;friction</option>
+	
+	<option value="//api/name/isRunning">&nbsp;&nbsp;&nbsp;&nbsp;isRunning</option>
+	
+	<option value="//api/name/joints">&nbsp;&nbsp;&nbsp;&nbsp;joints</option>
+	
+	<option value="//api/name/mass">&nbsp;&nbsp;&nbsp;&nbsp;mass</option>
+	
+	<option value="//api/name/node">&nbsp;&nbsp;&nbsp;&nbsp;node</option>
+	
+	<option value="//api/name/physicsNode">&nbsp;&nbsp;&nbsp;&nbsp;physicsNode</option>
+	
+	<option value="//api/name/sensor">&nbsp;&nbsp;&nbsp;&nbsp;sensor</option>
+	
+	<option value="//api/name/sleeping">&nbsp;&nbsp;&nbsp;&nbsp;sleeping</option>
+	
+	<option value="//api/name/surfaceVelocity">&nbsp;&nbsp;&nbsp;&nbsp;surfaceVelocity</option>
+	
+	<option value="//api/name/torque">&nbsp;&nbsp;&nbsp;&nbsp;torque</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
+	
+	<option value="//api/name/velocity">&nbsp;&nbsp;&nbsp;&nbsp;velocity</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/bodyWithCircleOfRadius:andCenter:">&nbsp;&nbsp;&nbsp;&nbsp;+ bodyWithCircleOfRadius:andCenter:</option>
+	
+	<option value="//api/name/bodyWithPillFrom:to:cornerRadius:">&nbsp;&nbsp;&nbsp;&nbsp;+ bodyWithPillFrom:to:cornerRadius:</option>
+	
+	<option value="//api/name/bodyWithPolygonFromPoints:count:cornerRadius:">&nbsp;&nbsp;&nbsp;&nbsp;+ bodyWithPolygonFromPoints:count:cornerRadius:</option>
+	
+	<option value="//api/name/bodyWithPolylineFromPoints:count:cornerRadius:looped:">&nbsp;&nbsp;&nbsp;&nbsp;+ bodyWithPolylineFromPoints:count:cornerRadius:looped:</option>
+	
+	<option value="//api/name/bodyWithPolylineFromRect:cornerRadius:">&nbsp;&nbsp;&nbsp;&nbsp;+ bodyWithPolylineFromRect:cornerRadius:</option>
+	
+	<option value="//api/name/bodyWithRect:cornerRadius:">&nbsp;&nbsp;&nbsp;&nbsp;+ bodyWithRect:cornerRadius:</option>
+	
+	<option value="//api/name/bodyWithShapes:">&nbsp;&nbsp;&nbsp;&nbsp;+ bodyWithShapes:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addJoint:">&nbsp;&nbsp;&nbsp;&nbsp;- addJoint:</option>
+	
+	<option value="//api/name/applyAngularImpulse:">&nbsp;&nbsp;&nbsp;&nbsp;- applyAngularImpulse:</option>
+	
+	<option value="//api/name/applyForce:">&nbsp;&nbsp;&nbsp;&nbsp;- applyForce:</option>
+	
+	<option value="//api/name/applyForce:atLocalPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- applyForce:atLocalPoint:</option>
+	
+	<option value="//api/name/applyForce:atWorldPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- applyForce:atWorldPoint:</option>
+	
+	<option value="//api/name/applyImpulse:">&nbsp;&nbsp;&nbsp;&nbsp;- applyImpulse:</option>
+	
+	<option value="//api/name/applyImpulse:atLocalPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- applyImpulse:atLocalPoint:</option>
+	
+	<option value="//api/name/applyImpulse:atWorldPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- applyImpulse:atWorldPoint:</option>
+	
+	<option value="//api/name/applyTorque:">&nbsp;&nbsp;&nbsp;&nbsp;- applyTorque:</option>
+	
+	<option value="//api/name/didAddToPhysicsNode:">&nbsp;&nbsp;&nbsp;&nbsp;- didAddToPhysicsNode:</option>
+	
+	<option value="//api/name/didRemoveFromPhysicsNode:">&nbsp;&nbsp;&nbsp;&nbsp;- didRemoveFromPhysicsNode:</option>
+	
+	<option value="//api/name/eachCollisionPair:">&nbsp;&nbsp;&nbsp;&nbsp;- eachCollisionPair:</option>
+	
+	<option value="//api/name/removeJoint:">&nbsp;&nbsp;&nbsp;&nbsp;- removeJoint:</option>
+	
+	<option value="//api/name/willAddToPhysicsNode:nonRigidTransform:">&nbsp;&nbsp;&nbsp;&nbsp;- willAddToPhysicsNode:nonRigidTransform:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a CCPhysicsBody Object">Creating a CCPhysicsBody Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Basic Body Attributes">Accessing Basic Body Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Simulation Attributes">Accessing Simulation Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Collision and Contact Attributes">Accessing Collision and Contact Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Velocity Attributes">Accessing Velocity Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Forces and Torques Attributes">Accessing Forces and Torques Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Applying Force and Impulses Methods">Applying Force and Impulses Methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Misc Attributes">Accessing Misc Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ObjectiveChipmunk Methods">ObjectiveChipmunk Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/absolutePosition">absolutePosition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/absoluteRadians">absoluteRadians</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/absoluteTransform">absoluteTransform</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/affectedByGravity">affectedByGravity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowsRotation">allowsRotation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/angularVelocity">angularVelocity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/area">area</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/body">body</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/chipmunkObjects">chipmunkObjects</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collisionCategories">collisionCategories</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collisionGroup">collisionGroup</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collisionMask">collisionMask</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collisionType">collisionType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/density">density</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/elasticity">elasticity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/force">force</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/friction">friction</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isRunning">isRunning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/joints">joints</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mass">mass</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/node">node</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/physicsNode">physicsNode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sensor">sensor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sleeping">sleeping</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/surfaceVelocity">surfaceVelocity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/torque">torque</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/velocity">velocity</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bodyWithCircleOfRadius:andCenter:">bodyWithCircleOfRadius:andCenter:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bodyWithPillFrom:to:cornerRadius:">bodyWithPillFrom:to:cornerRadius:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bodyWithPolygonFromPoints:count:cornerRadius:">bodyWithPolygonFromPoints:count:cornerRadius:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bodyWithPolylineFromPoints:count:cornerRadius:looped:">bodyWithPolylineFromPoints:count:cornerRadius:looped:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bodyWithPolylineFromRect:cornerRadius:">bodyWithPolylineFromRect:cornerRadius:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bodyWithRect:cornerRadius:">bodyWithRect:cornerRadius:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bodyWithShapes:">bodyWithShapes:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addJoint:">addJoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyAngularImpulse:">applyAngularImpulse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyForce:">applyForce:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyForce:atLocalPoint:">applyForce:atLocalPoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyForce:atWorldPoint:">applyForce:atWorldPoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyImpulse:">applyImpulse:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyImpulse:atLocalPoint:">applyImpulse:atLocalPoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyImpulse:atWorldPoint:">applyImpulse:atWorldPoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/applyTorque:">applyTorque:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didAddToPhysicsNode:">didAddToPhysicsNode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/didRemoveFromPhysicsNode:">didRemoveFromPhysicsNode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/eachCollisionPair:">eachCollisionPair:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeJoint:">removeJoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willAddToPhysicsNode:nonRigidTransform:">willAddToPhysicsNode:nonRigidTransform:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CCPhysicsBody Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CCPhysicsBody Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CCPhysicsBody.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Physics bodies are attached to <a href="../Classes/CCNode.html">CCNode</a> objects and contain their physical properties such as <a href="#//api/name/mass">mass</a>, shape, <a href="#//api/name/friction">friction</a>, etc.</p>
+
+<p>There are two main kinds of bodies, static and dynamic. Static bodies cannot be moved by normal forces, collisions or gravity.
+This is the <a href="#//api/name/type">type</a> of <a href="#//api/name/body">body</a> you would use for the ground or wall in a game. Dynamic bodies are just the opposite. They are affected by collisions, <a href="#//api/name/friction">friction</a>, gravity, forces, etc.
+You can change the <a href="#//api/name/type">type</a> of a <a href="#//api/name/body">body</a> using the CCPhysicsBody.<a href="#//api/name/type">type</a> property.</p>
+
+<p>There are two basic categories of shapes that physics bodies can have. The simplest category are convex shapes such as circles, pills and polygons (in order of efficiency).
+These are considered to be solid (not hollow) objects by the physics engine.
+Composite bodies, such as those created with the polyline or <a href="#//api/name/bodyWithShapes:">bodyWithShapes:</a> methods are actually composed of multiple shapes.
+Regardless of the <a href="#//api/name/type">type</a>, all shapes can be given a radius value that adds some thickness to them and rounds out their sharp corners.</p>
+
+<p>Many rigid <a href="#//api/name/body">body</a> properties such as the moment of inertia or center of gravity are calculated for you automatically based on the shapes the <a href="#//api/name/body">body</a> is created from.
+The exception is the <a href="#//api/name/mass">mass</a> of the <a href="#//api/name/body">body</a> which defaults to 1.0. It is the developer&rsquo;s responsibility to set the <a href="#//api/name/mass">mass</a> (or <a href="#//api/name/density">density</a>) for the objects.
+What units you use for <a href="#//api/name/mass">mass</a> is not important as long as they are consistent.</p>
+
+<h3>Collision Filtering:</h3>
+
+<p>By default physics bodies collide with all other physics bodies. Since 2D games use a lot of faked perspectives and layering CCPhysics provides you with many options to filter out unwanted collisions.</p>
+
+<ul>
+<li>collisionGroup: Bodies can be assigned an object pointer that defines a group. Two bodies in the same group will not collide.</li>
+<li>collisionCategory, collisionMask: Bodies can be assigned a list of categories and masks (rules) that define which kinds of bodies they will collide with.</li>
+<li><a href="../Classes/CCPhysicsJoint.html">CCPhysicsJoint</a>.collideBodies: Joints have a flag that allows you to reject a collisions between the bodies they connect.</li>
+<li><a href="../Protocols/CCPhysicsCollisionDelegate.html">CCPhysicsCollisionDelegate</a> methods: You can set up a delegate that responds to collision events between bodies progmatically.</li>
+</ul>
+
+
+<h3>Tips:</h3>
+
+<ul>
+<li>Use the simplest shape you can. You don&rsquo;t need to be pixel perfect. Collisions with complex shapes are very computationally expensive and will ultimately feel more random and unfair to your players.</li>
+<li>Add radii to your shapes. It will help smooth out collisions between corners of objects and it will allow the collision detection to run more efficiently.</li>
+<li>Avoid very small, thin, or fast moving shapes when possible. The underlying physics engine does not perform continuous collision detection and can miss collisions if they move too much in a single step.</li>
+<li>When possible, try to use groups, categories or <a href="#//api/name/joints">joints</a> to filter collisions since they are tried before running the expensive collision detection code.</li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating a CCPhysicsBody Object" name="task_Creating a CCPhysicsBody Object"></a>
+						<h3 class="subsubtitle task-title">Creating a CCPhysicsBody Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bodyWithCircleOfRadius:andCenter:">+&nbsp;bodyWithCircleOfRadius:andCenter:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bodyWithRect:cornerRadius:">+&nbsp;bodyWithRect:cornerRadius:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bodyWithPillFrom:to:cornerRadius:">+&nbsp;bodyWithPillFrom:to:cornerRadius:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bodyWithPolygonFromPoints:count:cornerRadius:">+&nbsp;bodyWithPolygonFromPoints:count:cornerRadius:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bodyWithPolylineFromRect:cornerRadius:">+&nbsp;bodyWithPolylineFromRect:cornerRadius:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bodyWithPolylineFromPoints:count:cornerRadius:looped:">+&nbsp;bodyWithPolylineFromPoints:count:cornerRadius:looped:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bodyWithShapes:">+&nbsp;bodyWithShapes:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Basic Body Attributes" name="task_Accessing Basic Body Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing Basic Body Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mass">&nbsp;&nbsp;mass</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/area">&nbsp;&nbsp;area</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/density">&nbsp;&nbsp;density</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/friction">&nbsp;&nbsp;friction</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/elasticity">&nbsp;&nbsp;elasticity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/surfaceVelocity">&nbsp;&nbsp;surfaceVelocity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Simulation Attributes" name="task_Accessing Simulation Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing Simulation Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/affectedByGravity">&nbsp;&nbsp;affectedByGravity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allowsRotation">&nbsp;&nbsp;allowsRotation</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Collision and Contact Attributes" name="task_Accessing Collision and Contact Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing Collision and Contact Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sensor">&nbsp;&nbsp;sensor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collisionGroup">&nbsp;&nbsp;collisionGroup</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collisionType">&nbsp;&nbsp;collisionType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collisionCategories">&nbsp;&nbsp;collisionCategories</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collisionMask">&nbsp;&nbsp;collisionMask</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/eachCollisionPair:">&ndash;&nbsp;eachCollisionPair:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Velocity Attributes" name="task_Accessing Velocity Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing Velocity Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/velocity">&nbsp;&nbsp;velocity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/angularVelocity">&nbsp;&nbsp;angularVelocity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Forces and Torques Attributes" name="task_Accessing Forces and Torques Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing Forces and Torques Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/force">&nbsp;&nbsp;force</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/torque">&nbsp;&nbsp;torque</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Applying Force and Impulses Methods" name="task_Applying Force and Impulses Methods"></a>
+						<h3 class="subsubtitle task-title">Applying Force and Impulses Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyTorque:">&ndash;&nbsp;applyTorque:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyAngularImpulse:">&ndash;&nbsp;applyAngularImpulse:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyForce:">&ndash;&nbsp;applyForce:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyImpulse:">&ndash;&nbsp;applyImpulse:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyForce:atLocalPoint:">&ndash;&nbsp;applyForce:atLocalPoint:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyImpulse:atLocalPoint:">&ndash;&nbsp;applyImpulse:atLocalPoint:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyForce:atWorldPoint:">&ndash;&nbsp;applyForce:atWorldPoint:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/applyImpulse:atWorldPoint:">&ndash;&nbsp;applyImpulse:atWorldPoint:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Misc Attributes" name="task_Accessing Misc Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing Misc Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/joints">&nbsp;&nbsp;joints</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sleeping">&nbsp;&nbsp;sleeping</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/node">&nbsp;&nbsp;node</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="ObjectiveChipmunk Methods" name="task_ObjectiveChipmunk Methods"></a>
+						<h3 class="subsubtitle task-title">ObjectiveChipmunk Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/physicsNode">&nbsp;&nbsp;physicsNode</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isRunning">&nbsp;&nbsp;isRunning</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/absolutePosition">&nbsp;&nbsp;absolutePosition</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/absoluteRadians">&nbsp;&nbsp;absoluteRadians</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/absoluteTransform">&nbsp;&nbsp;absoluteTransform</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/body">&nbsp;&nbsp;body</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/chipmunkObjects">&nbsp;&nbsp;chipmunkObjects</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addJoint:">&ndash;&nbsp;addJoint:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeJoint:">&ndash;&nbsp;removeJoint:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/willAddToPhysicsNode:nonRigidTransform:">&ndash;&nbsp;willAddToPhysicsNode:nonRigidTransform:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didAddToPhysicsNode:">&ndash;&nbsp;didAddToPhysicsNode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/didRemoveFromPhysicsNode:">&ndash;&nbsp;didRemoveFromPhysicsNode:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/absolutePosition" title="absolutePosition"></a>
+	<h3 class="subsubtitle method-title">absolutePosition</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The position of the <a href="#//api/name/body">body</a> relative to the space.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) cpVect absolutePosition</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/absoluteRadians" title="absoluteRadians"></a>
+	<h3 class="subsubtitle method-title">absoluteRadians</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The rotation of the <a href="#//api/name/body">body</a> relative to the space.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) cpFloat absoluteRadians</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/absoluteTransform" title="absoluteTransform"></a>
+	<h3 class="subsubtitle method-title">absoluteTransform</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The transform of the <a href="#//api/name/body">body</a> relative to the space.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) cpTransform absoluteTransform</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/affectedByGravity" title="affectedByGravity"></a>
+	<h3 class="subsubtitle method-title">affectedByGravity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Affected by gravity flag.  Defaults to Yes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL affectedByGravity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allowsRotation" title="allowsRotation"></a>
+	<h3 class="subsubtitle method-title">allowsRotation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allow <a href="#//api/name/body">body</a> rotation flag.  Defaults to Yes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL allowsRotation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/angularVelocity" title="angularVelocity"></a>
+	<h3 class="subsubtitle method-title">angularVelocity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Angular <a href="#//api/name/velocity">velocity</a> of the physics <a href="#//api/name/body">body</a> in radians per second.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat angularVelocity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/area" title="area"></a>
+	<h3 class="subsubtitle method-title">area</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Area of the <a href="#//api/name/body">body</a> in points<sup>2</sup>.
+Please note that this is relative to the <a href="../Classes/CCPhysicsNode.html">CCPhysicsNode</a>, changing the <a href="#//api/name/node">node</a> or a parent can change the area.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CGFloat area</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/body" title="body"></a>
+	<h3 class="subsubtitle method-title">body</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Chipmunk Body.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) ChipmunkBody *body</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/chipmunkObjects" title="chipmunkObjects"></a>
+	<h3 class="subsubtitle method-title">chipmunkObjects</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Implements the ChipmunkObject protocol.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *chipmunkObjects</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/collisionCategories" title="collisionCategories"></a>
+	<h3 class="subsubtitle method-title">collisionCategories</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of NSString category names of which this physics <a href="#//api/name/body">body</a> is a member. Up to 32 unique categories can be used in a single physics <a href="#//api/name/node">node</a>.
+A value of nil means that a <a href="#//api/name/body">body</a> exists in all possible collision categories.
+The deefault is nil.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *collisionCategories</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/collisionGroup" title="collisionGroup"></a>
+	<h3 class="subsubtitle method-title">collisionGroup</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The body&rsquo;s collisionGroup, if two physics bodies share the same group id, they don&rsquo;t collide. Defaults to nil.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id collisionGroup</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/collisionMask" title="collisionMask"></a>
+	<h3 class="subsubtitle method-title">collisionMask</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of NSString category names that this physics <a href="#//api/name/body">body</a> wants to collide with.
+The categories/masks of both bodies must agree for a collision to occur.
+A value of nil means that this <a href="#//api/name/body">body</a> will collide with a <a href="#//api/name/body">body</a> in any category.
+The default is nil.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSArray *collisionMask</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/collisionType" title="collisionType"></a>
+	<h3 class="subsubtitle method-title">collisionType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A string that identifies the collision pair delegate method that should be called. Default value is @&ldquo;default&rdquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, copy) NSString *collisionType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/density" title="density"></a>
+	<h3 class="subsubtitle method-title">density</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Density of the <a href="#//api/name/body">body</a> in 1/1000 units of <a href="#//api/name/mass">mass</a> per point<sup>2</sup>. The co-efficent is used to keep the <a href="#//api/name/mass">mass</a> of an object a reasonably small value.
+If the <a href="#//api/name/body">body</a> has multiple shapes, you cannot change the density directly.
+Note that <a href="#//api/name/mass">mass</a> and not density will remain constant if an object is rescaled.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat density</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/elasticity" title="elasticity"></a>
+	<h3 class="subsubtitle method-title">elasticity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Elasticity of the physics <a href="#//api/name/body">body</a>.
+When two objects collide, their elasticity is multiplied together.
+The calculated value can be ovrriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.2.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat elasticity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/force" title="force"></a>
+	<h3 class="subsubtitle method-title">force</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Linear force applied to the physics <a href="#//api/name/body">body</a> this fixed timestep.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint force</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/friction" title="friction"></a>
+	<h3 class="subsubtitle method-title">friction</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Surface friction of the physics <a href="#//api/name/body">body</a>, when two objects collide, their friction is multiplied together.
+The calculated value can be overridden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.7</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat friction</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isRunning" title="isRunning"></a>
+	<h3 class="subsubtitle method-title">isRunning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the <a href="#//api/name/body">body</a> is currently added to a <a href="#//api/name/physicsNode">physicsNode</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isRunning</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/joints" title="joints"></a>
+	<h3 class="subsubtitle method-title">joints</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Joints connected to this <a href="#//api/name/body">body</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSArray *joints</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mass" title="mass"></a>
+	<h3 class="subsubtitle method-title">mass</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Mass of the physics <a href="#//api/name/body">body</a>. The mass of a composite <a href="#//api/name/body">body</a> cannod be changed.
+Defaults to 1.0.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat mass</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/node" title="node"></a>
+	<h3 class="subsubtitle method-title">node</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="../Classes/CCNode.html">CCNode</a> to which this physics <a href="#//api/name/body">body</a> is attached.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, weak) CCNode *node</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/physicsNode" title="physicsNode"></a>
+	<h3 class="subsubtitle method-title">physicsNode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="../Classes/CCPhysicsNode.html">CCPhysicsNode</a> this <a href="#//api/name/body">body</a> is added to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CCPhysicsNode *physicsNode</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sensor" title="sensor"></a>
+	<h3 class="subsubtitle method-title">sensor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Is this <a href="#//api/name/body">body</a> a sensor? A sensor will call a collision delegate but does not physically cause collisions between bodies.
+Defaults to NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL sensor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sleeping" title="sleeping"></a>
+	<h3 class="subsubtitle method-title">sleeping</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sleeping bodies use minimal CPU resources as they are removed from the simulation until something collides with them.
+Normally a <a href="#//api/name/body">body</a> will fall alsleep on it&rsquo;s own, but you can manually <a href="#//api/name/force">force</a> a <a href="#//api/name/body">body</a> to fall a sleep at any time if you desire.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL sleeping</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/surfaceVelocity" title="surfaceVelocity"></a>
+	<h3 class="subsubtitle method-title">surfaceVelocity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Velocity of the surface of a physics <a href="#//api/name/body">body</a> relative to it&rsquo;s normal <a href="#//api/name/velocity">velocity</a>.  This is useful for modelling conveyor belts or the feet of a player avatar.
+The calculated surface <a href="#//api/name/velocity">velocity</a> of two colliding shapes by default only affects their <a href="#//api/name/friction">friction</a>.
+The calculated value can be overriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to CGPointZero.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint surfaceVelocity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/torque" title="torque"></a>
+	<h3 class="subsubtitle method-title">torque</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Torque applied to this physics <a href="#//api/name/body">body</a> this fixed timestep.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat torque</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Physics <a href="#//api/name/body">body</a> type.  Defaults to CCPhysicsBodyTypeDynamic</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CCPhysicsBodyType type</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/velocity" title="velocity"></a>
+	<h3 class="subsubtitle method-title">velocity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The velocity of the physics <a href="#//api/name/body">body</a> in absolute coordinates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint velocity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/bodyWithCircleOfRadius:andCenter:" title="bodyWithCircleOfRadius:andCenter:"></a>
+	<h3 class="subsubtitle method-title">bodyWithCircleOfRadius:andCenter:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and retuns a circular physics <a href="#//api/name/body">body</a> using the circle radius and center values specified.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCPhysicsBody *)bodyWithCircleOfRadius:(CGFloat)<em>radius</em> andCenter:(CGPoint)<em>center</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>radius</em></dt>
+			<dd><p>Circle radius.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>center</em></dt>
+			<dd><p>Circle center point.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCPhysicsBody Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bodyWithPillFrom:to:cornerRadius:" title="bodyWithPillFrom:to:cornerRadius:"></a>
+	<h3 class="subsubtitle method-title">bodyWithPillFrom:to:cornerRadius:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a pill shaped physics <a href="#//api/name/body">body</a> with rounded corners that stretches from &lsquo;start&rsquo; to &lsquo;end&rsquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCPhysicsBody *)bodyWithPillFrom:(CGPoint)<em>from</em> to:(CGPoint)<em>to</em> cornerRadius:(CGFloat)<em>cornerRadius</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>from</em></dt>
+			<dd><p>Start point.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>to</em></dt>
+			<dd><p>End point.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cornerRadius</em></dt>
+			<dd><p>Corner radius.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCPhysicsBody Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bodyWithPolygonFromPoints:count:cornerRadius:" title="bodyWithPolygonFromPoints:count:cornerRadius:"></a>
+	<h3 class="subsubtitle method-title">bodyWithPolygonFromPoints:count:cornerRadius:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a convex polygon shaped physics <a href="#//api/name/body">body</a> with rounded corners.
+If the points do not form a convex polygon then a convex hull will be created from them automatically.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCPhysicsBody *)bodyWithPolygonFromPoints:(CGPoint *)<em>points</em> count:(NSUInteger)<em>count</em> cornerRadius:(CGFloat)<em>cornerRadius</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>points</em></dt>
+			<dd><p>Points array pointer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>Points count.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cornerRadius</em></dt>
+			<dd><p>Corner radius.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCPhysicsBody Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bodyWithPolylineFromPoints:count:cornerRadius:looped:" title="bodyWithPolylineFromPoints:count:cornerRadius:looped:"></a>
+	<h3 class="subsubtitle method-title">bodyWithPolylineFromPoints:count:cornerRadius:looped:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a physics <a href="#//api/name/body">body</a> with multiple pill shapes attached, one for each segment in the polyline.
+Polyline based bodies default to the CCPhysicsBodyTypeStatic <a href="#//api/name/body">body</a> <a href="#//api/name/type">type</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCPhysicsBody *)bodyWithPolylineFromPoints:(CGPoint *)<em>points</em> count:(NSUInteger)<em>count</em> cornerRadius:(CGFloat)<em>cornerRadius</em> looped:(bool)<em>looped</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>points</em></dt>
+			<dd><p>Points array pointer.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>count</em></dt>
+			<dd><p>Points count.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cornerRadius</em></dt>
+			<dd><p>Corner radius.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>looped</em></dt>
+			<dd><p>Should there be a pill shape that goes from the first to last point or not.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCPhysicsBody Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bodyWithPolylineFromRect:cornerRadius:" title="bodyWithPolylineFromRect:cornerRadius:"></a>
+	<h3 class="subsubtitle method-title">bodyWithPolylineFromRect:cornerRadius:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a physics <a href="#//api/name/body">body</a> with four pill shapes around the rectangle&rsquo;s perimeter.
+Polyline based bodies default to the CCPhysicsBodyTypeStatic <a href="#//api/name/body">body</a> <a href="#//api/name/type">type</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCPhysicsBody *)bodyWithPolylineFromRect:(CGRect)<em>rect</em> cornerRadius:(CGFloat)<em>cornerRadius</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>Rectangle perimeter.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cornerRadius</em></dt>
+			<dd><p>Corner radius.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCPhysicsBody Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bodyWithRect:cornerRadius:" title="bodyWithRect:cornerRadius:"></a>
+	<h3 class="subsubtitle method-title">bodyWithRect:cornerRadius:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a box shaped physics <a href="#//api/name/body">body</a> with rounded corners.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCPhysicsBody *)bodyWithRect:(CGRect)<em>rect</em> cornerRadius:(CGFloat)<em>cornerRadius</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>Box dimensions.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>cornerRadius</em></dt>
+			<dd><p>Corner radius.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCPhysicsBody Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bodyWithShapes:" title="bodyWithShapes:"></a>
+	<h3 class="subsubtitle method-title">bodyWithShapes:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a physics <a href="#//api/name/body">body</a> with multiple shapes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCPhysicsBody *)bodyWithShapes:(NSArray *)<em>shapes</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>shapes</em></dt>
+			<dd><p>Array of shapes to attach to the <a href="#//api/name/body">body</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCPhysicsBody Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addJoint:" title="addJoint:"></a>
+	<h3 class="subsubtitle method-title">addJoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add joint to <a href="#//api/name/body">body</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addJoint:(CCPhysicsJoint *)<em>joint</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>joint</em></dt>
+			<dd><p>Physics joint to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyAngularImpulse:" title="applyAngularImpulse:"></a>
+	<h3 class="subsubtitle method-title">applyAngularImpulse:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Apply an angular impulse.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)applyAngularImpulse:(CGFloat)<em>impulse</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>impulse</em></dt>
+			<dd><p>Angular impulse.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyForce:" title="applyForce:"></a>
+	<h3 class="subsubtitle method-title">applyForce:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Apply a <a href="#//api/name/force">force</a> to the physics <a href="#//api/name/body">body</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)applyForce:(CGPoint)<em>force</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>force</em></dt>
+			<dd><p>Force vector.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyForce:atLocalPoint:" title="applyForce:atLocalPoint:"></a>
+	<h3 class="subsubtitle method-title">applyForce:atLocalPoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Apply <a href="#//api/name/force">force</a> and <a href="#//api/name/torque">torque</a> on the physics <a href="#//api/name/body">body</a> from a <a href="#//api/name/force">force</a> applied at the given point in the parent CCNode&rsquo;s coordinates.
+The <a href="#//api/name/force">force</a> will be rotated by, but not scaled by the CCNode&rsquo;s transform.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)applyForce:(CGPoint)<em>force</em> atLocalPoint:(CGPoint)<em>point</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>force</em></dt>
+			<dd><p>Force vector.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>Point to apply <a href="#//api/name/force">force</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyForce:atWorldPoint:" title="applyForce:atWorldPoint:"></a>
+	<h3 class="subsubtitle method-title">applyForce:atWorldPoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Apply an <a href="#//api/name/force">force</a> and angular <a href="#//api/name/torque">torque</a> on the physics <a href="#//api/name/body">body</a> at the given point in absolute coordinates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)applyForce:(CGPoint)<em>force</em> atWorldPoint:(CGPoint)<em>point</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>force</em></dt>
+			<dd><p>Force vector.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>Point to apply <a href="#//api/name/force">force</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyImpulse:" title="applyImpulse:"></a>
+	<h3 class="subsubtitle method-title">applyImpulse:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Apply an impulse on the physics <a href="#//api/name/body">body</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)applyImpulse:(CGPoint)<em>impulse</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>impulse</em></dt>
+			<dd><p>Impulse vector.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyImpulse:atLocalPoint:" title="applyImpulse:atLocalPoint:"></a>
+	<h3 class="subsubtitle method-title">applyImpulse:atLocalPoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Apply an impulse and angular impulse on the physics <a href="#//api/name/body">body</a> at the given point in the parent CCNode&rsquo;s coordinates.
+The impulse will be rotated by, but not scaled by the CCNode&rsquo;s transform.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)applyImpulse:(CGPoint)<em>impulse</em> atLocalPoint:(CGPoint)<em>point</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>impulse</em></dt>
+			<dd><p>Impulse vector.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>Point to apply impulse.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyImpulse:atWorldPoint:" title="applyImpulse:atWorldPoint:"></a>
+	<h3 class="subsubtitle method-title">applyImpulse:atWorldPoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Apply an impulse and angular impulse on the physics <a href="#//api/name/body">body</a> at the given point in absolute coordinates.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)applyImpulse:(CGPoint)<em>impulse</em> atWorldPoint:(CGPoint)<em>point</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>impulse</em></dt>
+			<dd><p>Impulse vector.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>Point to apply impulse.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/applyTorque:" title="applyTorque:"></a>
+	<h3 class="subsubtitle method-title">applyTorque:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Apply a <a href="#//api/name/torque">torque</a> on the physics <a href="#//api/name/body">body</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)applyTorque:(CGFloat)<em>torque</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>torque</em></dt>
+			<dd><p>Torque.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didAddToPhysicsNode:" title="didAddToPhysicsNode:"></a>
+	<h3 class="subsubtitle method-title">didAddToPhysicsNode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used for deferring collision <a href="#//api/name/type">type</a> setup until there is access to the physics <a href="#//api/name/node">node</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didAddToPhysicsNode:(CCPhysicsNode *)<em>physics</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>physics</em></dt>
+			<dd><p>Physics <a href="#//api/name/node">node</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/didRemoveFromPhysicsNode:" title="didRemoveFromPhysicsNode:"></a>
+	<h3 class="subsubtitle method-title">didRemoveFromPhysicsNode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used for deferring collision <a href="#//api/name/type">type</a> setup until there is access to the physics <a href="#//api/name/node">node</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)didRemoveFromPhysicsNode:(CCPhysicsNode *)<em>physics</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>physics</em></dt>
+			<dd><p>Physics <a href="#//api/name/node">node</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/eachCollisionPair:" title="eachCollisionPair:"></a>
+	<h3 class="subsubtitle method-title">eachCollisionPair:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Iterate over all of the CCPhysicsCollisionPairs this <a href="#//api/name/body">body</a> is currently in contact with.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)eachCollisionPair:(void ( ^ ) ( CCPhysicsCollisionPair *pair ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>Collision block.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="note"><p><strong>Note:</strong> The <a href="../Classes/CCPhysicsCollisionPair.html">CCPhysicsCollisionPair</a> object is shared so you should not store a reference to it.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsBody.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeJoint:" title="removeJoint:"></a>
+	<h3 class="subsubtitle method-title">removeJoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove joint from <a href="#//api/name/body">body</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeJoint:(CCPhysicsJoint *)<em>joint</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>joint</em></dt>
+			<dd><p>Physics joint to remove.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/willAddToPhysicsNode:nonRigidTransform:" title="willAddToPhysicsNode:nonRigidTransform:"></a>
+	<h3 class="subsubtitle method-title">willAddToPhysicsNode:nonRigidTransform:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used for deferring collision <a href="#//api/name/type">type</a> setup until there is access to the physics <a href="#//api/name/node">node</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)willAddToPhysicsNode:(CCPhysicsNode *)<em>physics</em> nonRigidTransform:(cpTransform)<em>transform</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>physics</em></dt>
+			<dd><p>Physics <a href="#//api/name/node">node</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>transform</em></dt>
+			<dd><p>Transform to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Cocos2D. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

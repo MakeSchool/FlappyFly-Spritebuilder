@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCLayoutBox.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCLayoutBox</TokenIdentifier>
+			<Abstract type="html">The box layout lays out its children in a horizontal or vertical row. Optionally you can set a spacing between the child nodes.</Abstract>
+			<DeclaredIn>CCLayoutBox.h</DeclaredIn>
+            
+			
+			<NodeRef refid="71"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLayoutBox/setDirection:</TokenIdentifier>
+			<Abstract type="html">The direction is either horizontal or vertical.</Abstract>
+			<DeclaredIn>CCLayoutBox.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCLayoutBoxDirection direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLayoutBox/direction</TokenIdentifier>
+			<Abstract type="html">The direction is either horizontal or vertical.</Abstract>
+			<DeclaredIn>CCLayoutBox.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCLayoutBoxDirection direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCLayoutBox/direction</TokenIdentifier>
+			<Abstract type="html">The direction is either horizontal or vertical.</Abstract>
+			<DeclaredIn>CCLayoutBox.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCLayoutBoxDirection direction</Declaration>
+			
+			
+			<Anchor>//api/name/direction</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLayoutBox/setSpacing:</TokenIdentifier>
+			<Abstract type="html">The spacing in points between the child nodes.</Abstract>
+			<DeclaredIn>CCLayoutBox.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float spacing</Declaration>
+			
+			
+			<Anchor>//api/name/spacing</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLayoutBox/spacing</TokenIdentifier>
+			<Abstract type="html">The spacing in points between the child nodes.</Abstract>
+			<DeclaredIn>CCLayoutBox.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float spacing</Declaration>
+			
+			
+			<Anchor>//api/name/spacing</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCLayoutBox/spacing</TokenIdentifier>
+			<Abstract type="html">The spacing in points between the child nodes.</Abstract>
+			<DeclaredIn>CCLayoutBox.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float spacing</Declaration>
+			
+			
+			<Anchor>//api/name/spacing</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,1570 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CCSprite Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Cocos2D 3.0 </a></h1>
+				<a id="developerHome" href="../index.html">Cocos2D</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CCSprite Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/blendFunc">&nbsp;&nbsp;&nbsp;&nbsp;blendFunc</option>
+	
+	<option value="//api/name/flipX">&nbsp;&nbsp;&nbsp;&nbsp;flipX</option>
+	
+	<option value="//api/name/flipY">&nbsp;&nbsp;&nbsp;&nbsp;flipY</option>
+	
+	<option value="//api/name/offsetPosition">&nbsp;&nbsp;&nbsp;&nbsp;offsetPosition</option>
+	
+	<option value="//api/name/spriteFrame">&nbsp;&nbsp;&nbsp;&nbsp;spriteFrame</option>
+	
+	<option value="//api/name/textureRect">&nbsp;&nbsp;&nbsp;&nbsp;textureRect</option>
+	
+	<option value="//api/name/textureRectRotated">&nbsp;&nbsp;&nbsp;&nbsp;textureRectRotated</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/emptySprite">&nbsp;&nbsp;&nbsp;&nbsp;+ emptySprite</option>
+	
+	<option value="//api/name/spriteWithCGImage:key:">&nbsp;&nbsp;&nbsp;&nbsp;+ spriteWithCGImage:key:</option>
+	
+	<option value="//api/name/spriteWithImageNamed:">&nbsp;&nbsp;&nbsp;&nbsp;+ spriteWithImageNamed:</option>
+	
+	<option value="//api/name/spriteWithSpriteFrame:">&nbsp;&nbsp;&nbsp;&nbsp;+ spriteWithSpriteFrame:</option>
+	
+	<option value="//api/name/spriteWithTexture:">&nbsp;&nbsp;&nbsp;&nbsp;+ spriteWithTexture:</option>
+	
+	<option value="//api/name/spriteWithTexture:rect:">&nbsp;&nbsp;&nbsp;&nbsp;+ spriteWithTexture:rect:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithCGImage:key:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithCGImage:key:</option>
+	
+	<option value="//api/name/initWithImageNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithImageNamed:</option>
+	
+	<option value="//api/name/initWithSpriteFrame:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithSpriteFrame:</option>
+	
+	<option value="//api/name/initWithTexture:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTexture:</option>
+	
+	<option value="//api/name/initWithTexture:rect:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTexture:rect:</option>
+	
+	<option value="//api/name/initWithTexture:rect:rotated:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTexture:rect:rotated:</option>
+	
+	<option value="//api/name/setTextureRect:">&nbsp;&nbsp;&nbsp;&nbsp;- setTextureRect:</option>
+	
+	<option value="//api/name/setTextureRect:rotated:untrimmedSize:">&nbsp;&nbsp;&nbsp;&nbsp;- setTextureRect:rotated:untrimmedSize:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a CCSprite Object">Creating a CCSprite Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a CCSprite Object">Initializing a CCSprite Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Textures Methods">Textures Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/blendFunc">blendFunc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flipX">flipX</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/flipY">flipY</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/offsetPosition">offsetPosition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spriteFrame">spriteFrame</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textureRect">textureRect</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/textureRectRotated">textureRectRotated</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emptySprite">emptySprite</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spriteWithCGImage:key:">spriteWithCGImage:key:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spriteWithImageNamed:">spriteWithImageNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spriteWithSpriteFrame:">spriteWithSpriteFrame:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spriteWithTexture:">spriteWithTexture:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spriteWithTexture:rect:">spriteWithTexture:rect:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithCGImage:key:">initWithCGImage:key:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithImageNamed:">initWithImageNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithSpriteFrame:">initWithSpriteFrame:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTexture:">initWithTexture:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTexture:rect:">initWithTexture:rect:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTexture:rect:rotated:">initWithTexture:rect:rotated:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTextureRect:">setTextureRect:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setTextureRect:rotated:untrimmedSize:">setTextureRect:rotated:untrimmedSize:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CCSprite Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CCSprite Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CCNode.html">CCNode</a> : <a href="../Classes/CCResponder.html">CCResponder</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">CCTextureProtocol</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CCSprite.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>CCSprite is a 2D image ( <a href="http://en.wikipedia.org/wiki/Sprite">http://en.wikipedia.org/wiki/Sprite</a>_(computer_graphics) )</p>
+
+<p>CCSprite can be created with an image, or with a sub-rectangle of an image.</p>
+
+<p>If the parent or any of its ancestors is a <a href="../Classes/CCSpriteBatchNode.html">CCSpriteBatchNode</a> then the following features &amp;limitations apply.</p>
+
+<p>Features:</p>
+
+<ul>
+<li>MUCH faster rendering, specially if the <a href="../Classes/CCSpriteBatchNode.html">CCSpriteBatchNode</a> has many children. All the children will be drawn in a single batch.</li>
+</ul>
+
+
+<p>Limitations:</p>
+
+<ul>
+<li>The Alias/Antialias property belongs to <a href="../Classes/CCSpriteBatchNode.html">CCSpriteBatchNode</a>, so you can&rsquo;t individually set the aliased property.</li>
+<li>The Blending function property belongs to <a href="../Classes/CCSpriteBatchNode.html">CCSpriteBatchNode</a>, so you can&rsquo;t individually set the blending function property.</li>
+<li>Parallax scroller is not supported, but can be simulated with a &ldquo;proxy&rdquo; sprite.</li>
+</ul>
+
+
+<p>If the parent is an standard <a href="../Classes/CCNode.html">CCNode</a>, then CCSprite behaves like any other <a href="../Classes/CCNode.html">CCNode</a>:</p>
+
+<ul>
+<li>It supports blending functions.</li>
+<li>It supports aliasing / antialiasing.</li>
+<li>But the rendering will be slower: 1 draw per children.</li>
+</ul>
+
+
+<p>The default anchorPoint in CCSprite is (0.5, 0.5).</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textureRect">&nbsp;&nbsp;textureRect</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/textureRectRotated">&nbsp;&nbsp;textureRectRotated</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spriteFrame">&nbsp;&nbsp;spriteFrame</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flipX">&nbsp;&nbsp;flipX</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/flipY">&nbsp;&nbsp;flipY</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/offsetPosition">&nbsp;&nbsp;offsetPosition</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/blendFunc">&nbsp;&nbsp;blendFunc</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating a CCSprite Object" name="task_Creating a CCSprite Object"></a>
+						<h3 class="subsubtitle task-title">Creating a CCSprite Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spriteWithImageNamed:">+&nbsp;spriteWithImageNamed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spriteWithTexture:">+&nbsp;spriteWithTexture:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spriteWithTexture:rect:">+&nbsp;spriteWithTexture:rect:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spriteWithSpriteFrame:">+&nbsp;spriteWithSpriteFrame:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spriteWithCGImage:key:">+&nbsp;spriteWithCGImage:key:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initializing a CCSprite Object" name="task_Initializing a CCSprite Object"></a>
+						<h3 class="subsubtitle task-title">Initializing a CCSprite Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithImageNamed:">&ndash;&nbsp;initWithImageNamed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTexture:">&ndash;&nbsp;initWithTexture:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTexture:rect:">&ndash;&nbsp;initWithTexture:rect:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithSpriteFrame:">&ndash;&nbsp;initWithSpriteFrame:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithCGImage:key:">&ndash;&nbsp;initWithCGImage:key:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emptySprite">+&nbsp;emptySprite</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTexture:rect:rotated:">&ndash;&nbsp;initWithTexture:rect:rotated:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Textures Methods" name="task_Textures Methods"></a>
+						<h3 class="subsubtitle task-title">Textures Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTextureRect:">&ndash;&nbsp;setTextureRect:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setTextureRect:rotated:untrimmedSize:">&ndash;&nbsp;setTextureRect:rotated:untrimmedSize:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/blendFunc" title="blendFunc"></a>
+	<h3 class="subsubtitle method-title">blendFunc</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Conforms to CCTextureProtocol protocol</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) ccBlendFunc blendFunc</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flipX" title="flipX"></a>
+	<h3 class="subsubtitle method-title">flipX</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not the sprite is flipped horizontally.
+It only flips the texture of the sprite, and not the texture of the sprite&rsquo;s children.
+Also, flipping the texture doesn&rsquo;t alter the anchorPoint.
+If you want to flip the anchorPoint too, and/or to flip the children too use:
+sprite.scaleX *= -1;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) BOOL flipX</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/flipY" title="flipY"></a>
+	<h3 class="subsubtitle method-title">flipY</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not the sprite is flipped vertically.
+It only flips the texture of the sprite, and not the texture of the sprite&rsquo;s children.
+Also, flipping the texture doesn&rsquo;t alter the anchorPoint.
+If you want to flip the anchorPoint too, and/or to flip the children too use:
+sprite.scaleY *= -1;</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) BOOL flipY</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/offsetPosition" title="offsetPosition"></a>
+	<h3 class="subsubtitle method-title">offsetPosition</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The offset position in points of the sprite in points. Calculated automatically by sprite sheet editors.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CGPoint offsetPosition</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spriteFrame" title="spriteFrame"></a>
+	<h3 class="subsubtitle method-title">spriteFrame</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The currently displayed spriteFrame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) CCSpriteFrame *spriteFrame</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textureRect" title="textureRect"></a>
+	<h3 class="subsubtitle method-title">textureRect</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the texture rect of the CCSprite in points.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CGRect textureRect</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/textureRectRotated" title="textureRectRotated"></a>
+	<h3 class="subsubtitle method-title">textureRectRotated</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns whether or not the texture rectangle is rotated.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL textureRectRotated</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/emptySprite" title="emptySprite"></a>
+	<h3 class="subsubtitle method-title">emptySprite</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a non rendered sprite, the primary use of this type of sprite would be for adding control sprites for more complex animations.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)emptySprite</code></div>
+
+    
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly initialized CCSprite object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spriteWithCGImage:key:" title="spriteWithCGImage:key:"></a>
+	<h3 class="subsubtitle method-title">spriteWithCGImage:key:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an sprite with a CGImageRef and a key.
+The key is used by the CCTextureCache to know if a texture was already created with this CGImage.
+For example, a valid key is: @&ldquo;_spriteframe_01&rdquo;.
+If key is nil, then a new texture will be created each time by the CCTextureCache.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)spriteWithCGImage:(CGImageRef)<em>image</em> key:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>image</em></dt>
+			<dd><p>Image ref.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>Key description.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCSprite Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spriteWithImageNamed:" title="spriteWithImageNamed:"></a>
+	<h3 class="subsubtitle method-title">spriteWithImageNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a sprite with the name of an image. The name can be either a name in a sprite sheet or the name of a file.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)spriteWithImageNamed:(NSString *)<em>imageName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>imageName</em></dt>
+			<dd><p>name of the image to load.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCSprite Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spriteWithSpriteFrame:" title="spriteWithSpriteFrame:"></a>
+	<h3 class="subsubtitle method-title">spriteWithSpriteFrame:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an sprite from a sprite frame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)spriteWithSpriteFrame:(CCSpriteFrame *)<em>spriteFrame</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spriteFrame</em></dt>
+			<dd><p>Sprite frame to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCSprite Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spriteWithTexture:" title="spriteWithTexture:"></a>
+	<h3 class="subsubtitle method-title">spriteWithTexture:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an sprite with a texture.
+The rect used will be the size of the texture.
+The offset will be (0,0).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)spriteWithTexture:(CCTexture *)<em>texture</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>texture</em></dt>
+			<dd><p>Texture to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCSprite Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spriteWithTexture:rect:" title="spriteWithTexture:rect:"></a>
+	<h3 class="subsubtitle method-title">spriteWithTexture:rect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an sprite with a texture.
+The offset will be (0,0).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)spriteWithTexture:(CCTexture *)<em>texture</em> rect:(CGRect)<em>rect</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>texture</em></dt>
+			<dd><p>Texture to use.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>Rect to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCSprite Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithCGImage:key:" title="initWithCGImage:key:"></a>
+	<h3 class="subsubtitle method-title">initWithCGImage:key:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes an sprite with a CGImageRef and a key.
+The key is used by the CCTextureCache to know if a texture was already created with this CGImage.
+For example, a valid key is: @&ldquo;_spriteframe_01&rdquo;.
+If key is nil, then a new texture will be created each time by the CCTextureCache.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithCGImage:(CGImageRef)<em>image</em> key:(NSString *)<em>key</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>image</em></dt>
+			<dd><p>Image ref.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>Key description.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly initialized CCSprite object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithImageNamed:" title="initWithImageNamed:"></a>
+	<h3 class="subsubtitle method-title">initWithImageNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a sprite with the name of an image. The name can be either a name in a sprite sheet or the name of a file.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithImageNamed:(NSString *)<em>imageName</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>imageName</em></dt>
+			<dd><p>name of the image to load.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly initialized CCSprite object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithSpriteFrame:" title="initWithSpriteFrame:"></a>
+	<h3 class="subsubtitle method-title">initWithSpriteFrame:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes an sprite with an sprite frame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithSpriteFrame:(CCSpriteFrame *)<em>spriteFrame</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spriteFrame</em></dt>
+			<dd><p>Sprite frame to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly initialized CCSprite object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTexture:" title="initWithTexture:"></a>
+	<h3 class="subsubtitle method-title">initWithTexture:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes an sprite with a texture.
+The rect used will be the size of the texture.
+The offset will be (0,0).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithTexture:(CCTexture *)<em>texture</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>texture</em></dt>
+			<dd><p>The texture to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly initialized CCSprite object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTexture:rect:" title="initWithTexture:rect:"></a>
+	<h3 class="subsubtitle method-title">initWithTexture:rect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes an sprite with a texture and a rect in points (unrotated)
+The offset will be (0,0).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithTexture:(CCTexture *)<em>texture</em> rect:(CGRect)<em>rect</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>texture</em></dt>
+			<dd><p>The texture to use.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>The rect to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly initialized CCSprite object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTexture:rect:rotated:" title="initWithTexture:rect:rotated:"></a>
+	<h3 class="subsubtitle method-title">initWithTexture:rect:rotated:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Designated initializer.
+Initializes an sprite with a texture and a rect in points, optionally rotated.
+The offset will be (0,0).
+IMPORTANT: This is the designated initializer.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithTexture:(CCTexture *)<em>texture</em> rect:(CGRect)<em>rect</em> rotated:(BOOL)<em>rotated</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>texture</em></dt>
+			<dd><p>The texture to use.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>The rect to use.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rotated</em></dt>
+			<dd><p>YES if texture is rotated.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A newly initialized CCSprite object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTextureRect:" title="setTextureRect:"></a>
+	<h3 class="subsubtitle method-title">setTextureRect:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the texture rect of the CCSprite in points.
+It will call setTextureRect:rotated:untrimmedSize with rotated = NO, and utrimmedSize = rect.size.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setTextureRect:(CGRect)<em>rect</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>Rect to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setTextureRect:rotated:untrimmedSize:" title="setTextureRect:rotated:untrimmedSize:"></a>
+	<h3 class="subsubtitle method-title">setTextureRect:rotated:untrimmedSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the texture rect, rectRotated and untrimmed size of the CCSprite in points.
+It will update the texture coordinates and the vertex rectangle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setTextureRect:(CGRect)<em>rect</em> rotated:(BOOL)<em>rotated</em> untrimmedSize:(CGSize)<em>size</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>Rect to use.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rotated</em></dt>
+			<dd><p>YES if texture is rotated.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>size</em></dt>
+			<dd><p>Untrimmed size.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCSprite.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Cocos2D. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

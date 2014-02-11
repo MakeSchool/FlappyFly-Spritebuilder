@@ -1,0 +1,1020 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CCPhysicsNode Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Cocos2D 3.0 </a></h1>
+				<a id="developerHome" href="../index.html">Cocos2D</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CCPhysicsNode Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/collisionDelegate">&nbsp;&nbsp;&nbsp;&nbsp;collisionDelegate</option>
+	
+	<option value="//api/name/debugDraw">&nbsp;&nbsp;&nbsp;&nbsp;debugDraw</option>
+	
+	<option value="//api/name/gravity">&nbsp;&nbsp;&nbsp;&nbsp;gravity</option>
+	
+	<option value="//api/name/iterations">&nbsp;&nbsp;&nbsp;&nbsp;iterations</option>
+	
+	<option value="//api/name/sleepTimeThreshold">&nbsp;&nbsp;&nbsp;&nbsp;sleepTimeThreshold</option>
+	
+	<option value="//api/name/space">&nbsp;&nbsp;&nbsp;&nbsp;space</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/bitmaskForCategories:">&nbsp;&nbsp;&nbsp;&nbsp;- bitmaskForCategories:</option>
+	
+	<option value="//api/name/categoriesForBitmask:">&nbsp;&nbsp;&nbsp;&nbsp;- categoriesForBitmask:</option>
+	
+	<option value="//api/name/indexForCategory:">&nbsp;&nbsp;&nbsp;&nbsp;- indexForCategory:</option>
+	
+	<option value="//api/name/internString:">&nbsp;&nbsp;&nbsp;&nbsp;- internString:</option>
+	
+	<option value="//api/name/pointQueryAt:within:block:">&nbsp;&nbsp;&nbsp;&nbsp;- pointQueryAt:within:block:</option>
+	
+	<option value="//api/name/rayQueryFirstFrom:to:block:">&nbsp;&nbsp;&nbsp;&nbsp;- rayQueryFirstFrom:to:block:</option>
+	
+	<option value="//api/name/rectQuery:block:">&nbsp;&nbsp;&nbsp;&nbsp;- rectQuery:block:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ObjectiveChipmunk Methods">ObjectiveChipmunk Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collisionDelegate">collisionDelegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/debugDraw">debugDraw</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gravity">gravity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/iterations">iterations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sleepTimeThreshold">sleepTimeThreshold</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/space">space</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bitmaskForCategories:">bitmaskForCategories:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/categoriesForBitmask:">categoriesForBitmask:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/indexForCategory:">indexForCategory:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/internString:">internString:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pointQueryAt:within:block:">pointQueryAt:within:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rayQueryFirstFrom:to:block:">rayQueryFirstFrom:to:block:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rectQuery:block:">rectQuery:block:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CCPhysicsNode Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CCPhysicsNode Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CCNode.html">CCNode</a> : <a href="../Classes/CCResponder.html">CCResponder</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CCPhysicsNode.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A <a href="../Classes/CCNode.html">CCNode</a> that enables physics simulation in it&rsquo;s children.
+To use CCPhysics, you create a physics node, and then attach <a href="../Classes/CCPhysicsBody.html">CCPhysicsBody</a> objects to any child node that you want to have <a href="#//api/name/gravity">gravity</a> or collisions applied to.
+Physics nodes are also where you set up a delegate object that can tell you about collision events.
+Lastly, you can query for physics objects near a point, along a ray, or within a certain bounding box.</p>
+
+<h3>Units:</h3>
+
+<p>For simplicity, CCPhysics does not use SI units, and the performance is not tuned to any particular scale.
+Positions and distances are expressed in regular Cocos2D points relative to whatever node is most relevant.
+For example, positions are in the same coordinates as the physics node.
+Shapes and joint anchors use the local coordinates of the node their body is attached to so that they properly respect it&rsquo;s transform.
+Mass has no particular units. I personally find it intuitive to use 1.0 as the main player&rsquo;s mass and set everything else based on that. Time is expressed in seconds.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/debugDraw">&nbsp;&nbsp;debugDraw</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gravity">&nbsp;&nbsp;gravity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/iterations">&nbsp;&nbsp;iterations</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sleepTimeThreshold">&nbsp;&nbsp;sleepTimeThreshold</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collisionDelegate">&nbsp;&nbsp;collisionDelegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pointQueryAt:within:block:">&ndash;&nbsp;pointQueryAt:within:block:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rayQueryFirstFrom:to:block:">&ndash;&nbsp;rayQueryFirstFrom:to:block:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rectQuery:block:">&ndash;&nbsp;rectQuery:block:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="ObjectiveChipmunk Methods" name="task_ObjectiveChipmunk Methods"></a>
+						<h3 class="subsubtitle task-title">ObjectiveChipmunk Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/space">&nbsp;&nbsp;space</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/internString:">&ndash;&nbsp;internString:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/indexForCategory:">&ndash;&nbsp;indexForCategory:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bitmaskForCategories:">&ndash;&nbsp;bitmaskForCategories:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/categoriesForBitmask:">&ndash;&nbsp;categoriesForBitmask:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/collisionDelegate" title="collisionDelegate"></a>
+	<h3 class="subsubtitle method-title">collisionDelegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The delegate that is called when two physics bodies collide.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSObject&lt;CCPhysicsCollisionDelegate&gt; *collisionDelegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/debugDraw" title="debugDraw"></a>
+	<h3 class="subsubtitle method-title">debugDraw</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Should the node draw a debug overlay of the joints and collision shapes? Defaults to NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL debugDraw</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gravity" title="gravity"></a>
+	<h3 class="subsubtitle method-title">gravity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gravity applied to the dynamic bodies in the world. Defaults to CGPointZero.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGPoint gravity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/iterations" title="iterations"></a>
+	<h3 class="subsubtitle method-title">iterations</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The number of solver iterations the underlying physics engine should run.
+This allows you to tune the performance and quality of the physics.
+Low numbers will improve performance, but make the physics spongy or rubbery.
+High numbers will use more CPU time, but make the physics look more solid.
+The default value is 10.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) int iterations</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sleepTimeThreshold" title="sleepTimeThreshold"></a>
+	<h3 class="subsubtitle method-title">sleepTimeThreshold</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Physics bodies fall asleep when a group of them move slowly for longer than the threshold.
+Sleeping bodies use minimal CPU resources and wake automatically when a collision happens.
+Defaults to 0.5 seconds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CCTime sleepTimeThreshold</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/space" title="space"></a>
+	<h3 class="subsubtitle method-title">space</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Access to the underlying Objective-Chipmunk object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) ChipmunkSpace *space</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/bitmaskForCategories:" title="bitmaskForCategories:"></a>
+	<h3 class="subsubtitle method-title">bitmaskForCategories:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convert an array of NSStrings for collision category identifiers into a category bitmask.
+The categories are retained and assigned indexes.
+Up to 32 categories can be tracked for a <a href="#//api/name/space">space</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (cpBitmask)bitmaskForCategories:(NSArray *)<em>categories</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>categories</em></dt>
+			<dd><p>Array of categories.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Bitmask.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/categoriesForBitmask:" title="categoriesForBitmask:"></a>
+	<h3 class="subsubtitle method-title">categoriesForBitmask:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Convert a cpBitmask value to an array of collision category strings.
+Ignores any bits that don&rsquo;t have a collision category assigned in the physics node.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)categoriesForBitmask:(cpBitmask)<em>categories</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>categories</em></dt>
+			<dd><p>Category bitmask.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Array of collision categories.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/indexForCategory:" title="indexForCategory:"></a>
+	<h3 class="subsubtitle method-title">indexForCategory:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Retain and track a category identifier and return its index.
+Up to 32 categories can be tracked for a <a href="#//api/name/space">space</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSUInteger)indexForCategory:(NSString *)<em>category</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>category</em></dt>
+			<dd><p>String category.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Category index.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/internString:" title="internString:"></a>
+	<h3 class="subsubtitle method-title">internString:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Intern and copy a string to ensure it can be checked by reference
+Used for collision type identifiers by CCPhysics.
+Nil and @&ldquo;default&rdquo; both return the value nil.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)internString:(NSString *)<em>string</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>Intern string.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>String.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pointQueryAt:within:block:" title="pointQueryAt:within:block:"></a>
+	<h3 class="subsubtitle method-title">pointQueryAt:within:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Find all CCPhysicsShapes within a certain distance of a point. The block is called once for each shape found.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)pointQueryAt:(CGPoint)<em>point</em> within:(CGFloat)<em>radius</em> block:(BOOL ( ^ ) ( CCPhysicsShape *shape , CGPoint nearest , CGFloat distance ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><p>Center point of query.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>radius</em></dt>
+			<dd><p>Radius to sweep.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>Block to execute per result.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rayQueryFirstFrom:to:block:" title="rayQueryFirstFrom:to:block:"></a>
+	<h3 class="subsubtitle method-title">rayQueryFirstFrom:to:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Shoot a ray from &lsquo;start&rsquo; to &lsquo;end&rsquo; and find all of the CCPhysicsShapes that it would hit.
+The block is called once for each shape found.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)rayQueryFirstFrom:(CGPoint)<em>start</em> to:(CGPoint)<em>end</em> block:(BOOL ( ^ ) ( CCPhysicsShape *shape , CGPoint point , CGPoint normal , CGFloat distance ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>start</em></dt>
+			<dd><p>Start point.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>end</em></dt>
+			<dd><p>End point.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>Block to execute per result.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rectQuery:block:" title="rectQuery:block:"></a>
+	<h3 class="subsubtitle method-title">rectQuery:block:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Find all CCPhysicsShapes whose bounding boxes overlap the given CGRect.
+The block is called once for each shape found.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)rectQuery:(CGRect)<em>rect</em> block:(BOOL ( ^ ) ( CCPhysicsShape *shape ))<em>block</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rect</em></dt>
+			<dd><p>Rectangle area to check.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>block</em></dt>
+			<dd><p>The block is called once for each shape found.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Cocos2D. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

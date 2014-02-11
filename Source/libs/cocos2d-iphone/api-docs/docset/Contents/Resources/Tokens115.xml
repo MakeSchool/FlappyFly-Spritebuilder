@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CCTransitionDirection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CCTransitionDirection</TokenIdentifier>
+			<Abstract type="html">Defines the direction that the transition will move in.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+            
+			
+			<NodeRef refid="115"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTransitionDirectionUp</TokenIdentifier>
+            <Abstract type="html">Transition moves upwards.</Abstract>
+            <Declaration>CCTransitionDirectionUp</Declaration>
+            
+            <DeclaredIn>CCTransition.h</DeclaredIn>
+            
+            <NodeRef refid="115"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTransitionDirectionDown</TokenIdentifier>
+            <Abstract type="html">Transition moves downwards.</Abstract>
+            <Declaration>CCTransitionDirectionDown</Declaration>
+            
+            <DeclaredIn>CCTransition.h</DeclaredIn>
+            
+            <NodeRef refid="115"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTransitionDirectionRight</TokenIdentifier>
+            <Abstract type="html">Transition moves rightwards.</Abstract>
+            <Declaration>CCTransitionDirectionRight</Declaration>
+            
+            <DeclaredIn>CCTransition.h</DeclaredIn>
+            
+            <NodeRef refid="115"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTransitionDirectionLeft</TokenIdentifier>
+            <Abstract type="html">Transition moves leftwards.</Abstract>
+            <Declaration>CCTransitionDirectionLeft</Declaration>
+            
+            <DeclaredIn>CCTransition.h</DeclaredIn>
+            
+            <NodeRef refid="115"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTransitionDirectionInvalid</TokenIdentifier>
+            <Abstract type="html">Invalid transition direction.</Abstract>
+            <Declaration>CCTransitionDirectionInvalid</Declaration>
+            
+            <DeclaredIn>CCTransition.h</DeclaredIn>
+            
+            <NodeRef refid="115"/>
+        </Token>
+        
+	</File>
+</Tokens>

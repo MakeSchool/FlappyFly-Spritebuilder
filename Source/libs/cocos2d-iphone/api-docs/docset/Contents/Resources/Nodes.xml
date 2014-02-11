@@ -1,0 +1,3115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>Cocos2D 3.0</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+                
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
+						<NodeRef refid="48"/>
+						<NodeRef refid="49"/>
+						<NodeRef refid="50"/>
+						<NodeRef refid="51"/>
+						<NodeRef refid="52"/>
+						<NodeRef refid="53"/>
+						<NodeRef refid="54"/>
+						<NodeRef refid="55"/>
+						<NodeRef refid="56"/>
+						<NodeRef refid="57"/>
+						<NodeRef refid="58"/>
+						<NodeRef refid="59"/>
+						<NodeRef refid="60"/>
+						<NodeRef refid="61"/>
+						<NodeRef refid="62"/>
+						<NodeRef refid="63"/>
+						<NodeRef refid="64"/>
+						<NodeRef refid="65"/>
+						<NodeRef refid="66"/>
+						<NodeRef refid="67"/>
+						<NodeRef refid="68"/>
+						<NodeRef refid="69"/>
+						<NodeRef refid="70"/>
+						<NodeRef refid="71"/>
+						<NodeRef refid="72"/>
+						<NodeRef refid="73"/>
+						<NodeRef refid="74"/>
+						<NodeRef refid="75"/>
+						<NodeRef refid="76"/>
+						<NodeRef refid="77"/>
+						<NodeRef refid="78"/>
+						<NodeRef refid="79"/>
+						<NodeRef refid="80"/>
+						<NodeRef refid="81"/>
+						<NodeRef refid="82"/>
+						<NodeRef refid="83"/>
+						<NodeRef refid="84"/>
+						<NodeRef refid="85"/>
+						<NodeRef refid="86"/>
+						<NodeRef refid="87"/>
+						<NodeRef refid="88"/>
+						<NodeRef refid="89"/>
+						<NodeRef refid="90"/>
+						<NodeRef refid="91"/>
+						<NodeRef refid="92"/>
+						<NodeRef refid="93"/>
+						<NodeRef refid="94"/>
+						<NodeRef refid="95"/>
+						<NodeRef refid="96"/>
+						<NodeRef refid="97"/>
+						<NodeRef refid="98"/>
+						<NodeRef refid="99"/>
+						<NodeRef refid="100"/>
+						<NodeRef refid="101"/>
+						<NodeRef refid="102"/>
+						<NodeRef refid="103"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+                
+				<Node>
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="104"/>
+						
+					</Subnodes>
+				</Node>
+				
+                
+				<Node>
+					<Name>Constants</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="105"/>
+						<NodeRef refid="106"/>
+						<NodeRef refid="107"/>
+						<NodeRef refid="108"/>
+						<NodeRef refid="109"/>
+						<NodeRef refid="110"/>
+						<NodeRef refid="111"/>
+						<NodeRef refid="112"/>
+						<NodeRef refid="113"/>
+						<NodeRef refid="114"/>
+						<NodeRef refid="115"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		
+		<Node id="1" type="file" documentType="reference">
+            <Name>CCAction</Name>
+            <Path>Classes/CCAction.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCAction.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCAction.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCAction.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCAction.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCAction.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="2" type="file" documentType="reference">
+            <Name>CCActionBezierBy</Name>
+            <Path>Classes/CCActionBezierBy.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionBezierBy.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionBezierBy.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionBezierBy.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionBezierBy.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="3" type="file" documentType="reference">
+            <Name>CCActionBezierTo</Name>
+            <Path>Classes/CCActionBezierTo.html</Path>
+            
+        </Node>
+		<Node id="4" type="file" documentType="reference">
+            <Name>CCActionBlink</Name>
+            <Path>Classes/CCActionBlink.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionBlink.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionBlink.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionBlink.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionBlink.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="5" type="file" documentType="reference">
+            <Name>CCActionCallBlock</Name>
+            <Path>Classes/CCActionCallBlock.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionCallBlock.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionCallBlock.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCallBlock.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCallBlock.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="6" type="file" documentType="reference">
+            <Name>CCActionCallFunc</Name>
+            <Path>Classes/CCActionCallFunc.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionCallFunc.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionCallFunc.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCallFunc.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCallFunc.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCallFunc.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="7" type="file" documentType="reference">
+            <Name>CCActionCardinalSplineBy</Name>
+            <Path>Classes/CCActionCardinalSplineBy.html</Path>
+            
+        </Node>
+		<Node id="8" type="file" documentType="reference">
+            <Name>CCActionCardinalSplineTo</Name>
+            <Path>Classes/CCActionCardinalSplineTo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionCardinalSplineTo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionCardinalSplineTo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCardinalSplineTo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCardinalSplineTo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCardinalSplineTo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="9" type="file" documentType="reference">
+            <Name>CCActionCatmullRomBy</Name>
+            <Path>Classes/CCActionCatmullRomBy.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionCatmullRomBy.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionCatmullRomBy.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCatmullRomBy.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCatmullRomBy.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="10" type="file" documentType="reference">
+            <Name>CCActionCatmullRomTo</Name>
+            <Path>Classes/CCActionCatmullRomTo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionCatmullRomTo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionCatmullRomTo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCatmullRomTo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionCatmullRomTo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="11" type="file" documentType="reference">
+            <Name>CCActionDelay</Name>
+            <Path>Classes/CCActionDelay.html</Path>
+            
+        </Node>
+		<Node id="12" type="file" documentType="reference">
+            <Name>CCActionEase</Name>
+            <Path>Classes/CCActionEase.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionEase.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionEase.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionEase.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionEase.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="13" type="file" documentType="reference">
+            <Name>CCActionEaseBackIn</Name>
+            <Path>Classes/CCActionEaseBackIn.html</Path>
+            
+        </Node>
+		<Node id="14" type="file" documentType="reference">
+            <Name>CCActionEaseBackInOut</Name>
+            <Path>Classes/CCActionEaseBackInOut.html</Path>
+            
+        </Node>
+		<Node id="15" type="file" documentType="reference">
+            <Name>CCActionEaseBackOut</Name>
+            <Path>Classes/CCActionEaseBackOut.html</Path>
+            
+        </Node>
+		<Node id="16" type="file" documentType="reference">
+            <Name>CCActionEaseBounce</Name>
+            <Path>Classes/CCActionEaseBounce.html</Path>
+            
+        </Node>
+		<Node id="17" type="file" documentType="reference">
+            <Name>CCActionEaseBounceIn</Name>
+            <Path>Classes/CCActionEaseBounceIn.html</Path>
+            
+        </Node>
+		<Node id="18" type="file" documentType="reference">
+            <Name>CCActionEaseBounceInOut</Name>
+            <Path>Classes/CCActionEaseBounceInOut.html</Path>
+            
+        </Node>
+		<Node id="19" type="file" documentType="reference">
+            <Name>CCActionEaseBounceOut</Name>
+            <Path>Classes/CCActionEaseBounceOut.html</Path>
+            
+        </Node>
+		<Node id="20" type="file" documentType="reference">
+            <Name>CCActionEaseElastic</Name>
+            <Path>Classes/CCActionEaseElastic.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionEaseElastic.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionEaseElastic.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCActionEaseElastic.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionEaseElastic.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionEaseElastic.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="21" type="file" documentType="reference">
+            <Name>CCActionEaseElasticIn</Name>
+            <Path>Classes/CCActionEaseElasticIn.html</Path>
+            
+        </Node>
+		<Node id="22" type="file" documentType="reference">
+            <Name>CCActionEaseElasticInOut</Name>
+            <Path>Classes/CCActionEaseElasticInOut.html</Path>
+            
+        </Node>
+		<Node id="23" type="file" documentType="reference">
+            <Name>CCActionEaseElasticOut</Name>
+            <Path>Classes/CCActionEaseElasticOut.html</Path>
+            
+        </Node>
+		<Node id="24" type="file" documentType="reference">
+            <Name>CCActionEaseIn</Name>
+            <Path>Classes/CCActionEaseIn.html</Path>
+            
+        </Node>
+		<Node id="25" type="file" documentType="reference">
+            <Name>CCActionEaseInOut</Name>
+            <Path>Classes/CCActionEaseInOut.html</Path>
+            
+        </Node>
+		<Node id="26" type="file" documentType="reference">
+            <Name>CCActionEaseOut</Name>
+            <Path>Classes/CCActionEaseOut.html</Path>
+            
+        </Node>
+		<Node id="27" type="file" documentType="reference">
+            <Name>CCActionEaseRate</Name>
+            <Path>Classes/CCActionEaseRate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionEaseRate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionEaseRate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCActionEaseRate.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionEaseRate.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionEaseRate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="28" type="file" documentType="reference">
+            <Name>CCActionFadeIn</Name>
+            <Path>Classes/CCActionFadeIn.html</Path>
+            
+        </Node>
+		<Node id="29" type="file" documentType="reference">
+            <Name>CCActionFadeOut</Name>
+            <Path>Classes/CCActionFadeOut.html</Path>
+            
+        </Node>
+		<Node id="30" type="file" documentType="reference">
+            <Name>CCActionFadeTo</Name>
+            <Path>Classes/CCActionFadeTo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionFadeTo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionFadeTo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionFadeTo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionFadeTo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="31" type="file" documentType="reference">
+            <Name>CCActionFlipX</Name>
+            <Path>Classes/CCActionFlipX.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionFlipX.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionFlipX.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionFlipX.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionFlipX.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="32" type="file" documentType="reference">
+            <Name>CCActionFlipY</Name>
+            <Path>Classes/CCActionFlipY.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionFlipY.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionFlipY.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionFlipY.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionFlipY.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="33" type="file" documentType="reference">
+            <Name>CCActionFollow</Name>
+            <Path>Classes/CCActionFollow.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionFollow.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionFollow.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCActionFollow.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionFollow.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionFollow.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="34" type="file" documentType="reference">
+            <Name>CCActionHide</Name>
+            <Path>Classes/CCActionHide.html</Path>
+            
+        </Node>
+		<Node id="35" type="file" documentType="reference">
+            <Name>CCActionInterval</Name>
+            <Path>Classes/CCActionInterval.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionInterval.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionInterval.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCActionInterval.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionInterval.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionInterval.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="36" type="file" documentType="reference">
+            <Name>CCActionJumpBy</Name>
+            <Path>Classes/CCActionJumpBy.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionJumpBy.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionJumpBy.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionJumpBy.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionJumpBy.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="37" type="file" documentType="reference">
+            <Name>CCActionJumpTo</Name>
+            <Path>Classes/CCActionJumpTo.html</Path>
+            
+        </Node>
+		<Node id="38" type="file" documentType="reference">
+            <Name>CCActionMoveBy</Name>
+            <Path>Classes/CCActionMoveBy.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionMoveBy.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionMoveBy.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionMoveBy.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionMoveBy.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="39" type="file" documentType="reference">
+            <Name>CCActionMoveTo</Name>
+            <Path>Classes/CCActionMoveTo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionMoveTo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionMoveTo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionMoveTo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionMoveTo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="40" type="file" documentType="reference">
+            <Name>CCActionPlace</Name>
+            <Path>Classes/CCActionPlace.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionPlace.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionPlace.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionPlace.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionPlace.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="41" type="file" documentType="reference">
+            <Name>CCActionProgressFromTo</Name>
+            <Path>Classes/CCActionProgressFromTo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionProgressFromTo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionProgressFromTo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionProgressFromTo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionProgressFromTo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="42" type="file" documentType="reference">
+            <Name>CCActionProgressTo</Name>
+            <Path>Classes/CCActionProgressTo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionProgressTo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionProgressTo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionProgressTo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionProgressTo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="43" type="file" documentType="reference">
+            <Name>CCActionRemove</Name>
+            <Path>Classes/CCActionRemove.html</Path>
+            
+        </Node>
+		<Node id="44" type="file" documentType="reference">
+            <Name>CCActionRepeat</Name>
+            <Path>Classes/CCActionRepeat.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionRepeat.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionRepeat.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionRepeat.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionRepeat.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="45" type="file" documentType="reference">
+            <Name>CCActionRepeatForever</Name>
+            <Path>Classes/CCActionRepeatForever.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionRepeatForever.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionRepeatForever.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCActionRepeatForever.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionRepeatForever.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionRepeatForever.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="46" type="file" documentType="reference">
+            <Name>CCActionReverse</Name>
+            <Path>Classes/CCActionReverse.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionReverse.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionReverse.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionReverse.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionReverse.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="47" type="file" documentType="reference">
+            <Name>CCActionRotateBy</Name>
+            <Path>Classes/CCActionRotateBy.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionRotateBy.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionRotateBy.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionRotateBy.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionRotateBy.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="48" type="file" documentType="reference">
+            <Name>CCActionRotateTo</Name>
+            <Path>Classes/CCActionRotateTo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionRotateTo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionRotateTo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionRotateTo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionRotateTo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="49" type="file" documentType="reference">
+            <Name>CCActionScaleBy</Name>
+            <Path>Classes/CCActionScaleBy.html</Path>
+            
+        </Node>
+		<Node id="50" type="file" documentType="reference">
+            <Name>CCActionScaleTo</Name>
+            <Path>Classes/CCActionScaleTo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionScaleTo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionScaleTo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionScaleTo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionScaleTo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="51" type="file" documentType="reference">
+            <Name>CCActionSequence</Name>
+            <Path>Classes/CCActionSequence.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionSequence.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionSequence.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionSequence.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionSequence.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="52" type="file" documentType="reference">
+            <Name>CCActionShow</Name>
+            <Path>Classes/CCActionShow.html</Path>
+            
+        </Node>
+		<Node id="53" type="file" documentType="reference">
+            <Name>CCActionSkewBy</Name>
+            <Path>Classes/CCActionSkewBy.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionSkewBy.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionSkewBy.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionSkewBy.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="54" type="file" documentType="reference">
+            <Name>CCActionSkewTo</Name>
+            <Path>Classes/CCActionSkewTo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionSkewTo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionSkewTo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionSkewTo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionSkewTo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="55" type="file" documentType="reference">
+            <Name>CCActionSpawn</Name>
+            <Path>Classes/CCActionSpawn.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionSpawn.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionSpawn.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionSpawn.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionSpawn.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="56" type="file" documentType="reference">
+            <Name>CCActionSpeed</Name>
+            <Path>Classes/CCActionSpeed.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionSpeed.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionSpeed.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCActionSpeed.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionSpeed.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionSpeed.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="57" type="file" documentType="reference">
+            <Name>CCActionTintBy</Name>
+            <Path>Classes/CCActionTintBy.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionTintBy.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionTintBy.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionTintBy.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionTintBy.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="58" type="file" documentType="reference">
+            <Name>CCActionTintTo</Name>
+            <Path>Classes/CCActionTintTo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionTintTo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionTintTo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionTintTo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionTintTo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="59" type="file" documentType="reference">
+            <Name>CCActionToggleVisibility</Name>
+            <Path>Classes/CCActionToggleVisibility.html</Path>
+            
+        </Node>
+		<Node id="60" type="file" documentType="reference">
+            <Name>CCActionTween</Name>
+            <Path>Classes/CCActionTween.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCActionTween.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCActionTween.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionTween.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCActionTween.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="61" type="file" documentType="reference">
+            <Name>CCAppDelegate</Name>
+            <Path>Classes/CCAppDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCAppDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCAppDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCAppDelegate.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCAppDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="62" type="file" documentType="reference">
+            <Name>CCButton</Name>
+            <Path>Classes/CCButton.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCButton.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCButton.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCButton.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCButton.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="63" type="file" documentType="reference">
+            <Name>CCClippingNode</Name>
+            <Path>Classes/CCClippingNode.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCClippingNode.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCClippingNode.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCClippingNode.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCClippingNode.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCClippingNode.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="64" type="file" documentType="reference">
+            <Name>CCColor</Name>
+            <Path>Classes/CCColor.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCColor.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCColor.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCColor.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="65" type="file" documentType="reference">
+            <Name>CCControl</Name>
+            <Path>Classes/CCControl.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCControl.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCControl.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCControl.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCControl.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="66" type="file" documentType="reference">
+            <Name>CCDirector</Name>
+            <Path>Classes/CCDirector.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCDirector.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCDirector.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCDirector.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCDirector.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCDirector.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="67" type="file" documentType="reference">
+            <Name>CCDrawNode</Name>
+            <Path>Classes/CCDrawNode.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCDrawNode.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCDrawNode.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCDrawNode.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCDrawNode.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="68" type="file" documentType="reference">
+            <Name>CCLabelBMFont</Name>
+            <Path>Classes/CCLabelBMFont.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCLabelBMFont.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCLabelBMFont.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCLabelBMFont.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCLabelBMFont.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCLabelBMFont.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="69" type="file" documentType="reference">
+            <Name>CCLabelTTF</Name>
+            <Path>Classes/CCLabelTTF.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCLabelTTF.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCLabelTTF.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCLabelTTF.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCLabelTTF.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCLabelTTF.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="70" type="file" documentType="reference">
+            <Name>CCLayout</Name>
+            <Path>Classes/CCLayout.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCLayout.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCLayout.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCLayout.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="71" type="file" documentType="reference">
+            <Name>CCLayoutBox</Name>
+            <Path>Classes/CCLayoutBox.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCLayoutBox.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCLayoutBox.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCLayoutBox.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="72" type="file" documentType="reference">
+            <Name>CCMotionStreak</Name>
+            <Path>Classes/CCMotionStreak.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCMotionStreak.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCMotionStreak.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCMotionStreak.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCMotionStreak.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCMotionStreak.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="73" type="file" documentType="reference">
+            <Name>CCNode</Name>
+            <Path>Classes/CCNode.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCNode.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCNode.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCNode.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCNode.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCNode.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="74" type="file" documentType="reference">
+            <Name>CCNodeColor</Name>
+            <Path>Classes/CCNodeColor.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCNodeColor.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCNodeColor.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCNodeColor.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCNodeColor.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCNodeColor.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="75" type="file" documentType="reference">
+            <Name>CCNodeGradient</Name>
+            <Path>Classes/CCNodeGradient.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCNodeGradient.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCNodeGradient.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCNodeGradient.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCNodeGradient.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCNodeGradient.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="76" type="file" documentType="reference">
+            <Name>CCNodeMultiplexer</Name>
+            <Path>Classes/CCNodeMultiplexer.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCNodeMultiplexer.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCNodeMultiplexer.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCNodeMultiplexer.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCNodeMultiplexer.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="77" type="file" documentType="reference">
+            <Name>CCParallaxNode</Name>
+            <Path>Classes/CCParallaxNode.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCParallaxNode.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCParallaxNode.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCParallaxNode.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCParallaxNode.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="78" type="file" documentType="reference">
+            <Name>CCParticleSystem</Name>
+            <Path>Classes/CCParticleSystem.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCParticleSystem.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCParticleSystem.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCParticleSystem.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="79" type="file" documentType="reference">
+            <Name>CCParticleSystemBase</Name>
+            <Path>Classes/CCParticleSystemBase.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCParticleSystemBase.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCParticleSystemBase.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCParticleSystemBase.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCParticleSystemBase.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCParticleSystemBase.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="80" type="file" documentType="reference">
+            <Name>CCPhysicsBody</Name>
+            <Path>Classes/CCPhysicsBody.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCPhysicsBody.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCPhysicsBody.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsBody.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsBody.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsBody.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="81" type="file" documentType="reference">
+            <Name>CCPhysicsCollisionPair</Name>
+            <Path>Classes/CCPhysicsCollisionPair.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCPhysicsCollisionPair.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCPhysicsCollisionPair.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsCollisionPair.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsCollisionPair.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="82" type="file" documentType="reference">
+            <Name>CCPhysicsJoint</Name>
+            <Path>Classes/CCPhysicsJoint.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCPhysicsJoint.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCPhysicsJoint.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsJoint.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsJoint.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsJoint.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="83" type="file" documentType="reference">
+            <Name>CCPhysicsNode</Name>
+            <Path>Classes/CCPhysicsNode.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCPhysicsNode.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCPhysicsNode.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsNode.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsNode.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="84" type="file" documentType="reference">
+            <Name>CCPhysicsShape</Name>
+            <Path>Classes/CCPhysicsShape.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCPhysicsShape.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCPhysicsShape.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsShape.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsShape.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCPhysicsShape.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="85" type="file" documentType="reference">
+            <Name>CCPointArray</Name>
+            <Path>Classes/CCPointArray.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCPointArray.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCPointArray.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCPointArray.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCPointArray.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCPointArray.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="86" type="file" documentType="reference">
+            <Name>CCProgressNode</Name>
+            <Path>Classes/CCProgressNode.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCProgressNode.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCProgressNode.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCProgressNode.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCProgressNode.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCProgressNode.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="87" type="file" documentType="reference">
+            <Name>CCRenderTexture</Name>
+            <Path>Classes/CCRenderTexture.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCRenderTexture.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCRenderTexture.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCRenderTexture.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCRenderTexture.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCRenderTexture.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="88" type="file" documentType="reference">
+            <Name>CCResponder</Name>
+            <Path>Classes/CCResponder.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCResponder.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCResponder.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCResponder.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCResponder.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="89" type="file" documentType="reference">
+            <Name>CCScene</Name>
+            <Path>Classes/CCScene.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCScene.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCScene.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCScene.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="90" type="file" documentType="reference">
+            <Name>CCSlider</Name>
+            <Path>Classes/CCSlider.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCSlider.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCSlider.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCSlider.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCSlider.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="91" type="file" documentType="reference">
+            <Name>CCSprite</Name>
+            <Path>Classes/CCSprite.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCSprite.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCSprite.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCSprite.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCSprite.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCSprite.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="92" type="file" documentType="reference">
+            <Name>CCSprite9Slice</Name>
+            <Path>Classes/CCSprite9Slice.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCSprite9Slice.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCSprite9Slice.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCSprite9Slice.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="93" type="file" documentType="reference">
+            <Name>CCSpriteBatchNode</Name>
+            <Path>Classes/CCSpriteBatchNode.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCSpriteBatchNode.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCSpriteBatchNode.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCSpriteBatchNode.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCSpriteBatchNode.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCSpriteBatchNode.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="94" type="file" documentType="reference">
+            <Name>CCSpriteFrame</Name>
+            <Path>Classes/CCSpriteFrame.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCSpriteFrame.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCSpriteFrame.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCSpriteFrame.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCSpriteFrame.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCSpriteFrame.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="95" type="file" documentType="reference">
+            <Name>CCTextField</Name>
+            <Path>Classes/CCTextField.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCTextField.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCTextField.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCTextField.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTextField.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTextField.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="96" type="file" documentType="reference">
+            <Name>CCTexture</Name>
+            <Path>Classes/CCTexture.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCTexture.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCTexture.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCTexture.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTexture.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTexture.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="97" type="file" documentType="reference">
+            <Name>CCTiledMap</Name>
+            <Path>Classes/CCTiledMap.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCTiledMap.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCTiledMap.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMap.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMap.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMap.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="98" type="file" documentType="reference">
+            <Name>CCTiledMapInfo</Name>
+            <Path>Classes/CCTiledMapInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCTiledMapInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCTiledMapInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMapInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMapInfo.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMapInfo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="99" type="file" documentType="reference">
+            <Name>CCTiledMapLayer</Name>
+            <Path>Classes/CCTiledMapLayer.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCTiledMapLayer.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCTiledMapLayer.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMapLayer.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMapLayer.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMapLayer.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="100" type="file" documentType="reference">
+            <Name>CCTiledMapLayerInfo</Name>
+            <Path>Classes/CCTiledMapLayerInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCTiledMapLayerInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCTiledMapLayerInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMapLayerInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="101" type="file" documentType="reference">
+            <Name>CCTiledMapObjectGroup</Name>
+            <Path>Classes/CCTiledMapObjectGroup.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCTiledMapObjectGroup.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCTiledMapObjectGroup.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMapObjectGroup.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMapObjectGroup.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="102" type="file" documentType="reference">
+            <Name>CCTiledMapTilesetInfo</Name>
+            <Path>Classes/CCTiledMapTilesetInfo.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCTiledMapTilesetInfo.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCTiledMapTilesetInfo.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMapTilesetInfo.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTiledMapTilesetInfo.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		<Node id="103" type="file" documentType="reference">
+            <Name>CCTransition</Name>
+            <Path>Classes/CCTransition.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Classes/CCTransition.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Classes/CCTransition.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                <Node type="section">
+                    <Path>Classes/CCTransition.html</Path>
+                    <Name>Properties</Name>
+                    <Anchor>properties</Anchor>
+                </Node>
+                
+                
+                <Node type="section">
+                    <Path>Classes/CCTransition.html</Path>
+                    <Name>Class Methods</Name>
+                    <Anchor>class_methods</Anchor>
+                </Node>
+                
+                
+            </Subnodes>
+            
+        </Node>
+		
+		
+        <Node id="104" type="file" documentType="reference">
+            <Name>CCPhysicsCollisionDelegate</Name>
+            <Path>Protocols/CCPhysicsCollisionDelegate.html</Path>
+            
+                <Subnodes>
+                <Node type="section">
+                    <Path>Protocols/CCPhysicsCollisionDelegate.html</Path>
+                    <Name>Overview</Name>
+                    <Anchor>overview</Anchor>
+                </Node>
+                <Node type="section">
+                    <Path>Protocols/CCPhysicsCollisionDelegate.html</Path>
+                    <Name>Tasks</Name>
+                    <Anchor>tasks</Anchor>
+                </Node>
+                
+                
+                
+                <Node type="section">
+                    <Path>Protocols/CCPhysicsCollisionDelegate.html</Path>
+                    <Name>Instance Methods</Name>
+                    <Anchor>instance_methods</Anchor>
+                </Node>
+                
+            </Subnodes>
+            
+        </Node>
+		
+        <Node id="105" type="file" documentType="reference">
+            <Name>CCControlState</Name>
+            <Path>Constants/CCControlState.html</Path>
+            
+        </Node>
+		<Node id="106" type="file" documentType="reference">
+            <Name>CCDirectorProjection</Name>
+            <Path>Constants/CCDirectorProjection.html</Path>
+            
+        </Node>
+		<Node id="107" type="file" documentType="reference">
+            <Name>CCLayoutBoxDirection</Name>
+            <Path>Constants/CCLayoutBoxDirection.html</Path>
+            
+        </Node>
+		<Node id="108" type="file" documentType="reference">
+            <Name>CCParticleSystemMode</Name>
+            <Path>Constants/CCParticleSystemMode.html</Path>
+            
+        </Node>
+		<Node id="109" type="file" documentType="reference">
+            <Name>CCParticleSystemPositionType</Name>
+            <Path>Constants/CCParticleSystemPositionType.html</Path>
+            
+        </Node>
+		<Node id="110" type="file" documentType="reference">
+            <Name>CCPhysicsBodyType</Name>
+            <Path>Constants/CCPhysicsBodyType.html</Path>
+            
+        </Node>
+		<Node id="111" type="file" documentType="reference">
+            <Name>CCProgressNodeType</Name>
+            <Path>Constants/CCProgressNodeType.html</Path>
+            
+        </Node>
+		<Node id="112" type="file" documentType="reference">
+            <Name>CCRenderTextureImageFormat</Name>
+            <Path>Constants/CCRenderTextureImageFormat.html</Path>
+            
+        </Node>
+		<Node id="113" type="file" documentType="reference">
+            <Name>CCTexturePixelFormat</Name>
+            <Path>Constants/CCTexturePixelFormat.html</Path>
+            
+        </Node>
+		<Node id="114" type="file" documentType="reference">
+            <Name>CCTiledMapOrientation</Name>
+            <Path>Constants/CCTiledMapOrientation.html</Path>
+            
+        </Node>
+		<Node id="115" type="file" documentType="reference">
+            <Name>CCTransitionDirection</Name>
+            <Path>Constants/CCTransitionDirection.html</Path>
+            
+        </Node>
+		
+	</Library>
+</DocSetNodes>

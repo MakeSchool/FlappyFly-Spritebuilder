@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1B4D7073-73B3-4785-836C-18E50B6721EF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PROJECTNAME</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>45F21041-D50F-4AE6-91D8-78F9D1D504C8</key>
+		<string>ssh://github.com/apportable/SpriteBuilder.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Default Project/PROJECTNAME.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>45F21041-D50F-4AE6-91D8-78F9D1D504C8</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/apportable/SpriteBuilder.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>45F21041-D50F-4AE6-91D8-78F9D1D504C8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>45F21041-D50F-4AE6-91D8-78F9D1D504C8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SpriteBuilder</string>
+		</dict>
+	</array>
+</dict>
+</plist>

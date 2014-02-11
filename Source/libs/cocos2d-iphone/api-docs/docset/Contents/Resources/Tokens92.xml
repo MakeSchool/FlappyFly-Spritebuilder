@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCSprite9Slice.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCSprite9Slice</TokenIdentifier>
+			<Abstract type="html">CCSprite9Slice will render a single image as nine quads, keeping the margins fixed, and stretching the center quads, to fit the content size.
+See CCSprite for usage.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+            
+			
+			<NodeRef refid="92"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/setMargin:</TokenIdentifier>
+			<Abstract type="html">Sets the margin as a normalized percentage of the total image size.
+If set to 0.25, 25% of the left, right, top and bottom of the image, will be unstratched.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/margin</TokenIdentifier>
+			<Abstract type="html">Sets the margin as a normalized percentage of the total image size.
+If set to 0.25, 25% of the left, right, top and bottom of the image, will be unstratched.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite9Slice/margin</TokenIdentifier>
+			<Abstract type="html">Sets the margin as a normalized percentage of the total image size.
+If set to 0.25, 25% of the left, right, top and bottom of the image, will be unstratched.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/setMarginLeft:</TokenIdentifier>
+			<Abstract type="html">Sets the left margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginLeft</Declaration>
+			
+			
+			<Anchor>//api/name/marginLeft</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/marginLeft</TokenIdentifier>
+			<Abstract type="html">Sets the left margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginLeft</Declaration>
+			
+			
+			<Anchor>//api/name/marginLeft</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite9Slice/marginLeft</TokenIdentifier>
+			<Abstract type="html">Sets the left margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginLeft</Declaration>
+			
+			
+			<Anchor>//api/name/marginLeft</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/setMarginRight:</TokenIdentifier>
+			<Abstract type="html">Sets the right margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginRight</Declaration>
+			
+			
+			<Anchor>//api/name/marginRight</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/marginRight</TokenIdentifier>
+			<Abstract type="html">Sets the right margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginRight</Declaration>
+			
+			
+			<Anchor>//api/name/marginRight</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite9Slice/marginRight</TokenIdentifier>
+			<Abstract type="html">Sets the right margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginRight</Declaration>
+			
+			
+			<Anchor>//api/name/marginRight</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/setMarginTop:</TokenIdentifier>
+			<Abstract type="html">Sets the top margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginTop</Declaration>
+			
+			
+			<Anchor>//api/name/marginTop</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/marginTop</TokenIdentifier>
+			<Abstract type="html">Sets the top margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginTop</Declaration>
+			
+			
+			<Anchor>//api/name/marginTop</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite9Slice/marginTop</TokenIdentifier>
+			<Abstract type="html">Sets the top margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginTop</Declaration>
+			
+			
+			<Anchor>//api/name/marginTop</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/setMarginBottom:</TokenIdentifier>
+			<Abstract type="html">Sets the bottom margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginBottom</Declaration>
+			
+			
+			<Anchor>//api/name/marginBottom</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite9Slice/marginBottom</TokenIdentifier>
+			<Abstract type="html">Sets the bottom margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginBottom</Declaration>
+			
+			
+			<Anchor>//api/name/marginBottom</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite9Slice/marginBottom</TokenIdentifier>
+			<Abstract type="html">Sets the bottom margin exclusively.</Abstract>
+			<DeclaredIn>CCSprite9Slice.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float marginBottom</Declaration>
+			
+			
+			<Anchor>//api/name/marginBottom</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

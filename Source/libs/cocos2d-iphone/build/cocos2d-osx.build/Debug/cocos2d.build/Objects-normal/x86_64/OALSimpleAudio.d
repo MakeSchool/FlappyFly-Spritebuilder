@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OALSimpleAudio.m \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OALSimpleAudio.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Support/SynthesizeSingleton.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALDevice.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALContext.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALListener.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALTypes.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Session/OALSuspendHandler.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALSource.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALSoundSource.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALBuffer.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Actions/OALAction.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectALConfig.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALChannelSource.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/ALSoundSourcePool.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/OALAudioTrack.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/AudioTrack/OALAudioTrackNotifications.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Support/ObjectALMacros.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Support/OALTools.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Support/ARCSafe_MemMgmt.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/Session/OALAudioSession.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/OpenAL/OpenALManager.h

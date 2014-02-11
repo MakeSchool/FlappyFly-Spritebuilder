@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionSpeed.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionSpeed</TokenIdentifier>
+			<Abstract type="html">Changes the speed of an action.
+Useful to simulate slow motion or fast forward effects.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+            
+			
+			<NodeRef refid="56"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionSpeed/setSpeed:</TokenIdentifier>
+			<Abstract type="html">Alter the speed of the inner function in runtime.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGFloat speed</Declaration>
+			
+			
+			<Anchor>//api/name/speed</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionSpeed/speed</TokenIdentifier>
+			<Abstract type="html">Alter the speed of the inner function in runtime.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGFloat speed</Declaration>
+			
+			
+			<Anchor>//api/name/speed</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCActionSpeed/speed</TokenIdentifier>
+			<Abstract type="html">Alter the speed of the inner function in runtime.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGFloat speed</Declaration>
+			
+			
+			<Anchor>//api/name/speed</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionSpeed/setInnerAction:</TokenIdentifier>
+			<Abstract type="html">Inner action of CCSpeed.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCActionInterval *innerAction</Declaration>
+			
+			
+			<Anchor>//api/name/innerAction</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionSpeed/innerAction</TokenIdentifier>
+			<Abstract type="html">Inner action of CCSpeed.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCActionInterval *innerAction</Declaration>
+			
+			
+			<Anchor>//api/name/innerAction</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCActionSpeed/innerAction</TokenIdentifier>
+			<Abstract type="html">Inner action of CCSpeed.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCActionInterval *innerAction</Declaration>
+			
+			
+			<Anchor>//api/name/innerAction</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionSpeed/actionWithAction:speed:</TokenIdentifier>
+			<Abstract type="html">Creates the speed action.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithAction:(CCActionInterval *)action speed:(CGFloat)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Action to modify for speed.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">Initial action speed.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCActionSpeed object.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithAction:speed:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionSpeed/initWithAction:speed:</TokenIdentifier>
+			<Abstract type="html">Initalizes the speed action.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithAction:(CCActionInterval *)action speed:(CGFloat)value</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Action to modify for speed.</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">Initial action speed.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCActionSpeed object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAction:speed:</Anchor>
+            <NodeRef refid="56"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

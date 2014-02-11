@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCTiledMapTilesetInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCTiledMapTilesetInfo</TokenIdentifier>
+			<Abstract type="html">CCTiledMapTilesetInfo contains information about the Tile Map&apos;s Tileset. This information is obtained from the supplied Tile Map File (TMX).</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="102"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setName:</TokenIdentifier>
+			<Abstract type="html">Tileset name.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/name</TokenIdentifier>
+			<Abstract type="html">Tileset name.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/name</TokenIdentifier>
+			<Abstract type="html">Tileset name.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setFirstGid:</TokenIdentifier>
+			<Abstract type="html">First GID.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) unsigned int firstGid</Declaration>
+			
+			
+			<Anchor>//api/name/firstGid</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/firstGid</TokenIdentifier>
+			<Abstract type="html">First GID.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) unsigned int firstGid</Declaration>
+			
+			
+			<Anchor>//api/name/firstGid</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/firstGid</TokenIdentifier>
+			<Abstract type="html">First GID.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) unsigned int firstGid</Declaration>
+			
+			
+			<Anchor>//api/name/firstGid</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setTileSize:</TokenIdentifier>
+			<Abstract type="html">Tileset size.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/tileSize</TokenIdentifier>
+			<Abstract type="html">Tileset size.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/tileSize</TokenIdentifier>
+			<Abstract type="html">Tileset size.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setSpacing:</TokenIdentifier>
+			<Abstract type="html">Tileset spacing.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) unsigned int spacing</Declaration>
+			
+			
+			<Anchor>//api/name/spacing</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/spacing</TokenIdentifier>
+			<Abstract type="html">Tileset spacing.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) unsigned int spacing</Declaration>
+			
+			
+			<Anchor>//api/name/spacing</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/spacing</TokenIdentifier>
+			<Abstract type="html">Tileset spacing.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) unsigned int spacing</Declaration>
+			
+			
+			<Anchor>//api/name/spacing</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setMargin:</TokenIdentifier>
+			<Abstract type="html">Tileset margin.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) unsigned int margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/margin</TokenIdentifier>
+			<Abstract type="html">Tileset margin.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) unsigned int margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/margin</TokenIdentifier>
+			<Abstract type="html">Tileset margin.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) unsigned int margin</Declaration>
+			
+			
+			<Anchor>//api/name/margin</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setSourceImage:</TokenIdentifier>
+			<Abstract type="html">Tileset source texture, should be spritesheet.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *sourceImage</Declaration>
+			
+			
+			<Anchor>//api/name/sourceImage</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/sourceImage</TokenIdentifier>
+			<Abstract type="html">Tileset source texture, should be spritesheet.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *sourceImage</Declaration>
+			
+			
+			<Anchor>//api/name/sourceImage</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/sourceImage</TokenIdentifier>
+			<Abstract type="html">Tileset source texture, should be spritesheet.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *sourceImage</Declaration>
+			
+			
+			<Anchor>//api/name/sourceImage</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setImageSize:</TokenIdentifier>
+			<Abstract type="html">Size of image in pixels.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize imageSize</Declaration>
+			
+			
+			<Anchor>//api/name/imageSize</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/imageSize</TokenIdentifier>
+			<Abstract type="html">Size of image in pixels.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize imageSize</Declaration>
+			
+			
+			<Anchor>//api/name/imageSize</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/imageSize</TokenIdentifier>
+			<Abstract type="html">Size of image in pixels.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize imageSize</Declaration>
+			
+			
+			<Anchor>//api/name/imageSize</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setTileOffset:</TokenIdentifier>
+			<Abstract type="html">Tileset offset in pixels.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint tileOffset</Declaration>
+			
+			
+			<Anchor>//api/name/tileOffset</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/tileOffset</TokenIdentifier>
+			<Abstract type="html">Tileset offset in pixels.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint tileOffset</Declaration>
+			
+			
+			<Anchor>//api/name/tileOffset</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/tileOffset</TokenIdentifier>
+			<Abstract type="html">Tileset offset in pixels.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint tileOffset</Declaration>
+			
+			
+			<Anchor>//api/name/tileOffset</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/setTileAnchorPoint:</TokenIdentifier>
+			<Abstract type="html">Auto set when tileOffset is modified.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) CGPoint tileAnchorPoint</Declaration>
+			
+			
+			<Anchor>//api/name/tileAnchorPoint</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/tileAnchorPoint</TokenIdentifier>
+			<Abstract type="html">Auto set when tileOffset is modified.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) CGPoint tileAnchorPoint</Declaration>
+			
+			
+			<Anchor>//api/name/tileAnchorPoint</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapTilesetInfo/tileAnchorPoint</TokenIdentifier>
+			<Abstract type="html">Auto set when tileOffset is modified.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, assign) CGPoint tileAnchorPoint</Declaration>
+			
+			
+			<Anchor>//api/name/tileAnchorPoint</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapTilesetInfo/rectForGID:</TokenIdentifier>
+			<Abstract type="html">Return rectange for GID value.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>- (CGRect)rectForGID:(unsigned int)gid</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gid</Name>
+					<Abstract type="html">GID value to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">CGRect.</Abstract></ReturnValue>
+			<Anchor>//api/name/rectForGID:</Anchor>
+            <NodeRef refid="102"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCLayout.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCLayout</TokenIdentifier>
+			<Abstract type="html">*  A layout will take control of its childrens&apos; positions. Any node added as a child will be position according to the rules of the specific layout type. If you are using a layout you should not set the position of the children manually.</Abstract>
+			<DeclaredIn>CCLayout.h</DeclaredIn>
+            
+			
+			<NodeRef refid="70"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLayout/needsLayout</TokenIdentifier>
+			<Abstract type="html">Called whenever the node needs to layout its children again. Normally, there is no need to call this method directly.</Abstract>
+			<DeclaredIn>CCLayout.h</DeclaredIn>
+			
+			<Declaration>- (void)needsLayout</Declaration>
+			
+			
+			<Anchor>//api/name/needsLayout</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLayout/layout</TokenIdentifier>
+			<Abstract type="html">The layout method layouts the children according to the rules of the specific layout.</Abstract>
+			<DeclaredIn>CCLayout.h</DeclaredIn>
+			
+			<Declaration>- (void)layout</Declaration>
+			
+			
+			<Anchor>//api/name/layout</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

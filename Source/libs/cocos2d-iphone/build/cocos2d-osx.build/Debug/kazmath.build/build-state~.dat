@@ -1,0 +1,317 @@
+Tkazmath
+v5
+r1
+cCheck dependencies
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/aabb.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/aabb.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4stack.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/mat4stack.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/matrix.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/matrix.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat4.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat3.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat3.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/plane.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/plane.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/quaternion.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/quaternion.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/ray2.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/ray2.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/utility.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/utility.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec2.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec2.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec3.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec3.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec4.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec4.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/libkazmath.a normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c000000005130312F00000000000000AA
+t1362112815
+s170
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/libkazmath.a
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/aabb.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/kazmath.LinkFileList
+c000000005220ED8B00000000000006DD
+t1377889675
+s1757
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat3.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4stack.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/matrix.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/plane.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/quaternion.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/ray2.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/utility.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec2.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec3.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec4.o
+t2
+s0
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/include/kazmath/aabb.h
+c00000000521E795B000000000000077A
+t1377728859
+s1914
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/mat4stack.c
+c00000000521E795B0000000000000A6B
+t1377728859
+s2667
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/matrix.c
+c00000000521E795B00000000000014CC
+t1377728859
+s5324
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/aabb.c
+c00000000521E795B0000000000000878
+t1377728859
+s2168
+i"kazmath/aabb.h"
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat3.c
+c00000000521E795B00000000000027F8
+t1377728859
+s10232
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat4.c
+c00000000521E795B00000000000054BB
+t1377728859
+s21691
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/plane.c
+c00000000521E795B0000000000001306
+t1377728859
+s4870
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/quaternion.c
+c00000000521E795B00000000000039E5
+t1377728859
+s14821
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/ray2.c
+c00000000521E795B00000000000014A9
+t1377728859
+s5289
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/utility.c
+c00000000521E795B00000000000007A9
+t1377728859
+s1961
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec2.c
+c00000000521E795B0000000000000C05
+t1377728859
+s3077
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec3.c
+c00000000521E795B0000000000001B64
+t1377728859
+s7012
+
+N/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec4.c
+c00000000521E795B0000000000001434
+t1377728859
+s5172
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies965f9a0b25d1b741^eb8da60b25d1b741^---0#1#0#--18"Check dependencies36"6C01638D-5442-4676-9B3F-A63C11971D0C-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/aabb.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/aabb.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.657500
+e399582475.688401
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/aabb.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/aabb.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/aabb.c39b4a80b25d1b741^938cb00b25d1b741^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/aabb.c0000000000000000^2931"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/aabb.o external/kazmath/src/aabb.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/aabb.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/aabb.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/aabb.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/aabb.o36"ACAA8621-B9BD-4803-82A5-42FEECA1EF63-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat3.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat3.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.657545
+e399582475.727567
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat3.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat3.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat3.c6cb4a80b25d1b741^ab94ba0b25d1b741^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat3.c0000000000000000^2931"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat3.o external/kazmath/src/mat3.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat3.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat3.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat3.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat3.o36"3CCAE099-3519-4B93-8066-0A46C3995D22-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat4.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.657553
+e399582475.742312
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat4.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat4.ca2b3a80b25d1b741^e108be0b25d1b741^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat4.c0000000000000000^2931"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4.o external/kazmath/src/mat4.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/mat4.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4.o36"0D016BB8-563E-4010-95A2-872B1ADDAF0F-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4stack.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/mat4stack.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.657513
+e399582475.705439
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4stack.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/mat4stack.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/mat4stack.cd9b2a80b25d1b741^cf11b50b25d1b741^---0#0#0#-19%DVTDocumentLocation2@123"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/mat4stack.c0000000000000000^2967"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4stack.o external/kazmath/src/GL/mat4stack.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4stack.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4stack.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/mat4stack.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/mat4stack.o36"321FB769-1761-4602-8380-950EE5C7BF17-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/matrix.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/matrix.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.657518
+e399582475.708046
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/matrix.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/matrix.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/matrix.c5fb3a80b25d1b741^47afb60b25d1b741^---0#0#0#-19%DVTDocumentLocation2@120"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/matrix.c0000000000000000^2949"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/matrix.o external/kazmath/src/GL/matrix.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/matrix.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/matrix.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/GL/matrix.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/matrix.o36"A7E3C72E-EAAF-4067-960A-B69D65FBDEBE-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/plane.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/plane.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.657783
+e399582475.727741
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/plane.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/plane.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/plane.cd5b3a80b25d1b741^cdcaba0b25d1b741^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/plane.c0000000000000000^2937"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/plane.o external/kazmath/src/plane.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/plane.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/plane.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/plane.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/plane.o36"FD483851-B15F-45F7-91DF-D6DEC976A679-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/quaternion.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/quaternion.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.657793
+e399582475.727520
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/quaternion.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/quaternion.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/quaternion.c24b5a80b25d1b741^9d4aba0b25d1b741^---0#0#0#-19%DVTDocumentLocation2@121"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/quaternion.c0000000000000000^2967"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/quaternion.o external/kazmath/src/quaternion.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/quaternion.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/quaternion.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/quaternion.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/quaternion.o36"00E43056-3B6D-403D-9737-0DDB91E7116E-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/ray2.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/ray2.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.659045
+e399582475.742144
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/ray2.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/ray2.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/ray2.c06f2a80b25d1b741^48fdbd0b25d1b741^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/ray2.c0000000000000000^2931"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/ray2.o external/kazmath/src/ray2.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/ray2.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/ray2.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/ray2.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/ray2.o36"3655EF8D-C239-4994-9F3F-49B63F941AA6-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/utility.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/utility.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.696041
+e399582475.727671
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/utility.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/utility.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/utility.ca358b20b25d1b741^76c3ba0b25d1b741^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/utility.c0000000000000000^2949"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/utility.o external/kazmath/src/utility.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/utility.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/utility.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/utility.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/utility.o36"16DFEC32-85B5-42B4-9F14-625E46D672E5-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec2.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec2.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.707169
+e399582475.745476
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec2.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec2.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec2.cb22fb50b25d1b741^1edfbe0b25d1b741^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec2.c0000000000000000^2931"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec2.o external/kazmath/src/vec2.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec2.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec2.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec2.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec2.o36"ABF3D104-1A36-4502-AB8E-262ACEA41506-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec3.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec3.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.709338
+e399582475.746679
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec3.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec3.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec3.c4dbeb50b25d1b741^b325bf0b25d1b741^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec3.c0000000000000000^2931"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec3.o external/kazmath/src/vec3.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec3.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec3.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec3.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec3.o36"9489482A-93B7-4190-9BC1-AE008AAB715E-
+
+CCompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec4.o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec4.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s399582475.728961
+e399582475.759141
+r1
+xCompileC
+xbuild/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec4.o
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec4.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compile /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec4.c86c7ba0b25d1b741^1157c20b25d1b741^---0#0#0#-19%DVTDocumentLocation2@115"file://localhost/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec4.c0000000000000000^2931"CompileC build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec4.o external/kazmath/src/vec4.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-enum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wnewline-eof -DDEBUG -DCC_ENABLE_GL_STATE_CACHE=1 -DCOCOS2D_DEBUG=1 -DCC_DIRECTOR_MAC_THREAD=2 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-sign-conversion -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-generated-files.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-own-target-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-all-target-headers.hmap -iquote /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/kazmath-project-headers.hmap -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/include -Iexternal/Box2d -Iexternal/Chipmunk/include/chipmunk -Iexternal/kazmath/include -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources/x86_64 -I/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/DerivedSources -F/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -MMD -MT dependencies -MF /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec4.d --serialize-diagnostics /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec4.dia -c /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/kazmath/src/vec4.c -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/vec4.o36"4BF36627-24C7-4083-88D2-C0F6E4B870B7-
+
+CLibtool /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/libkazmath.a normal x86_64
+s399582475.765336
+e399582475.775519
+r1
+xLibtool
+x/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/libkazmath.a
+xnormal
+xx86_64
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Libtool build/Debug/libkazmath.a normal x86_64e202c40b25d1b741^408ac60b25d1b741^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#0#--764"Libtool build/Debug/libkazmath.a normal x86_64    cd /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only x86_64 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -L/Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug -filelist /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/cocos2d-osx.build/Debug/kazmath.build/Objects-normal/x86_64/kazmath.LinkFileList -ObjC -o /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/build/Debug/libkazmath.a36"695D611C-E2BC-4A2F-9D4F-9CB5261FC7C0-
+

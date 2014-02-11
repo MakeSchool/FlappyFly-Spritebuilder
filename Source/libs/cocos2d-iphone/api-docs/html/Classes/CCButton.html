@@ -1,0 +1,1490 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CCButton Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Cocos2D 3.0 </a></h1>
+				<a id="developerHome" href="../index.html">Cocos2D</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CCButton Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/buttonWithTitle:">&nbsp;&nbsp;&nbsp;&nbsp;+ buttonWithTitle:</option>
+	
+	<option value="//api/name/buttonWithTitle:fontName:fontSize:">&nbsp;&nbsp;&nbsp;&nbsp;+ buttonWithTitle:fontName:fontSize:</option>
+	
+	<option value="//api/name/buttonWithTitle:spriteFrame:">&nbsp;&nbsp;&nbsp;&nbsp;+ buttonWithTitle:spriteFrame:</option>
+	
+	<option value="//api/name/buttonWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:">&nbsp;&nbsp;&nbsp;&nbsp;+ buttonWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/backgroundColorForState:">&nbsp;&nbsp;&nbsp;&nbsp;- backgroundColorForState:</option>
+	
+	<option value="//api/name/backgroundOpacityForState:">&nbsp;&nbsp;&nbsp;&nbsp;- backgroundOpacityForState:</option>
+	
+	<option value="//api/name/backgroundSpriteFrameForState:">&nbsp;&nbsp;&nbsp;&nbsp;- backgroundSpriteFrameForState:</option>
+	
+	<option value="//api/name/initWithTitle:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTitle:</option>
+	
+	<option value="//api/name/initWithTitle:fontName:fontSize:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTitle:fontName:fontSize:</option>
+	
+	<option value="//api/name/initWithTitle:spriteFrame:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTitle:spriteFrame:</option>
+	
+	<option value="//api/name/initWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</option>
+	
+	<option value="//api/name/labelColorForState:">&nbsp;&nbsp;&nbsp;&nbsp;- labelColorForState:</option>
+	
+	<option value="//api/name/labelOpacityForState:">&nbsp;&nbsp;&nbsp;&nbsp;- labelOpacityForState:</option>
+	
+	<option value="//api/name/setBackgroundColor:forState:">&nbsp;&nbsp;&nbsp;&nbsp;- setBackgroundColor:forState:</option>
+	
+	<option value="//api/name/setBackgroundOpacity:forState:">&nbsp;&nbsp;&nbsp;&nbsp;- setBackgroundOpacity:forState:</option>
+	
+	<option value="//api/name/setBackgroundSpriteFrame:forState:">&nbsp;&nbsp;&nbsp;&nbsp;- setBackgroundSpriteFrame:forState:</option>
+	
+	<option value="//api/name/setColor:">&nbsp;&nbsp;&nbsp;&nbsp;- setColor:</option>
+	
+	<option value="//api/name/setLabelColor:forState:">&nbsp;&nbsp;&nbsp;&nbsp;- setLabelColor:forState:</option>
+	
+	<option value="//api/name/setLabelOpacity:forState:">&nbsp;&nbsp;&nbsp;&nbsp;- setLabelOpacity:forState:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating Buttons">Creating Buttons</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/buttonWithTitle:">buttonWithTitle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/buttonWithTitle:fontName:fontSize:">buttonWithTitle:fontName:fontSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/buttonWithTitle:spriteFrame:">buttonWithTitle:spriteFrame:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/buttonWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:">buttonWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundColorForState:">backgroundColorForState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundOpacityForState:">backgroundOpacityForState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/backgroundSpriteFrameForState:">backgroundSpriteFrameForState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTitle:">initWithTitle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTitle:fontName:fontSize:">initWithTitle:fontName:fontSize:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTitle:spriteFrame:">initWithTitle:spriteFrame:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:">initWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/labelColorForState:">labelColorForState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/labelOpacityForState:">labelOpacityForState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBackgroundColor:forState:">setBackgroundColor:forState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBackgroundOpacity:forState:">setBackgroundOpacity:forState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBackgroundSpriteFrame:forState:">setBackgroundSpriteFrame:forState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setColor:">setColor:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLabelColor:forState:">setLabelColor:forState:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLabelOpacity:forState:">setLabelOpacity:forState:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CCButton Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CCButton Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CCControl.html">CCControl</a> : <a href="../Classes/CCNode.html">CCNode</a> : <a href="../Classes/CCResponder.html">CCResponder</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CCButton.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The CCButton represents a button on the screen. The button is presented with a stretchable background image and/or a title label. Different images, colors and opacity can be set for each of the buttons different states.</p>
+
+<p>Methods for setting callbacks for the button is inherited from <a href="../Classes/CCControl.html">CCControl</a> through the setTarget:selector: method or the block property.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating Buttons" name="task_Creating Buttons"></a>
+						
+<h3 class="subsubtitle task-title">Creating Buttons</h3>
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/buttonWithTitle:">+&nbsp;buttonWithTitle:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/buttonWithTitle:fontName:fontSize:">+&nbsp;buttonWithTitle:fontName:fontSize:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/buttonWithTitle:spriteFrame:">+&nbsp;buttonWithTitle:spriteFrame:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/buttonWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:">+&nbsp;buttonWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTitle:">&ndash;&nbsp;initWithTitle:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTitle:fontName:fontSize:">&ndash;&nbsp;initWithTitle:fontName:fontSize:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTitle:spriteFrame:">&ndash;&nbsp;initWithTitle:spriteFrame:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:">&ndash;&nbsp;initWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBackgroundColor:forState:">&ndash;&nbsp;setBackgroundColor:forState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundColorForState:">&ndash;&nbsp;backgroundColorForState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBackgroundOpacity:forState:">&ndash;&nbsp;setBackgroundOpacity:forState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundOpacityForState:">&ndash;&nbsp;backgroundOpacityForState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setColor:">&ndash;&nbsp;setColor:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLabelColor:forState:">&ndash;&nbsp;setLabelColor:forState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/labelColorForState:">&ndash;&nbsp;labelColorForState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLabelOpacity:forState:">&ndash;&nbsp;setLabelOpacity:forState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/labelOpacityForState:">&ndash;&nbsp;labelOpacityForState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBackgroundSpriteFrame:forState:">&ndash;&nbsp;setBackgroundSpriteFrame:forState:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/backgroundSpriteFrameForState:">&ndash;&nbsp;backgroundSpriteFrameForState:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/buttonWithTitle:" title="buttonWithTitle:"></a>
+	<h3 class="subsubtitle method-title">buttonWithTitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new button with a title and no background. Uses default font and font size.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)buttonWithTitle:(NSString *)<em>title</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title text of the button.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/buttonWithTitle:fontName:fontSize:" title="buttonWithTitle:fontName:fontSize:"></a>
+	<h3 class="subsubtitle method-title">buttonWithTitle:fontName:fontSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new button with a title and no background.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)buttonWithTitle:(NSString *)<em>title</em> fontName:(NSString *)<em>fontName</em> fontSize:(float)<em>size</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title text of the button.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fontName</em></dt>
+			<dd><p>Name of the TTF font to use for the title label.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>size</em></dt>
+			<dd><p>Font size for the title label.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/buttonWithTitle:spriteFrame:" title="buttonWithTitle:spriteFrame:"></a>
+	<h3 class="subsubtitle method-title">buttonWithTitle:spriteFrame:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new button with the specified title for the label and sprite frame for its background.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)buttonWithTitle:(NSString *)<em>title</em> spriteFrame:(CCSpriteFrame *)<em>spriteFrame</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title text of the button.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spriteFrame</em></dt>
+			<dd><p>Stretchable background image.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/buttonWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:" title="buttonWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:"></a>
+	<h3 class="subsubtitle method-title">buttonWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new button with the speicified title for the label, sprite frames for its background in different states.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)buttonWithTitle:(NSString *)<em>title</em> spriteFrame:(CCSpriteFrame *)<em>spriteFrame</em> highlightedSpriteFrame:(CCSpriteFrame *)<em>highlighted</em> disabledSpriteFrame:(CCSpriteFrame *)<em>disabled</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title text of the button.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spriteFrame</em></dt>
+			<dd><p>Stretchable background image for the normal state.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>highlighted</em></dt>
+			<dd><p>Stretchable background image for the highlighted state.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>disabled</em></dt>
+			<dd><p>Stretchable background image for the disabled state.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundColorForState:" title="backgroundColorForState:"></a>
+	<h3 class="subsubtitle method-title">backgroundColorForState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the background color for the specified state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CCColor *)backgroundColorForState:(CCControlState)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>State to get the color for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Background color.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundOpacityForState:" title="backgroundOpacityForState:"></a>
+	<h3 class="subsubtitle method-title">backgroundOpacityForState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the background opacity for the specified state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)backgroundOpacityForState:(CCControlState)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>State to get the opacity for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Opacity.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/backgroundSpriteFrameForState:" title="backgroundSpriteFrameForState:"></a>
+	<h3 class="subsubtitle method-title">backgroundSpriteFrameForState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the background&rsquo;s sprite frame for the specified state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CCSpriteFrame *)backgroundSpriteFrameForState:(CCControlState)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>State to get the sprite frame for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Background sprite frame.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTitle:" title="initWithTitle:"></a>
+	<h3 class="subsubtitle method-title">initWithTitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a new button with a title and no background. Uses default font and font size.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithTitle:(NSString *)<em>title</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title text of the button.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTitle:fontName:fontSize:" title="initWithTitle:fontName:fontSize:"></a>
+	<h3 class="subsubtitle method-title">initWithTitle:fontName:fontSize:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a new button with a title and no background.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithTitle:(NSString *)<em>title</em> fontName:(NSString *)<em>fontName</em> fontSize:(float)<em>size</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title text of the button.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fontName</em></dt>
+			<dd><p>Name of the TTF font to use for the title label.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>size</em></dt>
+			<dd><p>Font size for the title label.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTitle:spriteFrame:" title="initWithTitle:spriteFrame:"></a>
+	<h3 class="subsubtitle method-title">initWithTitle:spriteFrame:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a new button with the specified title for the label and sprite frame for its background.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithTitle:(NSString *)<em>title</em> spriteFrame:(CCSpriteFrame *)<em>spriteFrame</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title text of the button.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spriteFrame</em></dt>
+			<dd><p>Stretchable background image.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:" title="initWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:"></a>
+	<h3 class="subsubtitle method-title">initWithTitle:spriteFrame:highlightedSpriteFrame:disabledSpriteFrame:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes a new button with the speicified title for the label, sprite frames for its background in different states.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithTitle:(NSString *)<em>title</em> spriteFrame:(CCSpriteFrame *)<em>spriteFrame</em> highlightedSpriteFrame:(CCSpriteFrame *)<em>highlighted</em> disabledSpriteFrame:(CCSpriteFrame *)<em>disabled</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>title</em></dt>
+			<dd><p>The title text of the button.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spriteFrame</em></dt>
+			<dd><p>Stretchable background image for the normal state.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>highlighted</em></dt>
+			<dd><p>Stretchable background image for the highlighted state.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>disabled</em></dt>
+			<dd><p>Stretchable background image for the disabled state.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A new button.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/labelColorForState:" title="labelColorForState:"></a>
+	<h3 class="subsubtitle method-title">labelColorForState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the label&rsquo;s color for the specified state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CCColor *)labelColorForState:(CCControlState)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>State to get the color for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Label color.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/labelOpacityForState:" title="labelOpacityForState:"></a>
+	<h3 class="subsubtitle method-title">labelOpacityForState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gets the label&rsquo;s opacity for the specified state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGFloat)labelOpacityForState:(CCControlState)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>State to get the opacity for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Label opacity.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBackgroundColor:forState:" title="setBackgroundColor:forState:"></a>
+	<h3 class="subsubtitle method-title">setBackgroundColor:forState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the background color for the specified state. The color is multiplied into the background sprite frame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setBackgroundColor:(CCColor *)<em>color</em> forState:(CCControlState)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>color</em></dt>
+			<dd><p>Color applied to background image.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>State to apply the color to.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBackgroundOpacity:forState:" title="setBackgroundOpacity:forState:"></a>
+	<h3 class="subsubtitle method-title">setBackgroundOpacity:forState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the background&rsquo;s opacity for the specified state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setBackgroundOpacity:(CGFloat)<em>opacity</em> forState:(CCControlState)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>opacity</em></dt>
+			<dd><p>Opacity to apply to the background image</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>State to apply the opacity to.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBackgroundSpriteFrame:forState:" title="setBackgroundSpriteFrame:forState:"></a>
+	<h3 class="subsubtitle method-title">setBackgroundSpriteFrame:forState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the background&rsquo;s sprite frame for the specified state. The sprite frame will be stretched to the preferred size of the label. If set to <code>NULL</code> no background will be drawn.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setBackgroundSpriteFrame:(CCSpriteFrame *)<em>spriteFrame</em> forState:(CCControlState)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>spriteFrame</em></dt>
+			<dd><p>Sprite frame to use for drawing the background.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>State to set the background for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setColor:" title="setColor:"></a>
+	<h3 class="subsubtitle method-title">setColor:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Will set the label&rsquo;s color for the normal state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setColor:(CCColor *)<em>color</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>color</em></dt>
+			<dd><p>Color applied to the label.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLabelColor:forState:" title="setLabelColor:forState:"></a>
+	<h3 class="subsubtitle method-title">setLabelColor:forState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the label&rsquo;s color for the specified state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setLabelColor:(CCColor *)<em>color</em> forState:(CCControlState)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>color</em></dt>
+			<dd><p>Color applied to the label.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>State to set the color for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLabelOpacity:forState:" title="setLabelOpacity:forState:"></a>
+	<h3 class="subsubtitle method-title">setLabelOpacity:forState:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the label&rsquo;s opacity for the specified state.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setLabelOpacity:(CGFloat)<em>opacity</em> forState:(CCControlState)<em>state</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>opacity</em></dt>
+			<dd><p>Opacity applied to the label.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>state</em></dt>
+			<dd><p>State to set the opacity for.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCButton.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Cocos2D. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

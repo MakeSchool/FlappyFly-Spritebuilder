@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionFadeOut.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionFadeOut</TokenIdentifier>
+			<Abstract type="html">This action fades out the target, it modifies the opacity from 1 to 0.
+Notes:
+Works with cascadeOpacity, if you want children to fade too.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

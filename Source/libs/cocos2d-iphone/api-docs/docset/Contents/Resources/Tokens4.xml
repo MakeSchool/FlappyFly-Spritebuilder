@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionBlink.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionBlink</TokenIdentifier>
+			<Abstract type="html">This action performs a blinks effect on the target.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionBlink/actionWithDuration:blinks:</TokenIdentifier>
+			<Abstract type="html">Creates the blink action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration blinks:(NSUInteger)blinks</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>blinks</Name>
+					<Abstract type="html">Number of times to blink.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New blink action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:blinks:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionBlink/initWithDuration:blinks:</TokenIdentifier>
+			<Abstract type="html">Initializes the blink action</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration blinks:(NSUInteger)blinks</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration</Abstract>
+				</Parameter><Parameter>
+					<Name>blinks</Name>
+					<Abstract type="html">Number of times to blink</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New blink action</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:blinks:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

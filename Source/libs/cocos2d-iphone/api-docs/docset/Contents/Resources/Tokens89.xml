@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCScene.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCScene</TokenIdentifier>
+			<Abstract type="html">CCScene is a subclass of CCNode and must be the parent of all your nodes.</Abstract>
+			<DeclaredIn>CCScene.h</DeclaredIn>
+            
+			
+			<NodeRef refid="89"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCScene/init</TokenIdentifier>
+			<Abstract type="html">Initialize the node.</Abstract>
+			<DeclaredIn>CCScene.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="89"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

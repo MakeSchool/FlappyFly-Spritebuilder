@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCLabelBMFont.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCLabelBMFont</TokenIdentifier>
+			<Abstract type="html">CCLabelBMFont displays a bitmap font label. The label is loaded from a fnt-file
+created with an external editor. Each character in the label is represented by a
+CCSprite and can be accessed through the children property.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+            
+			
+			<NodeRef refid="68"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/setAlignment:</TokenIdentifier>
+			<Abstract type="html">The technique to use for horizontal aligning of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CCTextAlignment alignment</Declaration>
+			
+			
+			<Anchor>//api/name/alignment</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/alignment</TokenIdentifier>
+			<Abstract type="html">The technique to use for horizontal aligning of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CCTextAlignment alignment</Declaration>
+			
+			
+			<Anchor>//api/name/alignment</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCLabelBMFont/alignment</TokenIdentifier>
+			<Abstract type="html">The technique to use for horizontal aligning of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, readonly) CCTextAlignment alignment</Declaration>
+			
+			
+			<Anchor>//api/name/alignment</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/setFntFile:</TokenIdentifier>
+			<Abstract type="html">The font file of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *fntFile</Declaration>
+			
+			
+			<Anchor>//api/name/fntFile</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/fntFile</TokenIdentifier>
+			<Abstract type="html">The font file of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *fntFile</Declaration>
+			
+			
+			<Anchor>//api/name/fntFile</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCLabelBMFont/fntFile</TokenIdentifier>
+			<Abstract type="html">The font file of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *fntFile</Declaration>
+			
+			
+			<Anchor>//api/name/fntFile</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/setOpacity:</TokenIdentifier>
+			<Abstract type="html">The opacity of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/opacity</TokenIdentifier>
+			<Abstract type="html">The opacity of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCLabelBMFont/opacity</TokenIdentifier>
+			<Abstract type="html">The opacity of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/setColor:</TokenIdentifier>
+			<Abstract type="html">The color of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/color</TokenIdentifier>
+			<Abstract type="html">The color of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCLabelBMFont/color</TokenIdentifier>
+			<Abstract type="html">The color of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/setWidth:</TokenIdentifier>
+			<Abstract type="html">Set the maximum width allowed before a line break will be inserted.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>- (void)setWidth:(float)width</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>width</Name>
+					<Abstract type="html">The maximum width.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setWidth:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/setAlignment:</TokenIdentifier>
+			<Abstract type="html">Set the technique to use for horizontal aligning of the text.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>- (void)setAlignment:(CCTextAlignment)alignment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>alignment</Name>
+					<Abstract type="html">Horizontal alignment.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setAlignment:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCLabelBMFont/labelWithString:fntFile:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a label object using the specified text and font file values.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>+ (id)labelWithString:(NSString *)string fntFile:(NSString *)fntFile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">Label text.</Abstract>
+				</Parameter><Parameter>
+					<Name>fntFile</Name>
+					<Abstract type="html">Label font file.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCLabelBMFont Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/labelWithString:fntFile:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCLabelBMFont/labelWithString:fntFile:width:alignment:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a label object using the specified text, font file and alignment values.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>+ (id)labelWithString:(NSString *)string fntFile:(NSString *)fntFile width:(float)width alignment:(CCTextAlignment)alignment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">Label text.</Abstract>
+				</Parameter><Parameter>
+					<Name>fntFile</Name>
+					<Abstract type="html">Label font file.</Abstract>
+				</Parameter><Parameter>
+					<Name>width</Name>
+					<Abstract type="html">Label maximum width.</Abstract>
+				</Parameter><Parameter>
+					<Name>alignment</Name>
+					<Abstract type="html">Horizontal text alignment.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCLabelBMFont Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/labelWithString:fntFile:width:alignment:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCLabelBMFont/labelWithString:fntFile:width:alignment:imageOffset:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a label object using the specified text, font file, alignment and image offset values.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>+ (id)labelWithString:(NSString *)string fntFile:(NSString *)fntFile width:(float)width alignment:(CCTextAlignment)alignment imageOffset:(CGPoint)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">Label text.</Abstract>
+				</Parameter><Parameter>
+					<Name>fntFile</Name>
+					<Abstract type="html">Label font file.</Abstract>
+				</Parameter><Parameter>
+					<Name>width</Name>
+					<Abstract type="html">Label maximum width.</Abstract>
+				</Parameter><Parameter>
+					<Name>alignment</Name>
+					<Abstract type="html">Horizontal text alignment.</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">Glyph offset on the font texture</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCLabelBMFont Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/labelWithString:fntFile:width:alignment:imageOffset:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/initWithString:fntFile:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a label object using the specified text and font file values.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithString:(NSString *)string fntFile:(NSString *)fntFile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">Label text.</Abstract>
+				</Parameter><Parameter>
+					<Name>fntFile</Name>
+					<Abstract type="html">Label font file.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCLabelBMFont Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithString:fntFile:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/initWithString:fntFile:width:alignment:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a label object using the specified text, font file and alignment values.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithString:(NSString *)string fntFile:(NSString *)fntFile width:(float)width alignment:(CCTextAlignment)alignment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">Label text.</Abstract>
+				</Parameter><Parameter>
+					<Name>fntFile</Name>
+					<Abstract type="html">Label font file.</Abstract>
+				</Parameter><Parameter>
+					<Name>width</Name>
+					<Abstract type="html">Label maximum width.</Abstract>
+				</Parameter><Parameter>
+					<Name>alignment</Name>
+					<Abstract type="html">Horizontal text alignment.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCLabelBMFont Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithString:fntFile:width:alignment:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCLabelBMFont/initWithString:fntFile:width:alignment:imageOffset:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a label object using the specified text, font file, alignment and image offset values.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithString:(NSString *)string fntFile:(NSString *)fntFile width:(float)width alignment:(CCTextAlignment)alignment imageOffset:(CGPoint)offset</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>string</Name>
+					<Abstract type="html">Label text.</Abstract>
+				</Parameter><Parameter>
+					<Name>fntFile</Name>
+					<Abstract type="html">Label font file.</Abstract>
+				</Parameter><Parameter>
+					<Name>width</Name>
+					<Abstract type="html">Label maximum width.</Abstract>
+				</Parameter><Parameter>
+					<Name>alignment</Name>
+					<Abstract type="html">Horizontal text alignment.</Abstract>
+				</Parameter><Parameter>
+					<Name>offset</Name>
+					<Abstract type="html">Glyph offset on the font texture.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCLabelBMFont Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithString:fntFile:width:alignment:imageOffset:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCLabelBMFont/purgeCachedData</TokenIdentifier>
+			<Abstract type="html">Removes from memory the cached configurations and the atlas name dictionary.</Abstract>
+			<DeclaredIn>CCLabelBMFont.h</DeclaredIn>
+			
+			<Declaration>+ (void)purgeCachedData</Declaration>
+			
+			
+			<Anchor>//api/name/purgeCachedData</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionCardinalSplineTo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionCardinalSplineTo</TokenIdentifier>
+			<Abstract type="html">Creates an action, based on a cardinal sline path.</Abstract>
+			<DeclaredIn>CCActionCatmullRom.h</DeclaredIn>
+            
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instp/CCActionCardinalSplineTo/points</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="8"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionCardinalSplineTo/setPoints:</TokenIdentifier>
+			<Abstract type="html">The array of control points associated with the cardinal spline.</Abstract>
+			<DeclaredIn>CCActionCatmullRom.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCPointArray *points</Declaration>
+			
+			
+			<Anchor>//api/name/points</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionCardinalSplineTo/points</TokenIdentifier>
+			<Abstract type="html">The array of control points associated with the cardinal spline.</Abstract>
+			<DeclaredIn>CCActionCatmullRom.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCPointArray *points</Declaration>
+			
+			
+			<Anchor>//api/name/points</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCActionCardinalSplineTo/points</TokenIdentifier>
+			<Abstract type="html">The array of control points associated with the cardinal spline.</Abstract>
+			<DeclaredIn>CCActionCatmullRom.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCPointArray *points</Declaration>
+			
+			
+			<Anchor>//api/name/points</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionCardinalSplineTo/actionWithDuration:points:tension:</TokenIdentifier>
+			<Abstract type="html">Creates a cardinal spline action, based on control points and tension.
+A tension of 0, will return a curve following the straight lines in the point array.
+Increase value of tension to smooth out the curve.</Abstract>
+			<DeclaredIn>CCActionCatmullRom.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration points:(CCPointArray *)points tension:(CGFloat)tension</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>points</Name>
+					<Abstract type="html">Points to use for spline.</Abstract>
+				</Parameter><Parameter>
+					<Name>tension</Name>
+					<Abstract type="html">The tension of the spline curve.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New spline action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:points:tension:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionCardinalSplineTo/initWithDuration:points:tension:</TokenIdentifier>
+			<Abstract type="html">Initializes a cardinal spline action, based on control points and tension.
+A tension of 0, will return a curve following the straight lines in the point array.
+Increase value of tension to smooth out the curve.</Abstract>
+			<DeclaredIn>CCActionCatmullRom.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration points:(CCPointArray *)points tension:(CGFloat)tension</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>points</Name>
+					<Abstract type="html">Points to use for spline.</Abstract>
+				</Parameter><Parameter>
+					<Name>tension</Name>
+					<Abstract type="html">The tension of the spline curve.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New spline action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:points:tension:</Anchor>
+            <NodeRef refid="8"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

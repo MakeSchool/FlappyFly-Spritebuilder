@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCNodeColor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCNodeColor</TokenIdentifier>
+			<Abstract type="html">CCNodeColor is a subclass of CCNode that is used to generate solid colors.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+            
+			
+			<NodeRef refid="74"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCNodeColor/nodeWithColor:width:height:</TokenIdentifier>
+			<Abstract type="html">Creates a node with color, width and height in Points.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+			
+			<Declaration>+ (id)nodeWithColor:(CCColor *)color width:(GLfloat)w height:(GLfloat)h</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color of the node.</Abstract>
+				</Parameter><Parameter>
+					<Name>w</Name>
+					<Abstract type="html">Width of the node.</Abstract>
+				</Parameter><Parameter>
+					<Name>h</Name>
+					<Abstract type="html">Height of the node.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCNodeColor Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/nodeWithColor:width:height:</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCNodeColor/nodeWithColor:</TokenIdentifier>
+			<Abstract type="html">Creates a node with color. Width and height are the window size.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+			
+			<Declaration>+ (id)nodeWithColor:(CCColor *)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color of the node.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCNodeColor Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/nodeWithColor:</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNodeColor/initWithColor:width:height:</TokenIdentifier>
+			<Abstract type="html">Initializes a node with color, width and height in Points.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithColor:(CCColor *)color width:(GLfloat)w height:(GLfloat)h</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color of the node.</Abstract>
+				</Parameter><Parameter>
+					<Name>w</Name>
+					<Abstract type="html">Width of the node.</Abstract>
+				</Parameter><Parameter>
+					<Name>h</Name>
+					<Abstract type="html">Height of the node.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCNodeColor Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithColor:width:height:</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNodeColor/initWithColor:</TokenIdentifier>
+			<Abstract type="html">Initializes a node with color. Width and height are the window size.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithColor:(CCColor *)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color of the node.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCNodeColor Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithColor:</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNodeColor/setBlendFunc:</TokenIdentifier>
+			<Abstract type="html">Blend method to use.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) ccBlendFunc blendFunc</Declaration>
+			
+			
+			<Anchor>//api/name/blendFunc</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNodeColor/blendFunc</TokenIdentifier>
+			<Abstract type="html">Blend method to use.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) ccBlendFunc blendFunc</Declaration>
+			
+			
+			<Anchor>//api/name/blendFunc</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNodeColor/blendFunc</TokenIdentifier>
+			<Abstract type="html">Blend method to use.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) ccBlendFunc blendFunc</Declaration>
+			
+			
+			<Anchor>//api/name/blendFunc</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

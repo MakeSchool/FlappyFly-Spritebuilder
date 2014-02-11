@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionEaseElastic.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionEaseElastic</TokenIdentifier>
+			<Abstract type="html">CCActionEaseElastic adds a period property and applies a dampened oscillation to the specified action.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionEaseElastic/setPeriod:</TokenIdentifier>
+			<Abstract type="html">Period of the wave in radians. Default is 0.3.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) float period</Declaration>
+			
+			
+			<Anchor>//api/name/period</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionEaseElastic/period</TokenIdentifier>
+			<Abstract type="html">Period of the wave in radians. Default is 0.3.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) float period</Declaration>
+			
+			
+			<Anchor>//api/name/period</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCActionEaseElastic/period</TokenIdentifier>
+			<Abstract type="html">Period of the wave in radians. Default is 0.3.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) float period</Declaration>
+			
+			
+			<Anchor>//api/name/period</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionEaseElastic/actionWithAction:period:</TokenIdentifier>
+			<Abstract type="html">Creates the action with the inner action and the period in radians (default is 0.3).</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithAction:(CCActionInterval *)action period:(float)period</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Action to apply ease action to.</Abstract>
+				</Parameter><Parameter>
+					<Name>period</Name>
+					<Abstract type="html">eriod of wave in radians.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New elastic action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithAction:period:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionEaseElastic/initWithAction:period:</TokenIdentifier>
+			<Abstract type="html">Initializes the action with the inner action and the period in radians (default is 0.3).</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithAction:(CCActionInterval *)action period:(float)period</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Action to apply ease action to.</Abstract>
+				</Parameter><Parameter>
+					<Name>period</Name>
+					<Abstract type="html">eriod of wave in radians.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New elastic action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAction:period:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

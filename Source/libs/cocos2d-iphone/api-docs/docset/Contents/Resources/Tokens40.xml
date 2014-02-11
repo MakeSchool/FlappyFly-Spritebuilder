@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionPlace.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionPlace</TokenIdentifier>
+			<Abstract type="html">This action will teleport a target to the specififed position.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+            
+			
+			<NodeRef refid="40"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionPlace/actionWithPosition:</TokenIdentifier>
+			<Abstract type="html">Creates a place action using the specified position.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithPosition:(CGPoint)pos</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pos</Name>
+					<Abstract type="html">The position the target is placed at.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The place action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithPosition:</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionPlace/initWithPosition:</TokenIdentifier>
+			<Abstract type="html">Initializes a place action using the specified position.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithPosition:(CGPoint)pos</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pos</Name>
+					<Abstract type="html">The position the target is placed at</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized place action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithPosition:</Anchor>
+            <NodeRef refid="40"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

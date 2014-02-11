@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionScaleBy.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionScaleBy</TokenIdentifier>
+			<Abstract type="html">This action scales the target by the specified factor value.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="49"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

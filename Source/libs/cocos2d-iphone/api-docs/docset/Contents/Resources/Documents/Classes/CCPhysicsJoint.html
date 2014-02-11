@@ -1,0 +1,1265 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CCPhysicsJoint Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Cocos2D 3.0 </a></h1>
+				<a id="developerHome" href="../index.html">Cocos2D</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CCPhysicsJoint Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/bodyA">&nbsp;&nbsp;&nbsp;&nbsp;bodyA</option>
+	
+	<option value="//api/name/bodyB">&nbsp;&nbsp;&nbsp;&nbsp;bodyB</option>
+	
+	<option value="//api/name/breakingForce">&nbsp;&nbsp;&nbsp;&nbsp;breakingForce</option>
+	
+	<option value="//api/name/collideBodies">&nbsp;&nbsp;&nbsp;&nbsp;collideBodies</option>
+	
+	<option value="//api/name/constraint">&nbsp;&nbsp;&nbsp;&nbsp;constraint</option>
+	
+	<option value="//api/name/impulse">&nbsp;&nbsp;&nbsp;&nbsp;impulse</option>
+	
+	<option value="//api/name/isRunning">&nbsp;&nbsp;&nbsp;&nbsp;isRunning</option>
+	
+	<option value="//api/name/maxForce">&nbsp;&nbsp;&nbsp;&nbsp;maxForce</option>
+	
+	<option value="//api/name/valid">&nbsp;&nbsp;&nbsp;&nbsp;valid</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:">&nbsp;&nbsp;&nbsp;&nbsp;+ connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:</option>
+	
+	<option value="//api/name/connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:minDistance:maxDistance:">&nbsp;&nbsp;&nbsp;&nbsp;+ connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:minDistance:maxDistance:</option>
+	
+	<option value="//api/name/connectedPivotJointWithBodyA:bodyB:anchorA:">&nbsp;&nbsp;&nbsp;&nbsp;+ connectedPivotJointWithBodyA:bodyB:anchorA:</option>
+	
+	<option value="//api/name/connectedSpringJointWithBodyA:bodyB:anchorA:anchorB:restLength:stiffness:damping:">&nbsp;&nbsp;&nbsp;&nbsp;+ connectedSpringJointWithBodyA:bodyB:anchorA:anchorB:restLength:stiffness:damping:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/invalidate">&nbsp;&nbsp;&nbsp;&nbsp;- invalidate</option>
+	
+	<option value="//api/name/tryAddToPhysicsNode:">&nbsp;&nbsp;&nbsp;&nbsp;- tryAddToPhysicsNode:</option>
+	
+	<option value="//api/name/tryRemoveFromPhysicsNode:">&nbsp;&nbsp;&nbsp;&nbsp;- tryRemoveFromPhysicsNode:</option>
+	
+	<option value="//api/name/willAddToPhysicsNode:">&nbsp;&nbsp;&nbsp;&nbsp;- willAddToPhysicsNode:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a CCPhysicsJoint Object">Creating a CCPhysicsJoint Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Physics Joint Attributes">Accessing Physics Joint Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_ObjectiveChipmunk Methods">ObjectiveChipmunk Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bodyA">bodyA</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/bodyB">bodyB</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/breakingForce">breakingForce</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/collideBodies">collideBodies</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/constraint">constraint</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/impulse">impulse</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isRunning">isRunning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxForce">maxForce</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/valid">valid</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:">connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:minDistance:maxDistance:">connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:minDistance:maxDistance:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectedPivotJointWithBodyA:bodyB:anchorA:">connectedPivotJointWithBodyA:bodyB:anchorA:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/connectedSpringJointWithBodyA:bodyB:anchorA:anchorB:restLength:stiffness:damping:">connectedSpringJointWithBodyA:bodyB:anchorA:anchorB:restLength:stiffness:damping:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/invalidate">invalidate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tryAddToPhysicsNode:">tryAddToPhysicsNode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tryRemoveFromPhysicsNode:">tryRemoveFromPhysicsNode:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/willAddToPhysicsNode:">willAddToPhysicsNode:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CCPhysicsJoint Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CCPhysicsJoint Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CCPhysicsJoint.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>CCPhysicsJoints hold two CCPhysicsBodies together in some way like a joint between bones or a hinge on a door. Joints work in a fairly automatic fashion.
+They are active from the moment they are created. When you are done with a joint you <a href="#//api/name/invalidate">invalidate</a> it in order to disable it.
+Joints cannot be reactivated once they are invalidated.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating a CCPhysicsJoint Object" name="task_Creating a CCPhysicsJoint Object"></a>
+						<h3 class="subsubtitle task-title">Creating a CCPhysicsJoint Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectedPivotJointWithBodyA:bodyB:anchorA:">+&nbsp;connectedPivotJointWithBodyA:bodyB:anchorA:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:">+&nbsp;connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:minDistance:maxDistance:">+&nbsp;connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:minDistance:maxDistance:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/connectedSpringJointWithBodyA:bodyB:anchorA:anchorB:restLength:stiffness:damping:">+&nbsp;connectedSpringJointWithBodyA:bodyB:anchorA:anchorB:restLength:stiffness:damping:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Physics Joint Attributes" name="task_Accessing Physics Joint Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing Physics Joint Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bodyA">&nbsp;&nbsp;bodyA</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/bodyB">&nbsp;&nbsp;bodyB</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxForce">&nbsp;&nbsp;maxForce</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/collideBodies">&nbsp;&nbsp;collideBodies</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/impulse">&nbsp;&nbsp;impulse</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/breakingForce">&nbsp;&nbsp;breakingForce</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/valid">&nbsp;&nbsp;valid</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/invalidate">&ndash;&nbsp;invalidate</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="ObjectiveChipmunk Methods" name="task_ObjectiveChipmunk Methods"></a>
+						<h3 class="subsubtitle task-title">ObjectiveChipmunk Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/constraint">&nbsp;&nbsp;constraint</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isRunning">&nbsp;&nbsp;isRunning</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tryAddToPhysicsNode:">&ndash;&nbsp;tryAddToPhysicsNode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tryRemoveFromPhysicsNode:">&ndash;&nbsp;tryRemoveFromPhysicsNode:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/willAddToPhysicsNode:">&ndash;&nbsp;willAddToPhysicsNode:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/bodyA" title="bodyA"></a>
+	<h3 class="subsubtitle method-title">bodyA</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The first body this joint is attached to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CCPhysicsBody *bodyA</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/bodyB" title="bodyB"></a>
+	<h3 class="subsubtitle method-title">bodyB</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The second body this joint is attached to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CCPhysicsBody *bodyB</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/breakingForce" title="breakingForce"></a>
+	<h3 class="subsubtitle method-title">breakingForce</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Maximum force that can be applied before the joint disables itself. Defaults to INFINITY
+To avoid problems with solver accuracy, make sure that this value is lower than CCPhysicsJoint.<a href="#//api/name/maxForce">maxForce</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat breakingForce</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/collideBodies" title="collideBodies"></a>
+	<h3 class="subsubtitle method-title">collideBodies</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not the connected bodies are allowed to collide with each other. Defaults to YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL collideBodies</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/constraint" title="constraint"></a>
+	<h3 class="subsubtitle method-title">constraint</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Access to the underlying Objective-Chipmunk object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) ChipmunkConstraint *constraint</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/impulse" title="impulse"></a>
+	<h3 class="subsubtitle method-title">impulse</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Depending on the joint, either the magnitude of the linear or angular impulse that this joint applied on the previous fixed time step.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) CGFloat impulse</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isRunning" title="isRunning"></a>
+	<h3 class="subsubtitle method-title">isRunning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns YES if the body is currently added to a physicsNode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isRunning</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxForce" title="maxForce"></a>
+	<h3 class="subsubtitle method-title">maxForce</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Maxium foce this joint is allowed to use. Defaults to INFINITY.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CGFloat maxForce</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/valid" title="valid"></a>
+	<h3 class="subsubtitle method-title">valid</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Check if the joint is still valid and active.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL valid</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:" title="connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:"></a>
+	<h3 class="subsubtitle method-title">connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a pivot joint between the two bodies and keeps the distance of the two anchor points constant.
+The anchor points are specified in the coordinates of the node that the bodies are attached to.
+The distance between the anchor points will be calculated when the joint first becomes active.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCPhysicsJoint *)connectedDistanceJointWithBodyA:(CCPhysicsBody *)<em>bodyA</em> bodyB:(CCPhysicsBody *)<em>bodyB</em> anchorA:(CGPoint)<em>anchorA</em> anchorB:(CGPoint)<em>anchorB</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyA</em></dt>
+			<dd><p>Body A.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyB</em></dt>
+			<dd><p>Body B.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anchorA</em></dt>
+			<dd><p>Anchor point A.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anchorB</em></dt>
+			<dd><p>Anchor point B.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCPhysicsJoint Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:minDistance:maxDistance:" title="connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:minDistance:maxDistance:"></a>
+	<h3 class="subsubtitle method-title">connectedDistanceJointWithBodyA:bodyB:anchorA:anchorB:minDistance:maxDistance:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a pivot joint between the two bodies and keeps the distance of the two anchor points within the range.
+The anchor points are specified in the coordinates of the node that the bodies are attached to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCPhysicsJoint *)connectedDistanceJointWithBodyA:(CCPhysicsBody *)<em>bodyA</em> bodyB:(CCPhysicsBody *)<em>bodyB</em> anchorA:(CGPoint)<em>anchorA</em> anchorB:(CGPoint)<em>anchorB</em> minDistance:(CGFloat)<em>min</em> maxDistance:(CGFloat)<em>max</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyA</em></dt>
+			<dd><p>Body A.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyB</em></dt>
+			<dd><p>Body B.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anchorA</em></dt>
+			<dd><p>Anchor point A.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anchorB</em></dt>
+			<dd><p>Anchor point B.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>min</em></dt>
+			<dd><p>The minimum distance to allow between the anchor points.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>max</em></dt>
+			<dd><p>The maximum distance to allow between the anchor points.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCPhysicsJoint Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectedPivotJointWithBodyA:bodyB:anchorA:" title="connectedPivotJointWithBodyA:bodyB:anchorA:"></a>
+	<h3 class="subsubtitle method-title">connectedPivotJointWithBodyA:bodyB:anchorA:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a pivot joint object between the two bodies specified. The pivot point is specified in the coordinates of the node that <a href="#//api/name/bodyA">bodyA</a> is attached to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCPhysicsJoint *)connectedPivotJointWithBodyA:(CCPhysicsBody *)<em>bodyA</em> bodyB:(CCPhysicsBody *)<em>bodyB</em> anchorA:(CGPoint)<em>anchorA</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyA</em></dt>
+			<dd><p>Body A.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyB</em></dt>
+			<dd><p>Body B.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anchorA</em></dt>
+			<dd><p>Anchor point A.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCPhysicsJoint Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/connectedSpringJointWithBodyA:bodyB:anchorA:anchorB:restLength:stiffness:damping:" title="connectedSpringJointWithBodyA:bodyB:anchorA:anchorB:restLength:stiffness:damping:"></a>
+	<h3 class="subsubtitle method-title">connectedSpringJointWithBodyA:bodyB:anchorA:anchorB:restLength:stiffness:damping:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a spring joint between the two bodies at the specified anchor points.  The anchor points are specicied in the coordinates of the node that he bodies are attached to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCPhysicsJoint *)connectedSpringJointWithBodyA:(CCPhysicsBody *)<em>bodyA</em> bodyB:(CCPhysicsBody *)<em>bodyB</em> anchorA:(CGPoint)<em>anchorA</em> anchorB:(CGPoint)<em>anchorB</em> restLength:(CGFloat)<em>restLength</em> stiffness:(CGFloat)<em>stiffness</em> damping:(CGFloat)<em>damping</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyA</em></dt>
+			<dd><p>Body A.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bodyB</em></dt>
+			<dd><p>Body B.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anchorA</em></dt>
+			<dd><p>Anchor point A.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>anchorB</em></dt>
+			<dd><p>Anchor point B.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>restLength</em></dt>
+			<dd><p>Rest Length.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>stiffness</em></dt>
+			<dd><p>Spring stiffness.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>damping</em></dt>
+			<dd><p>Sprin damping.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCPhysicsJoint Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/invalidate" title="invalidate"></a>
+	<h3 class="subsubtitle method-title">invalidate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Disable the joint and remove it from the simulation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)invalidate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsJoint.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tryAddToPhysicsNode:" title="tryAddToPhysicsNode:"></a>
+	<h3 class="subsubtitle method-title">tryAddToPhysicsNode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add the join to the physics node, but only if both connected bodies are running.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tryAddToPhysicsNode:(CCPhysicsNode *)<em>physicsNode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>physicsNode</em></dt>
+			<dd><p>Physics node.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tryRemoveFromPhysicsNode:" title="tryRemoveFromPhysicsNode:"></a>
+	<h3 class="subsubtitle method-title">tryRemoveFromPhysicsNode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Remove the joint from the physics node, but only if the joint is added.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)tryRemoveFromPhysicsNode:(CCPhysicsNode *)<em>physicsNode</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>physicsNode</em></dt>
+			<dd><p>Physics node.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/willAddToPhysicsNode:" title="willAddToPhysicsNode:"></a>
+	<h3 class="subsubtitle method-title">willAddToPhysicsNode:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used for deferring collision type setup until there is access to the physics node.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)willAddToPhysicsNode:(CCPhysicsNode *)<em>physics</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>physics</em></dt>
+			<dd><p>Physics node.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysics+ObjectiveChipmunk.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Cocos2D. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

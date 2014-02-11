@@ -1,0 +1,957 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CCTransition Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Cocos2D 3.0 </a></h1>
+				<a id="developerHome" href="../index.html">Cocos2D</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CCTransition Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/outgoingDownScale">&nbsp;&nbsp;&nbsp;&nbsp;outgoingDownScale</option>
+	
+	<option value="//api/name/outgoingSceneAnimated">&nbsp;&nbsp;&nbsp;&nbsp;outgoingSceneAnimated</option>
+	
+	<option value="//api/name/progress">&nbsp;&nbsp;&nbsp;&nbsp;progress</option>
+	
+	<option value="//api/name/retinaTransition">&nbsp;&nbsp;&nbsp;&nbsp;retinaTransition</option>
+	
+	<option value="//api/name/runTime">&nbsp;&nbsp;&nbsp;&nbsp;runTime</option>
+	
+	<option value="//api/name/transitionPixelFormat">&nbsp;&nbsp;&nbsp;&nbsp;transitionPixelFormat</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/transitionCrossFadeWithDuration:">&nbsp;&nbsp;&nbsp;&nbsp;+ transitionCrossFadeWithDuration:</option>
+	
+	<option value="//api/name/transitionFadeWithColor:duration:">&nbsp;&nbsp;&nbsp;&nbsp;+ transitionFadeWithColor:duration:</option>
+	
+	<option value="//api/name/transitionFadeWithDuration:">&nbsp;&nbsp;&nbsp;&nbsp;+ transitionFadeWithDuration:</option>
+	
+	<option value="//api/name/transitionMoveInWithDirection:duration:">&nbsp;&nbsp;&nbsp;&nbsp;+ transitionMoveInWithDirection:duration:</option>
+	
+	<option value="//api/name/transitionPushWithDirection:duration:">&nbsp;&nbsp;&nbsp;&nbsp;+ transitionPushWithDirection:duration:</option>
+	
+	<option value="//api/name/transitionRevealWithDirection:duration:">&nbsp;&nbsp;&nbsp;&nbsp;+ transitionRevealWithDirection:duration:</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing the Transition Attributes">Accessing the Transition Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a CCTransition Object">Creating a CCTransition Object</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/outgoingDownScale">outgoingDownScale</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/outgoingSceneAnimated">outgoingSceneAnimated</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/progress">progress</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/retinaTransition">retinaTransition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/runTime">runTime</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/transitionPixelFormat">transitionPixelFormat</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/transitionCrossFadeWithDuration:">transitionCrossFadeWithDuration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/transitionFadeWithColor:duration:">transitionFadeWithColor:duration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/transitionFadeWithDuration:">transitionFadeWithDuration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/transitionMoveInWithDirection:duration:">transitionMoveInWithDirection:duration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/transitionPushWithDirection:duration:">transitionPushWithDirection:duration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/transitionRevealWithDirection:duration:">transitionRevealWithDirection:duration:</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CCTransition Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CCTransition Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CCScene.html">CCScene</a> : <a href="../Classes/CCNode.html">CCNode</a> : <a href="../Classes/CCResponder.html">CCResponder</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CCTransition.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Creates a transition.
+The transition will replace the outgoing scene, with the incoming scene.
+Both scenes can be animated during the transition ( default disabled ).</p>
+
+<p>Complex animated scenes on retina devices might run slow during transitions.
+In that case, try disabling retina transitions, and check if the render quality is adequate.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Accessing the Transition Attributes" name="task_Accessing the Transition Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing the Transition Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/outgoingDownScale">&nbsp;&nbsp;outgoingDownScale</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/retinaTransition">&nbsp;&nbsp;retinaTransition</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/transitionPixelFormat">&nbsp;&nbsp;transitionPixelFormat</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/outgoingSceneAnimated">&nbsp;&nbsp;outgoingSceneAnimated</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/runTime">&nbsp;&nbsp;runTime</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/progress">&nbsp;&nbsp;progress</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating a CCTransition Object" name="task_Creating a CCTransition Object"></a>
+						<h3 class="subsubtitle task-title">Creating a CCTransition Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/transitionCrossFadeWithDuration:">+&nbsp;transitionCrossFadeWithDuration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/transitionFadeWithColor:duration:">+&nbsp;transitionFadeWithColor:duration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/transitionFadeWithDuration:">+&nbsp;transitionFadeWithDuration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/transitionMoveInWithDirection:duration:">+&nbsp;transitionMoveInWithDirection:duration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/transitionPushWithDirection:duration:">+&nbsp;transitionPushWithDirection:duration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/transitionRevealWithDirection:duration:">+&nbsp;transitionRevealWithDirection:duration:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/outgoingDownScale" title="outgoingDownScale"></a>
+	<h3 class="subsubtitle method-title">outgoingDownScale</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Will downscale incoming and outgoing scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) float outgoingDownScale</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/outgoingSceneAnimated" title="outgoingSceneAnimated"></a>
+	<h3 class="subsubtitle method-title">outgoingSceneAnimated</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defines whether incoming and outgoing scene will be animated during transition.
+Default NO.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, getter=isOutgoingSceneAnimated) BOOL outgoingSceneAnimated</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/progress" title="progress"></a>
+	<h3 class="subsubtitle method-title">progress</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Normalized transition progress.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) float progress</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/retinaTransition" title="retinaTransition"></a>
+	<h3 class="subsubtitle method-title">retinaTransition</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Transition will be performed in retina resolution.
+Will force <a href="#//api/name/outgoingDownScale">outgoingDownScale</a> and incomingDownScale to 1.0 on non retina devices, and 2.0 on retina devices if not set.
+Default YES.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, getter=isRetinaTransition) BOOL retinaTransition</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/runTime" title="runTime"></a>
+	<h3 class="subsubtitle method-title">runTime</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The actual transition runtime in seconds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSTimeInterval runTime</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/transitionPixelFormat" title="transitionPixelFormat"></a>
+	<h3 class="subsubtitle method-title">transitionPixelFormat</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pixel format used for transition.
+Default CCTexturePixelFormat_RGBA8888.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) CCTexturePixelFormat transitionPixelFormat</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/transitionCrossFadeWithDuration:" title="transitionCrossFadeWithDuration:"></a>
+	<h3 class="subsubtitle method-title">transitionCrossFadeWithDuration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a cross fade transition directly from outgoing to incoming scene.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCTransition *)transitionCrossFadeWithDuration:(NSTimeInterval)<em>duration</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The duration of the transition in seconds.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCTransition Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/transitionFadeWithColor:duration:" title="transitionFadeWithColor:duration:"></a>
+	<h3 class="subsubtitle method-title">transitionFadeWithColor:duration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a fade transition from outgoing to incoming scene, through color.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCTransition *)transitionFadeWithColor:(CCColor *)<em>color</em> duration:(NSTimeInterval)<em>duration</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>color</em></dt>
+			<dd><p>The color to fade through</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The duration of the transition in seconds.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCTransition Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/transitionFadeWithDuration:" title="transitionFadeWithDuration:"></a>
+	<h3 class="subsubtitle method-title">transitionFadeWithDuration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a fade transition from outgoing to incoming scene, through black.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCTransition *)transitionFadeWithDuration:(NSTimeInterval)<em>duration</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The duration of the transition in seconds.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCTransition Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/transitionMoveInWithDirection:duration:" title="transitionMoveInWithDirection:duration:"></a>
+	<h3 class="subsubtitle method-title">transitionMoveInWithDirection:duration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a transition where the incoming scene is moved in over the outgoing scene.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCTransition *)transitionMoveInWithDirection:(CCTransitionDirection)<em>direction</em> duration:(NSTimeInterval)<em>duration</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>Direction to move the incoming scene.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The duration of the transition in seconds.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCTransition Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/transitionPushWithDirection:duration:" title="transitionPushWithDirection:duration:"></a>
+	<h3 class="subsubtitle method-title">transitionPushWithDirection:duration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a transition where the incoming scene pushed the outgoing scene out.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCTransition *)transitionPushWithDirection:(CCTransitionDirection)<em>direction</em> duration:(NSTimeInterval)<em>duration</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>Direction to move incoming and outgoing scenes.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The duration of the transition in seconds.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCTransition Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/transitionRevealWithDirection:duration:" title="transitionRevealWithDirection:duration:"></a>
+	<h3 class="subsubtitle method-title">transitionRevealWithDirection:duration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a transition where the incoming scene is revealed by sliding the outgoing scene out.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (CCTransition *)transitionRevealWithDirection:(CCTransitionDirection)<em>direction</em> duration:(NSTimeInterval)<em>duration</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>direction</em></dt>
+			<dd><p>Direction to slide outcoing scene.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>duration</em></dt>
+			<dd><p>The duration of the transition in seconds.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCTransition Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCTransition.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Cocos2D. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

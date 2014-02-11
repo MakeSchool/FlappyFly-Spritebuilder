@@ -1,0 +1,1140 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CCLabelBMFont Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Cocos2D 3.0 </a></h1>
+				<a id="developerHome" href="../index.html">Cocos2D</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CCLabelBMFont Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/alignment">&nbsp;&nbsp;&nbsp;&nbsp;alignment</option>
+	
+	<option value="//api/name/color">&nbsp;&nbsp;&nbsp;&nbsp;color</option>
+	
+	<option value="//api/name/fntFile">&nbsp;&nbsp;&nbsp;&nbsp;fntFile</option>
+	
+	<option value="//api/name/opacity">&nbsp;&nbsp;&nbsp;&nbsp;opacity</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/labelWithString:fntFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ labelWithString:fntFile:</option>
+	
+	<option value="//api/name/labelWithString:fntFile:width:alignment:">&nbsp;&nbsp;&nbsp;&nbsp;+ labelWithString:fntFile:width:alignment:</option>
+	
+	<option value="//api/name/labelWithString:fntFile:width:alignment:imageOffset:">&nbsp;&nbsp;&nbsp;&nbsp;+ labelWithString:fntFile:width:alignment:imageOffset:</option>
+	
+	<option value="//api/name/purgeCachedData">&nbsp;&nbsp;&nbsp;&nbsp;+ purgeCachedData</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithString:fntFile:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithString:fntFile:</option>
+	
+	<option value="//api/name/initWithString:fntFile:width:alignment:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithString:fntFile:width:alignment:</option>
+	
+	<option value="//api/name/initWithString:fntFile:width:alignment:imageOffset:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithString:fntFile:width:alignment:imageOffset:</option>
+	
+	<option value="//api/name/setAlignment:">&nbsp;&nbsp;&nbsp;&nbsp;- setAlignment:</option>
+	
+	<option value="//api/name/setWidth:">&nbsp;&nbsp;&nbsp;&nbsp;- setWidth:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing the Text Attributes">Accessing the Text Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Sizing the Label’s Text">Sizing the Label’s Text</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a CCLabelBMFont Object">Creating a CCLabelBMFont Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a CCLabelBMFont Object">Initializing a CCLabelBMFont Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Memory Management">Memory Management</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alignment">alignment</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/color">color</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fntFile">fntFile</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/opacity">opacity</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/labelWithString:fntFile:">labelWithString:fntFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/labelWithString:fntFile:width:alignment:">labelWithString:fntFile:width:alignment:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/labelWithString:fntFile:width:alignment:imageOffset:">labelWithString:fntFile:width:alignment:imageOffset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/purgeCachedData">purgeCachedData</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithString:fntFile:">initWithString:fntFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithString:fntFile:width:alignment:">initWithString:fntFile:width:alignment:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithString:fntFile:width:alignment:imageOffset:">initWithString:fntFile:width:alignment:imageOffset:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setAlignment:">setAlignment:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setWidth:">setWidth:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CCLabelBMFont Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CCLabelBMFont Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CCSpriteBatchNode.html">CCSpriteBatchNode</a> : <a href="../Classes/CCNode.html">CCNode</a> : <a href="../Classes/CCResponder.html">CCResponder</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">CCLabelProtocol</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CCLabelBMFont.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>CCLabelBMFont displays a bitmap font label. The label is loaded from a fnt-file
+created with an external editor. Each character in the label is represented by a
+CCSprite and can be accessed through the children property.</p>
+
+<p>CCLabelBMFont has the flexibility of CCLabel and all the features and performance of CCSprite.</p>
+
+<h3>Notes</h3>
+
+<ul>
+<li>All inner characters are using an anchorPoint of (0.5f, 0.5f) and it is not recommend to change it
+because it might affect the rendering.</li>
+</ul>
+
+
+<h3>Supported editors</h3>
+
+<ul>
+<li>(Premium) <a href="http://www.71squared.com/glyphdesigner">http://www.71squared.com/glyphdesigner</a></li>
+<li>(Premium) <a href="http://www.bmglyph.com/">http://www.bmglyph.com/</a></li>
+<li>(Free) <a href="http://www.n4te.com/hiero/hiero.jnlp">http://www.n4te.com/hiero/hiero.jnlp</a></li>
+<li>(Free) <a href="http://www.angelcode.com/products/bmfont/">http://www.angelcode.com/products/bmfont/</a></li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Accessing the Text Attributes" name="task_Accessing the Text Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing the Text Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alignment">&nbsp;&nbsp;alignment</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fntFile">&nbsp;&nbsp;fntFile</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/opacity">&nbsp;&nbsp;opacity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/color">&nbsp;&nbsp;color</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Sizing the Label’s Text" name="task_Sizing the Label’s Text"></a>
+						<h3 class="subsubtitle task-title">Sizing the Label’s Text</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setWidth:">&ndash;&nbsp;setWidth:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setAlignment:">&ndash;&nbsp;setAlignment:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating a CCLabelBMFont Object" name="task_Creating a CCLabelBMFont Object"></a>
+						<h3 class="subsubtitle task-title">Creating a CCLabelBMFont Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/labelWithString:fntFile:">+&nbsp;labelWithString:fntFile:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/labelWithString:fntFile:width:alignment:">+&nbsp;labelWithString:fntFile:width:alignment:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/labelWithString:fntFile:width:alignment:imageOffset:">+&nbsp;labelWithString:fntFile:width:alignment:imageOffset:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initializing a CCLabelBMFont Object" name="task_Initializing a CCLabelBMFont Object"></a>
+						<h3 class="subsubtitle task-title">Initializing a CCLabelBMFont Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithString:fntFile:">&ndash;&nbsp;initWithString:fntFile:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithString:fntFile:width:alignment:">&ndash;&nbsp;initWithString:fntFile:width:alignment:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithString:fntFile:width:alignment:imageOffset:">&ndash;&nbsp;initWithString:fntFile:width:alignment:imageOffset:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Memory Management" name="task_Memory Management"></a>
+						<h3 class="subsubtitle task-title">Memory Management</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/purgeCachedData">+&nbsp;purgeCachedData</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/alignment" title="alignment"></a>
+	<h3 class="subsubtitle method-title">alignment</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The technique to use for horizontal aligning of the text.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, readonly) CCTextAlignment alignment</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/color" title="color"></a>
+	<h3 class="subsubtitle method-title">color</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color of the text.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) CCColor *color</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fntFile" title="fntFile"></a>
+	<h3 class="subsubtitle method-title">fntFile</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The font file of the text.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *fntFile</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/opacity" title="opacity"></a>
+	<h3 class="subsubtitle method-title">opacity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The opacity of the text.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) CGFloat opacity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/labelWithString:fntFile:" title="labelWithString:fntFile:"></a>
+	<h3 class="subsubtitle method-title">labelWithString:fntFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a label object using the specified text and font file values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)labelWithString:(NSString *)<em>string</em> fntFile:(NSString *)<em>fntFile</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>Label text.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fntFile</em></dt>
+			<dd><p>Label font file.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCLabelBMFont Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/labelWithString:fntFile:width:alignment:" title="labelWithString:fntFile:width:alignment:"></a>
+	<h3 class="subsubtitle method-title">labelWithString:fntFile:width:alignment:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a label object using the specified text, font file and <a href="#//api/name/alignment">alignment</a> values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)labelWithString:(NSString *)<em>string</em> fntFile:(NSString *)<em>fntFile</em> width:(float)<em>width</em> alignment:(CCTextAlignment)<em>alignment</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>Label text.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fntFile</em></dt>
+			<dd><p>Label font file.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>width</em></dt>
+			<dd><p>Label maximum width.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>alignment</em></dt>
+			<dd><p>Horizontal text <a href="#//api/name/alignment">alignment</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCLabelBMFont Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/labelWithString:fntFile:width:alignment:imageOffset:" title="labelWithString:fntFile:width:alignment:imageOffset:"></a>
+	<h3 class="subsubtitle method-title">labelWithString:fntFile:width:alignment:imageOffset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a label object using the specified text, font file, <a href="#//api/name/alignment">alignment</a> and image offset values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)labelWithString:(NSString *)<em>string</em> fntFile:(NSString *)<em>fntFile</em> width:(float)<em>width</em> alignment:(CCTextAlignment)<em>alignment</em> imageOffset:(CGPoint)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>Label text.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fntFile</em></dt>
+			<dd><p>Label font file.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>width</em></dt>
+			<dd><p>Label maximum width.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>alignment</em></dt>
+			<dd><p>Horizontal text <a href="#//api/name/alignment">alignment</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>Glyph offset on the font texture</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The CCLabelBMFont Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/purgeCachedData" title="purgeCachedData"></a>
+	<h3 class="subsubtitle method-title">purgeCachedData</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Removes from memory the cached configurations and the atlas name dictionary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (void)purgeCachedData</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithString:fntFile:" title="initWithString:fntFile:"></a>
+	<h3 class="subsubtitle method-title">initWithString:fntFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a label object using the specified text and font file values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithString:(NSString *)<em>string</em> fntFile:(NSString *)<em>fntFile</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>Label text.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fntFile</em></dt>
+			<dd><p>Label font file.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized CCLabelBMFont Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithString:fntFile:width:alignment:" title="initWithString:fntFile:width:alignment:"></a>
+	<h3 class="subsubtitle method-title">initWithString:fntFile:width:alignment:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a label object using the specified text, font file and <a href="#//api/name/alignment">alignment</a> values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithString:(NSString *)<em>string</em> fntFile:(NSString *)<em>fntFile</em> width:(float)<em>width</em> alignment:(CCTextAlignment)<em>alignment</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>Label text.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fntFile</em></dt>
+			<dd><p>Label font file.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>width</em></dt>
+			<dd><p>Label maximum width.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>alignment</em></dt>
+			<dd><p>Horizontal text <a href="#//api/name/alignment">alignment</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized CCLabelBMFont Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithString:fntFile:width:alignment:imageOffset:" title="initWithString:fntFile:width:alignment:imageOffset:"></a>
+	<h3 class="subsubtitle method-title">initWithString:fntFile:width:alignment:imageOffset:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a label object using the specified text, font file, <a href="#//api/name/alignment">alignment</a> and image offset values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithString:(NSString *)<em>string</em> fntFile:(NSString *)<em>fntFile</em> width:(float)<em>width</em> alignment:(CCTextAlignment)<em>alignment</em> imageOffset:(CGPoint)<em>offset</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>string</em></dt>
+			<dd><p>Label text.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fntFile</em></dt>
+			<dd><p>Label font file.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>width</em></dt>
+			<dd><p>Label maximum width.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>alignment</em></dt>
+			<dd><p>Horizontal text <a href="#//api/name/alignment">alignment</a>.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>offset</em></dt>
+			<dd><p>Glyph offset on the font texture.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized CCLabelBMFont Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setAlignment:" title="setAlignment:"></a>
+	<h3 class="subsubtitle method-title">setAlignment:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the technique to use for horizontal aligning of the text.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setAlignment:(CCTextAlignment)<em>alignment</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>alignment</em></dt>
+			<dd><p>Horizontal <a href="#//api/name/alignment">alignment</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setWidth:" title="setWidth:"></a>
+	<h3 class="subsubtitle method-title">setWidth:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the maximum width allowed before a line break will be inserted.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setWidth:(float)<em>width</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>width</em></dt>
+			<dd><p>The maximum width.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCLabelBMFont.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Cocos2D. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

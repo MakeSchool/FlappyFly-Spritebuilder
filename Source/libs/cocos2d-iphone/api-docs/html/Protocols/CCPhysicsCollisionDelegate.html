@@ -1,0 +1,559 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CCPhysicsCollisionDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Cocos2D 3.0 </a></h1>
+				<a id="developerHome" href="../index.html">Cocos2D</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CCPhysicsCollisionDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/ccPhysicsCollisionBegin:typeA:typeB:">&nbsp;&nbsp;&nbsp;&nbsp;- ccPhysicsCollisionBegin:typeA:typeB:</option>
+	
+	<option value="//api/name/ccPhysicsCollisionPostSolve:typeA:typeB:">&nbsp;&nbsp;&nbsp;&nbsp;- ccPhysicsCollisionPostSolve:typeA:typeB:</option>
+	
+	<option value="//api/name/ccPhysicsCollisionPreSolve:typeA:typeB:">&nbsp;&nbsp;&nbsp;&nbsp;- ccPhysicsCollisionPreSolve:typeA:typeB:</option>
+	
+	<option value="//api/name/ccPhysicsCollisionSeparate:typeA:typeB:">&nbsp;&nbsp;&nbsp;&nbsp;- ccPhysicsCollisionSeparate:typeA:typeB:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ccPhysicsCollisionBegin:typeA:typeB:">ccPhysicsCollisionBegin:typeA:typeB:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ccPhysicsCollisionPostSolve:typeA:typeB:">ccPhysicsCollisionPostSolve:typeA:typeB:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ccPhysicsCollisionPreSolve:typeA:typeB:">ccPhysicsCollisionPreSolve:typeA:typeB:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/ccPhysicsCollisionSeparate:typeA:typeB:">ccPhysicsCollisionSeparate:typeA:typeB:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CCPhysicsCollisionDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CCPhysicsCollisionDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CCPhysicsNode.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Delegate type called when two physics bodies collide.</p>
+
+<p>The final two parameter names (typeA/typeB) should be replaced with names used with CCPhysicsBody.collisionType or CCPhysicsShape.collisionType.
+If both final parameter names are &ldquo;default&rdquo; then the collision method is called when a more specific method isn&rsquo;t found.</p>
+
+<h3>Wildcard Collisions:</h3>
+
+<p>&ldquo;wildcard&rdquo; can be used as the final parameter name to mean &ldquo;collides with anything&rdquo;.
+When using wildcard methods, it&rsquo;s possible for up to three methods to be called (ex: bullet/monster, bullet/wildcard, monster/wildcard).
+The most specific method (bullet/monster) will be called first, and then the wildcard handlers will be called in a somewhat random order.
+Begin and PreSolve methods return a boolean. If multiple methods are called, their return values are combined with a logical AND.</p>
+
+<h3>Collision Sequence:</h3>
+
+<p>On the first fixed time step (not necessarily frame) that two physics shapes collide for the first time, a ccPhysicsCollisionBegin method will be called.
+As long as those objects stay in contact, a ccPhysicsCollisionPreSolve and ccPhysicsCollisionPostSolve method will be called before and after the physics solver runs.
+The pre-solve method gives you a chance to modify the outcome of the collision, and the post-solve method lets you find out what the outcome was.
+This means you cannot use the outcome of the collision to modify itself. (ex: discard or undo a collision only if it will cause enough damage)
+Finally, when two physics objects stop touching for the very first fixed time step, the ccPhysicsCollisionSeparate method is called.</p>
+
+<h3>CCPhysicsShape vs. CCPhysicsBody:</h3>
+
+<p>Though CCPhysics concentrates mostly on physics bodies, the underlying physics engine (Chipmunk2D) operates collision callbacks on the level of individual shapes.
+CCPhysicsBody objects can have multiple shapes such as polyline bodies or those created with <a href="../Classes/CCPhysicsBody.html#//api/name/bodyWithShapes:">[CCPhysicsBody bodyWithShapes:]</a>.
+In those cases, its possible to have have multiple active collisions between two <a href="../Classes/CCPhysicsBody.html">CCPhysicsBody</a> objects. This is something to keep in mind.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ccPhysicsCollisionBegin:typeA:typeB:">&ndash;&nbsp;ccPhysicsCollisionBegin:typeA:typeB:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ccPhysicsCollisionPreSolve:typeA:typeB:">&ndash;&nbsp;ccPhysicsCollisionPreSolve:typeA:typeB:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ccPhysicsCollisionPostSolve:typeA:typeB:">&ndash;&nbsp;ccPhysicsCollisionPostSolve:typeA:typeB:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/ccPhysicsCollisionSeparate:typeA:typeB:">&ndash;&nbsp;ccPhysicsCollisionSeparate:typeA:typeB:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/ccPhysicsCollisionBegin:typeA:typeB:" title="ccPhysicsCollisionBegin:typeA:typeB:"></a>
+	<h3 class="subsubtitle method-title">ccPhysicsCollisionBegin:typeA:typeB:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Begin methods are called on the first fixed time step when two bodies begin colliding.
+If you return NO from a begin method, the collision between the two bodies will be ignored.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)<em>pair</em> typeA:(CCNode *)<em>nodeA</em> typeB:(CCNode *)<em>nodeB</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pair</em></dt>
+			<dd><p>Collision pair.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeA</em></dt>
+			<dd><p>Node A.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeB</em></dt>
+			<dd><p>Node B.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>BOOL</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ccPhysicsCollisionPostSolve:typeA:typeB:" title="ccPhysicsCollisionPostSolve:typeA:typeB:"></a>
+	<h3 class="subsubtitle method-title">ccPhysicsCollisionPostSolve:typeA:typeB:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Post-solve methods are called every fixed time step when two bodies are in contact after the physics solver runs.
+You can call use properties such as totalKineticEnergy and totalImpulse on <a href="../Classes/CCPhysicsCollisionPair.html">CCPhysicsCollisionPair</a> from a post-solve method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)ccPhysicsCollisionPostSolve:(CCPhysicsCollisionPair *)<em>pair</em> typeA:(CCNode *)<em>nodeA</em> typeB:(CCNode *)<em>nodeB</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pair</em></dt>
+			<dd><p>Collision pair.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeA</em></dt>
+			<dd><p>Node A.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeB</em></dt>
+			<dd><p>Node B.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ccPhysicsCollisionPreSolve:typeA:typeB:" title="ccPhysicsCollisionPreSolve:typeA:typeB:"></a>
+	<h3 class="subsubtitle method-title">ccPhysicsCollisionPreSolve:typeA:typeB:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pre-solve methods are called every fixed time step when two bodies are in contact before the physics solver runs.
+This gives you a chance to modify the collision&rsquo;s outcome by setting properties such as friction, restitution, or surfaceVelocity on <a href="../Classes/CCPhysicsCollisionPair.html">CCPhysicsCollisionPair</a>
+Since the collisions have not been solved yet, you cannot access the outcome by using properties such as totalKineticEnergy or totalImpulse.
+If you return NO from a pre-solve method, the collision will be ignored for the current time step.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)ccPhysicsCollisionPreSolve:(CCPhysicsCollisionPair *)<em>pair</em> typeA:(CCNode *)<em>nodeA</em> typeB:(CCNode *)<em>nodeB</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pair</em></dt>
+			<dd><p>Collision pair.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeA</em></dt>
+			<dd><p>Node A.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeB</em></dt>
+			<dd><p>Node B.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>BOOL</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/ccPhysicsCollisionSeparate:typeA:typeB:" title="ccPhysicsCollisionSeparate:typeA:typeB:"></a>
+	<h3 class="subsubtitle method-title">ccPhysicsCollisionSeparate:typeA:typeB:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Separate methods are called the first fixed time step after two bodies stop colliding.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)ccPhysicsCollisionSeparate:(CCPhysicsCollisionPair *)<em>pair</em> typeA:(CCNode *)<em>nodeA</em> typeB:(CCNode *)<em>nodeB</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pair</em></dt>
+			<dd><p>Collision pair.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeA</em></dt>
+			<dd><p>Node A.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nodeB</em></dt>
+			<dd><p>Node B.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCPhysicsNode.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Cocos2D. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

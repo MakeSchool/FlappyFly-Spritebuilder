@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionCardinalSplineBy.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionCardinalSplineBy</TokenIdentifier>
+			<Abstract type="html">Creates an action, based on a cardinal spline path.</Abstract>
+			<DeclaredIn>CCActionCatmullRom.h</DeclaredIn>
+            
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/cl/CCActionCardinalSplineTo</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

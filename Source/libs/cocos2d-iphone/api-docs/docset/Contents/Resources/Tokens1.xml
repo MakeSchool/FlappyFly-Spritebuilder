@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCAction</TokenIdentifier>
+			<Abstract type="html">CCAction forms the foundation for one the great areas of Cocos2D functionality.
+The manipulatinon of node properties such as position, rotation, scale and opacity over time, to create fun effects.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+            
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/setTarget:</TokenIdentifier>
+			<Abstract type="html">The &quot;target&quot;. The action will modify the target properties.
+The target will be set with the &apos;startWithTarget&apos; method.
+When the &apos;stop&apos; method is called, target will be set to nil.
+The target is &apos;assigned&apos;, it is not &apos;retained&apos;.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, unsafe_unretained) id target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/target</TokenIdentifier>
+			<Abstract type="html">The &quot;target&quot;. The action will modify the target properties.
+The target will be set with the &apos;startWithTarget&apos; method.
+When the &apos;stop&apos; method is called, target will be set to nil.
+The target is &apos;assigned&apos;, it is not &apos;retained&apos;.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, unsafe_unretained) id target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCAction/target</TokenIdentifier>
+			<Abstract type="html">The &quot;target&quot;. The action will modify the target properties.
+The target will be set with the &apos;startWithTarget&apos; method.
+When the &apos;stop&apos; method is called, target will be set to nil.
+The target is &apos;assigned&apos;, it is not &apos;retained&apos;.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, unsafe_unretained) id target</Declaration>
+			
+			
+			<Anchor>//api/name/target</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/setOriginalTarget:</TokenIdentifier>
+			<Abstract type="html">The original target, since target can be nil.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, unsafe_unretained) id originalTarget</Declaration>
+			
+			
+			<Anchor>//api/name/originalTarget</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/originalTarget</TokenIdentifier>
+			<Abstract type="html">The original target, since target can be nil.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, unsafe_unretained) id originalTarget</Declaration>
+			
+			
+			<Anchor>//api/name/originalTarget</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCAction/originalTarget</TokenIdentifier>
+			<Abstract type="html">The original target, since target can be nil.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, unsafe_unretained) id originalTarget</Declaration>
+			
+			
+			<Anchor>//api/name/originalTarget</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/setTag:</TokenIdentifier>
+			<Abstract type="html">The action tag. An identifier of the action.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) NSInteger tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/tag</TokenIdentifier>
+			<Abstract type="html">The action tag. An identifier of the action.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) NSInteger tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCAction/tag</TokenIdentifier>
+			<Abstract type="html">The action tag. An identifier of the action.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) NSInteger tag</Declaration>
+			
+			
+			<Anchor>//api/name/tag</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCAction/action</TokenIdentifier>
+			<Abstract type="html">Creates and returns an action object.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>+ (id)action</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCAction Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/action</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/init</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an action object.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">An initialized CCAction Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/isDone</TokenIdentifier>
+			<Abstract type="html">Return YES if the action has finished.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isDone</Declaration>
+			
+			<ReturnValue><Abstract type="html">Action completion status</Abstract></ReturnValue>
+			<Anchor>//api/name/isDone</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/startWithTarget:</TokenIdentifier>
+			<Abstract type="html">Assigns a target to the action
+Called before the action is started.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>- (void)startWithTarget:(id)target</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">Target to assign to action (weak reference).</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/startWithTarget:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/stop</TokenIdentifier>
+			<Abstract type="html">Stops the action
+Called after the action has finished. Will assign the internal target reference to nil.
+Note:
+You should never call this method directly.
+In stead use: [target stopAction:action]</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/step:</TokenIdentifier>
+			<Abstract type="html">Steps the action.
+Called for every frame with step interval.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>- (void)step:(CCTime)dt</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dt</Name>
+					<Abstract type="html">Ellapsed interval since last step.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/step:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAction/update:</TokenIdentifier>
+			<Abstract type="html">Updates the action with normalized value.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>- (void)update:(CCTime)time</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>time</Name>
+					<Abstract type="html">Normalized action progress.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/update:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

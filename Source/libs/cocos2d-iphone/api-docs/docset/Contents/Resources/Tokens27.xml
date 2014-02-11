@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionEaseRate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionEaseRate</TokenIdentifier>
+			<Abstract type="html">CCActionEaseRate adds an additional rate property to control the rate of change for the specified action.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="27"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionEaseRate/setRate:</TokenIdentifier>
+			<Abstract type="html">Rate value for the ease action.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rate</Declaration>
+			
+			
+			<Anchor>//api/name/rate</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionEaseRate/rate</TokenIdentifier>
+			<Abstract type="html">Rate value for the ease action.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rate</Declaration>
+			
+			
+			<Anchor>//api/name/rate</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCActionEaseRate/rate</TokenIdentifier>
+			<Abstract type="html">Rate value for the ease action.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rate</Declaration>
+			
+			
+			<Anchor>//api/name/rate</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionEaseRate/actionWithAction:rate:</TokenIdentifier>
+			<Abstract type="html">Creates the action with the inner action and the rate parameter.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithAction:(CCActionInterval *)action rate:(float)rate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Interval action to ease.</Abstract>
+				</Parameter><Parameter>
+					<Name>rate</Name>
+					<Abstract type="html">Action rate.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New rate action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithAction:rate:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionEaseRate/initWithAction:rate:</TokenIdentifier>
+			<Abstract type="html">Initializes the action with the inner action and the rate parameter.</Abstract>
+			<DeclaredIn>CCActionEase.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithAction:(CCActionInterval *)action rate:(float)rate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Interval action to ease.</Abstract>
+				</Parameter><Parameter>
+					<Name>rate</Name>
+					<Abstract type="html">Action rate.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New rate action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAction:rate:</Anchor>
+            <NodeRef refid="27"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

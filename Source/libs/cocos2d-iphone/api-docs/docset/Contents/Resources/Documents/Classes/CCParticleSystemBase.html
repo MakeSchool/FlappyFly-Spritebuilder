@@ -1,0 +1,2885 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CCParticleSystemBase Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Cocos2D 3.0 </a></h1>
+				<a id="developerHome" href="../index.html">Cocos2D</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CCParticleSystemBase Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/active">&nbsp;&nbsp;&nbsp;&nbsp;active</option>
+	
+	<option value="//api/name/angle">&nbsp;&nbsp;&nbsp;&nbsp;angle</option>
+	
+	<option value="//api/name/angleVar">&nbsp;&nbsp;&nbsp;&nbsp;angleVar</option>
+	
+	<option value="//api/name/autoRemoveOnFinish">&nbsp;&nbsp;&nbsp;&nbsp;autoRemoveOnFinish</option>
+	
+	<option value="//api/name/blendAdditive">&nbsp;&nbsp;&nbsp;&nbsp;blendAdditive</option>
+	
+	<option value="//api/name/blendFunc">&nbsp;&nbsp;&nbsp;&nbsp;blendFunc</option>
+	
+	<option value="//api/name/duration">&nbsp;&nbsp;&nbsp;&nbsp;duration</option>
+	
+	<option value="//api/name/emissionRate">&nbsp;&nbsp;&nbsp;&nbsp;emissionRate</option>
+	
+	<option value="//api/name/emitterMode">&nbsp;&nbsp;&nbsp;&nbsp;emitterMode</option>
+	
+	<option value="//api/name/endColor">&nbsp;&nbsp;&nbsp;&nbsp;endColor</option>
+	
+	<option value="//api/name/endColorVar">&nbsp;&nbsp;&nbsp;&nbsp;endColorVar</option>
+	
+	<option value="//api/name/endRadius">&nbsp;&nbsp;&nbsp;&nbsp;endRadius</option>
+	
+	<option value="//api/name/endRadiusVar">&nbsp;&nbsp;&nbsp;&nbsp;endRadiusVar</option>
+	
+	<option value="//api/name/endSize">&nbsp;&nbsp;&nbsp;&nbsp;endSize</option>
+	
+	<option value="//api/name/endSizeVar">&nbsp;&nbsp;&nbsp;&nbsp;endSizeVar</option>
+	
+	<option value="//api/name/endSpin">&nbsp;&nbsp;&nbsp;&nbsp;endSpin</option>
+	
+	<option value="//api/name/endSpinVar">&nbsp;&nbsp;&nbsp;&nbsp;endSpinVar</option>
+	
+	<option value="//api/name/gravity">&nbsp;&nbsp;&nbsp;&nbsp;gravity</option>
+	
+	<option value="//api/name/life">&nbsp;&nbsp;&nbsp;&nbsp;life</option>
+	
+	<option value="//api/name/lifeVar">&nbsp;&nbsp;&nbsp;&nbsp;lifeVar</option>
+	
+	<option value="//api/name/opacityModifyRGB">&nbsp;&nbsp;&nbsp;&nbsp;opacityModifyRGB</option>
+	
+	<option value="//api/name/particleCount">&nbsp;&nbsp;&nbsp;&nbsp;particleCount</option>
+	
+	<option value="//api/name/particlePositionType">&nbsp;&nbsp;&nbsp;&nbsp;particlePositionType</option>
+	
+	<option value="//api/name/posVar">&nbsp;&nbsp;&nbsp;&nbsp;posVar</option>
+	
+	<option value="//api/name/radialAccel">&nbsp;&nbsp;&nbsp;&nbsp;radialAccel</option>
+	
+	<option value="//api/name/radialAccelVar">&nbsp;&nbsp;&nbsp;&nbsp;radialAccelVar</option>
+	
+	<option value="//api/name/resetOnVisibilityToggle">&nbsp;&nbsp;&nbsp;&nbsp;resetOnVisibilityToggle</option>
+	
+	<option value="//api/name/rotatePerSecond">&nbsp;&nbsp;&nbsp;&nbsp;rotatePerSecond</option>
+	
+	<option value="//api/name/rotatePerSecondVar">&nbsp;&nbsp;&nbsp;&nbsp;rotatePerSecondVar</option>
+	
+	<option value="//api/name/sourcePosition">&nbsp;&nbsp;&nbsp;&nbsp;sourcePosition</option>
+	
+	<option value="//api/name/speed">&nbsp;&nbsp;&nbsp;&nbsp;speed</option>
+	
+	<option value="//api/name/speedVar">&nbsp;&nbsp;&nbsp;&nbsp;speedVar</option>
+	
+	<option value="//api/name/startColor">&nbsp;&nbsp;&nbsp;&nbsp;startColor</option>
+	
+	<option value="//api/name/startColorVar">&nbsp;&nbsp;&nbsp;&nbsp;startColorVar</option>
+	
+	<option value="//api/name/startRadius">&nbsp;&nbsp;&nbsp;&nbsp;startRadius</option>
+	
+	<option value="//api/name/startRadiusVar">&nbsp;&nbsp;&nbsp;&nbsp;startRadiusVar</option>
+	
+	<option value="//api/name/startSize">&nbsp;&nbsp;&nbsp;&nbsp;startSize</option>
+	
+	<option value="//api/name/startSizeVar">&nbsp;&nbsp;&nbsp;&nbsp;startSizeVar</option>
+	
+	<option value="//api/name/startSpin">&nbsp;&nbsp;&nbsp;&nbsp;startSpin</option>
+	
+	<option value="//api/name/startSpinVar">&nbsp;&nbsp;&nbsp;&nbsp;startSpinVar</option>
+	
+	<option value="//api/name/tangentialAccel">&nbsp;&nbsp;&nbsp;&nbsp;tangentialAccel</option>
+	
+	<option value="//api/name/tangentialAccelVar">&nbsp;&nbsp;&nbsp;&nbsp;tangentialAccelVar</option>
+	
+	<option value="//api/name/texture">&nbsp;&nbsp;&nbsp;&nbsp;texture</option>
+	
+	<option value="//api/name/totalParticles">&nbsp;&nbsp;&nbsp;&nbsp;totalParticles</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/particleWithFile:">&nbsp;&nbsp;&nbsp;&nbsp;+ particleWithFile:</option>
+	
+	<option value="//api/name/particleWithTotalParticles:">&nbsp;&nbsp;&nbsp;&nbsp;+ particleWithTotalParticles:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithDictionary:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDictionary:</option>
+	
+	<option value="//api/name/initWithDictionary:path:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDictionary:path:</option>
+	
+	<option value="//api/name/initWithFile:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithFile:</option>
+	
+	<option value="//api/name/initWithTotalParticles:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithTotalParticles:</option>
+	
+	<option value="//api/name/resetSystem">&nbsp;&nbsp;&nbsp;&nbsp;- resetSystem</option>
+	
+	<option value="//api/name/stopSystem">&nbsp;&nbsp;&nbsp;&nbsp;- stopSystem</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Particle Attributes">Accessing Particle Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Gravity Mode Specific Attributes">Accessing Gravity Mode Specific Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing Radius Mode Specific Attributes">Accessing Radius Mode Specific Attributes</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating a CCParticleSystem Object">Creating a CCParticleSystem Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a CCParticleSystem Object">Initializing a CCParticleSystem Object</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Particle System Management">Particle System Management</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/active">active</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/angle">angle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/angleVar">angleVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autoRemoveOnFinish">autoRemoveOnFinish</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/blendAdditive">blendAdditive</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/blendFunc">blendFunc</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/duration">duration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emissionRate">emissionRate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/emitterMode">emitterMode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endColor">endColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endColorVar">endColorVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endRadius">endRadius</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endRadiusVar">endRadiusVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endSize">endSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endSizeVar">endSizeVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endSpin">endSpin</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/endSpinVar">endSpinVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gravity">gravity</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/life">life</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lifeVar">lifeVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/opacityModifyRGB">opacityModifyRGB</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/particleCount">particleCount</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/particlePositionType">particlePositionType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/posVar">posVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/radialAccel">radialAccel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/radialAccelVar">radialAccelVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetOnVisibilityToggle">resetOnVisibilityToggle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rotatePerSecond">rotatePerSecond</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rotatePerSecondVar">rotatePerSecondVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sourcePosition">sourcePosition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/speed">speed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/speedVar">speedVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startColor">startColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startColorVar">startColorVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startRadius">startRadius</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startRadiusVar">startRadiusVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startSize">startSize</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startSizeVar">startSizeVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startSpin">startSpin</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/startSpinVar">startSpinVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tangentialAccel">tangentialAccel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tangentialAccelVar">tangentialAccelVar</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/texture">texture</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/totalParticles">totalParticles</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/particleWithFile:">particleWithFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/particleWithTotalParticles:">particleWithTotalParticles:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDictionary:">initWithDictionary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDictionary:path:">initWithDictionary:path:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithFile:">initWithFile:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithTotalParticles:">initWithTotalParticles:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetSystem">resetSystem</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stopSystem">stopSystem</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CCParticleSystemBase Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CCParticleSystemBase Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/CCNode.html">CCNode</a> : <a href="../Classes/CCResponder.html">CCResponder</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">CCTextureProtocol</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CCParticleSystemBase.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Felxbile particle system.</p>
+
+<h3>Attribute overview of a particle system</h3>
+
+<ul>
+<li><p>Gravity Mode (Mode A)</p>
+
+<ul>
+<li>Gravity</li>
+<li>Direction</li>
+<li>Speed +-  variance</li>
+<li>Tangential acceleration +- variance</li>
+<li>Radial acceleration +- variance</li>
+</ul>
+</li>
+<li><p>Radius Mode (Mode B)</p>
+
+<ul>
+<li>Start Radius +- variance</li>
+<li>End Radius +- variance</li>
+<li>Rotate +- variance</li>
+</ul>
+</li>
+<li><p>Properties common to all modes</p>
+
+<ul>
+<li>Life +- variance</li>
+<li>Start spin +- variance</li>
+<li>End spin +- variance</li>
+<li>Start size +- variance</li>
+<li>End size +- variance</li>
+<li>Start color +- variance</li>
+<li>End color +- variance</li>
+<li>Life +- variance</li>
+<li>Blending function</li>
+</ul>
+</li>
+<li><p>Texture</p></li>
+</ul>
+
+
+<h3>Supported editors</h3>
+
+<ul>
+<li>Particle Designer <a href="http://particledesigner.71squared.com/">http://particledesigner.71squared.com/</a></li>
+</ul>
+
+
+<h3> Notes</h3>
+
+<p>cocos2d supports all the variables used by Particle Designer plus a bit more:</p>
+
+<ul>
+<li>Spinning particles (supported when using CCParticleSystemQuad)</li>
+<li>Tangential acceleration (Gravity mode)</li>
+<li>Radial acceleration (Gravity mode)</li>
+<li>Radius direction (Radius mode) (Particle Designer supports outwards to inwards direction only)</li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Accessing Particle Attributes" name="task_Accessing Particle Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing Particle Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/active">&nbsp;&nbsp;active</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/particleCount">&nbsp;&nbsp;particleCount</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/duration">&nbsp;&nbsp;duration</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sourcePosition">&nbsp;&nbsp;sourcePosition</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/posVar">&nbsp;&nbsp;posVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/life">&nbsp;&nbsp;life</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lifeVar">&nbsp;&nbsp;lifeVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/angle">&nbsp;&nbsp;angle</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/angleVar">&nbsp;&nbsp;angleVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startSize">&nbsp;&nbsp;startSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startSizeVar">&nbsp;&nbsp;startSizeVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endSize">&nbsp;&nbsp;endSize</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endSizeVar">&nbsp;&nbsp;endSizeVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startColor">&nbsp;&nbsp;startColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startColorVar">&nbsp;&nbsp;startColorVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endColor">&nbsp;&nbsp;endColor</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endColorVar">&nbsp;&nbsp;endColorVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startSpin">&nbsp;&nbsp;startSpin</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startSpinVar">&nbsp;&nbsp;startSpinVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endSpin">&nbsp;&nbsp;endSpin</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endSpinVar">&nbsp;&nbsp;endSpinVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emissionRate">&nbsp;&nbsp;emissionRate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/totalParticles">&nbsp;&nbsp;totalParticles</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/texture">&nbsp;&nbsp;texture</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/blendFunc">&nbsp;&nbsp;blendFunc</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/opacityModifyRGB">&nbsp;&nbsp;opacityModifyRGB</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/blendAdditive">&nbsp;&nbsp;blendAdditive</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/particlePositionType">&nbsp;&nbsp;particlePositionType</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autoRemoveOnFinish">&nbsp;&nbsp;autoRemoveOnFinish</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetOnVisibilityToggle">&nbsp;&nbsp;resetOnVisibilityToggle</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/emitterMode">&nbsp;&nbsp;emitterMode</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Gravity Mode Specific Attributes" name="task_Accessing Gravity Mode Specific Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing Gravity Mode Specific Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gravity">&nbsp;&nbsp;gravity</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/speed">&nbsp;&nbsp;speed</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/speedVar">&nbsp;&nbsp;speedVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tangentialAccel">&nbsp;&nbsp;tangentialAccel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tangentialAccelVar">&nbsp;&nbsp;tangentialAccelVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/radialAccel">&nbsp;&nbsp;radialAccel</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/radialAccelVar">&nbsp;&nbsp;radialAccelVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing Radius Mode Specific Attributes" name="task_Accessing Radius Mode Specific Attributes"></a>
+						<h3 class="subsubtitle task-title">Accessing Radius Mode Specific Attributes</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startRadius">&nbsp;&nbsp;startRadius</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/startRadiusVar">&nbsp;&nbsp;startRadiusVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endRadius">&nbsp;&nbsp;endRadius</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/endRadiusVar">&nbsp;&nbsp;endRadiusVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rotatePerSecond">&nbsp;&nbsp;rotatePerSecond</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rotatePerSecondVar">&nbsp;&nbsp;rotatePerSecondVar</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating a CCParticleSystem Object" name="task_Creating a CCParticleSystem Object"></a>
+						<h3 class="subsubtitle task-title">Creating a CCParticleSystem Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/particleWithFile:">+&nbsp;particleWithFile:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/particleWithTotalParticles:">+&nbsp;particleWithTotalParticles:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Initializing a CCParticleSystem Object" name="task_Initializing a CCParticleSystem Object"></a>
+						<h3 class="subsubtitle task-title">Initializing a CCParticleSystem Object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithFile:">&ndash;&nbsp;initWithFile:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDictionary:">&ndash;&nbsp;initWithDictionary:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDictionary:path:">&ndash;&nbsp;initWithDictionary:path:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithTotalParticles:">&ndash;&nbsp;initWithTotalParticles:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Particle System Management" name="task_Particle System Management"></a>
+						<h3 class="subsubtitle task-title">Particle System Management</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stopSystem">&ndash;&nbsp;stopSystem</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetSystem">&ndash;&nbsp;resetSystem</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/active" title="active"></a>
+	<h3 class="subsubtitle method-title">active</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>True if particle system active.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL active</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/angle" title="angle"></a>
+	<h3 class="subsubtitle method-title">angle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Angle of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float angle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/angleVar" title="angleVar"></a>
+	<h3 class="subsubtitle method-title">angleVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Angle variance of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float angleVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/autoRemoveOnFinish" title="autoRemoveOnFinish"></a>
+	<h3 class="subsubtitle method-title">autoRemoveOnFinish</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>True will remove particle system on completition.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) BOOL autoRemoveOnFinish</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/blendAdditive" title="blendAdditive"></a>
+	<h3 class="subsubtitle method-title">blendAdditive</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>True to enable blend additive mode. (GL_SRC_ALPHA, GL_ONE).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) BOOL blendAdditive</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/blendFunc" title="blendFunc"></a>
+	<h3 class="subsubtitle method-title">blendFunc</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Blend method.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) ccBlendFunc blendFunc</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/duration" title="duration"></a>
+	<h3 class="subsubtitle method-title">duration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>How many seconds the emitter wil run. -1 means &lsquo;forever&rsquo;.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float duration</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/emissionRate" title="emissionRate"></a>
+	<h3 class="subsubtitle method-title">emissionRate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Emission rate of the particles.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float emissionRate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/emitterMode" title="emitterMode"></a>
+	<h3 class="subsubtitle method-title">emitterMode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set emitter mode mechanism.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) CCParticleSystemMode emitterMode</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endColor" title="endColor"></a>
+	<h3 class="subsubtitle method-title">endColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>End color and end color variation of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, strong) CCColor *endColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endColorVar" title="endColorVar"></a>
+	<h3 class="subsubtitle method-title">endColorVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>End color variance of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, strong) CCColor *endColorVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endRadius" title="endRadius"></a>
+	<h3 class="subsubtitle method-title">endRadius</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The ending radius of the particles. Only available in &lsquo;Radius&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float endRadius</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endRadiusVar" title="endRadiusVar"></a>
+	<h3 class="subsubtitle method-title">endRadiusVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The ending radius variance of the particles. Only available in &lsquo;Radius&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float endRadiusVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endSize" title="endSize"></a>
+	<h3 class="subsubtitle method-title">endSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>End size in pixels of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float endSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endSizeVar" title="endSizeVar"></a>
+	<h3 class="subsubtitle method-title">endSizeVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>End size variance in pixels of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float endSizeVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endSpin" title="endSpin"></a>
+	<h3 class="subsubtitle method-title">endSpin</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>End spin of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float endSpin</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/endSpinVar" title="endSpinVar"></a>
+	<h3 class="subsubtitle method-title">endSpinVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>End spin variance of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float endSpinVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gravity" title="gravity"></a>
+	<h3 class="subsubtitle method-title">gravity</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Gravity value. Only available in &lsquo;Gravity&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) CGPoint gravity</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/life" title="life"></a>
+	<h3 class="subsubtitle method-title">life</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Life time of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float life</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lifeVar" title="lifeVar"></a>
+	<h3 class="subsubtitle method-title">lifeVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Life variance of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float lifeVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/opacityModifyRGB" title="opacityModifyRGB"></a>
+	<h3 class="subsubtitle method-title">opacityModifyRGB</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>True to enbale alpha value modifies color.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, getter=doesOpacityModifyRGB, assign) BOOL opacityModifyRGB</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/particleCount" title="particleCount"></a>
+	<h3 class="subsubtitle method-title">particleCount</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Quantity of particles that are being simulated at the moment.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSUInteger particleCount</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/particlePositionType" title="particlePositionType"></a>
+	<h3 class="subsubtitle method-title">particlePositionType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Particles movement type: Free or Grouped.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) CCParticleSystemPositionType particlePositionType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/posVar" title="posVar"></a>
+	<h3 class="subsubtitle method-title">posVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The Position variance of the emitter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) CGPoint posVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/radialAccel" title="radialAccel"></a>
+	<h3 class="subsubtitle method-title">radialAccel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Radial acceleration of each particle. Only available in &lsquo;Gravity&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float radialAccel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/radialAccelVar" title="radialAccelVar"></a>
+	<h3 class="subsubtitle method-title">radialAccelVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Radial acceleration variance of each particle. Only available in &lsquo;Gravity&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float radialAccelVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetOnVisibilityToggle" title="resetOnVisibilityToggle"></a>
+	<h3 class="subsubtitle method-title">resetOnVisibilityToggle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>True particle system will reset upon visibility  toggling to True.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite) BOOL resetOnVisibilityToggle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rotatePerSecond" title="rotatePerSecond"></a>
+	<h3 class="subsubtitle method-title">rotatePerSecond</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Number of degress to rotate a particle around the source pos per second. Only available in &lsquo;Radius&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float rotatePerSecond</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rotatePerSecondVar" title="rotatePerSecondVar"></a>
+	<h3 class="subsubtitle method-title">rotatePerSecondVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Variance in degrees for <a href="#//api/name/rotatePerSecond">rotatePerSecond</a>. Only available in &lsquo;Radius&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float rotatePerSecondVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sourcePosition" title="sourcePosition"></a>
+	<h3 class="subsubtitle method-title">sourcePosition</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The source position of the emitter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) CGPoint sourcePosition</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/speed" title="speed"></a>
+	<h3 class="subsubtitle method-title">speed</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Speed of each particle. Only available in &lsquo;Gravity&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float speed</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/speedVar" title="speedVar"></a>
+	<h3 class="subsubtitle method-title">speedVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Speed variance of each particle. Only available in &lsquo;Gravity&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float speedVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startColor" title="startColor"></a>
+	<h3 class="subsubtitle method-title">startColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start color of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, strong) CCColor *startColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startColorVar" title="startColorVar"></a>
+	<h3 class="subsubtitle method-title">startColorVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start color variance of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, strong) CCColor *startColorVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startRadius" title="startRadius"></a>
+	<h3 class="subsubtitle method-title">startRadius</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The starting radius of the particles. Only available in &lsquo;Radius&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float startRadius</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startRadiusVar" title="startRadiusVar"></a>
+	<h3 class="subsubtitle method-title">startRadiusVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The starting radius variance of the particles. Only available in &lsquo;Radius&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float startRadiusVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startSize" title="startSize"></a>
+	<h3 class="subsubtitle method-title">startSize</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start size in pixels of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float startSize</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startSizeVar" title="startSizeVar"></a>
+	<h3 class="subsubtitle method-title">startSizeVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Size variance in pixels of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float startSizeVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startSpin" title="startSpin"></a>
+	<h3 class="subsubtitle method-title">startSpin</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start spin of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float startSpin</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/startSpinVar" title="startSpinVar"></a>
+	<h3 class="subsubtitle method-title">startSpinVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Start spin variance of each particle.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float startSpinVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tangentialAccel" title="tangentialAccel"></a>
+	<h3 class="subsubtitle method-title">tangentialAccel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tangential acceleration of each particle. Only available in &lsquo;Gravity&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float tangentialAccel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tangentialAccelVar" title="tangentialAccelVar"></a>
+	<h3 class="subsubtitle method-title">tangentialAccelVar</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tangential acceleration variance of each particle. Only available in &lsquo;Gravity&rsquo; mode.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) float tangentialAccelVar</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/texture" title="texture"></a>
+	<h3 class="subsubtitle method-title">texture</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Particle system texture.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, strong) CCTexture *texture</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/totalParticles" title="totalParticles"></a>
+	<h3 class="subsubtitle method-title">totalParticles</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Maxmium particles of the system.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readwrite, assign) NSUInteger totalParticles</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/particleWithFile:" title="particleWithFile:"></a>
+	<h3 class="subsubtitle method-title">particleWithFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns a particle system object from the specified plist source file.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)particleWithFile:(NSString *)<em>plistFile</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>plistFile</em></dt>
+			<dd><p>Particle configuration file.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/CCParticleSystem.html">CCParticleSystem</a> Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/particleWithTotalParticles:" title="particleWithTotalParticles:"></a>
+	<h3 class="subsubtitle method-title">particleWithTotalParticles:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates and returns an empty particle system object with the specified maxmium number of particles.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)particleWithTotalParticles:(NSUInteger)<em>numberOfParticles</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>numberOfParticles</em></dt>
+			<dd><p>Maximum particles.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The <a href="../Classes/CCParticleSystem.html">CCParticleSystem</a> Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDictionary:" title="initWithDictionary:"></a>
+	<h3 class="subsubtitle method-title">initWithDictionary:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a particle system object from the specified dictionary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDictionary:(NSDictionary *)<em>dictionary</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>Particle dictionary object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized <a href="../Classes/CCParticleSystem.html">CCParticleSystem</a> Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDictionary:path:" title="initWithDictionary:path:"></a>
+	<h3 class="subsubtitle method-title">initWithDictionary:path:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a particle system object from the specified dictionary and <a href="#//api/name/texture">texture</a> directory path values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDictionary:(NSDictionary *)<em>dictionary</em> path:(NSString *)<em>dirname</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>Particle dictionary object.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dirname</em></dt>
+			<dd><p>Path to dictionary</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized <a href="../Classes/CCParticleSystem.html">CCParticleSystem</a> Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithFile:" title="initWithFile:"></a>
+	<h3 class="subsubtitle method-title">initWithFile:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a particle system object from the specified plist source file.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithFile:(NSString *)<em>plistFile</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>plistFile</em></dt>
+			<dd><p>Particle configuration file.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized <a href="../Classes/CCParticleSystem.html">CCParticleSystem</a> Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithTotalParticles:" title="initWithTotalParticles:"></a>
+	<h3 class="subsubtitle method-title">initWithTotalParticles:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns an empty particle system object with the specified maxmium number of particles.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithTotalParticles:(NSUInteger)<em>numberOfParticles</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>numberOfParticles</em></dt>
+			<dd><p>Maximum particles.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized <a href="../Classes/CCParticleSystem.html">CCParticleSystem</a> Object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetSystem" title="resetSystem"></a>
+	<h3 class="subsubtitle method-title">resetSystem</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Destroy all particles.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)resetSystem</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stopSystem" title="stopSystem"></a>
+	<h3 class="subsubtitle method-title">stopSystem</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Stop emitting new particles, existing particles will die off.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)stopSystem</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCParticleSystemBase.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 Cocos2D. All rights reserved. (Last updated: 2014-01-13)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

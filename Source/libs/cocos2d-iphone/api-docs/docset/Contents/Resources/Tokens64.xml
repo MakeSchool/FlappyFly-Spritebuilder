@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCColor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCColor</TokenIdentifier>
+			<Abstract type="html">Defines a CCColor to use with cocos2d.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+            
+			
+			<NodeRef refid="64"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/interpolateTo:time:</TokenIdentifier>
+			<Abstract type="html">Linearly interpolate from this color to &apos;toColor&apos;. Parameter t is normalised</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>- (CCColor *)interpolateTo:(CCColor *)toColor time:(float)t</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>toColor</Name>
+					<Abstract type="html">Color to interpolate to.</Abstract>
+				</Parameter><Parameter>
+					<Name>t</Name>
+					<Abstract type="html">Normalised progress.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The interpolated color.</Abstract></ReturnValue>
+			<Anchor>//api/name/interpolateTo:time:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

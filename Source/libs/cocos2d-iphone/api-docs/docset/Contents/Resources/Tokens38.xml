@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionMoveBy.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionMoveBy</TokenIdentifier>
+			<Abstract type="html">  
+This action moves the target by the x,y values in the specified point value.
+X and Y are relative to the position of the object.
+Several CCMoveBy actions can be concurrently called, and the resulting movement will be the sum of individual movements.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="38"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionMoveBy/actionWithDuration:position:</TokenIdentifier>
+			<Abstract type="html">Creates the action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration position:(CGPoint)deltaPosition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action interval.</Abstract>
+				</Parameter><Parameter>
+					<Name>deltaPosition</Name>
+					<Abstract type="html">Delta position.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New moveby action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:position:</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionMoveBy/initWithDuration:position:</TokenIdentifier>
+			<Abstract type="html">Initializes the action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration position:(CGPoint)deltaPosition</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action interval.</Abstract>
+				</Parameter><Parameter>
+					<Name>deltaPosition</Name>
+					<Abstract type="html">Delta position.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New moveby action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:position:</Anchor>
+            <NodeRef refid="38"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

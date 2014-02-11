@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CCTiledMapOrientation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CCTiledMapOrientation</TokenIdentifier>
+			<Abstract type="html">Possible oritentations of the TMX map.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+            
+			
+			<NodeRef refid="114"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTiledMapOrientationOrtho</TokenIdentifier>
+            <Abstract type="html">Orthogonal orientation.</Abstract>
+            <Declaration>CCTiledMapOrientationOrtho</Declaration>
+            
+            <DeclaredIn>CCTiledMap.h</DeclaredIn>
+            
+            <NodeRef refid="114"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTiledMapOrientationHex</TokenIdentifier>
+            <Abstract type="html">Hexagonal orientation.</Abstract>
+            <Declaration>CCTiledMapOrientationHex</Declaration>
+            
+            <DeclaredIn>CCTiledMap.h</DeclaredIn>
+            
+            <NodeRef refid="114"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCTiledMapOrientationIso</TokenIdentifier>
+            <Abstract type="html">Isometric orientation.</Abstract>
+            <Declaration>CCTiledMapOrientationIso</Declaration>
+            
+            <DeclaredIn>CCTiledMap.h</DeclaredIn>
+            
+            <NodeRef refid="114"/>
+        </Token>
+        
+	</File>
+</Tokens>

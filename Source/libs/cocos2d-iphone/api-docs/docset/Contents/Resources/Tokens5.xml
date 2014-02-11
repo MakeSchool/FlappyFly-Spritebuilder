@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionCallBlock.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionCallBlock</TokenIdentifier>
+			<Abstract type="html">This actions executes a code block.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionCallBlock/actionWithBlock:</TokenIdentifier>
+			<Abstract type="html">Creates the action with the specified block, to be used as a callback.
+The block will be &quot;copied&quot;.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithBlock:(void ( ^ ) ( ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">Block to execute.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The call block action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithBlock:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionCallBlock/initWithBlock:</TokenIdentifier>
+			<Abstract type="html">Initializes the action with the specified block, to be used as a callback.
+The block will be &quot;copied&quot;.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithBlock:(void ( ^ ) ( ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">Block to execute.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized call block action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithBlock:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

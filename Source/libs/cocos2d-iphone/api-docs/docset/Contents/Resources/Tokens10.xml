@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionCatmullRomTo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionCatmullRomTo</TokenIdentifier>
+			<Abstract type="html">Creates an action, based on a catmull-rom spline path.</Abstract>
+			<DeclaredIn>CCActionCatmullRom.h</DeclaredIn>
+            
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionCatmullRomTo/actionWithDuration:points:</TokenIdentifier>
+			<Abstract type="html">Creates an action, performing a catmull-rom spline.
+This is similar to creating a cardinal spline, with a tension of 0.5.</Abstract>
+			<DeclaredIn>CCActionCatmullRom.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)dt points:(CCPointArray *)points</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dt</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>points</Name>
+					<Abstract type="html">Points to use for spline.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New catmull-rom action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:points:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionCatmullRomTo/initWithDuration:points:</TokenIdentifier>
+			<Abstract type="html">Initializes an action, performing a catmull-rom spline.
+This is similar to creating a cardinal spline, with a tension of 0.5.</Abstract>
+			<DeclaredIn>CCActionCatmullRom.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)dt points:(CCPointArray *)points</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dt</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>points</Name>
+					<Abstract type="html">Points to use for spline.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New catmull-rom action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:points:</Anchor>
+            <NodeRef refid="10"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
