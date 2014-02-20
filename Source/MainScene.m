@@ -141,7 +141,8 @@ typedef NS_ENUM(NSInteger, DrawingOrder) {
 - (void)update:(CCTime)delta {
     // clamp velocity
     float yVelocity = clampf(_hero.physicsBody.velocity.y, -1 * MAXFLOAT, 200.f);
-    _hero.physicsBody.velocity = ccp(_scrollSpeed, yVelocity);
+    _hero.physicsBody.velocity = ccp(0, yVelocity);
+    _hero.position = ccp(_hero.position.x + delta * _scrollSpeed, _hero.position.y);
 
     _sinceTouch += delta;
     
