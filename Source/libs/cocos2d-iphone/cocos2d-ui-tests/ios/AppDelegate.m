@@ -38,14 +38,17 @@
     
     sharedFileUtils.searchPath =
     [NSArray arrayWithObjects:
+     [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Images"],
+     [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Fonts"],
      [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Resources-shared"],
      [[NSBundle mainBundle] resourcePath],
      nil];
     
     [self setupCocos2dWithOptions:@{
+                                    CCSetupDepthFormat: @GL_DEPTH24_STENCIL8,
+                                    CCSetupTabletScale2X: @YES,
 //			CCSetupScreenMode: CCScreenModeFixed,
 //			CCSetupScreenOrientation: CCScreenOrientationPortrait,
-//			CCSetupTabletScale2X: @YES,
 //			CCSetupShowDebugStats: @YES,
 		}];
     

@@ -328,7 +328,12 @@ static CCDirector *_sharedDirector = nil;
 
 		// set size
 		CGSize size = CCNSSizeToCGSize(__view.bounds.size);
+#ifdef __CC_PLATFORM_IOS
 		CGFloat scale = __view.layer.contentsScale ?: 1.0;
+#else
+		//self.view.wantsBestResolutionOpenGLSurface = YES;
+		CGFloat scale = self.view.window.backingScaleFactor;
+#endif
 		
 		_winSizeInPixels = CGSizeMake(size.width*scale, size.height*scale);
 		_winSizeInPoints = size;
@@ -437,6 +442,29 @@ GLToClipTransform(kmMat4 *transformOut)
 -(CGSize)viewSizeInPixels
 {
 	return _winSizeInPixels;
+}
+
+-(CGRect)viewportRect
+{
+	// TODO It's _possible_ that a user will use a non-axis aligned projection. Weird, but possible.
+	kmMat4 transform;
+	GLToClipTransform(&transform);
+		
+	kmMat4 transformInv;
+	kmMat4Inverse(&transformInv, &transform);
+	
+	// Calculate z=0 using -> transform*[0, 0, 0, 1]/w
+	kmScalar zClip = transform.mat[14]/transform.mat[15];
+	
+	// Bottom left and top right coordinates of viewport in clip coords.
+	kmVec3 clipBL = {-1.0, -1.0, zClip};
+	kmVec3 clipTR = { 1.0,  1.0, zClip};
+	
+	kmVec3 glBL, glTR;
+	kmVec3TransformCoord(&glBL, &clipBL, &transformInv);
+	kmVec3TransformCoord(&glTR, &clipTR, &transformInv);
+	
+	return CGRectMake(glBL.x, glBL.y, glTR.x - glBL.x, glTR.y - glBL.y);
 }
 
 -(CGSize)designSize
@@ -701,6 +729,7 @@ GLToClipTransform(kmMat4 *transformOut)
     {
 		[_runningScene onEnter];
 		[_runningScene onEnterTransitionDidFinish];
+        [_runningScene setPaused:NO];
 	}
 }
 
@@ -847,7 +876,7 @@ GLToClipTransform(kmMat4 *transformOut)
 
 	[CCTexture setDefaultAlphaPixelFormat:currentFormat];
 	
-	CGPoint offset = [self convertToGL:ccp(0, __view.bounds.size.height)];
+	CGPoint offset = [self convertToGL:ccp(0, (self.flipY == 1.0) ? 0 : __view.bounds.size.height)];
 	CGPoint pos = ccpAdd(CC_DIRECTOR_STATS_POSITION, offset);
 	[_drawsLabel setPosition: ccpAdd( ccp(0,34), pos ) ];
 	[_SPFLabel setPosition: ccpAdd( ccp(0,17), pos ) ];

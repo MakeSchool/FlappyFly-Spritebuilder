@@ -84,7 +84,7 @@ const CGSize FIXED_SIZE = {568, 384};
     }
     else
     {
-        return UIInterfaceOrientationMaskPortrait;
+        return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
     }
 }
 
@@ -182,11 +182,11 @@ FindPOTScale(CGFloat size, CGFloat fixedSize)
 	CCGLView *glView = [CCGLView
 		viewWithFrame:[window_ bounds]
 		pixelFormat:config[CCSetupPixelFormat] ?: kEAGLColorFormatRGBA8
-        depthFormat:[config[CCSetupDepthFormat] integerValue]
+        depthFormat:[config[CCSetupDepthFormat] unsignedIntValue]
 		preserveBackbuffer:[config[CCSetupPreserveBackbuffer] boolValue]
 		sharegroup:nil
 		multiSampling:[config[CCSetupMultiSampling] boolValue]
-		numberOfSamples:[config[CCSetupNumberOfSamples] integerValue]
+		numberOfSamples:[config[CCSetupNumberOfSamples] unsignedIntValue]
 	];
 	
 	CCDirectorIOS* director = (CCDirectorIOS*) [CCDirector sharedDirector];

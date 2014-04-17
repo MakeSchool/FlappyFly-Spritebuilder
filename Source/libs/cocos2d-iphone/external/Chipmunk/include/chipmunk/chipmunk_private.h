@@ -127,10 +127,6 @@ struct cpBody {
 	} sleeping;
 };
 
-static inline cpBool cpBodyIsDynamic(cpBody *body){return (cpBodyGetType(body) == CP_BODY_TYPE_DYNAMIC);}
-static inline cpBool cpBodyIsKinematic(cpBody *body){return (cpBodyGetType(body) == CP_BODY_TYPE_KINEMATIC);}
-static inline cpBool cpBodyIsStatic(cpBody *body){return (cpBodyGetType(body) == CP_BODY_TYPE_STATIC);}
-
 void cpBodyAddShape(cpBody *body, cpShape *shape);
 void cpBodyRemoveShape(cpBody *body, cpShape *shape);
 
@@ -369,6 +365,8 @@ cpShapeFilterReject(cpShapeFilter a, cpShapeFilter b)
 		(b.categories & a.mask) == 0
 	);
 }
+
+void cpLoopIndexes(const cpVect *verts, int count, int *start, int *end);
 
 
 //MARK: Constraints
@@ -658,7 +656,7 @@ struct cpSpace {
 	cpFloat curr_dt;
 
 	cpArray *dynamicBodies;
-	cpArray *otherBodies;
+	cpArray *staticBodies;
 	cpArray *rousedBodies;
 	cpArray *sleepingComponents;
 	
@@ -726,6 +724,12 @@ cpSpaceUncacheArbiter(cpSpace *space, cpArbiter *arb)
 	cpHashValue arbHashID = CP_HASH_PAIR((cpHashValue)a, (cpHashValue)b);
 	cpHashSetRemove(space->cachedArbiters, arbHashID, shape_pair);
 	cpArrayDeleteObj(space->arbiters, arb);
+}
+
+static inline cpArray *
+cpSpaceArrayForBodyType(cpSpace *space, cpBodyType type)
+{
+	return (type == CP_BODY_TYPE_STATIC ? space->staticBodies : space->dynamicBodies);
 }
 
 void cpShapeUpdateFunc(cpShape *shape, void *unused);

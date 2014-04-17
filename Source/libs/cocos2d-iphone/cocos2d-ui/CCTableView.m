@@ -82,6 +82,7 @@
     _button.contentSizeType = CCSizeTypeNormalized;
     _button.preferredSize = CGSizeMake(1, 1);
     _button.anchorPoint = ccp(0, 0);
+    _button.zoomWhenHighlighted = NO;
     [_button setTarget:self selector:@selector(pressedCell:)];
     [self addChild:_button z:-1];
     
@@ -289,6 +290,8 @@
 
 - (void) reloadData
 {
+    _currentlyVisibleRange = NSMakeRange(0, 0);
+    
     [self.contentNode removeAllChildrenWithCleanup:YES];
     
     if (!_dataSource) return;
@@ -385,9 +388,10 @@
 
 - (void) setTarget:(id)target selector:(SEL)selector
 {
-    __unsafe_unretained id weakTarget = target; // avoid retain cycle
+    __weak id weakTarget = target; // avoid retain cycle
     [self setBlock:^(id sender) {
-        objc_msgSend(weakTarget, selector, sender);
+        typedef void (*Func)(id, SEL, id);
+        ((Func)objc_msgSend)(weakTarget, selector, sender);
 	}];
 }
 

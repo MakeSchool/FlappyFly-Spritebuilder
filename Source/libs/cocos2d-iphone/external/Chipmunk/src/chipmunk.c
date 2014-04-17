@@ -131,14 +131,14 @@ cpCentroidForPoly(const int count, const cpVect *verts)
 	return cpvmult(vsum, 1.0f/(3.0f*sum));
 }
 
-void
-cpRecenterPoly(const int count, cpVect *verts){
-	cpVect centroid = cpCentroidForPoly(count, verts);
-	
-	for(int i=0; i<count; i++){
-		verts[i] = cpvsub(verts[i], centroid);
-	}
-}
+//void
+//cpRecenterPoly(const int count, cpVect *verts){
+//	cpVect centroid = cpCentroidForPoly(count, verts);
+//	
+//	for(int i=0; i<count; i++){
+//		verts[i] = cpvsub(verts[i], centroid);
+//	}
+//}
 
 cpFloat
 cpMomentForBox(cpFloat m, cpFloat width, cpFloat height)

@@ -21,5 +21,6 @@ dependencies: \
   external/kazmath/include/kazmath/ray2.h cocos2d/CCResponder.h \
   cocos2d/CCScheduler.h cocos2d/Platforms/Mac/../../CCScene.h \
   cocos2d/Platforms/Mac/../../CCGLProgram.h \
+  cocos2d/Platforms/Mac/../../ccFPSImages.h \
   external/kazmath/include/kazmath/GL/matrix.h \
   /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/cocos2d/CCDirector_Private.h

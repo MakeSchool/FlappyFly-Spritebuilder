@@ -1,7 +1,7 @@
 dependencies: \
   /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkMultiGrab.m \
   /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkMultiGrab.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ObjectiveChipmunk.h \
+  external/Chipmunk/objectivec/include/ObjectiveChipmunk/ObjectiveChipmunk.h \
   external/Chipmunk/include/chipmunk/chipmunk.h \
   external/Chipmunk/include/chipmunk/chipmunk_types.h \
   external/Chipmunk/include/chipmunk/cpVect.h \

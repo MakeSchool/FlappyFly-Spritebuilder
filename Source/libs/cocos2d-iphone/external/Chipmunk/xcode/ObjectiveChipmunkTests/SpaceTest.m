@@ -22,7 +22,7 @@
 #import <XCTest/XCTest.h>
 
 #define CP_ALLOW_PRIVATE_ACCESS 1
-#import "ObjectiveChipmunk.h"
+#import "ObjectiveChipmunk/ObjectiveChipmunk.h"
 
 @interface SpaceTest : XCTestCase {}
 @end
@@ -147,13 +147,13 @@ testPointQueries_helper(id self, ChipmunkSpace *space, ChipmunkBody *body)
 	
 	// Segment queries starting from inside a shape
 	segmentInfo = [space segmentQueryFirstFrom:cpvzero to:cpv(1,1) radius:0.0 filter:CP_SHAPE_FILTER_ALL];
-	XCTAssertEqual(segmentInfo.t, 0.0f, @"Starting inside a shape should return t=0.");
+	XCTAssertEqual(segmentInfo.t, (cpFloat)0, @"Starting inside a shape should return t=0.");
 	
 	segmentInfo = [space segmentQueryFirstFrom:cpv(1,1) to:cpvzero radius:0.0 filter:CP_SHAPE_FILTER_ALL];
-	XCTAssertEqual(segmentInfo.t, 0.0f, @"Starting inside a shape should return t=0.");
+	XCTAssertEqual(segmentInfo.t, (cpFloat)0, @"Starting inside a shape should return t=0.");
 	
 	segmentInfo = [space segmentQueryFirstFrom:cpv(-0.6, -0.6) to:cpvzero radius:0.0 filter:CP_SHAPE_FILTER_ALL];
-	XCTAssertEqual(segmentInfo.t, 0.0f, @"Starting inside a shape should return t=0.");
+	XCTAssertEqual(segmentInfo.t, (cpFloat)0, @"Starting inside a shape should return t=0.");
 	XCTAssertEqual(segmentInfo.shape, segment, @"Should have picked the segment shape.");
 	
 	// A segment query that misses should return nil.
@@ -253,7 +253,7 @@ testPointQueries_helper(id self, ChipmunkSpace *space, ChipmunkBody *body)
 	ChipmunkSpace *space = [[ChipmunkSpace alloc] init];
 	space.gravity = cpv(0, -100);
 	
-	[space addBounds:CGRectMake(-50, 0, 100, 100) thickness:1 elasticity:1 friction:1 filter:CP_SHAPE_FILTER_ALL collisionType:nil];
+	[space addBounds:cpBBNew(-50, 0, 50, 100) thickness:1 elasticity:1 friction:1 filter:CP_SHAPE_FILTER_ALL collisionType:nil];
 	
 	ChipmunkBody *ball = [space add:[ChipmunkBody bodyWithMass:1 andMoment:cpMomentForCircle(1, 0, 1, cpvzero)]];
 	ball.position = cpv(-10, 10);
@@ -301,7 +301,15 @@ testPointQueries_helper(id self, ChipmunkSpace *space, ChipmunkBody *body)
 	cpSpaceFree(space);
 }
 
-static cpBool CallBlock(cpArbiter *arb, cpSpace *space, cpBool (^block)(cpArbiter *arb)){return block(arb);}
+-(bool)beginSleepSensorRemoveBug:(cpArbiter *)arb space:(ChipmunkSpace*)space
+{
+	// 'b' is the shape we are using to trigger the callback.
+	CHIPMUNK_ARBITER_GET_SHAPES(arb, a, b);
+	NSLog(@"space: %p, arb: %p, a: %p, b: %p", space.space, arb, a.shape, a.body);
+	[space addPostStepRemoval:b];
+	
+	return FALSE;
+}
 
 static void
 VerifyContactGraph(id self, ChipmunkBody *body1, ChipmunkBody *body2)
@@ -352,17 +360,7 @@ VerifyContactGraph(id self, ChipmunkBody *body1, ChipmunkBody *body2)
 	ChipmunkShape *shape = [space add:[ChipmunkCircleShape circleWithBody:body3 radius:1 offset:cpv(-0.5, 0)]];
 	shape.collisionType = type;
 	
-	// TODO
-//	[space addCollisionHandler:self typeA:nil typeB:type begin:@selector(beginSleepSensorRemoveBug:space:) preSolve:nil postSolve:nil separate:nil];
-	cpCollisionHandler *handler = cpSpaceAddCollisionHandler(space.space, nil, type);
-	handler->beginFunc = (cpCollisionBeginFunc)CallBlock,
-	handler->userData = ^(cpArbiter *arb){
-		// 'b' is the shape we are using to trigger the callback.
-		CHIPMUNK_ARBITER_GET_SHAPES(arb, a, b);
-		[space addPostStepRemoval:b];
-		
-		return FALSE;
-	};
+	[space addCollisionHandler:self typeA:nil typeB:type begin:@selector(beginSleepSensorRemoveBug:space:) preSolve:nil postSolve:nil separate:nil];
 	
 	// Now step again and shape should get removed.
 	[space step:0.01];
@@ -403,7 +401,7 @@ VerifyContactGraph(id self, ChipmunkBody *body1, ChipmunkBody *body2)
 	ChipmunkShape *shape2 = [space add:[ChipmunkCircleShape circleWithBody:body2 radius:1 offset:cpvzero]];
 	shape2.collisionType = awakeType;
 	
-//	[space addCollisionHandler:self typeA:sleepType typeB:awakeType begin:@selector(beginSleepActivateOnImpact:space:) preSolve:nil postSolve:nil separate:nil];
+	[space addCollisionHandler:self typeA:sleepType typeB:awakeType begin:@selector(beginSleepActivateOnImpact:space:) preSolve:nil postSolve:nil separate:nil];
 	[space step:0.01];
 	
 	XCTAssertFalse(body1.isSleeping, @"body1 did not awake.");
@@ -414,7 +412,7 @@ VerifyContactGraph(id self, ChipmunkBody *body1, ChipmunkBody *body2)
 -(void)testAddBounds
 {
 	ChipmunkSpace *space = [[ChipmunkSpace alloc] init];
-	NSArray *objs = [space addBounds:CGRectMake(0, 0, 10, 10) thickness:5 elasticity:0 friction:1 filter:CP_SHAPE_FILTER_ALL collisionType:nil];
+	NSArray *objs = [space addBounds:cpBBNew(0, 0, 10, 10) thickness:5 elasticity:0 friction:1 filter:CP_SHAPE_FILTER_ALL collisionType:nil];
 	XCTAssertTrue([space contains:objs], @"");
 	
 	[space release];

@@ -1,6 +1,6 @@
 dependencies: \
   /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/src/ChipmunkSpace.m \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ObjectiveChipmunk.h \
+  external/Chipmunk/objectivec/include/ObjectiveChipmunk/ObjectiveChipmunk.h \
   external/Chipmunk/include/chipmunk/chipmunk_private.h \
   external/Chipmunk/include/chipmunk/chipmunk.h \
   external/Chipmunk/include/chipmunk/chipmunk_types.h \
@@ -24,8 +24,8 @@ dependencies: \
   external/Chipmunk/include/chipmunk/cpGearJoint.h \
   external/Chipmunk/include/chipmunk/cpSimpleMotor.h \
   external/Chipmunk/include/chipmunk/cpSpace.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkBody.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkShape.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkConstraint.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkSpace.h \
-  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkMultiGrab.h
+  external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkBody.h \
+  external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkShape.h \
+  external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkConstraint.h \
+  external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkSpace.h \
+  external/Chipmunk/objectivec/include/ObjectiveChipmunk/ChipmunkMultiGrab.h
