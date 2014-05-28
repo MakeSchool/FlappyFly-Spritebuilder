@@ -1,0 +1,11 @@
+./.uncrustify/test-expected.m
+./.uncrustify/test-input.m
+./FlappyFly.spritebuilder/Source/AppDelegate.h
+./FlappyFly.spritebuilder/Source/AppDelegate.m
+./FlappyFly.spritebuilder/Source/Goal.h
+./FlappyFly.spritebuilder/Source/Goal.m
+./FlappyFly.spritebuilder/Source/main.m
+./FlappyFly.spritebuilder/Source/MainScene.h
+./FlappyFly.spritebuilder/Source/MainScene.m
+./FlappyFly.spritebuilder/Source/Obstacle.h
+./FlappyFly.spritebuilder/Source/Obstacle.m
