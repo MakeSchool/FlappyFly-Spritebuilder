@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionRepeat.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionRepeat</TokenIdentifier>
+			<Abstract type="html">This action will repeat the specified action a number of times.
+If you wish to repeat an action forever, please use the CCRepeatForever action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="47"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionRepeat/actionWithAction:times:</TokenIdentifier>
+			<Abstract type="html">Creates a repeat action.
+Times is an unsigned integer between 1 and MAX_UINT.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithAction:(CCActionFiniteTime *)action times:(NSUInteger)times</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Action to repeat.</Abstract>
+				</Parameter><Parameter>
+					<Name>times</Name>
+					<Abstract type="html">Number of times to repeat action.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New action repeat</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithAction:times:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionRepeat/initWithAction:times:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCRepeat action.
+Times is an unsigned integer between 1 and MAX_UINT.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithAction:(CCActionFiniteTime *)action times:(NSUInteger)times</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Action to repeat.</Abstract>
+				</Parameter><Parameter>
+					<Name>times</Name>
+					<Abstract type="html">Number of times to repeat action.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New action repeat.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAction:times:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

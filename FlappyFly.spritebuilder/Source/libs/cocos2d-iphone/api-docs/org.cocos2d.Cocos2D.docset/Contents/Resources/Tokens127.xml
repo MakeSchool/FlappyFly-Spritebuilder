@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSValue+CCRenderer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSValue(CCRenderer)</TokenIdentifier>
+			<Abstract type="html">Check if the given bounding box as specified by it&apos;s center and extents (half with/height) is visible onscreen.	</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="127"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

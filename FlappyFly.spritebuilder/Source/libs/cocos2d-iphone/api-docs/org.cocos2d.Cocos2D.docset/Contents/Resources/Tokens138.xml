@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CCPhysicsBodyType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CCPhysicsBodyType</TokenIdentifier>
+			<Abstract type="html">The type of physics body to use.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+            
+			
+			<NodeRef refid="138"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCPhysicsBodyTypeDynamic</TokenIdentifier>
+            <Abstract type="html">A regular rigid body that is affected by gravity, forces and collisions.</Abstract>
+            <Declaration>CCPhysicsBodyTypeDynamic</Declaration>
+            
+            <DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+            
+            <NodeRef refid="138"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCPhysicsBodyTypeKinematic</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CCPhysicsBodyTypeKinematic</Declaration>
+            
+            <DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+            
+            <NodeRef refid="138"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCPhysicsBodyTypeStatic</TokenIdentifier>
+            <Abstract type="html">A body that is immovable such as a wall or the ground.</Abstract>
+            <Declaration>CCPhysicsBodyTypeStatic</Declaration>
+            
+            <DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+            
+            <NodeRef refid="138"/>
+        </Token>
+        
+	</File>
+</Tokens>

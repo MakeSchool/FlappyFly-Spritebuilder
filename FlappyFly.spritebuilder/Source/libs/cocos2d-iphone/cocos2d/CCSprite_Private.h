@@ -24,42 +24,31 @@
  */
 
 #import "CCSprite.h"
+#import "CCEffectRenderer.h"
+#import "CCEffect_Private.h"
 
-@interface CCSprite ()
+@interface CCSprite () {
+	@private
+	
+	// Vertex coords, texture coords and color info.
+	CCSpriteVertexes _verts;
+	
+	// Center of extents (half width/height) of the sprite for culling purposes.
+	GLKVector2 _vertexCenter, _vertexExtents;
+	
+	CCEffect *_effect;
+	CCEffectRenderer *_effectRenderer;
+}
 
-// Whether or not the Sprite needs to be updated in the Atlas.
-@property (nonatomic,readwrite) BOOL dirty;
++ (CCSpriteTexCoordSet)textureCoordsForTexture:(CCTexture *)texture withRect:(CGRect)rect rotated:(BOOL)rotated xFlipped:(BOOL)flipX yFlipped:(BOOL)flipY;
 
-// The quad (tex coords, vertex coords and color) information.
-@property (nonatomic,readonly) ccV3F_C4B_T2F_Quad quad;
+- (void)updateShaderUniformsFromEffect;
 
-// The index used on the TextureAtlas. Don't modify this value unless you know what you are doing.
-@property (nonatomic,readwrite) NSUInteger atlasIndex;
+@end
 
-// Weak reference of the CCTextureAtlas used when the sprite is rendered using a CCSpriteBatchNode.
-@property (nonatomic,readwrite,unsafe_unretained) CCTextureAtlas *textureAtlas;
 
-// Weak reference to the CCSpriteBatchNode that renders the CCSprite.
-@property (nonatomic,readwrite,unsafe_unretained) CCSpriteBatchNode *batchNode;
+@interface CCSprite(NoARC)
 
-#pragma mark CCSprite - BatchNode
-
-// Updates the quad according the the rotation, position, scale values.
--(void) updateTransform;
-
-/* 
- Set the vertex rect. It will be called internally by setTextureRect.
- Useful if you want to create 2x images from SD images in Retina Display.  
- Do not call it manually. Use setTextureRect instead.
-*/
--(void) setVertexRect:(CGRect)rect;
-
-#pragma mark CCSprite - Animation
-
-/* 
- Changes the display frame with animation name and index. 
- The animation name will be retried from the CCAnimationCache.
-*/
--(void) setSpriteFrameWithAnimationName:(NSString*)animationName index:(int) frameIndex;
+-(void)enqueueTriangles:(CCRenderer *)renderer transform:(const GLKMatrix4 *)transform;
 
 @end

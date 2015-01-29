@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCBlendMode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCBlendMode</TokenIdentifier>
+			<Abstract type="html">Blending mode identifiers used with CCNode.blendMode.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="68"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCBlendMode/setOptions:</TokenIdentifier>
+			<Abstract type="html">Blending options for this mode.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCBlendMode/options</TokenIdentifier>
+			<Abstract type="html">Blending options for this mode.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCBlendMode/options</TokenIdentifier>
+			<Abstract type="html">Blending options for this mode.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSDictionary *options</Declaration>
+			
+			
+			<Anchor>//api/name/options</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCBlendMode/blendModeWithOptions:</TokenIdentifier>
+			<Abstract type="html">Return a cached blending mode with the given options.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>+ (CCBlendMode *)blendModeWithOptions:(NSDictionary *)options</Declaration>
+			
+			
+			<Anchor>//api/name/blendModeWithOptions:</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCBlendMode/disabledMode</TokenIdentifier>
+			<Abstract type="html">Disabled blending mode. Use this with fully opaque surfaces for extra performance.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>+ (CCBlendMode *)disabledMode</Declaration>
+			
+			
+			<Anchor>//api/name/disabledMode</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCBlendMode/alphaMode</TokenIdentifier>
+			<Abstract type="html">Regular alpha blending.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>+ (CCBlendMode *)alphaMode</Declaration>
+			
+			
+			<Anchor>//api/name/alphaMode</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCBlendMode/premultipliedAlphaMode</TokenIdentifier>
+			<Abstract type="html">Pre-multiplied alpha blending. (This is usually the default)</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>+ (CCBlendMode *)premultipliedAlphaMode</Declaration>
+			
+			
+			<Anchor>//api/name/premultipliedAlphaMode</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCBlendMode/addMode</TokenIdentifier>
+			<Abstract type="html">Additive blending. (Similar to PhotoShop&apos;s linear dodge mode)</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>+ (CCBlendMode *)addMode</Declaration>
+			
+			
+			<Anchor>//api/name/addMode</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCBlendMode/multiplyMode</TokenIdentifier>
+			<Abstract type="html">Multiply blending mode. (Similar to PhotoShop&apos;s burn mode)</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>+ (CCBlendMode *)multiplyMode</Declaration>
+			
+			
+			<Anchor>//api/name/multiplyMode</Anchor>
+            <NodeRef refid="68"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CCDirectorProjection.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CCDirectorProjection</TokenIdentifier>
+			<Abstract type="html">Possible OpenGL projections used by director</Abstract>
+			<DeclaredIn>CCDirector.h</DeclaredIn>
+            
+			
+			<NodeRef refid="132"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCDirectorProjection2D</TokenIdentifier>
+            <Abstract type="html">sets a 2D projection (orthogonal projection).</Abstract>
+            <Declaration>CCDirectorProjection2D</Declaration>
+            
+            <DeclaredIn>CCDirector.h</DeclaredIn>
+            
+            <NodeRef refid="132"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCDirectorProjection3D</TokenIdentifier>
+            <Abstract type="html">sets a 3D projection with a fovy=60, znear=0.5f and zfar=1500.</Abstract>
+            <Declaration>CCDirectorProjection3D</Declaration>
+            
+            <DeclaredIn>CCDirector.h</DeclaredIn>
+            
+            <NodeRef refid="132"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCDirectorProjectionCustom</TokenIdentifier>
+            <Abstract type="html">it calls &quot;updateProjection&quot; on the projection delegate.</Abstract>
+            <Declaration>CCDirectorProjectionCustom</Declaration>
+            
+            <DeclaredIn>CCDirector.h</DeclaredIn>
+            
+            <NodeRef refid="132"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCDirectorProjectionDefault</TokenIdentifier>
+            <Abstract type="html">Detault projection is 3D projection</Abstract>
+            <Declaration>CCDirectorProjectionDefault</Declaration>
+            
+            <DeclaredIn>CCDirector.h</DeclaredIn>
+            
+            <NodeRef refid="132"/>
+        </Token>
+        
+	</File>
+</Tokens>

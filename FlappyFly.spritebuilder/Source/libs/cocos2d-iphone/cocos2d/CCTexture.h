@@ -71,7 +71,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 @class CCSpriteFrame;
 
 /**
- *  Possible texture pixel formats
+ *  Possible texture pixel formats. Used by various rendering components, including CCTexture, CCRenderTexture, CCEffectNode.
  */
 typedef NS_ENUM(NSUInteger, CCTexturePixelFormat) {
     
@@ -105,40 +105,26 @@ typedef NS_ENUM(NSUInteger, CCTexturePixelFormat) {
 	///! 2-bit PVRTC-compressed texture: PVRTC2
 	CCTexturePixelFormat_PVRTC2,
 
+	///! 32-bit texture: BGRA8888
+	CCTexturePixelFormat_BGRA8888,
+    
 	///! Default texture format: RGBA8888
 	CCTexturePixelFormat_Default = CCTexturePixelFormat_RGBA8888,
 };
 
-@class CCGLProgram;
+@class CCShader;
 
-/** CCTexture2D class.
- *  This class allows to easily create OpenGL 2D textures from images, text or raw data.
- *  The created CCTexture2D object will always have power-of-two dimensions.
- *  Depending on how you create the CCTexture2D object, the actual image area of the texture might be smaller than the texture dimensions 
- *  - i.e. "contentSize" != (pixelsWide, pixelsHigh) and (maxS, maxT) != (1.0, 1.0).
- *  Be aware that the content of the generated textures will be upside-down!
+/**
+ Represents a texture, an in-memory representation of an image in a compatible format the graphics processor can process.
+ 
+ Allows to create OpenGL textures from image files, text (font rendering) and raw data.
+
+ @note Be aware that the content of the generated texture will be upside-down! This is an OpenGL oddity.
  */
-@interface CCTexture : NSObject {
-	GLuint						_name;
-	CGSize						_sizeInPixels;
-	CGFloat _contentScale;
-	NSUInteger					_width,
-								_height;
-	CCTexturePixelFormat		_format;
-	GLfloat						_maxS,
-								_maxT;
-	BOOL						_premultipliedAlpha;
-	BOOL						_hasMipmaps;
-    
-    BOOL                        _antialiased;
-
-	// Needed for drawAtRect, drawInPoint.
-	CCGLProgram					*_shaderProgram;
-}
-
+@interface CCTexture : NSObject
 
 /// -----------------------------------------------------------------------
-/// @name Initializing a CCTexture Object
+/// @name Creating a Texture
 /// -----------------------------------------------------------------------
 
 /**
@@ -152,17 +138,15 @@ typedef NS_ENUM(NSUInteger, CCTexturePixelFormat) {
  *  @param contentScale Content scale.
  *
  *  @return An initialized CCTexture Object.
+ *  @see CCTexturePixelFormat
  */
 - (id)initWithData:(const void*)data pixelFormat:(CCTexturePixelFormat)pixelFormat pixelsWide:(NSUInteger)width pixelsHigh:(NSUInteger)height contentSizeInPixels:(CGSize)sizeInPixels contentScale:(CGFloat)contentScale;
 
-
-/// -----------------------------------------------------------------------
-/// @name Creating a CCTexture Object
-/// -----------------------------------------------------------------------
-
 /**
- *  Creates and returns a new texture, based on  the specified file path value.
- *  If the texture has already been loaded, and resides in cache, the previously created texture is returned.
+ *  Creates and returns a new texture, based on the specified image file path.
+ *
+ *  If the texture has already been loaded, and resides in the internal cache, the previously created texture is returned from the cache.
+ *  While this is fast, it still has an overhead compared to manually caching textures in an ivar or property.
  *
  *  @param file File path to load (should not include any suffixes).
  *
@@ -170,12 +154,28 @@ typedef NS_ENUM(NSUInteger, CCTexturePixelFormat) {
  */
 +(instancetype)textureWithFile:(NSString*)file;
 
+/** A placeholder value for a blank sizeless texture.
+ @return An empty texture. */
++(instancetype)none;
 
 /// -------------------------------------------------------
-/// @name Accessing The Texture Attributes
+/// @name Creating a Sprite Frame
 /// -------------------------------------------------------
 
-/** Pixel format of the texture. */
+/**
+ *  Creates a sprite frame from the texture.
+ *
+ *  @return A new sprite frame.
+ *  @see CCSpriteFrame
+ */
+-(CCSpriteFrame*)createSpriteFrame;
+
+/// -------------------------------------------------------
+/// @name Texture Format and Size
+/// -------------------------------------------------------
+
+/** Pixel format of the texture.
+ @see CCTexturePixelFormat */
 @property(nonatomic,readonly) CCTexturePixelFormat pixelFormat;
 
 /** Width in pixels. */
@@ -184,34 +184,28 @@ typedef NS_ENUM(NSUInteger, CCTexturePixelFormat) {
 /** Height in pixels. */
 @property(nonatomic,readonly) NSUInteger pixelHeight;
 
+/** Returns the content size of the texture in points. */
+-(CGSize)contentSize;
+
 /** Returns content size of the texture in pixels. */
 @property(nonatomic,readonly, nonatomic) CGSize contentSizeInPixels;
+
+/** Returns the contentScale of the texture.
+ In general "HD" textures return a contentScale of 2.0, while non-HD textures return 1.0.
+ 
+ Loading behavior is changed by [CCFileUtils set*ContentScaleFactor:]. The value can be changed manually if you want to force a certain content scale.
+ */
+@property(nonatomic, readwrite) CGFloat contentScale;
+
+/// -------------------------------------------------------
+/// @name Texture Settings
+/// -------------------------------------------------------
 
 /** Whether or not the texture has their Alpha premultiplied. */
 @property(nonatomic,readonly,getter=hasPremultipliedAlpha) BOOL premultipliedAlpha;
 
 /** True if antialised. */
 @property(nonatomic,assign,getter=isAntialiased) BOOL antialiased;
-
-/** Shader program used by drawAtPoint and drawInRect. */
-@property(nonatomic,readwrite,strong) CCGLProgram *shaderProgram;
-
-/** Returns the contentScale of the texture.
- In general "HD" textures return a contentScale of 2.0, while non-HD textures return 1.0.
- Loading behavior is changed by [CCFileUtils set*ContentScaleFactor:].
- The value can be changed manually if you want to force a certain content scale.
- */
-@property(nonatomic, readwrite) CGFloat contentScale;
-
-/** Returns the content size of the texture in points. */
--(CGSize)contentSize;
-
-/**
- *  Creates a sprite frame from the texture.
- *
- *  @return A new sprite frame.
- */
--(CCSpriteFrame*)createSpriteFrame;
 
 @end
 
@@ -220,7 +214,7 @@ typedef NS_ENUM(NSUInteger, CCTexturePixelFormat) {
  *  Extensions to make it easy to create a CCTexture2D object from an image file.
  *  Note that RGBA type textures will have their alpha premultiplied - use the blending mode (GL_ONE, GL_ONE_MINUS_SRC_ALPHA).
  */
-@interface CCTexture (Image)
+@interface CCTexture (CGImage)
 
 /**
  *  Initializes and returns a texture from a CGImage object.
@@ -246,6 +240,7 @@ typedef NS_ENUM(NSUInteger, CCTexturePixelFormat) {
  * This parameter is not valid for PVR / PVR.CCZ images.
  *
  *  @param format Format to use with texture.
+ *  @see CCTexturePixelFormat
  */
 +(void)setDefaultAlphaPixelFormat:(CCTexturePixelFormat)format;
 
@@ -253,6 +248,7 @@ typedef NS_ENUM(NSUInteger, CCTexturePixelFormat) {
  *  Returns the alpha pixel format.
  *
  *  @return The pixel format.
+ *  @see CCTexturePixelFormat
  */
 +(CCTexturePixelFormat)defaultAlphaPixelFormat;
 
@@ -272,6 +268,7 @@ typedef NS_ENUM(NSUInteger, CCTexturePixelFormat) {
  *  @param format Format to query for pixelsize.
  *
  *  @return Number of bits for pixelformat.
+ *  @see CCTexturePixelFormat
  */
 +(NSUInteger)bitsPerPixelForFormat:(CCTexturePixelFormat)format;
 

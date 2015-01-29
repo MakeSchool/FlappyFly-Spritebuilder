@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCClippingNode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCClippingNode</TokenIdentifier>
+			<Abstract type="html">CCClippingNode can be used to clip (crop) your node content using a stencil.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+            
+			
+			<NodeRef refid="70"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCClippingNode/setStencil:</TokenIdentifier>
+			<Abstract type="html">Stencil Node.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCNode *stencil</Declaration>
+			
+			
+			<Anchor>//api/name/stencil</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCClippingNode/stencil</TokenIdentifier>
+			<Abstract type="html">Stencil Node.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCNode *stencil</Declaration>
+			
+			
+			<Anchor>//api/name/stencil</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCClippingNode/stencil</TokenIdentifier>
+			<Abstract type="html">Stencil Node.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCNode *stencil</Declaration>
+			
+			
+			<Anchor>//api/name/stencil</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCClippingNode/setAlphaThreshold:</TokenIdentifier>
+			<Abstract type="html">The Alpha threshold.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) GLfloat alphaThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/alphaThreshold</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCClippingNode/alphaThreshold</TokenIdentifier>
+			<Abstract type="html">The Alpha threshold.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) GLfloat alphaThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/alphaThreshold</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCClippingNode/alphaThreshold</TokenIdentifier>
+			<Abstract type="html">The Alpha threshold.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) GLfloat alphaThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/alphaThreshold</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCClippingNode/setInverted:</TokenIdentifier>
+			<Abstract type="html">Inverted.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL inverted</Declaration>
+			
+			
+			<Anchor>//api/name/inverted</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCClippingNode/inverted</TokenIdentifier>
+			<Abstract type="html">Inverted.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL inverted</Declaration>
+			
+			
+			<Anchor>//api/name/inverted</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCClippingNode/inverted</TokenIdentifier>
+			<Abstract type="html">Inverted.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL inverted</Declaration>
+			
+			
+			<Anchor>//api/name/inverted</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCClippingNode/clippingNode</TokenIdentifier>
+			<Abstract type="html">Creates and returns a clipping node object without a stencil.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>+ (id)clippingNode</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCClippingNode Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/clippingNode</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCClippingNode/clippingNodeWithStencil:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a clipping node object with the specified stencil node.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>+ (id)clippingNodeWithStencil:(CCNode *)stencil</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>stencil</Name>
+					<Abstract type="html">Node to use as stencil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCClippingNode Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/clippingNodeWithStencil:</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCClippingNode/init</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a clipping node object without a stencil.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">An initialized CCClippingNode Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCClippingNode/initWithStencil:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a clipping node object with the specified stencil node.</Abstract>
+			<DeclaredIn>CCClippingNode.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithStencil:(CCNode *)stencil</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>stencil</Name>
+					<Abstract type="html">Node to use as stencil.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCClippingNode Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithStencil:</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

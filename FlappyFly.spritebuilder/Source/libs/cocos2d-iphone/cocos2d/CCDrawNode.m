@@ -28,359 +28,327 @@
  */
 
 #import "CCDrawNode.h"
-#import "CCShaderCache.h"
-#import "CCGLProgram.h"
+#import "CCShader.h"
 #import "Support/CGPointExtension.h"
-#import "Support/OpenGL_Internal.h"
 #import "CCNode_Private.h"
 #import "CCColor.h"
+#import "CCConfiguration.h"
+#import "CCMetalSupport_Private.h"
 
+// Vertex shader that performs the modelview-projection multiplication on the GPU.
+// Faster for draw nodes that draw many vertexes, but can't be batched.
+static NSString *CCDrawNodeHWTransformVertexShaderSource =
+	@"uniform highp mat4 u_MVP;\n"
+	@"uniform highp vec4 u_TintColor;\n"
+	@"void main(){\n"
+	@"	gl_Position = u_MVP*cc_Position;\n"
+	@"	cc_FragColor = clamp(u_TintColor*cc_Color, 0.0, 1.0);\n"
+	@"	cc_FragTexCoord1 = cc_TexCoord1;\n"
+	@"}\n";
 
-// ccVertex2F == CGPoint in 32-bits, but not in 64-bits (OS X)
-// that's why the "v2f" functions are needed
-static ccVertex2F v2fzero = (ccVertex2F){0,0};
-
-static inline ccVertex2F v2f( float x, float y )
-{
-	return (ccVertex2F){x,y};
-}
-
-static inline ccVertex2F v2fadd( ccVertex2F v0, ccVertex2F v1 )
-{
-	return v2f( v0.x+v1.x, v0.y+v1.y );
-}
-
-static inline ccVertex2F v2fsub( ccVertex2F v0, ccVertex2F v1 )
-{
-	return v2f( v0.x-v1.x, v0.y-v1.y );
-}
-
-static inline ccVertex2F v2fmult( ccVertex2F v, float s )
-{
-	return v2f( v.x * s, v.y * s );
-}
-
-static inline ccVertex2F v2fperp( ccVertex2F p0 )
-{
-	return v2f( -p0.y, p0.x );
-}
-
-static inline ccVertex2F v2fneg( ccVertex2F p0 )
-{
-	return v2f( -p0.x, - p0.y );
-}
-
-static inline float v2fdot(ccVertex2F p0, ccVertex2F p1)
-{
-	return  p0.x * p1.x + p0.y * p1.y;
-}
-
-static inline ccVertex2F v2fforangle( float _a_)
-{
-	return v2f( cosf(_a_), sinf(_a_) );
-}
-
-static inline ccVertex2F v2fnormalize( ccVertex2F p )
-{
-	CGPoint r = ccpNormalize( ccp(p.x, p.y) );
-	return v2f( r.x, r.y);
-}
-
-static inline ccVertex2F __v2f(CGPoint v )
-{
-#ifdef __LP64__
-	return v2f(v.x, v.y);
+#ifdef ANDROID // Many Android devices do NOT support GL_OES_standard_derivatives correctly
+static NSString *CCDrawNodeFragmentShaderSource =
+    @"void main(){\n"
+    @"  gl_FragColor = cc_FragColor*step(0.0, 1.0 - length(cc_FragTexCoord1));\n"
+    @"}\n";
 #else
-	return * ((ccVertex2F*) &v);
+static NSString *CCDrawNodeFragmentShaderSource =
+	@"#ifdef GL_ES\n"
+	@"#extension GL_OES_standard_derivatives : enable\n"
+	@"#endif\n"
+	@"\n"
+	@"void main(){\n"
+	@"	gl_FragColor = cc_FragColor*smoothstep(0.0, length(fwidth(cc_FragTexCoord1)), 1.0 - length(cc_FragTexCoord1));\n"
+	@"}\n";
 #endif
+
+@implementation CCDrawNode {
+    GLsizei _vertexCount, _vertexCapacity;
+    CCVertex *_vertexes;
+    
+    GLsizei _indexCount, _indexCapacity;
+    GLushort *_indexes;
+		
+		BOOL _useBatchMode;
 }
 
-static inline ccTex2F __t(ccVertex2F v )
+CCShader *CCDRAWNODE_HWTRANSFORM_SHADER = nil;
+CCShader *CCDRAWNODE_BATCH_SHADER = nil;
+
++(void)initialize
 {
-	return *(ccTex2F*)&v;
+#if __CC_METAL_SUPPORTED_AND_ENABLED
+	if([CCConfiguration sharedConfiguration].graphicsAPI == CCGraphicsAPIMetal){
+		id<MTLLibrary> library = [CCMetalContext currentContext].library;
+		NSAssert(library, @"Metal shader library not found.");
+		
+		id<MTLFunction> vertexFunc = [library newFunctionWithName:@"CCVertexFunctionDefault"];
+		
+		CCDRAWNODE_BATCH_SHADER = [[CCShader alloc] initWithMetalVertexFunction:vertexFunc fragmentFunction:[library newFunctionWithName:@"CCFragmentFunctionDefaultDrawNode"]];
+		CCDRAWNODE_BATCH_SHADER.debugName = @"CCFragmentFunctionDefaultDrawNode";
+	} else
+#endif
+	{
+		CCDRAWNODE_HWTRANSFORM_SHADER = [[CCShader alloc] initWithVertexShaderSource:CCDrawNodeHWTransformVertexShaderSource fragmentShaderSource:CCDrawNodeFragmentShaderSource];
+		CCDRAWNODE_HWTRANSFORM_SHADER.debugName = @"CCDRAWNODE_HWTRANSFORM_SHADER";
+		
+		CCDRAWNODE_BATCH_SHADER = [[CCShader alloc] initWithFragmentShaderSource:CCDrawNodeFragmentShaderSource];
+		CCDRAWNODE_BATCH_SHADER.debugName = @"CCDRAWNODE_BATCH_SHADER";
+	}
 }
-
-
-@implementation CCDrawNode
-
-@synthesize blendFunc = _blendFunc;
 
 #pragma mark memory
 
--(void)ensureCapacity:(NSUInteger)count
+-(CCRenderBuffer)bufferVertexes:(GLsizei)vertexCount andTriangleCount:(GLsizei)triangleCount
 {
-	if(_bufferCount + count > _bufferCapacity){
-		_bufferCapacity += MAX(_bufferCapacity, count);
-		_buffer = realloc(_buffer, _bufferCapacity*sizeof(ccV2F_C4B_T2F));
-		
-//		NSLog(@"Resized vertex buffer to %d", _bufferCapacity);
-	}
+    GLsizei requiredVertexes = _vertexCount + vertexCount;
+    if(requiredVertexes > _vertexCapacity){
+		    _vertexCapacity = requiredVertexes*1.5;
+        _vertexes = realloc(_vertexes, _vertexCapacity*sizeof(*_vertexes));
+    }
+    
+    GLsizei indexCount = 3*triangleCount;
+    GLsizei requiredIndexes = _indexCount + indexCount;
+    if(requiredIndexes > _indexCapacity){
+        _indexCapacity = requiredIndexes*1.5;
+        _indexes = realloc(_indexes, _indexCapacity*sizeof(*_indexes));
+    }
+    
+    CCRenderBuffer buffer = {
+        _vertexes + _vertexCount,
+        _indexes + _indexCount,
+        _vertexCount
+    };
+    
+    _vertexCount += vertexCount;
+    _indexCount += indexCount;
+    
+    return buffer;
 }
 
 -(id)init
 {
-	if((self = [super init])){
-		self.blendFunc = (ccBlendFunc){CC_BLEND_SRC, CC_BLEND_DST};
-		
-		self.shaderProgram = [[CCShaderCache sharedShaderCache] programForKey:kCCShader_PositionLengthTexureColor];
-
-		[self ensureCapacity:512];
-
-		glGenVertexArrays(1, &_vao);
-		ccGLBindVAO(_vao);
-			
-		glGenBuffers(1, &_vbo);
-		glBindBuffer(GL_ARRAY_BUFFER, _vbo);
-		glBufferData(GL_ARRAY_BUFFER, sizeof(ccV2F_C4B_T2F)*_bufferCapacity, _buffer, GL_STREAM_DRAW);
-
-		glEnableVertexAttribArray(kCCVertexAttrib_Position);
-		glVertexAttribPointer(kCCVertexAttrib_Position, 2, GL_FLOAT, GL_FALSE, sizeof(ccV2F_C4B_T2F), (GLvoid *)offsetof(ccV2F_C4B_T2F, vertices));
-		
-		glEnableVertexAttribArray(kCCVertexAttrib_Color);
-		glVertexAttribPointer(kCCVertexAttrib_Color, 4, GL_UNSIGNED_BYTE, GL_TRUE, sizeof(ccV2F_C4B_T2F), (GLvoid *)offsetof(ccV2F_C4B_T2F, colors));
-
-		glEnableVertexAttribArray(kCCVertexAttrib_TexCoords);
-		glVertexAttribPointer(kCCVertexAttrib_TexCoords, 2, GL_FLOAT, GL_FALSE, sizeof(ccV2F_C4B_T2F), (GLvoid *)offsetof(ccV2F_C4B_T2F, texCoords));
-		
-		glBindBuffer(GL_ARRAY_BUFFER, 0);
-		ccGLBindVAO(0);
-
-		CHECK_GL_ERROR();
-		
-		_dirty = YES;
-	}
-	
-	return self;
+    if((self = [super init])){
+        _blendMode = [CCBlendMode premultipliedAlphaMode];
+				
+        if(CCDRAWNODE_HWTRANSFORM_SHADER){
+        	_shader = CCDRAWNODE_HWTRANSFORM_SHADER;
+        } else {
+        // HWTransform shader not currently supported for Metal rendering.
+        	_shader = CCDRAWNODE_BATCH_SHADER;
+        	_useBatchMode = YES;
+        }
+        
+        _vertexCapacity = 128;
+        _vertexes = calloc(_vertexCapacity, sizeof(*_vertexes));
+        
+        _indexCapacity = 128;
+        _indexes = calloc(_indexCapacity, sizeof(*_indexes));
+    }
+    
+    return self;
 }
 
 -(void)dealloc
 {
-#ifdef __CC_PLATFORM_IOS
-	NSAssert([EAGLContext currentContext], @"No GL context set!");
-#endif
-	
-	free(_buffer); _buffer = NULL;
-	
-	glDeleteBuffers(1, &_vbo); _vbo = 0;
-	glDeleteVertexArrays(1, &_vao); _vao = 0;
-	
+    free(_vertexes); _vertexes = NULL;
+    free(_indexes); _indexes = NULL;
 }
 
 #pragma mark Rendering
 
--(void)render
+-(void)enableBatchMode
 {
-	if( _dirty ) {
-		glBindBuffer(GL_ARRAY_BUFFER, _vbo);
-		glBufferData(GL_ARRAY_BUFFER, sizeof(ccV2F_C4B_T2F)*_bufferCapacity, _buffer, GL_STREAM_DRAW);
-		glBindBuffer(GL_ARRAY_BUFFER, 0);
-		_dirty = NO;
+	_useBatchMode = YES;
+	
+	if(_shader == CCDRAWNODE_HWTRANSFORM_SHADER){
+		CCLOGINFO(@"Changing the blend mode or shader of a CCBatchNode disables GPU accelerated transform and tinting.");
+		_shader = CCDRAWNODE_BATCH_SHADER;
 	}
 	
-	ccGLBindVAO(_vao);
-	glDrawArrays(GL_TRIANGLES, 0, _bufferCount);
-	
-	CC_INCREMENT_GL_DRAWS(1);
-	
-	CHECK_GL_ERROR();
+	// Reset the render state.
+	_renderState = nil;
 }
 
--(void)draw
+// Force batch mode on if the user changes the blendmode or shader.
+-(void)setBlendMode:(CCBlendMode *)blendMode
 {
-	ccGLBlendFunc(_blendFunc.src, _blendFunc.dst);
-	
-	[_shaderProgram use];
-	[_shaderProgram setUniformsForBuiltins];
-	
-	[self render];	
+	[super setBlendMode:blendMode];
+	[self enableBatchMode];
+}
+
+-(void)setShader:(CCShader *)shader
+{
+	[super setShader:shader];
+	[self enableBatchMode];
+}
+
+-(void)draw:(CCRenderer *)renderer transform:(const GLKMatrix4 *)transform
+{
+    if(_indexCount == 0) return;
+		
+		// If batch mode is disabled (default), update the MVP matrix in the uniforms.
+		if(!_useBatchMode){
+			self.shaderUniforms[@"u_MVP"] = [NSValue valueWithGLKMatrix4:*transform];
+			
+			GLKVector4 color = Premultiply(GLKVector4Make(_displayColor.r, _displayColor.g, _displayColor.b, _displayColor.a));
+			self.shaderUniforms[@"u_TintColor"] = [NSValue valueWithGLKVector4:color];
+		}
+		
+    CCRenderBuffer buffer = [renderer enqueueTriangles:_indexCount/3 andVertexes:_vertexCount withState:self.renderState globalSortOrder:0];
+    
+		if(_useBatchMode){
+			// Transform the vertexes on the CPU.
+			for(int i=0; i<_vertexCount; i++){
+				CCRenderBufferSetVertex(buffer, i, CCVertexApplyTransform(_vertexes[i], transform));
+			}
+		} else {
+			// memcpy() the buffer and let the GPU handle the transform.
+			memcpy(buffer.vertexes, _vertexes, _vertexCount*sizeof(*_vertexes));
+		}
+    
+		// Offset the indices.
+    for(int i=0; i<_indexCount; i++){
+			buffer.elements[i] = _indexes[i] + buffer.startIndex;
+		}
 }
 
 #pragma mark Immediate Mode
 
--(void)drawDot:(CGPoint)pos radius:(CGFloat)radius color:(CCColor*)color;
+static inline GLKVector4
+Premultiply(GLKVector4 c)
 {
-    ccColor4B c4 = color.ccColor4b;
+    return GLKVector4Make(c.r*c.a, c.g*c.a, c.b*c.a, c.a);
+}
+
+-(void)drawDot:(CGPoint)pos radius:(CGFloat)radius color:(CCColor *)color;
+{
+    GLKVector4 color4 = Premultiply(color.glkVector4);
     
-	NSUInteger vertex_count = 2*3;
-	[self ensureCapacity:vertex_count];
-	
-	ccV2F_C4B_T2F a = {{pos.x - radius, pos.y - radius}, c4, {-1.0, -1.0} };
-	ccV2F_C4B_T2F b = {{pos.x - radius, pos.y + radius}, c4, {-1.0,  1.0} };
-	ccV2F_C4B_T2F c = {{pos.x + radius, pos.y + radius}, c4, { 1.0,  1.0} };
-	ccV2F_C4B_T2F d = {{pos.x + radius, pos.y - radius}, c4, { 1.0, -1.0} };
-	
-	ccV2F_C4B_T2F_Triangle *triangles = (ccV2F_C4B_T2F_Triangle *)(_buffer + _bufferCount);
-	triangles[0] = (ccV2F_C4B_T2F_Triangle){a, b, c};
-	triangles[1] = (ccV2F_C4B_T2F_Triangle){a, c, d};
-	
-	_bufferCount += vertex_count;
-	
-	_dirty = YES;
+    GLKVector2 zero2 = GLKVector2Make(0, 0);
+    
+    CCRenderBuffer buffer = [self bufferVertexes:4 andTriangleCount:2];
+    CCRenderBufferSetVertex(buffer, 0, (CCVertex){GLKVector4Make(pos.x - radius, pos.y - radius, 0, 1), GLKVector2Make(-1, -1), zero2, color4});
+    CCRenderBufferSetVertex(buffer, 1, (CCVertex){GLKVector4Make(pos.x - radius, pos.y + radius, 0, 1), GLKVector2Make(-1,  1), zero2, color4});
+    CCRenderBufferSetVertex(buffer, 2, (CCVertex){GLKVector4Make(pos.x + radius, pos.y + radius, 0, 1), GLKVector2Make( 1,  1), zero2, color4});
+    CCRenderBufferSetVertex(buffer, 3, (CCVertex){GLKVector4Make(pos.x + radius, pos.y - radius, 0, 1), GLKVector2Make( 1, -1), zero2, color4});
+    
+    CCRenderBufferSetTriangle(buffer, 0, 0, 1, 2);
+    CCRenderBufferSetTriangle(buffer, 1, 0, 2, 3);
+}
+
+static inline GLKVector2 GLKVector2Perp(GLKVector2 v){return GLKVector2Make(-v.y, v.x);}
+
+static inline void
+SetVertex(CCRenderBuffer buffer, int index, GLKVector2 v, GLKVector2 texCoord, GLKVector4 color)
+{
+    CCRenderBufferSetVertex(buffer, index, (CCVertex){GLKVector4Make(v.x, v.y, 0.0f, 1.0f), texCoord, GLKVector2Make(0.0f, 0.0f), color});
 }
 
 -(void)drawSegmentFrom:(CGPoint)_a to:(CGPoint)_b radius:(CGFloat)radius color:(CCColor*)color;
 {
-    ccColor4B c4 = color.ccColor4b;
+    GLKVector4 color4 = Premultiply(color.glkVector4);
+    GLKVector2 a = GLKVector2Make(_a.x, _a.y);
+    GLKVector2 b = GLKVector2Make(_b.x, _b.y);
     
-	NSUInteger vertex_count = 6*3;
-	[self ensureCapacity:vertex_count];
-	
-	ccVertex2F a = __v2f(_a);
-	ccVertex2F b = __v2f(_b);
-	
-	
-	ccVertex2F n = v2fnormalize(v2fperp(v2fsub(b, a)));
-	ccVertex2F t = v2fperp(n);
-	
-	ccVertex2F nw = v2fmult(n, radius);
-	ccVertex2F tw = v2fmult(t, radius);
-	ccVertex2F v0 = v2fsub(b, v2fadd(nw, tw));
-	ccVertex2F v1 = v2fadd(b, v2fsub(nw, tw));
-	ccVertex2F v2 = v2fsub(b, nw);
-	ccVertex2F v3 = v2fadd(b, nw);
-	ccVertex2F v4 = v2fsub(a, nw);
-	ccVertex2F v5 = v2fadd(a, nw);
-	ccVertex2F v6 = v2fsub(a, v2fsub(nw, tw));
-	ccVertex2F v7 = v2fadd(a, v2fadd(nw, tw));
-	
-	
-	ccV2F_C4B_T2F_Triangle *triangles = (ccV2F_C4B_T2F_Triangle *)(_buffer + _bufferCount);
-	
-	triangles[0] = (ccV2F_C4B_T2F_Triangle) {
-		{v0, c4, __t(v2fneg(v2fadd(n, t))) },
-		{v1, c4, __t(v2fsub(n, t)) },
-		{v2, c4, __t(v2fneg(n)) },
-	};
-	
-	triangles[1] = (ccV2F_C4B_T2F_Triangle){
-		{v3, c4, __t(n)},
-		{v1, c4, __t(v2fsub(n, t)) },
-		{v2, c4, __t(v2fneg(n)) },
-	};
-	
-	triangles[2] = (ccV2F_C4B_T2F_Triangle){
-		{v3, c4, __t(n)},
-		{v4, c4, __t(v2fneg(n)) },
-		{v2, c4, __t(v2fneg(n)) },
-	};
-	triangles[3] = (ccV2F_C4B_T2F_Triangle){
-		{v3, c4, __t(n) },
-		{v4, c4, __t(v2fneg(n)) },
-		{v5, c4, __t(n) },
-	};
-	triangles[4] = (ccV2F_C4B_T2F_Triangle){
-		{v6, c4, __t(v2fsub(t, n))},
-		{v4, c4, __t(v2fneg(n)) },
-		{v5, c4, __t(n)},
-	};
-	triangles[5] = (ccV2F_C4B_T2F_Triangle){
-		{v6, c4, __t(v2fsub(t, n)) },
-		{v7, c4, __t(v2fadd(n, t)) },
-		{v5, c4, __t(n)},
-	};
-	
-	_bufferCount += vertex_count;
-	
-	_dirty = YES;
+    GLKVector2 n = GLKVector2Normalize(GLKVector2Perp(GLKVector2Subtract(b, a)));
+    GLKVector2 t = GLKVector2Perp(n);
+    
+    GLKVector2 nw = GLKVector2MultiplyScalar(n, radius);
+    GLKVector2 tw = GLKVector2MultiplyScalar(t, radius);
+    
+    CCRenderBuffer buffer = [self bufferVertexes:8 andTriangleCount:6];
+    SetVertex(buffer, 0, GLKVector2Subtract(b, GLKVector2Add(nw, tw)), GLKVector2Negate(GLKVector2Add(n, t)), color4);
+    SetVertex(buffer, 1, GLKVector2Add(b, GLKVector2Subtract(nw, tw)), GLKVector2Subtract(n, t), color4);
+    SetVertex(buffer, 2, GLKVector2Subtract(b, nw), GLKVector2Negate(n), color4);
+    SetVertex(buffer, 3, GLKVector2Add(b, nw), n, color4);
+    SetVertex(buffer, 4, GLKVector2Subtract(a, nw), GLKVector2Negate(n), color4);
+    SetVertex(buffer, 5, GLKVector2Add(a, nw), n, color4);
+    SetVertex(buffer, 6, GLKVector2Subtract(a, GLKVector2Subtract(nw, tw)), GLKVector2Subtract(t, n), color4);
+    SetVertex(buffer, 7, GLKVector2Add(a, GLKVector2Add(nw, tw)), GLKVector2Add(n, t), color4);
+    
+    CCRenderBufferSetTriangle(buffer, 0, 0, 1, 2);
+    CCRenderBufferSetTriangle(buffer, 1, 3, 1, 2);
+    CCRenderBufferSetTriangle(buffer, 2, 3, 4, 2);
+    CCRenderBufferSetTriangle(buffer, 3, 3, 4, 5);
+    CCRenderBufferSetTriangle(buffer, 4, 6, 4, 5);
+    CCRenderBufferSetTriangle(buffer, 5, 6, 7, 5);
 }
 
--(void)drawPolyWithVerts:(const CGPoint *)verts count:(NSUInteger)count fillColor:(CCColor*)fill  borderWidth:(CGFloat)width borderColor:(CCColor*)line;
+-(void)drawPolyWithVerts:(const CGPoint *)_verts count:(NSUInteger)count fillColor:(CCColor*)fill  borderWidth:(CGFloat)width borderColor:(CCColor*)line;
 {
-    ccColor4B fill4 = fill.ccColor4b;
-    ccColor4B line4 = line.ccColor4b;
+    GLKVector4 fill4 = Premultiply(fill.glkVector4);
+    GLKVector4 line4 = Premultiply(line.glkVector4);
     
-	struct ExtrudeVerts {ccVertex2F offset, n;};
-	struct ExtrudeVerts extrude[count];
-	bzero(extrude, sizeof(extrude) );
-	
-	for(int i=0; i<count; i++){
-		ccVertex2F v0 = __v2f( verts[(i-1+count)%count] );
-		ccVertex2F v1 = __v2f( verts[i] );
-		ccVertex2F v2 = __v2f( verts[(i+1)%count] );
-	
-		ccVertex2F n1 = v2fnormalize(v2fperp(v2fsub(v1, v0)));
-		ccVertex2F n2 = v2fnormalize(v2fperp(v2fsub(v2, v1)));
-		
-		ccVertex2F offset = v2fmult(v2fadd(n1, n2), 1.0/(v2fdot(n1, n2) + 1.0));
-		extrude[i] = (struct ExtrudeVerts){offset, n2};
-	}
-	
-	BOOL outline = (line4.a > 0 && width > 0.0);
-	
-	NSUInteger triangle_count = 3*count - 2;
-	NSUInteger vertex_count = 3*triangle_count;
-	[self ensureCapacity:vertex_count];
-	
-	ccV2F_C4B_T2F_Triangle *triangles = (ccV2F_C4B_T2F_Triangle *)(_buffer + _bufferCount);
-	ccV2F_C4B_T2F_Triangle *cursor = triangles;
-	
-	CGFloat inset = (outline == 0.0 ? 0.5 : 0.0);
-	for(int i=0; i<count-2; i++){
-		ccVertex2F v0 = v2fsub( __v2f(verts[0  ]), v2fmult(extrude[0  ].offset, inset));
-		ccVertex2F v1 = v2fsub( __v2f(verts[i+1]), v2fmult(extrude[i+1].offset, inset));
-		ccVertex2F v2 = v2fsub( __v2f(verts[i+2]), v2fmult(extrude[i+2].offset, inset));
-		
-		*cursor++ = (ccV2F_C4B_T2F_Triangle){
-			{v0, fill4, __t(v2fzero) },
-			{v1, fill4, __t(v2fzero) },
-			{v2, fill4, __t(v2fzero) },
-		};
-	}
-	
-	for(int i=0; i<count; i++){
-		int j = (i+1)%count;
-		ccVertex2F v0 = __v2f( verts[i] );
-		ccVertex2F v1 = __v2f( verts[j] );
-		
-		ccVertex2F n0 = extrude[i].n;
-		
-		ccVertex2F offset0 = extrude[i].offset;
-		ccVertex2F offset1 = extrude[j].offset;
-		
-		if(outline){
-			ccVertex2F inner0 = v2fsub(v0, v2fmult(offset0, width));
-			ccVertex2F inner1 = v2fsub(v1, v2fmult(offset1, width));
-			ccVertex2F outer0 = v2fadd(v0, v2fmult(offset0, width));
-			ccVertex2F outer1 = v2fadd(v1, v2fmult(offset1, width));
-			
-			*cursor++ = (ccV2F_C4B_T2F_Triangle){
-				{inner0, line4, __t(v2fneg(n0))},
-				{inner1, line4, __t(v2fneg(n0))},
-				{outer1, line4, __t(n0)}
-			};
-			*cursor++ = (ccV2F_C4B_T2F_Triangle){
-				{inner0, line4, __t(v2fneg(n0))},
-				{outer0, line4, __t(n0)},
-				{outer1, line4, __t(n0)}
-			};
-		} else {
-			ccVertex2F inner0 = v2fsub(v0, v2fmult(offset0, 0.5));
-			ccVertex2F inner1 = v2fsub(v1, v2fmult(offset1, 0.5));
-			ccVertex2F outer0 = v2fadd(v0, v2fmult(offset0, 0.5));
-			ccVertex2F outer1 = v2fadd(v1, v2fmult(offset1, 0.5));
-			
-			*cursor++ = (ccV2F_C4B_T2F_Triangle){
-				{inner0, fill4, __t(v2fzero)},
-				{inner1, fill4, __t(v2fzero)},
-				{outer1, fill4, __t(n0)}
-			};
-			*cursor++ = (ccV2F_C4B_T2F_Triangle){
-				{inner0, fill4, __t(v2fzero)},
-				{outer0, fill4, __t(n0)},
-				{outer1, fill4, __t(n0)}
-			};
-		}
-	}
-	
-	_bufferCount += vertex_count;
-	
-	_dirty = YES;
+    GLKVector2 verts[count];
+    for(int i=0; i<count; i++) verts[i] = GLKVector2Make(_verts[i].x, _verts[i].y);
+    
+    struct ExtrudeVerts {GLKVector2 offset, n;};
+    struct ExtrudeVerts extrude[count];
+    bzero(extrude, sizeof(extrude) );
+    
+    for(int i=0; i<count; i++){
+        GLKVector2 v0 = verts[(i-1+count)%count];
+        GLKVector2 v1 = verts[i];
+        GLKVector2 v2 = verts[(i+1)%count];
+        
+        GLKVector2 n1 = GLKVector2Normalize(GLKVector2Perp(GLKVector2Subtract(v1, v0)));
+        GLKVector2 n2 = GLKVector2Normalize(GLKVector2Perp(GLKVector2Subtract(v2, v1)));
+        
+        GLKVector2 offset = GLKVector2MultiplyScalar(GLKVector2Add(n1, n2), 1.0/(GLKVector2DotProduct(n1, n2) + 1.0));
+        extrude[i] = (struct ExtrudeVerts){offset, n2};
+    }
+    
+    CCRenderBuffer buffer = [self bufferVertexes:(GLsizei)(count + 2*count*2) andTriangleCount:(GLsizei)(3*count - 2)];
+    int vertexCursor = 0, triangleCursor = 0;
+    
+    BOOL outline = (line4.a > 0 && width > 0.0);
+    const GLKVector2 GLKVector2Zero = {{0.0f, 0.0f}};
+    
+    CGFloat inset = (outline == 0.0 ? 0.5 : 0.0);
+    for(int i=0; i<count; i++){
+        SetVertex(buffer, vertexCursor++, GLKVector2Subtract(verts[i], GLKVector2MultiplyScalar(extrude[i].offset, inset)), GLKVector2Zero, fill4);
+    }
+    
+    for(int i=0; i<count-2; i++){
+        CCRenderBufferSetTriangle(buffer, triangleCursor++, 0, i + 1, i + 2);
+    }
+    
+    for(int i=0; i<count; i++){
+        int j = (i+1)%count;
+        GLKVector2 v0 = ( verts[i] );
+        GLKVector2 v1 = ( verts[j] );
+        
+        GLKVector2 n0 = extrude[i].n;
+        
+        float w = (outline ? width : 0.5);
+        GLKVector2 offset0 = extrude[i].offset;
+        GLKVector2 offset1 = extrude[j].offset;
+        
+        GLKVector2 inner0 = GLKVector2Subtract(v0, GLKVector2MultiplyScalar(offset0, w));
+        GLKVector2 inner1 = GLKVector2Subtract(v1, GLKVector2MultiplyScalar(offset1, w));
+        GLKVector2 outer0 = GLKVector2Add(v0, GLKVector2MultiplyScalar(offset0, w));
+        GLKVector2 outer1 = GLKVector2Add(v1, GLKVector2MultiplyScalar(offset1, w));
+        
+        GLKVector2 outerTexCoord = (outline ? GLKVector2Negate(n0) : GLKVector2Zero);
+        
+        CCRenderBufferSetTriangle(buffer, triangleCursor++, vertexCursor + 0, vertexCursor + 1, vertexCursor + 2);
+        CCRenderBufferSetTriangle(buffer, triangleCursor++, vertexCursor + 0, vertexCursor + 2, vertexCursor + 3);
+        
+        GLKVector4 outlineColor = (outline ? line4 : fill4);
+        
+        // TODO could reduce this to 2 vertexes per
+        SetVertex(buffer, vertexCursor++, inner0, outerTexCoord, outlineColor);
+        SetVertex(buffer, vertexCursor++, inner1, outerTexCoord, outlineColor);
+        SetVertex(buffer, vertexCursor++, outer1, n0, outlineColor);
+        SetVertex(buffer, vertexCursor++, outer0, n0, outlineColor);
+    }
 }
 
 -(void)clear
 {
-	_bufferCount = 0;
-	_dirty = YES;
+    _vertexCount = 0;
+    _indexCount = 0;
 }
 
 @end

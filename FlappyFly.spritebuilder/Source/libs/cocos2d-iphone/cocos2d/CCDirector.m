@@ -36,32 +36,34 @@
 #import "CCActionManager.h"
 #import "CCTextureCache.h"
 #import "CCAnimationCache.h"
-#import "CCLabelAtlas.h"
+#import "CCLabelBMFont.h"
 #import "ccMacros.h"
 #import "CCScene.h"
 #import "CCSpriteFrameCache.h"
 #import "CCTexture.h"
 #import "CCLabelBMFont.h"
-#import "ccGLStateCache.h"
-#import "CCShaderCache.h"
 #import "ccFPSImages.h"
 #import "CCConfiguration.h"
 #import "CCTransition.h"
+#import "CCRenderer_Private.h"
+#import "CCRenderDispatch_Private.h"
 
 // support imports
 #import "Platforms/CCGL.h"
 #import "Platforms/CCNS.h"
 
-#import "Support/OpenGL_Internal.h"
 #import "Support/CGPointExtension.h"
 #import "Support/CCProfiling.h"
 #import "Support/CCFileUtils.h"
 
-#ifdef __CC_PLATFORM_IOS
+#if __CC_PLATFORM_IOS
 #import "Platforms/iOS/CCDirectorIOS.h"
 #define CC_DIRECTOR_DEFAULT CCDirectorDisplayLink
-#elif defined(__CC_PLATFORM_MAC)
+#elif __CC_PLATFORM_MAC
 #import "Platforms/Mac/CCDirectorMac.h"
+#define CC_DIRECTOR_DEFAULT CCDirectorDisplayLink
+#elif __CC_PLATFORM_ANDROID
+#import "Platforms/Android/CCDirectorAndroid.h"
 #define CC_DIRECTOR_DEFAULT CCDirectorDisplayLink
 #endif
 
@@ -94,7 +96,9 @@ extern NSString * cocos2dVersion(void);
 -(void) calculateMPF;
 @end
 
-@implementation CCDirector
+@implementation CCDirector {
+	CCFrameBufferObject *_framebuffer;
+}
 
 @synthesize animationInterval = _animationInterval;
 @synthesize runningScene = _runningScene;
@@ -110,6 +114,7 @@ extern NSString * cocos2dVersion(void);
 @synthesize secondsPerFrame = _secondsPerFrame;
 @synthesize scheduler = _scheduler;
 @synthesize actionManager = _actionManager;
+@synthesize actionManagerFixed = _actionManagerFixed;
 
 //
 // singleton stuff
@@ -178,16 +183,30 @@ static CCDirector *_sharedDirector = nil;
 
 		// action manager
 		_actionManager = [[CCActionManager alloc] init];
+		_actionManagerFixed = [[CCFixedActionManager alloc] init];
+		
 		[_scheduler scheduleTarget:_actionManager];
-		[_scheduler setPaused:NO target:_actionManager];
-        
-        // touch manager
-        _responderManager = [ CCResponderManager responderManager ];
+		[_scheduler scheduleTarget:_actionManagerFixed];
 
+		[_scheduler setPaused:NO target:_actionManager];
+		[_scheduler setPaused:NO target:_actionManagerFixed];
+		
+		
+		// touch manager
+		_responderManager = [ CCResponderManager responderManager ];
+		
 		_winSizeInPixels = _winSizeInPoints = CGSizeZero;
 		
 		__ccContentScaleFactor = 1;
 		self.UIScaleFactor = 1;
+		
+		_rendererPool = [NSMutableArray array];
+		_globalShaderUniforms = [NSMutableDictionary dictionary];
+		
+		// Force the graphics API to be selected if it hasn't already done so.
+		// Startup code is annoyingly different for iOS/Mac/Android.
+		[[CCConfiguration sharedConfiguration] graphicsAPI];
+		_framebuffer = [[CCFrameBufferObjectClass alloc] init];
 	}
 
 	return self;
@@ -195,7 +214,7 @@ static CCDirector *_sharedDirector = nil;
 
 - (NSString*) description
 {
-	return [NSString stringWithFormat:@"<%@ = %p | Size: %0.f x %0.f, view = %@>", [self class], self, _winSizeInPoints.width, _winSizeInPoints.height, __view];
+	return [NSString stringWithFormat:@"<%@ = %p | Size: %0.f x %0.f, view = %@>", [self class], self, _winSizeInPoints.width, _winSizeInPoints.height, self.view];
 }
 
 - (void) dealloc
@@ -207,25 +226,81 @@ static CCDirector *_sharedDirector = nil;
 
 }
 
--(void) setGLDefaultValues
-{
-	// This method SHOULD be called only after __view was initialized
-	NSAssert( __view, @"__view must be initialized");
+- (void) drawScene
+{	
+    /* calculate "global" dt */
+	[self calculateDeltaTime];
 
-	[self setAlphaBlending: YES];
-	[self setDepthTest: __view.depthFormat];
-	[self setProjection: _projection];
+	/* tick before glClear: issue #533 */
+	if( ! _isPaused ) [_scheduler update: _dt];
 
-	// set other opengl default values
-	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+	/* to avoid flickr, nextScene MUST be here: after tick and before draw.
+	 XXX: Which bug is this one. It seems that it can't be reproduced with v0.9 */
+	if( _nextScene ) [self setNextScene];
+	
+	CC_VIEW<CCDirectorView> *ccview = self.view;
+	[ccview beginFrame];
+	
+	if(CCRenderDispatchBeginFrame()){
+		GLKMatrix4 projection = self.projectionMatrix;
+		
+		// Synchronize the framebuffer with the view.
+		[_framebuffer syncWithView:self.view];
+		
+		CCRenderer *renderer = [self rendererFromPool];
+		[renderer prepareWithProjection:&projection framebuffer:_framebuffer];
+		[CCRenderer bindRenderer:renderer];
+		
+		[renderer enqueueClear:(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT) color:_runningScene.colorRGBA.glkVector4 depth:1.0f stencil:0 globalSortOrder:NSIntegerMin];
+		
+		// Render
+		[_runningScene visit:renderer parentTransform:&projection];
+		[_notificationNode visit:renderer parentTransform:&projection];
+		if( _displayStats ) [self showStats];
+		
+		[CCRenderer bindRenderer:nil];
+		
+		CCRenderDispatchCommitFrame(renderer.threadsafe, ^{
+			[ccview addFrameCompletionHandler:^{
+				// Return the renderer to the pool when the frame completes.
+				[self poolRenderer:renderer];
+			}];
+			
+			[renderer flush];
+			[ccview presentFrame];
+		});
+		
+		_totalFrames++;
+		
+		if( _displayStats ) [self calculateMPF];
+	}
 }
 
-//
-// Draw the Scene
-//
-- (void) drawScene
+-(CCRenderer *)rendererFromPool
 {
-	// Override me
+	@synchronized(_rendererPool){
+		if(_rendererPool.count > 0){
+			CCRenderer *renderer = _rendererPool.lastObject;
+			[_rendererPool removeLastObject];
+			
+			return renderer;
+		}
+	}
+	
+	// Allocate and return a new renderer.
+	return [[CCRenderer alloc] init];
+}
+
+-(void)poolRenderer:(CCRenderer *)renderer
+{
+	@synchronized(_rendererPool){
+		[_rendererPool addObject:renderer];
+	}
+}
+
+-(void)addFrameCompletionHandler:(dispatch_block_t)handler
+{
+	[self.view addFrameCompletionHandler:handler];
 }
 
 -(void) calculateDeltaTime
@@ -247,7 +322,7 @@ static CCDirector *_sharedDirector = nil;
 		_dt = MAX(0,_dt);
 	}
 
-#ifdef DEBUG
+#if DEBUG
 	// If we are debugging our code, prevent big delta time
 	if( _dt > 0.2f )
 		_dt = 1/60.0f;
@@ -260,6 +335,12 @@ static CCDirector *_sharedDirector = nil;
 
 -(void) purgeCachedData
 {
+    if([_delegate respondsToSelector:@selector(purgeCachedData)])
+    {
+        [_delegate purgeCachedData];
+    }
+    
+	[CCRenderState flushCache];
 	[CCLabelBMFont purgeCachedData];
 	if ([_sharedDirector view])
 		[[CCTextureCache sharedTextureCache] removeUnusedTextures];
@@ -288,48 +369,22 @@ static CCDirector *_sharedDirector = nil;
 	CCLOG(@"cocos2d: override me");
 }
 
-- (void) setAlphaBlending: (BOOL) on
-{
-	if (on) {
-		ccGLBlendFunc(CC_BLEND_SRC, CC_BLEND_DST);
-
-	} else
-		ccGLBlendFunc(GL_ONE, GL_ZERO);
-
-	CHECK_GL_ERROR_DEBUG();
-}
-
-- (void) setDepthTest: (BOOL) on
-{
-	if (on) {
-		glClearDepth(1.0f);
-
-		glEnable(GL_DEPTH_TEST);
-		glDepthFunc(GL_LEQUAL);
-//		glHint(GL_PERSPECTIVE_CORRECTION_HINT, GL_NICEST);
-	} else
-		glDisable( GL_DEPTH_TEST );
-
-	CHECK_GL_ERROR_DEBUG();
-}
-
 #pragma mark Director Integration with a UIKit view
 
--(void) setView:(CCGLView*)view
+-(void) setView:(CC_VIEW<CCDirectorView> *)view
 {
-//	NSAssert( view, @"OpenGLView must be non-nil");
-
-	if( view != __view ) {
-	
-#ifdef __CC_PLATFORM_IOS
+#if __CC_PLATFORM_IOS
 		[super setView:view];
+#else 
+		_view = view;
 #endif
-		__view = view;
 
 		// set size
-		CGSize size = CCNSSizeToCGSize(__view.bounds.size);
-#ifdef __CC_PLATFORM_IOS
-		CGFloat scale = __view.layer.contentsScale ?: 1.0;
+		CGSize size = CCNSSizeToCGSize(self.view.bounds.size);
+#if __CC_PLATFORM_IOS
+		CGFloat scale = self.view.layer.contentsScale ?: 1.0;
+#elif __CC_PLATFORM_ANDROID
+        CGFloat scale = _view.contentScaleFactor;
 #else
 		//self.view.wantsBestResolutionOpenGLSurface = YES;
 		CGFloat scale = self.view.window.backingScaleFactor;
@@ -341,20 +396,13 @@ static CCDirector *_sharedDirector = nil;
 
 		// it could be nil
 		if( view ) {
+            
 			[self createStatsLabel];
-			[self setGLDefaultValues];
+			[self setProjection: _projection];
 		}
 
 		// Dump info once OpenGL was initilized
 		[[CCConfiguration sharedConfiguration] dumpInfo];
-
-		CHECK_GL_ERROR_DEBUG();
-	}
-}
-
--(CCGLView*) view
-{
-	return  __view;
 }
 
 
@@ -381,18 +429,6 @@ static CCDirector *_sharedDirector = nil;
 	}
 }
 
-static void
-GLToClipTransform(kmMat4 *transformOut)
-{
-	kmMat4 projection;
-	kmGLGetMatrix(KM_GL_PROJECTION, &projection);
-	
-	kmMat4 modelview;
-	kmGLGetMatrix(KM_GL_MODELVIEW, &modelview);
-	
-	kmMat4Multiply(transformOut, &projection, &modelview);
-}
-
 -(CGFloat)flipY
 {
 	return -1.0;
@@ -400,38 +436,29 @@ GLToClipTransform(kmMat4 *transformOut)
 
 -(CGPoint)convertToGL:(CGPoint)uiPoint
 {
-	kmMat4 transform;
-	GLToClipTransform(&transform);
-	
-	kmMat4 transformInv;
-	kmMat4Inverse(&transformInv, &transform);
+	GLKMatrix4 transform = self.projectionMatrix;
+	GLKMatrix4 invTransform = GLKMatrix4Invert(transform, NULL);
 	
 	// Calculate z=0 using -> transform*[0, 0, 0, 1]/w
-	kmScalar zClip = transform.mat[14]/transform.mat[15];
+	float zClip = transform.m[14]/transform.m[15];
 	
-	CGSize glSize = __view.bounds.size;
-	kmVec3 clipCoord = {2.0*uiPoint.x/glSize.width - 1.0, 2.0*uiPoint.y/glSize.height - 1.0, zClip};
+	CGSize glSize = self.view.bounds.size;
+	GLKVector3 clipCoord = GLKVector3Make(2.0*uiPoint.x/glSize.width - 1.0, 2.0*uiPoint.y/glSize.height - 1.0, zClip);
+	
 	clipCoord.y *= self.flipY;
 	
-	kmVec3 glCoord;
-	kmVec3TransformCoord(&glCoord, &clipCoord, &transformInv);
-	
-//	NSLog(@"uiPoint: %@, glPoint: %@", NSStringFromCGPoint(uiPoint), NSStringFromCGPoint(ccp(glCoord.x, glCoord.y)));
+	GLKVector3 glCoord = GLKMatrix4MultiplyAndProjectVector3(invTransform, clipCoord);
 	return ccp(glCoord.x, glCoord.y);
 }
 
 -(CGPoint)convertToUI:(CGPoint)glPoint
 {
-	kmMat4 transform;
-	GLToClipTransform(&transform);
+	GLKMatrix4 transform = self.projectionMatrix;
 		
-	kmVec3 clipCoord;
-	// Need to calculate the zero depth from the transform.
-	kmVec3 glCoord = {glPoint.x, glPoint.y, 0.0};
-	kmVec3TransformCoord(&clipCoord, &glCoord, &transform);
+	GLKVector3 clipCoord = GLKMatrix4MultiplyAndProjectVector3(transform, GLKVector3Make(glPoint.x, glPoint.y, 0.0));
 	
-	CGSize glSize = __view.bounds.size;
-	return ccp(glSize.width*(clipCoord.x*0.5 + 0.5), glSize.height*(self.flipY*clipCoord.y*0.5 + 0.5));
+	CGSize glSize = self.view.bounds.size;
+	return ccp(glSize.width*(clipCoord.v[0]*0.5 + 0.5), glSize.height*(self.flipY*clipCoord.v[1]*0.5 + 0.5));
 }
 
 -(CGSize)viewSize
@@ -446,23 +473,21 @@ GLToClipTransform(kmMat4 *transformOut)
 
 -(CGRect)viewportRect
 {
+	GLKMatrix4 projection = self.projectionMatrix;
+	
 	// TODO It's _possible_ that a user will use a non-axis aligned projection. Weird, but possible.
-	kmMat4 transform;
-	GLToClipTransform(&transform);
-		
-	kmMat4 transformInv;
-	kmMat4Inverse(&transformInv, &transform);
+	GLKMatrix4 projectionInv = GLKMatrix4Invert(projection, NULL);
 	
 	// Calculate z=0 using -> transform*[0, 0, 0, 1]/w
-	kmScalar zClip = transform.mat[14]/transform.mat[15];
+	float zClip = projection.m[14]/projection.m[15];
 	
-	// Bottom left and top right coordinates of viewport in clip coords.
-	kmVec3 clipBL = {-1.0, -1.0, zClip};
-	kmVec3 clipTR = { 1.0,  1.0, zClip};
+	// Bottom left and top right coords of viewport in clip coords.
+	GLKVector3 clipBL = GLKVector3Make(-1.0, -1.0, zClip);
+	GLKVector3 clipTR = GLKVector3Make( 1.0,  1.0, zClip);
 	
-	kmVec3 glBL, glTR;
-	kmVec3TransformCoord(&glBL, &clipBL, &transformInv);
-	kmVec3TransformCoord(&glTR, &clipTR, &transformInv);
+	// Bottom left and top right coords in GL coords.
+	GLKVector3 glBL = GLKMatrix4MultiplyAndProjectVector3(projectionInv, clipBL);
+	GLKVector3 glTR = GLKMatrix4MultiplyAndProjectVector3(projectionInv, clipTR);
 	
 	return CGRectMake(glBL.x, glBL.y, glTR.x - glBL.x, glTR.y - glBL.y);
 }
@@ -473,12 +498,14 @@ GLToClipTransform(kmMat4 *transformOut)
 	return (CGSizeEqualToSize(_designSize, CGSizeZero) ? self.viewSize : _designSize);
 }
 
--(void) reshapeProjection:(CGSize)newWindowSize
+-(void) reshapeProjection:(CGSize)newViewSize
 {
-	_winSizeInPixels = newWindowSize;
+	_winSizeInPixels = newViewSize;
 	_winSizeInPoints = CGSizeMake( _winSizeInPixels.width / __ccContentScaleFactor, _winSizeInPixels.height / __ccContentScaleFactor );
 	
 	[self setProjection:_projection];
+	
+	[_runningScene viewDidResizeTo: _winSizeInPoints];
 }
 
 #pragma mark Director Scene Management
@@ -524,7 +551,7 @@ GLToClipTransform(kmMat4 *transformOut)
     
     [_scenesStack addObject:scene];
     _sendCleanupToScene = NO;
-    [transition performSelector:@selector(startTransition:) withObject:scene];
+    [transition startTransition:scene];
 }
 
 -(void) popScene
@@ -555,13 +582,19 @@ GLToClipTransform(kmMat4 *transformOut)
         [_scenesStack removeLastObject];
         CCScene * incomingScene = [_scenesStack lastObject];
         _sendCleanupToScene = YES;
-        [transition performSelector:@selector(startTransition:) withObject:incomingScene];
+        [transition startTransition:incomingScene];
     }
 }
 
 -(void) popToRootScene
 {
 	[self popToSceneStackLevel:1];
+}
+
+-(void) popToRootSceneWithTransition:(CCTransition *)transition {
+	[self popToRootScene];
+	_sendCleanupToScene = YES;
+    [transition startTransition:_nextScene];
 }
 
 -(void) popToSceneStackLevel:(NSUInteger)level
@@ -619,7 +652,7 @@ GLToClipTransform(kmMat4 *transformOut)
 {
     // the transition gets to become the running scene
     _sendCleanupToScene = YES;
-    [transition performSelector:@selector(startTransition:) withObject:scene];
+    [transition startTransition:scene];
 }
 
 // -----------------------------------------------------------------
@@ -638,6 +671,11 @@ GLToClipTransform(kmMat4 *transformOut)
 
 -(void) end
 {
+    if([_delegate respondsToSelector:@selector(end)])
+    {
+        [_delegate end];
+    }
+    
 	[_runningScene onExitTransitionDidStart];
 	[_runningScene onExit];
 	[_runningScene cleanup];
@@ -664,7 +702,6 @@ GLToClipTransform(kmMat4 *transformOut)
 	[CCAnimationCache purgeSharedAnimationCache];
 	[CCSpriteFrameCache purgeSharedSpriteFrameCache];
 	[CCTextureCache purgeSharedTextureCache];
-	[CCShaderCache purgeSharedShaderCache];
 	[[CCFileUtils sharedFileUtils] purgeCachedEntries];
 
 	// OpenGL view
@@ -672,12 +709,8 @@ GLToClipTransform(kmMat4 *transformOut)
 	// Since the director doesn't attach the openglview to the window
 	// it shouldn't remove it from the window too.
 //	[openGLView_ removeFromSuperview];
-
-
-	// Invalidate GL state cache
-	ccGLInvalidateStateCache();
-
-	CHECK_GL_ERROR();
+	
+	CC_CHECK_GL_ERROR_DEBUG();
 }
 
 -(void) setNextScene
@@ -738,6 +771,11 @@ GLToClipTransform(kmMat4 *transformOut)
 	if( _isPaused )
 		return;
 
+    if([_delegate respondsToSelector:@selector(pause)])
+    {
+        [_delegate pause];
+    }
+    
 	_oldAnimationInterval = _animationInterval;
 
 	// when paused, don't consume CPU
@@ -752,7 +790,12 @@ GLToClipTransform(kmMat4 *transformOut)
 {
 	if( ! _isPaused )
 		return;
-
+    
+    if([_delegate respondsToSelector:@selector(resume)])
+    {
+        [_delegate resume];
+    }
+    
 	[self setAnimationInterval: _oldAnimationInterval];
 
 	if( gettimeofday( &_lastUpdate, NULL) != 0 ) {
@@ -768,6 +811,11 @@ GLToClipTransform(kmMat4 *transformOut)
 
 - (void)startAnimation
 {
+    if([_delegate respondsToSelector:@selector(startAnimation)])
+    {
+        [_delegate startAnimation];
+    }
+    
 	_nextDeltaTimeZero = YES;
 }
 
@@ -778,7 +826,7 @@ GLToClipTransform(kmMat4 *transformOut)
 
 - (void)setAnimationInterval:(NSTimeInterval)interval
 {
-	CCLOG(@"cocos2d: Director#setAnimationInterval. Override me");
+	//CCLOG(@"cocos2d: Director#setAnimationInterval. Override me");
 }
 
 - (CCTime)fixedUpdateInterval
@@ -791,6 +839,74 @@ GLToClipTransform(kmMat4 *transformOut)
 	self.scheduler.fixedUpdateInterval = fixedUpdateInterval;
 }
 
+@end
+
+
+@interface CCFPSLabel : CCNode<CCTextureProtocol>
+@property(nonatomic, strong) NSString *string;
+@end
+
+static const int CCFPSLabelChars = 12;
+static const float CCFPSLabelItemWidth = 12;
+static const float CCFPSLabelItemHeight = 32;
+
+@implementation CCFPSLabel {
+	CCSpriteVertexes _charVertexes[CCFPSLabelChars];
+}
+
+-(instancetype)initWithString:(NSString *)string texture:(CCTexture *)texture
+{
+	if((self = [super init])){
+		_string = string;
+		
+		self.texture = texture;
+		self.shader = [CCShader positionTextureColorShader];
+		
+		float w = CCFPSLabelItemWidth;
+		float h = CCFPSLabelItemHeight;
+		
+		float tx = CCFPSLabelItemWidth/texture.contentSize.width;
+		float ty = CCFPSLabelItemHeight/texture.contentSize.height;
+		
+		for(int i=0; i<CCFPSLabelChars; i++){
+			float tx0 = i*tx;
+			float tx1 = (i + 1)*tx;
+			_charVertexes[i].bl = (CCVertex){GLKVector4Make(0.0f, 0.0f, 0.0f, 1.0f), GLKVector2Make(tx0, 0.0f), GLKVector2Make(0.0f, 0.0f), GLKVector4Make(1.0f, 1.0f, 1.0f, 1.0f)};
+			_charVertexes[i].br = (CCVertex){GLKVector4Make(   w, 0.0f, 0.0f, 1.0f), GLKVector2Make(tx1, 0.0f), GLKVector2Make(0.0f, 0.0f), GLKVector4Make(1.0f, 1.0f, 1.0f, 1.0f)};
+			_charVertexes[i].tr = (CCVertex){GLKVector4Make(   w,    h, 0.0f, 1.0f), GLKVector2Make(tx1,   ty), GLKVector2Make(0.0f, 0.0f), GLKVector4Make(1.0f, 1.0f, 1.0f, 1.0f)};
+			_charVertexes[i].tl = (CCVertex){GLKVector4Make(0.0f,    h, 0.0f, 1.0f), GLKVector2Make(tx0,   ty), GLKVector2Make(0.0f, 0.0f), GLKVector4Make(1.0f, 1.0f, 1.0f, 1.0f)};
+		}
+	}
+	
+	return self;
+}
+
+-(void)draw:(CCRenderer *)renderer transform:(const GLKMatrix4 *)transform
+{
+	for(int i=0; i<_string.length; i++){
+		int c = [_string characterAtIndex:i];
+		
+		// Skip spaces.
+		if(c == ' ') continue;
+		
+		// Index relative to '.'.
+		c = MAX(0, MIN(CCFPSLabelChars - 1, c - '.'));
+		GLKMatrix4 t = GLKMatrix4Multiply(*transform, GLKMatrix4MakeTranslation(i*CCFPSLabelItemWidth, 0.0f, 0.0f));
+		
+		CCRenderBuffer buffer = [renderer enqueueTriangles:2 andVertexes:4 withState:self.renderState globalSortOrder:NSIntegerMax];
+		CCRenderBufferSetVertex(buffer, 0, CCVertexApplyTransform(_charVertexes[c].bl, &t));
+		CCRenderBufferSetVertex(buffer, 1, CCVertexApplyTransform(_charVertexes[c].br, &t));
+		CCRenderBufferSetVertex(buffer, 2, CCVertexApplyTransform(_charVertexes[c].tr, &t));
+		CCRenderBufferSetVertex(buffer, 3, CCVertexApplyTransform(_charVertexes[c].tl, &t));
+		CCRenderBufferSetTriangle(buffer, 0, 0, 1, 2);
+		CCRenderBufferSetTriangle(buffer, 1, 0, 2, 3);
+	}
+}
+
+@end
+
+
+@implementation CCDirector(Stats)
 
 // display statistics
 -(void) showStats
@@ -816,13 +932,16 @@ GLToClipTransform(kmMat4 *transformOut)
 			NSString *fpsstr = [[NSString alloc] initWithFormat:@"%.1f", _frameRate];
 			[_FPSLabel setString:fpsstr];
 			
-			NSString *draws = [[NSString alloc] initWithFormat:@"%4lu", (unsigned long)__ccNumberOfDraws];
+			// Subtract one for the stat label's own batch. This caused a lot of confusion on the forums...
+			NSString *draws = [[NSString alloc] initWithFormat:@"%4lu", (unsigned long)__ccNumberOfDraws - 1];
 			[_drawsLabel setString:draws];
 		}
-
-		[_drawsLabel visit];
-		[_FPSLabel visit];
-		[_SPFLabel visit];
+		
+		// TODO should pass as a parameter instead? Requires changing method signatures...
+		CCRenderer *renderer = [CCRenderer currentRenderer];
+		[_drawsLabel visit:renderer parentTransform:&_projectionMatrix];
+		[_FPSLabel visit:renderer parentTransform:&_projectionMatrix];
+		[_SPFLabel visit:renderer parentTransform:&_projectionMatrix];
 	}
 	
 	__ccNumberOfDraws = 0;
@@ -835,8 +954,6 @@ GLToClipTransform(kmMat4 *transformOut)
 
 	_secondsPerFrame = (now.tv_sec - _lastUpdate.tv_sec) + (now.tv_usec - _lastUpdate.tv_usec) / 1000000.0f;
 }
-
-#pragma mark Director - Helper
 
 -(void)getFPSImageData:(unsigned char**)datapointer length:(NSUInteger*)len contentScale:(CGFloat *)scale
 {
@@ -870,13 +987,13 @@ GLToClipTransform(kmMat4 *transformOut)
 	CGDataProviderRelease(imgDataProvider);
 	CGImageRelease(imageRef);
 
-	_FPSLabel = [[CCLabelAtlas alloc]  initWithString:@"00.0" texture:texture itemWidth:12 itemHeight:32 startCharMap:'.'];
-	_SPFLabel = [[CCLabelAtlas alloc]  initWithString:@"0.000" texture:texture itemWidth:12 itemHeight:32 startCharMap:'.'];
-	_drawsLabel = [[CCLabelAtlas alloc]  initWithString:@"000" texture:texture itemWidth:12 itemHeight:32 startCharMap:'.'];
+	_FPSLabel = [[CCFPSLabel alloc]  initWithString:@"00.0" texture:texture];
+	_SPFLabel = [[CCFPSLabel alloc]  initWithString:@"0.000" texture:texture];
+	_drawsLabel = [[CCFPSLabel alloc]  initWithString:@"000" texture:texture];
 
 	[CCTexture setDefaultAlphaPixelFormat:currentFormat];
 	
-	CGPoint offset = [self convertToGL:ccp(0, (self.flipY == 1.0) ? 0 : __view.bounds.size.height)];
+	CGPoint offset = [self convertToGL:ccp(0, (self.flipY == 1.0) ? 0 : self.view.bounds.size.height)];
 	CGPoint pos = ccpAdd(CC_DIRECTOR_STATS_POSITION, offset);
 	[_drawsLabel setPosition: ccpAdd( ccp(0,34), pos ) ];
 	[_SPFLabel setPosition: ccpAdd( ccp(0,17), pos ) ];
@@ -884,4 +1001,3 @@ GLToClipTransform(kmMat4 *transformOut)
 }
 
 @end
-

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCEffectHue.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCEffectHue</TokenIdentifier>
+			<Abstract type="html">CCEffectHue adjusts the hue of the sprite or effect node it is attached to.</Abstract>
+			<DeclaredIn>CCEffectHue.h</DeclaredIn>
+            
+			
+			<NodeRef refid="81"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectHue/setHue:</TokenIdentifier>
+			<Abstract type="html">The adjustment value that is used to shift the hue of the affected pixel colors. This
+value is in the range [-180..180] and represents the angle of rotation of the color
+values in the HSV color space. In HSV space, the color red is at 0 degrees, green is at
+120 degrees, and blue is at 240 degrees. So if you have a red sprite and you apply a
+hue adjustment of 120 you will get a green sprite. Instead if you apply a hue adjustment
+of -120 you will get a blue sprite.</Abstract>
+			<DeclaredIn>CCEffectHue.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float hue</Declaration>
+			
+			
+			<Anchor>//api/name/hue</Anchor>
+            <NodeRef refid="81"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectHue/hue</TokenIdentifier>
+			<Abstract type="html">The adjustment value that is used to shift the hue of the affected pixel colors. This
+value is in the range [-180..180] and represents the angle of rotation of the color
+values in the HSV color space. In HSV space, the color red is at 0 degrees, green is at
+120 degrees, and blue is at 240 degrees. So if you have a red sprite and you apply a
+hue adjustment of 120 you will get a green sprite. Instead if you apply a hue adjustment
+of -120 you will get a blue sprite.</Abstract>
+			<DeclaredIn>CCEffectHue.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float hue</Declaration>
+			
+			
+			<Anchor>//api/name/hue</Anchor>
+            <NodeRef refid="81"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectHue/hue</TokenIdentifier>
+			<Abstract type="html">The adjustment value that is used to shift the hue of the affected pixel colors. This
+value is in the range [-180..180] and represents the angle of rotation of the color
+values in the HSV color space. In HSV space, the color red is at 0 degrees, green is at
+120 degrees, and blue is at 240 degrees. So if you have a red sprite and you apply a
+hue adjustment of 120 you will get a green sprite. Instead if you apply a hue adjustment
+of -120 you will get a blue sprite.</Abstract>
+			<DeclaredIn>CCEffectHue.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float hue</Declaration>
+			
+			
+			<Anchor>//api/name/hue</Anchor>
+            <NodeRef refid="81"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectHue/init</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectHue object with a hue adjustment of 0.</Abstract>
+			<DeclaredIn>CCEffectHue.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCEffectHue object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="81"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectHue/initWithHue:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectHue object with the supplied parameters.</Abstract>
+			<DeclaredIn>CCEffectHue.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithHue:(float)hue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hue</Name>
+					<Abstract type="html">The desired hue adjustment.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectHue object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithHue:</Anchor>
+            <NodeRef refid="81"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCEffectHue/effectWithHue:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectHue object with the supplied parameters.</Abstract>
+			<DeclaredIn>CCEffectHue.h</DeclaredIn>
+			
+			<Declaration>+ (id)effectWithHue:(float)hue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>hue</Name>
+					<Abstract type="html">The desired hue adjustment.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectHue object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effectWithHue:</Anchor>
+            <NodeRef refid="81"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

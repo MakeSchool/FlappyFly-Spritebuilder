@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCProgressNode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCProgressNode</TokenIdentifier>
+			<Abstract type="html">CCProgressNode displays a sprite with a progressive reveal.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+            
+			
+			<NodeRef refid="106"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/setType:</TokenIdentifier>
+			<Abstract type="html">	Progress type. </Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCProgressNodeType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/type</TokenIdentifier>
+			<Abstract type="html">	Progress type. </Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCProgressNodeType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCProgressNode/type</TokenIdentifier>
+			<Abstract type="html">	Progress type. </Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCProgressNodeType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/setReverseDirection:</TokenIdentifier>
+			<Abstract type="html">	Reverse progress direction. </Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL reverseDirection</Declaration>
+			
+			
+			<Anchor>//api/name/reverseDirection</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/reverseDirection</TokenIdentifier>
+			<Abstract type="html">	Reverse progress direction. </Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL reverseDirection</Declaration>
+			
+			
+			<Anchor>//api/name/reverseDirection</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCProgressNode/reverseDirection</TokenIdentifier>
+			<Abstract type="html">	Reverse progress direction. </Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL reverseDirection</Declaration>
+			
+			
+			<Anchor>//api/name/reverseDirection</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/setMidpoint:</TokenIdentifier>
+			<Abstract type="html">Progress start position.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint midpoint</Declaration>
+			
+			
+			<Anchor>//api/name/midpoint</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/midpoint</TokenIdentifier>
+			<Abstract type="html">Progress start position.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint midpoint</Declaration>
+			
+			
+			<Anchor>//api/name/midpoint</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCProgressNode/midpoint</TokenIdentifier>
+			<Abstract type="html">Progress start position.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint midpoint</Declaration>
+			
+			
+			<Anchor>//api/name/midpoint</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/setBarChangeRate:</TokenIdentifier>
+			<Abstract type="html">Bar change rate.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint barChangeRate</Declaration>
+			
+			
+			<Anchor>//api/name/barChangeRate</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/barChangeRate</TokenIdentifier>
+			<Abstract type="html">Bar change rate.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint barChangeRate</Declaration>
+			
+			
+			<Anchor>//api/name/barChangeRate</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCProgressNode/barChangeRate</TokenIdentifier>
+			<Abstract type="html">Bar change rate.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint barChangeRate</Declaration>
+			
+			
+			<Anchor>//api/name/barChangeRate</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/setPercentage:</TokenIdentifier>
+			<Abstract type="html">Progress percentage.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) float percentage</Declaration>
+			
+			
+			<Anchor>//api/name/percentage</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/percentage</TokenIdentifier>
+			<Abstract type="html">Progress percentage.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) float percentage</Declaration>
+			
+			
+			<Anchor>//api/name/percentage</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCProgressNode/percentage</TokenIdentifier>
+			<Abstract type="html">Progress percentage.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) float percentage</Declaration>
+			
+			
+			<Anchor>//api/name/percentage</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/setSprite:</TokenIdentifier>
+			<Abstract type="html">The Sprite to use.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCSprite *sprite</Declaration>
+			
+			
+			<Anchor>//api/name/sprite</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/sprite</TokenIdentifier>
+			<Abstract type="html">The Sprite to use.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCSprite *sprite</Declaration>
+			
+			
+			<Anchor>//api/name/sprite</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCProgressNode/sprite</TokenIdentifier>
+			<Abstract type="html">The Sprite to use.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCSprite *sprite</Declaration>
+			
+			
+			<Anchor>//api/name/sprite</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCProgressNode/progressWithSprite:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a progress node object using the specified sprite value.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>+ (id)progressWithSprite:(CCSprite *)sprite</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sprite</Name>
+					<Abstract type="html">The CCSprite to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCProgressNode Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/progressWithSprite:</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCProgressNode/initWithSprite:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a progress node object using the specified sprite value.</Abstract>
+			<DeclaredIn>CCProgressNode.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithSprite:(CCSprite *)sprite</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sprite</Name>
+					<Abstract type="html">The CCSprite to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCProgressNode Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSprite:</Anchor>
+            <NodeRef refid="106"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

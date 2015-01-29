@@ -32,6 +32,7 @@
 #import "CCDirector.h"
 #import "CCDirectorMac.h"
 #import "CCScene.h"
+#import "CCTouch.h"
 
 // -----------------------------------------------------------------
 #pragma mark -
@@ -103,31 +104,29 @@
     _dirty = NO;
 }
 
--( void )buildResponderList:(CCNode *)node
+- (void)buildResponderList:(CCNode *)node
 {
-    BOOL nodeAdded = NO;
-    
     // dont add invisible nodes
     if (!node.visible) return;
     
-    if ((node.children) && (node.children.count > 0))
+    BOOL shouldAddNode = node.isUserInteractionEnabled;
+    
+    if (node.children.count)
     {
-        // scan through children, and build responderlist
+        // scan through children, and build responder list
         for (CCNode *child in node.children)
         {
-            if ((child.zOrder >= 0) && (!nodeAdded) && (node.isUserInteractionEnabled))
+            if (shouldAddNode && child.zOrder >= 0)
             {
                 [self addResponder:node];
-                nodeAdded = YES;
+                shouldAddNode = NO;
             }
             [self buildResponderList:child];
         }
     }
-    else
-    {
-        // only add self
-        if (node.isUserInteractionEnabled) [self addResponder:node];
-    }
+    
+    // if eligible, add the current node to the responder list
+    if (shouldAddNode) [self addResponder:node];
 }
 
 // -----------------------------------------------------------------
@@ -224,24 +223,25 @@
 #pragma mark - iOS touch handling -
 // -----------------------------------------------------------------
 
-#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+//#if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
+#if __CC_PLATFORM_IOS || __CC_PLATFORM_ANDROID
+- (void)touchesBegan:(NSSet *)touches withEvent:(CCTouchEvent *)event
 {
     if (!_enabled) return;
     if (_exclusiveMode) return;
-    
+
     // End editing any text fields
+#if __CC_PLATFORM_IOS
     [[CCDirector sharedDirector].view endEditing:YES];
-    
+#endif
     BOOL responderCanAcceptTouch;
     
     if (_dirty) [self buildResponderList];
     
     // go through all touches
-    for (UITouch *touch in touches)
+    for (CCTouch *touch in touches)
     {
-        CGPoint worldTouchLocation = [[CCDirector sharedDirector] convertToGL:[touch locationInView:[CCDirector sharedDirector].view]];
+        CGPoint worldTouchLocation = [[CCDirector sharedDirector] convertToGL:[touch locationInView:(CCGLView*)[CCDirector sharedDirector].view]];
         
         // scan backwards through touch responders
         for (int index = _responderListCount - 1; index >= 0; index --)
@@ -292,13 +292,13 @@
 
 // -----------------------------------------------------------------
 
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)touchesMoved:(NSSet *)touches withEvent:(CCTouchEvent *)event
 {
     if (!_enabled) return;
     if (_dirty) [self buildResponderList];
 
     // go through all touches
-    for (UITouch *touch in touches)
+    for (CCTouch *touch in touches)
     {
         // get touch object
         CCRunningResponder *touchEntry = [self responderForTouch:touch];
@@ -318,7 +318,7 @@
             else
             {
                 // as node does not lock touch, check if it was moved outside
-                if (![node hitTestWithWorldPos:[[CCDirector sharedDirector] convertToGL:[touch locationInView:[CCDirector sharedDirector].view]]])
+                if (![node hitTestWithWorldPos:[[CCDirector sharedDirector] convertToGL:[touch locationInView:(CCGLView*)[CCDirector sharedDirector].view]]])
                 {
                     // cancel the touch
                     if ([node respondsToSelector:@selector(touchCancelled:withEvent:)])
@@ -347,7 +347,7 @@
                     CCNode *node = _responderList[index];
                     
                     // if the touch responder does not lock touch, it will receive a touchBegan if a touch is moved inside
-                    if (!node.claimsUserInteraction  && [node hitTestWithWorldPos:[[CCDirector sharedDirector] convertToGL:[touch locationInView:[CCDirector sharedDirector].view ]]])
+                    if (!node.claimsUserInteraction  && [node hitTestWithWorldPos:[[CCDirector sharedDirector] convertToGL:[touch locationInView:(CCGLView*)[CCDirector sharedDirector].view ]]])
                     {
                         // check if node has exclusive touch
                         if (node.isExclusiveTouch)
@@ -376,13 +376,13 @@
 
 // -----------------------------------------------------------------
 
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)touchesEnded:(NSSet *)touches withEvent:(CCTouchEvent *)event
 {
     if (!_enabled) return;
     if (_dirty) [self buildResponderList];
-
+    
     // go through all touches
-    for (UITouch *touch in touches)
+    for (CCTouch *touch in touches)
     {
         // get touch object
         CCRunningResponder *touchEntry = [self responderForTouch:touch];
@@ -405,13 +405,13 @@
 
 // -----------------------------------------------------------------
 
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+- (void)touchesCancelled:(NSSet *)touches withEvent:(CCTouchEvent *)event
 {
     if (!_enabled) return;
     if (_dirty) [self buildResponderList];
 
     // go through all touches
-    for (UITouch *touch in touches)
+    for (CCTouch *touch in touches)
     {
         // get touch object
         CCRunningResponder *touchEntry = [self responderForTouch:touch];
@@ -431,11 +431,12 @@
 // -----------------------------------------------------------------
 // finds a responder object for a touch
 
-- (CCRunningResponder *)responderForTouch:(UITouch *)touch
+- (CCRunningResponder *)responderForTouch:(CCTouch *)touch
 {
     for (CCRunningResponder *touchEntry in _runningResponderList)
     {
-        if (touchEntry.touch == touch) return(touchEntry);
+        if (touchEntry.touch == touch)
+            return touchEntry;
     }
     return(nil);
 }
@@ -443,7 +444,7 @@
 // -----------------------------------------------------------------
 // adds a responder object ( running responder ) to the responder object list
 
-- (void)addResponder:(CCNode *)node withTouch:(UITouch *)touch andEvent:(UIEvent *)event
+- (void)addResponder:(CCNode *)node withTouch:(CCTouch *)touch andEvent:(CCTouchEvent *)event
 {
     CCRunningResponder *touchEntry;
     
@@ -471,7 +472,7 @@
 
 // -----------------------------------------------------------------
 
-#else
+#elif __CC_PLATFORM_MAC
 
 // -----------------------------------------------------------------
 #pragma mark - Mac mouse handling -

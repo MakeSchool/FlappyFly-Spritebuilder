@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CCRenderTextureImageFormat.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CCRenderTextureImageFormat</TokenIdentifier>
+			<Abstract type="html">Image format when saving render textures</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+            
+			
+			<NodeRef refid="140"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCRenderTextureImageFormatJPEG</TokenIdentifier>
+            <Abstract type="html">Image will be saved as JPEG</Abstract>
+            <Declaration>CCRenderTextureImageFormatJPEG</Declaration>
+            
+            <DeclaredIn>CCRenderTexture.h</DeclaredIn>
+            
+            <NodeRef refid="140"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCRenderTextureImageFormatPNG</TokenIdentifier>
+            <Abstract type="html">Image will be saved as PNG</Abstract>
+            <Declaration>CCRenderTextureImageFormatPNG</Declaration>
+            
+            <DeclaredIn>CCRenderTexture.h</DeclaredIn>
+            
+            <NodeRef refid="140"/>
+        </Token>
+        
+	</File>
+</Tokens>

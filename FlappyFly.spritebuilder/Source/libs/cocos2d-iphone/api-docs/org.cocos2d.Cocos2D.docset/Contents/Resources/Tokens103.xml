@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCPhysicsNode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCPhysicsNode</TokenIdentifier>
+			<Abstract type="html">A CCNode that enables physics simulation in it&apos;s children.
+To use CCPhysics, you create a physics node, and then attach CCPhysicsBody objects to any child node that you want to have gravity or collisions applied to.
+Physics nodes are also where you set up a delegate object that can tell you about collision events.
+Lastly, you can query for physics objects near a point, along a ray, or within a certain bounding box.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+            
+			
+			<NodeRef refid="103"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/setDebugDraw:</TokenIdentifier>
+			<Abstract type="html">Should the node draw a debug overlay of the joints and collision shapes? Defaults to NO.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL debugDraw</Declaration>
+			
+			
+			<Anchor>//api/name/debugDraw</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/debugDraw</TokenIdentifier>
+			<Abstract type="html">Should the node draw a debug overlay of the joints and collision shapes? Defaults to NO.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL debugDraw</Declaration>
+			
+			
+			<Anchor>//api/name/debugDraw</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsNode/debugDraw</TokenIdentifier>
+			<Abstract type="html">Should the node draw a debug overlay of the joints and collision shapes? Defaults to NO.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL debugDraw</Declaration>
+			
+			
+			<Anchor>//api/name/debugDraw</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/setGravity:</TokenIdentifier>
+			<Abstract type="html">Gravity applied to the dynamic bodies in the world. Defaults to CGPointZero.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint gravity</Declaration>
+			
+			
+			<Anchor>//api/name/gravity</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/gravity</TokenIdentifier>
+			<Abstract type="html">Gravity applied to the dynamic bodies in the world. Defaults to CGPointZero.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint gravity</Declaration>
+			
+			
+			<Anchor>//api/name/gravity</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsNode/gravity</TokenIdentifier>
+			<Abstract type="html">Gravity applied to the dynamic bodies in the world. Defaults to CGPointZero.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint gravity</Declaration>
+			
+			
+			<Anchor>//api/name/gravity</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/setIterations:</TokenIdentifier>
+			<Abstract type="html">The number of solver iterations the underlying physics engine should run.
+This allows you to tune the performance and quality of the physics.
+Low numbers will improve performance, but make the physics spongy or rubbery.
+High numbers will use more CPU time, but make the physics look more solid.
+The default value is 10.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int iterations</Declaration>
+			
+			
+			<Anchor>//api/name/iterations</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/iterations</TokenIdentifier>
+			<Abstract type="html">The number of solver iterations the underlying physics engine should run.
+This allows you to tune the performance and quality of the physics.
+Low numbers will improve performance, but make the physics spongy or rubbery.
+High numbers will use more CPU time, but make the physics look more solid.
+The default value is 10.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int iterations</Declaration>
+			
+			
+			<Anchor>//api/name/iterations</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsNode/iterations</TokenIdentifier>
+			<Abstract type="html">The number of solver iterations the underlying physics engine should run.
+This allows you to tune the performance and quality of the physics.
+Low numbers will improve performance, but make the physics spongy or rubbery.
+High numbers will use more CPU time, but make the physics look more solid.
+The default value is 10.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) int iterations</Declaration>
+			
+			
+			<Anchor>//api/name/iterations</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/setSleepTimeThreshold:</TokenIdentifier>
+			<Abstract type="html">Physics bodies fall asleep when a group of them move slowly for longer than the threshold.
+Sleeping bodies use minimal CPU resources and wake automatically when a collision happens.
+Defaults to 0.5 seconds.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCTime sleepTimeThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/sleepTimeThreshold</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/sleepTimeThreshold</TokenIdentifier>
+			<Abstract type="html">Physics bodies fall asleep when a group of them move slowly for longer than the threshold.
+Sleeping bodies use minimal CPU resources and wake automatically when a collision happens.
+Defaults to 0.5 seconds.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCTime sleepTimeThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/sleepTimeThreshold</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsNode/sleepTimeThreshold</TokenIdentifier>
+			<Abstract type="html">Physics bodies fall asleep when a group of them move slowly for longer than the threshold.
+Sleeping bodies use minimal CPU resources and wake automatically when a collision happens.
+Defaults to 0.5 seconds.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCTime sleepTimeThreshold</Declaration>
+			
+			
+			<Anchor>//api/name/sleepTimeThreshold</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/setCollisionDelegate:</TokenIdentifier>
+			<Abstract type="html">The delegate that is called when two physics bodies collide.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSObject&lt;CCPhysicsCollisionDelegate&gt; *collisionDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/collisionDelegate</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/collisionDelegate</TokenIdentifier>
+			<Abstract type="html">The delegate that is called when two physics bodies collide.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSObject&lt;CCPhysicsCollisionDelegate&gt; *collisionDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/collisionDelegate</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsNode/collisionDelegate</TokenIdentifier>
+			<Abstract type="html">The delegate that is called when two physics bodies collide.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSObject&lt;CCPhysicsCollisionDelegate&gt; *collisionDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/collisionDelegate</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/pointQueryAt:within:block:</TokenIdentifier>
+			<Abstract type="html">Find all CCPhysicsShapes within a certain distance of a point. The block is called once for each shape found.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>- (void)pointQueryAt:(CGPoint)point within:(CGFloat)radius block:(void ( ^ ) ( CCPhysicsShape *shape , CGPoint nearest , CGFloat distance ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>point</Name>
+					<Abstract type="html">Center point of query.</Abstract>
+				</Parameter><Parameter>
+					<Name>radius</Name>
+					<Abstract type="html">Radius to sweep.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">Block to execute per result.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/pointQueryAt:within:block:</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/rayQueryFirstFrom:to:block:</TokenIdentifier>
+			<Abstract type="html">Shoot a ray from &apos;start&apos; to &apos;end&apos; and find all of the CCPhysicsShapes that it would hit.
+The block is called once for each shape found.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>- (void)rayQueryFirstFrom:(CGPoint)start to:(CGPoint)end block:(void ( ^ ) ( CCPhysicsShape *shape , CGPoint point , CGPoint normal , CGFloat distance ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>start</Name>
+					<Abstract type="html">Start point.</Abstract>
+				</Parameter><Parameter>
+					<Name>end</Name>
+					<Abstract type="html">End point.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">Block to execute per result.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/rayQueryFirstFrom:to:block:</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsNode/rectQuery:block:</TokenIdentifier>
+			<Abstract type="html">Find all CCPhysicsShapes whose bounding boxes overlap the given CGRect.
+The block is called once for each shape found.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>- (void)rectQuery:(CGRect)rect block:(void ( ^ ) ( CCPhysicsShape *shape ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">Rectangle area to check.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">The block is called once for each shape found.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/rectQuery:block:</Anchor>
+            <NodeRef refid="103"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -27,10 +27,36 @@
 
 @implementation CCBKeyframe
 
-@synthesize value;
-@synthesize time;
-@synthesize easingType;
-@synthesize easingOpt;
+- (id)init
+{
+    self = [super init];
+    if (!self) return NULL;
+    
+    // Defaults
+    _value              = nil;
+    _time               = 0.0f;
+    _easingType         = 0;
+    _easingOpt          = 0.0f;
+    _frameActions       = nil;
+    
+    return self;
+}
 
+- (NSString *) description {
+    
+    NSString *description = [NSString localizedStringWithFormat:@"[CCAnimationKeyframe] value: %@, time: %f, easingType: %d, easingOpt: %f", self.value, self.time,self.easingType,self.easingOpt];
+    
+    return description;
+}
 
+- (id)copyWithZone:(NSZone *)zone
+{
+	CCBKeyframe * copyKeyframe = [[self class] allocWithZone:zone];
+	copyKeyframe->_value = self->_value;
+	copyKeyframe->_time = self->_time;
+	copyKeyframe->_easingType = self->_easingType;
+	copyKeyframe->_easingOpt = self->_easingOpt;
+
+	return copyKeyframe;
+}
 @end

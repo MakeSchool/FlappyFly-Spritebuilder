@@ -24,9 +24,8 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "cocos2d.h"
 
-@class CCBAnimationManager;
+#import "cocos2d.h"
 
 /**
  The CCBReader loads node graphs created by SpriteBuilder (or other editors using the same format). If you are using SpriteBuilder it's strongly recommended that you set up the CCFileUtils using the configureCCFileUtils method or use the Xcode project file created by SpriteBuilder.
@@ -37,7 +36,7 @@
  
  When all loading is complete, the didLoadFromCCB method will be called on all loaded nodes (if it has been implemented).
  
- If you are using animations a CCBAnimationManager will be assigned to all ccb-file root node's userObject properties. The top CCBAnimationManager is also assigned to the CCBReader's animationManager property.
+ If you are using animations a CCAnimationManager will be assigned to all ccb-file root node's animationManager property. The top CCAnimationManager is also assigned to the CCBReader's animationManager property.
  */
 @interface CCBReader : NSObject
 {
@@ -51,9 +50,11 @@
     
     id owner;
     
-    CCBAnimationManager* animationManager;
+    CCAnimationManager* animationManager;
     NSMutableDictionary* actionManagers;
     NSMutableSet* animatedProps;
+    NSMutableDictionary* nodeMapping;//Maps UUID -> Node
+	NSMutableArray * postDeserializationUUIDFixup;
 }
 
 /// -----------------------------------------------------------------------
@@ -152,9 +153,8 @@
 /// -----------------------------------------------------------------------
 
 /**
- *  Once a ccb-file has been loaded, the animationManager property will be set to contain the top level CCBAnimationManager
+ *  Once a ccb-file has been loaded, the animationManager property will be set to contain the top level CCAnimationManager
  */
-@property (nonatomic,strong) CCBAnimationManager* animationManager;
+@property (nonatomic,strong) CCAnimationManager* animationManager;
 
 @end
-

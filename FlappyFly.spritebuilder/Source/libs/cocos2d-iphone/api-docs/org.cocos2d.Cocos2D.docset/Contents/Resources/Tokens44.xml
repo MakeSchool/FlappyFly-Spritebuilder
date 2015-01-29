@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionProgressFromTo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionProgressFromTo</TokenIdentifier>
+			<Abstract type="html">This action is for use with the CCProgressNode to control the progression from and to animation.</Abstract>
+			<DeclaredIn>CCActionProgressTimer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="44"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionProgressFromTo/actionWithDuration:from:to:</TokenIdentifier>
+			<Abstract type="html">Creates a progress action.</Abstract>
+			<DeclaredIn>CCActionProgressTimer.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration from:(float)fromPercentage to:(float)toPercentage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>fromPercentage</Name>
+					<Abstract type="html">Percentage to start from.</Abstract>
+				</Parameter><Parameter>
+					<Name>toPercentage</Name>
+					<Abstract type="html">Percentage to end at.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New progress action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:from:to:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionProgressFromTo/initWithDuration:from:to:</TokenIdentifier>
+			<Abstract type="html">Initializes a progress action.</Abstract>
+			<DeclaredIn>CCActionProgressTimer.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration from:(float)fromPercentage to:(float)toPercentage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>fromPercentage</Name>
+					<Abstract type="html">Percentage to start from.</Abstract>
+				</Parameter><Parameter>
+					<Name>toPercentage</Name>
+					<Abstract type="html">Percentage to end at.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New progress action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:from:to:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

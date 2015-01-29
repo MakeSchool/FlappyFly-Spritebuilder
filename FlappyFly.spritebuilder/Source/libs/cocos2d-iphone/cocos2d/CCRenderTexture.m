@@ -27,8 +27,7 @@
 #import "CCRenderTexture.h"
 #import "CCDirector.h"
 #import "ccMacros.h"
-#import "CCGLProgram.h"
-#import "ccGLStateCache.h"
+#import "CCShader.h"
 #import "CCConfiguration.h"
 #import "Support/ccUtils.h"
 #import "Support/CCFileUtils.h"
@@ -37,21 +36,49 @@
 #import "CCTexture_Private.h"
 #import "CCDirector_Private.h"
 #import "CCNode_Private.h"
+#import "CCRenderer_Private.h"
+#import "CCRenderTexture_Private.h"
+#import "CCRenderDispatch.h"
+#import "CCMetalSupport_Private.h"
 
 #if __CC_PLATFORM_MAC
 #import <ApplicationServices/ApplicationServices.h>
 #endif
 
-// extern
-#import "kazmath/GL/matrix.h"
+
+
+
+@implementation CCRenderTextureSprite
+
+-(CCRenderState *)renderState
+{
+	if(_renderState == nil){
+		// Allowing the uniforms to be copied speeds up the rendering by making the render state immutable.
+		// Copy the uniforms if custom uniforms are not being used.
+		BOOL copyUniforms = self.hasDefaultShaderUniforms;
+		
+		// Create an uncached renderstate so the texture can be released before the renderstate cache is flushed.
+		_renderState = [CCRenderState renderStateWithBlendMode:_blendMode shader:_shader shaderUniforms:self.shaderUniforms copyUniforms:copyUniforms];
+	}
+	
+	return _renderState;
+}
+
+- (CGAffineTransform)nodeToWorldTransform
+{
+	CGAffineTransform t = [self nodeToParentTransform];
+    
+	for (CCNode *p = _renderTexture; p != nil; p = p.parent)
+    {
+		t = CGAffineTransformConcat(t, [p nodeToParentTransform]);
+    }
+	return t;
+}
+
+@end
+
 
 @implementation CCRenderTexture
-
-@synthesize sprite=_sprite;
-@synthesize autoDraw=_autoDraw;
-@synthesize clearDepth=_clearDepth;
-@synthesize clearStencil=_clearStencil;
-@synthesize clearFlags=_clearFlags;
 
 +(id)renderTextureWithWidth:(int)w height:(int)h pixelFormat:(CCTexturePixelFormat) format depthStencilFormat:(GLuint)depthStencilFormat
 {
@@ -59,7 +86,7 @@
 }
 
 // issue #994
-+(id)renderTextureWithWidth:(int)w height:(int)h pixelFormat:(CCTexturePixelFormat) format
++(id)renderTextureWithWidth:(int)w height:(int)h pixelFormat:(CCTexturePixelFormat)format
 {
 	return [[self alloc] initWithWidth:w height:h pixelFormat:format];
 }
@@ -79,11 +106,18 @@
   return [self initWithWidth:w height:h pixelFormat:format depthStencilFormat:0];
 }
 
--(id)initWithWidth:(int)w height:(int)h pixelFormat:(CCTexturePixelFormat) format depthStencilFormat:(GLuint)depthStencilFormat
+-(id)initWithWidth:(int)width height:(int)height pixelFormat:(CCTexturePixelFormat) format depthStencilFormat:(GLuint)depthStencilFormat
 {
-	if ((self = [super init]))
-	{
-		NSAssert(format != CCTexturePixelFormat_A8,@"only RGB and RGBA formats are valid for a render texture");
+	if((self = [super init])){
+#if __CC_METAL_SUPPORTED_AND_ENABLED
+		if([CCConfiguration sharedConfiguration].graphicsAPI == CCGraphicsAPIMetal){
+			NSAssert(format == CCTexturePixelFormat_RGBA8888, @"Only RGBA8 pixel formats are supported for Metal render textures. (The internally created texture is actually BRGA8)");
+			format = CCTexturePixelFormat_BGRA8888;
+		} else
+#endif
+		{
+			NSAssert(format != CCTexturePixelFormat_A8, @"only RGB and RGBA formats are valid for a render texture");
+		}
 
 		CCDirector *director = [CCDirector sharedDirector];
 
@@ -91,182 +125,191 @@
 		if( [director runningThread] != [NSThread currentThread] )
 			CCLOGWARN(@"cocos2d: WARNING. CCRenderTexture is running on its own thread. Make sure that an OpenGL context is being used on this thread!");
 
-		CGFloat scale = [CCDirector sharedDirector].contentScaleFactor;
-		w *= scale;
-		h *= scale;
+		_contentScale = [CCDirector sharedDirector].contentScaleFactor;
+		[self setContentSize:CGSizeMake(width, height)];
+		_pixelFormat = format;
+		_depthStencilFormat = depthStencilFormat;
 
-		glGetIntegerv(GL_FRAMEBUFFER_BINDING, &_oldFBO);
-
-		// textures must be power of two
-		NSUInteger powW;
-		NSUInteger powH;
-
-		if( [[CCConfiguration sharedConfiguration] supportsNPOT] ) {
-			powW = w;
-			powH = h;
-		} else {
-			powW = CCNextPOT(w);
-			powH = CCNextPOT(h);
-		}
-
-		void *data = malloc((int)(powW * powH * 4));
-		memset(data, 0, (int)(powW * powH * 4));
-		_pixelFormat=format;
-
-		_texture = [[CCTexture alloc] initWithData:data pixelFormat:_pixelFormat pixelsWide:powW pixelsHigh:powH contentSizeInPixels:CGSizeMake(w, h) contentScale:[CCDirector sharedDirector].contentScaleFactor];
-		free( data );
-
-		GLint oldRBO;
-		glGetIntegerv(GL_RENDERBUFFER_BINDING, &oldRBO);
-
-		// generate FBO
-		glGenFramebuffers(1, &_FBO);
-		glBindFramebuffer(GL_FRAMEBUFFER, _FBO);
-
-		// associate texture with FBO
-		glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, _texture.name, 0);
-
-		if (depthStencilFormat != 0) {
-			//create and attach depth buffer
-			glGenRenderbuffers(1, &_depthRenderBufffer);
-			glBindRenderbuffer(GL_RENDERBUFFER, _depthRenderBufffer);
-			glRenderbufferStorage(GL_RENDERBUFFER, depthStencilFormat, (GLsizei)powW, (GLsizei)powH);
-			glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, _depthRenderBufffer);
-
-			// if depth format is the one with stencil part, bind same render buffer as stencil attachment
-			if (depthStencilFormat == GL_DEPTH24_STENCIL8)
-				glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_STENCIL_ATTACHMENT, GL_RENDERBUFFER, _depthRenderBufffer);
-		}
-
-		// check if it worked (probably worth doing :) )
-		NSAssert( glCheckFramebufferStatus(GL_FRAMEBUFFER) == GL_FRAMEBUFFER_COMPLETE, @"Could not attach texture to framebuffer");
-
-		[_texture setAliasTexParameters];
-
-		// retained
-		self.sprite = [CCSprite spriteWithTexture:_texture];
-
-		[_sprite setScaleY:-1];
-
-		// issue #937
-		[_sprite setBlendFunc:(ccBlendFunc){GL_ONE, GL_ONE_MINUS_SRC_ALPHA}];
-		// issue #1464
-		[_sprite setOpacityModifyRGB:YES];
-
-		glBindRenderbuffer(GL_RENDERBUFFER, oldRBO);
-		glBindFramebuffer(GL_FRAMEBUFFER, _oldFBO);
+		self.projection = GLKMatrix4MakeOrtho(0.0f, width, 0.0f, height, -1024.0f, 1024.0f);
 		
+		CCRenderTextureSprite *rtSprite = [CCRenderTextureSprite spriteWithTexture:[CCTexture none]];
+		rtSprite.renderTexture = self;
+		_sprite = rtSprite;
+
 		// Diabled by default.
 		_autoDraw = NO;
-		
-		// add sprite for backward compatibility
-		[self addChild:_sprite];
 	}
+	
 	return self;
+}
+
+
+-(id)init
+{
+    return [self initWithWidth:0 height:0 pixelFormat:CCTexturePixelFormat_RGBA8888];
+}
+
+-(void)create
+{
+    CGSize pixelSize = CGSizeMake(_contentSize.width * _contentScale, _contentSize.height * _contentScale);
+    [self createTextureAndFboWithPixelSize:pixelSize];
+}
+
+-(void)createTextureAndFboWithPixelSize:(CGSize)pixelSize
+{
+	CCGL_DEBUG_PUSH_GROUP_MARKER("CCRenderTexture: Create");
+	
+	// textures must be power of two
+	NSUInteger powW;
+	NSUInteger powH;
+
+	if( [[CCConfiguration sharedConfiguration] supportsNPOT] ) {
+		powW = pixelSize.width;
+		powH = pixelSize.height;
+	} else {
+		powW = CCNextPOT(pixelSize.width);
+		powH = CCNextPOT(pixelSize.height);
+	}
+    
+	void *data = calloc(powW*powH, 4);
+	CCTexture *texture = [[CCTexture alloc] initWithData:data pixelFormat:_pixelFormat pixelsWide:powW pixelsHigh:powH contentSizeInPixels:pixelSize contentScale:_contentScale];
+	self.texture = texture;
+	free(data);
+	
+	// Render textures are nearest filtered for legacy reasons.
+	self.texture.antialiased = NO;
+	
+	_framebuffer = [[CCFrameBufferObjectClass alloc] initWithTexture:texture depthStencilFormat:_depthStencilFormat];
+	
+    // XXX Thayer says: I think this is incorrect for any situations where the content
+    // size type isn't (points, points). The call to setTextureRect below eventually arrives
+    // at some code that assumes the supplied size is in points so, if the size is not in points,
+    // things break.
+	[self assignSpriteTexture];
+	[_sprite setTextureRect:CGRectMake(0, 0, _contentSize.width, _contentSize.height)];
+}
+
+-(void)assignSpriteTexture
+{
+    _sprite.texture = self.texture;
+}
+
+-(void)setContentScale:(float)contentScale
+{
+	if(_contentScale != contentScale){
+		_contentScale = contentScale;
+		
+		[self destroy];
+	}
+}
+
+-(void)destroy
+{
+	_framebuffer = nil;
+	self.texture = nil;
 }
 
 -(void)dealloc
 {
-	glDeleteFramebuffers(1, &_FBO);
-	if (_depthRenderBufffer)
-		glDeleteRenderbuffers(1, &_depthRenderBufffer);
-
+	[self destroy];
 }
 
--(void)begin
+-(CCTexture *)texture
 {
-	kmGLMatrixMode(KM_GL_PROJECTION);
-	kmGLPushMatrix();
-	kmGLMatrixMode(KM_GL_MODELVIEW);
-	kmGLPushMatrix();
+    if (super.texture == nil)
+    {
+        [self create];
+    }
     
-	CCDirector *director = [CCDirector sharedDirector];
-    [director setProjection:director.projection];
-    
-	CGSize texSize = [_texture contentSizeInPixels];
-
-
-	// Calculate the adjustment ratios based on the old and new projections
-	CGSize size = [director viewSizeInPixels];
-	float widthRatio = size.width / texSize.width;
-	float heightRatio = size.height / texSize.height;
-
-
-	// Adjust the orthographic projection and viewport
-	glViewport(0, 0, texSize.width, texSize.height );
-
-	kmMat4 orthoMatrix;
-	kmMat4OrthographicProjection(&orthoMatrix, (float)-1.0 / widthRatio,  (float)1.0 / widthRatio,
-								 (float)-1.0 / heightRatio, (float)1.0 / heightRatio, -1,1 );
-	kmGLMultMatrix(&orthoMatrix);
-    
-
-	glGetIntegerv(GL_FRAMEBUFFER_BINDING, &_oldFBO);
-	glBindFramebuffer(GL_FRAMEBUFFER, _FBO);
+    return super.texture;
 }
 
--(void)beginWithClear:(float)r g:(float)g b:(float)b a:(float)a depth:(float)depthValue stencil:(int)stencilValue flags:(GLbitfield)flags
+static GLKMatrix4
+FlipY(GLKMatrix4 projection)
 {
-	[self begin];
-	
-	// save clear color
-	GLfloat	clearColor[4];
-	GLfloat depthClearValue;
-	int stencilClearValue;
-	
-	if(flags & GL_COLOR_BUFFER_BIT) {
-		glGetFloatv(GL_COLOR_CLEAR_VALUE,clearColor);
-		glClearColor(r, g, b, a);
+	return GLKMatrix4Multiply(GLKMatrix4MakeScale(1.0, -1.0, 1.0), projection);
+}
+
+// Metal texture coordinates are inverted compared to GL so the projection must be flipped.
+-(GLKMatrix4)projection
+{
+#if __CC_METAL_SUPPORTED_AND_ENABLED
+	if([CCConfiguration sharedConfiguration].graphicsAPI == CCGraphicsAPIMetal){
+		return FlipY(_projection);
+	} else
+#endif
+	{
+		return _projection;
+	}
+}
+
+-(void)setProjection:(GLKMatrix4)projection
+{
+#if __CC_METAL_SUPPORTED_AND_ENABLED
+	if([CCConfiguration sharedConfiguration].graphicsAPI == CCGraphicsAPIMetal){
+		_projection = FlipY(projection);
+	} else
+#endif
+	{
+		_projection = projection;
+	}
+}
+
+-(CCRenderer *)begin
+{
+	CCTexture *texture = self.texture;
+	if(texture == nil){
+		[self create];
+		texture = self.texture;
 	}
 	
-	if( flags & GL_DEPTH_BUFFER_BIT ) {
-		glGetFloatv(GL_DEPTH_CLEAR_VALUE, &depthClearValue);
-		glClearDepth(depthValue);
-	}
+	CCRenderer *renderer = [[CCDirector sharedDirector] rendererFromPool];
+	[renderer prepareWithProjection:&_projection framebuffer:_framebuffer];
 	
-	if( flags & GL_STENCIL_BUFFER_BIT ) {
-		glGetIntegerv(GL_STENCIL_CLEAR_VALUE, &stencilClearValue);
-		glClearStencil(stencilValue);
-	}
+	_previousRenderer = [CCRenderer currentRenderer];
+	[CCRenderer bindRenderer:renderer];
 	
-	glClear(flags);
-	
-	
-	// restore
-	if( flags & GL_COLOR_BUFFER_BIT)
-		glClearColor(clearColor[0], clearColor[1], clearColor[2], clearColor[3]);
-	if( flags & GL_DEPTH_BUFFER_BIT)
-		glClearDepth(depthClearValue);
-	if( flags & GL_STENCIL_BUFFER_BIT)
-		glClearStencil(stencilClearValue);
+	return renderer;
 }
 
--(void)beginWithClear:(float)r g:(float)g b:(float)b a:(float)a
+-(CCRenderer *)beginWithClear:(float)r g:(float)g b:(float)b a:(float)a depth:(float)depthValue stencil:(int)stencilValue flags:(GLbitfield)flags
 {
-	[self beginWithClear:r g:g b:b a:a depth:0 stencil:0 flags:GL_COLOR_BUFFER_BIT];
+	CCRenderer *renderer = [self begin];
+	[renderer enqueueClear:flags color:GLKVector4Make(r, g, b, a) depth:depthValue stencil:stencilValue globalSortOrder:NSIntegerMin];
+	
+	return renderer;
 }
 
--(void)beginWithClear:(float)r g:(float)g b:(float)b a:(float)a depth:(float)depthValue
+-(CCRenderer *)beginWithClear:(float)r g:(float)g b:(float)b a:(float)a
 {
-	[self beginWithClear:r g:g b:b a:a depth:depthValue stencil:0 flags:GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT];
+	return [self beginWithClear:r g:g b:b a:a depth:0 stencil:0 flags:GL_COLOR_BUFFER_BIT];
 }
--(void)beginWithClear:(float)r g:(float)g b:(float)b a:(float)a depth:(float)depthValue stencil:(int)stencilValue
+
+-(CCRenderer *)beginWithClear:(float)r g:(float)g b:(float)b a:(float)a depth:(float)depthValue
 {
-	[self beginWithClear:r g:g b:b a:a depth:depthValue stencil:stencilValue flags:GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT|GL_STENCIL_BUFFER_BIT];
+	return [self beginWithClear:r g:g b:b a:a depth:depthValue stencil:0 flags:GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT];
+}
+
+-(CCRenderer *)beginWithClear:(float)r g:(float)g b:(float)b a:(float)a depth:(float)depthValue stencil:(int)stencilValue
+{
+	return [self beginWithClear:r g:g b:b a:a depth:depthValue stencil:stencilValue flags:GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT|GL_STENCIL_BUFFER_BIT];
 }
 
 -(void)end
 {
-	CCDirector *director = [CCDirector sharedDirector];
-	glBindFramebuffer(GL_FRAMEBUFFER, _oldFBO);
-
-	// restore viewport
-	[director setViewport];
-    
-	kmGLMatrixMode(KM_GL_PROJECTION);
-	kmGLPopMatrix();
-	kmGLMatrixMode(KM_GL_MODELVIEW);
-	kmGLPopMatrix();
+	CCRenderer *renderer = [CCRenderer currentRenderer];
+	
+	__unsafe_unretained CCDirector *director = [CCDirector sharedDirector];
+	CCRenderDispatch(renderer.threadsafe, ^{
+		[director addFrameCompletionHandler:^{
+			// Return the renderer to the pool when the frame completes.
+			[director poolRenderer:renderer];
+		}];
+		
+		[renderer flush];
+	});
+	
+	[CCRenderer bindRenderer:_previousRenderer];
 }
 
 -(void)clear:(float)r g:(float)g b:(float)b a:(float)a
@@ -277,122 +320,83 @@
 
 - (void)clearDepth:(float)depthValue
 {
-	[self begin];
-	//! save old depth value
-	GLfloat depthClearValue;
-	glGetFloatv(GL_DEPTH_CLEAR_VALUE, &depthClearValue);
-
-	glClearDepth(depthValue);
-	glClear(GL_DEPTH_BUFFER_BIT);
-
-	// restore clear color
-	glClearDepth(depthClearValue);
+	CCRenderer *renderer = [self begin];
+		[renderer enqueueClear:GL_DEPTH_BUFFER_BIT color:GLKVector4Make(0, 0, 0, 0) depth:depthValue stencil:0 globalSortOrder:NSIntegerMin];
 	[self end];
 }
 
 - (void)clearStencil:(int)stencilValue
 {
-	// save old stencil value
-	int stencilClearValue;
-	glGetIntegerv(GL_STENCIL_CLEAR_VALUE, &stencilClearValue);
-
-	glClearStencil(stencilValue);
-	glClear(GL_STENCIL_BUFFER_BIT);
-
-	// restore clear color
-	glClearStencil(stencilClearValue);
+	CCRenderer *renderer = [self begin];
+		[renderer enqueueClear:GL_STENCIL_BUFFER_BIT color:GLKVector4Make(0, 0, 0, 0) depth:0.0 stencil:stencilValue globalSortOrder:NSIntegerMin];
+	[self end];
 }
 
 #pragma mark RenderTexture - "auto" update
 
-- (void)visit
+- (void)visit:(CCRenderer *)renderer parentTransform:(const GLKMatrix4 *)parentTransform
 {
 	// override visit.
 	// Don't call visit on its children
-	if (!_visible)
-		return;
+	if(!_visible) return;
 	
-	kmGLPushMatrix();
-
-	[self transform];
-	[_sprite visit];
-	[self draw];
-	
-	kmGLPopMatrix();
-	
-	_orderOfArrival = 0;
-}
-
-- (void)draw
-{
-	if( _autoDraw) {
-		
-		[self begin];
-		
-		if (_clearFlags) {
-			
-			GLfloat oldClearColor[4];
-			GLfloat oldDepthClearValue;
-			GLint oldStencilClearValue;
-			
-			// backup and set
-			if( _clearFlags & GL_COLOR_BUFFER_BIT ) {
-				glGetFloatv(GL_COLOR_CLEAR_VALUE, oldClearColor);
-				glClearColor(_clearColor.r, _clearColor.g, _clearColor.b, _clearColor.a);
-			}
-			
-			if( _clearFlags & GL_DEPTH_BUFFER_BIT ) {
-				glGetFloatv(GL_DEPTH_CLEAR_VALUE, &oldDepthClearValue);
-				glClearDepth(_clearDepth);
-			}
-			
-			if( _clearFlags & GL_STENCIL_BUFFER_BIT ) {
-				glGetIntegerv(GL_STENCIL_CLEAR_VALUE, &oldStencilClearValue);
-				glClearStencil(_clearStencil);
-			}
-			
-			// clear
-			glClear(_clearFlags);
-			
-			// restore
-			if( _clearFlags & GL_COLOR_BUFFER_BIT )
-				glClearColor(oldClearColor[0], oldClearColor[1], oldClearColor[2], oldClearColor[3]);
-			if( _clearFlags & GL_DEPTH_BUFFER_BIT )
-				glClearDepth(oldDepthClearValue);
-			if( _clearFlags & GL_STENCIL_BUFFER_BIT )
-				glClearStencil(oldStencilClearValue);
+	if(_autoDraw){
+		if(_contentSizeChanged){
+			[self destroy];
+			_contentSizeChanged = NO;
 		}
+		
+		CCRenderer *rtRenderer = [self begin];
+		NSAssert(renderer == renderer, @"CCRenderTexture error!");
+		
+		[rtRenderer enqueueClear:_clearFlags color:_clearColor depth:_clearDepth stencil:_clearStencil globalSortOrder:NSIntegerMin];
 		
 		//! make sure all children are drawn
 		[self sortAllChildren];
 		
-        for (CCNode *child in _children) {
-			if( child != _sprite)
-				[child visit];
+		for(CCNode *child in _children){
+			[child visit:rtRenderer parentTransform:&_projection];
 		}
+		
 		[self end];
-
+		
+		GLKMatrix4 transform = [self transform:parentTransform];
+		[self draw:renderer transform:&transform];
+	} else {
+		// Render normally, v3.0 and earlier skipped this.
+		[super visit:renderer parentTransform:parentTransform];
 	}
+	
+	_orderOfArrival = 0;
+}
 
-//	[_sprite visit];
+-(void)draw:(CCRenderer *)renderer transform:(const GLKMatrix4 *)transform
+{
+	NSAssert(_sprite.zOrder == 0, @"Changing the sprite's zOrder is not supported.");
+	
+	// Force the sprite to render itself.
+	[_sprite visit:renderer parentTransform:transform];
 }
 
 #pragma mark RenderTexture - Save Image
 
 -(CGImageRef) newCGImage
 {
-    NSAssert(_pixelFormat == CCTexturePixelFormat_RGBA8888,@"only RGBA8888 can be saved as image");
+	// TODO need to find out why getting pixels from a Metal texture doesn't seem to work.
+	// Workaround - use pixel buffers and a copy encoder?
+	NSAssert([CCConfiguration sharedConfiguration].graphicsAPI == CCGraphicsAPIGL, @"[CCRenderTexture -newCGImage] is only supported for GL.");
 	
+	NSAssert(_pixelFormat == CCTexturePixelFormat_RGBA8888,@"only RGBA8888 can be saved as image");
 	
-	CGSize s = [_texture contentSizeInPixels];
+	CGSize s = [self.texture contentSizeInPixels];
 	int tx = s.width;
 	int ty = s.height;
 	
-	int bitsPerComponent			= 8;
-    int bitsPerPixel                = 4 * 8;
-    int bytesPerPixel               = bitsPerPixel / 8;
-	int bytesPerRow					= bytesPerPixel * tx;
-	NSInteger myDataLength			= bytesPerRow * ty;
+	int bitsPerComponent = 8;
+	int bitsPerPixel = 4 * 8;
+	int bytesPerPixel = bitsPerPixel / 8;
+	int bytesPerRow = bytesPerPixel * tx;
+	NSInteger myDataLength = bytesPerRow * ty;
 	
 	GLubyte *buffer	= calloc(myDataLength,1);
 	GLubyte *pixels	= calloc(myDataLength,1);
@@ -405,15 +409,14 @@
 		return nil;
 	}
 	
-	[self begin];
-	
-
-	glReadPixels(0,0,tx,ty,GL_RGBA,GL_UNSIGNED_BYTE, buffer);
-
-	[self end];
+    CCRenderer *renderer = [self begin];
+    [renderer enqueueBlock:^{
+        glReadPixels(0,0,tx,ty,GL_RGBA,GL_UNSIGNED_BYTE, buffer);
+    } globalSortOrder:NSIntegerMax debugLabel:@"CCRenderTexture reading pixels for new image" threadSafe:NO];
+    [self end];
 	
 	// make data provider with data.
-	
+	// TODO find out why iref can't be used as the return value.
 	CGBitmapInfo bitmapInfo	= kCGImageAlphaPremultipliedLast | kCGBitmapByteOrderDefault;
 	CGDataProviderRef provider = CGDataProviderCreateWithData(NULL, buffer, myDataLength, NULL);
 	CGColorSpaceRef colorSpaceRef = CGColorSpaceCreateDeviceRGB();
@@ -433,6 +436,7 @@
 		CGContextTranslateCTM(context, 0.0f, ty);
 		CGContextScaleCTM(context, 1.0f, -1.0f);
 	}
+	
 	CGContextDrawImage(context, CGRectMake(0.0f, 0.0f, tx, ty), iref);
 	CGImageRef image = CGBitmapContextCreateImage(context);
 	
@@ -454,63 +458,79 @@
 
 -(BOOL)saveToFile:(NSString*)fileName format:(CCRenderTextureImageFormat)format
 {
-	BOOL success;
+	BOOL success = YES;
 	
 	NSString *fullPath = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:fileName];
-	
-	CGImageRef imageRef = [self newCGImage];
 
-	if( ! imageRef ) {
-		CCLOG(@"cocos2d: Error: Cannot create CGImage ref from texture");
-		return NO;
-	}
-	
+    return [self saveToFilePath:fullPath format:format];
+}
+
+- (BOOL)saveToFilePath:(NSString *)filePath
+{
+    return [self saveToFilePath:filePath format:CCRenderTextureImageFormatJPEG];
+}
+
+- (BOOL)saveToFilePath:(NSString *)filePath format:(CCRenderTextureImageFormat)format
+{
+    BOOL success = NO;
+
+   	CGImageRef imageRef = [self newCGImage];
+
+   	if( ! imageRef ) {
+   		CCLOG(@"cocos2d: Error: Cannot create CGImage ref from texture");
+   		return NO;
+   	}
+
 #if __CC_PLATFORM_IOS
-	CGFloat scale = [CCDirector sharedDirector].contentScaleFactor;
-	UIImage* image	= [[UIImage alloc] initWithCGImage:imageRef scale:scale orientation:UIImageOrientationUp];
-	NSData *imageData = nil;
-    
-	if( format == CCRenderTextureImageFormatPNG )
-		imageData = UIImagePNGRepresentation( image );
-    
-	else if( format == CCRenderTextureImageFormatJPEG )
-		imageData = UIImageJPEGRepresentation(image, 0.9f);
-    
-	else
-		NSAssert(NO, @"Unsupported format");
-	
-    
-	success = [imageData writeToFile:fullPath atomically:YES];
+   	CGFloat scale = [CCDirector sharedDirector].contentScaleFactor;
+   	UIImage* image	= [[UIImage alloc] initWithCGImage:imageRef scale:scale orientation:UIImageOrientationUp];
+   	NSData *imageData = nil;
 
-	
+   	if( format == CCRenderTextureImageFormatPNG )
+   		imageData = UIImagePNGRepresentation( image );
+
+   	else if( format == CCRenderTextureImageFormatJPEG )
+   		imageData = UIImageJPEGRepresentation(image, 0.9f);
+
+   	else
+   		NSAssert(NO, @"Unsupported format");
+
+   	success = [imageData writeToFile:filePath atomically:YES];
+
 #elif __CC_PLATFORM_MAC
-	
-	CFURLRef url = (__bridge CFURLRef)[NSURL fileURLWithPath:fullPath];
-	
-	CGImageDestinationRef dest;
+    CFURLRef url = (__bridge CFURLRef)[NSURL fileURLWithPath:filePath];
 
-	if( format == CCRenderTextureImageFormatPNG )
-		dest = 	CGImageDestinationCreateWithURL(url, kUTTypePNG, 1, NULL);
+    CGImageDestinationRef dest = nil;
 
-	else if( format == CCRenderTextureImageFormatJPEG )
-		dest = 	CGImageDestinationCreateWithURL(url, kUTTypeJPEG, 1, NULL);
+    if( format == CCRenderTextureImageFormatPNG )
+        dest = 	CGImageDestinationCreateWithURL(url, kUTTypePNG, 1, NULL);
 
-	else
-		NSAssert(NO, @"Unsupported format");
+    else if( format == CCRenderTextureImageFormatJPEG )
+        dest = 	CGImageDestinationCreateWithURL(url, kUTTypeJPEG, 1, NULL);
 
-	CGImageDestinationAddImage(dest, imageRef, nil);
-		
-	success = CGImageDestinationFinalize(dest);
+    else
+        NSAssert(NO, @"Unsupported format");
 
-	CFRelease(dest);
+    if (!dest)
+    {
+        CCLOG(@"cocos2d: ERROR: Failed to create image destination with file path:%@", filePath);
+        CGImageRelease(imageRef);
+        return NO;
+    }
+
+    CGImageDestinationAddImage(dest, imageRef, nil);
+
+    success = CGImageDestinationFinalize(dest);
+
+    CFRelease(dest);
 #endif
 
-	CGImageRelease(imageRef);
-	
-	if( ! success )
-		CCLOG(@"cocos2d: ERROR: Failed to save file:%@ to disk",fullPath);
+    CGImageRelease(imageRef);
 
-	return success;
+    if( ! success )
+        CCLOG(@"cocos2d: ERROR: Failed to save file:%@ to disk", filePath);
+
+    return success;
 }
 
 
@@ -531,24 +551,28 @@
 
 - (CCColor*) clearColor
 {
-    return [CCColor colorWithCcColor4f:_clearColor];
+    return [CCColor colorWithGLKVector4:_clearColor];
 }
 
 - (void) setClearColor:(CCColor *)clearColor
 {
-    _clearColor = clearColor.ccColor4f;
+    _clearColor = clearColor.glkVector4;
 }
 
 #pragma RenderTexture - Override
 
--(CGSize) contentSize
-{
-	return _texture.contentSize;
-}
-
 -(void) setContentSize:(CGSize)size
 {
-	NSAssert(NO, @"You cannot change the content size of an already created CCRenderTexture. Recreate it");
+    // TODO: Fix CCRenderTexture so that it correctly handles this
+	// NSAssert(NO, @"You cannot change the content size of an already created CCRenderTexture. Recreate it");
+    [super setContentSize:size];
+    
+    // XXX Thayer says: I'm pretty sure this is broken since the supplied content size could
+    // be normalized, in points, in UI points, etc. We should get the size in points then convert
+    // to pixels and use that to make the ortho matrix.
+	self.projection = GLKMatrix4MakeOrtho(0.0f, size.width, 0.0f, size.height, -1024.0f, 1024.0f);
+    _contentSizeChanged = YES;
 }
 
 @end
+

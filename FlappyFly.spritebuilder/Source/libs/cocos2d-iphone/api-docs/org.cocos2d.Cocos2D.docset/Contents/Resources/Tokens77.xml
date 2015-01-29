@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCEffectBlur.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCEffectBlur</TokenIdentifier>
+			<Abstract type="html">CCEffectBlur performs blur operation on the pixels of the attached node.</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
+            
+			
+			<NodeRef refid="77"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectBlur/setBlurRadius:</TokenIdentifier>
+			<Abstract type="html">The size of the blur. This value is in the range [0..6].</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger blurRadius</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadius</Anchor>
+            <NodeRef refid="77"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectBlur/blurRadius</TokenIdentifier>
+			<Abstract type="html">The size of the blur. This value is in the range [0..6].</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger blurRadius</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadius</Anchor>
+            <NodeRef refid="77"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectBlur/blurRadius</TokenIdentifier>
+			<Abstract type="html">The size of the blur. This value is in the range [0..6].</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger blurRadius</Declaration>
+			
+			
+			<Anchor>//api/name/blurRadius</Anchor>
+            <NodeRef refid="77"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectBlur/init</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectBlur object with the following default parameters:
+blurRadius = 2</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCEffectBlur object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="77"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectBlur/initWithPixelBlurRadius:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectBlur object with the specified parameters.</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithPixelBlurRadius:(NSUInteger)blurRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>blurRadius</Name>
+					<Abstract type="html">number of pixels blur will extend to (6 is the maximum, because we are limited by the number
+of varying variables that can be passed to a glsl program).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectBlur object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithPixelBlurRadius:</Anchor>
+            <NodeRef refid="77"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCEffectBlur/effectWithBlurRadius:</TokenIdentifier>
+			<Abstract type="html">Creates a CCEffectBlur object with the specified parameters.</Abstract>
+			<DeclaredIn>CCEffectBlur.h</DeclaredIn>
+			
+			<Declaration>+ (id)effectWithBlurRadius:(NSUInteger)blurRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>blurRadius</Name>
+					<Abstract type="html">number of pixels blur will extend to (6 is the maximum, because we are limited by the number
+of varying variables that can be passed to a glsl program).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectBlur object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effectWithBlurRadius:</Anchor>
+            <NodeRef refid="77"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

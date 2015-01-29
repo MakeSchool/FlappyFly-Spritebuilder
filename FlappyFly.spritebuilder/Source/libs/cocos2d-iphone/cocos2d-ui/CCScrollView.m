@@ -29,15 +29,21 @@
 #import "CCActionEase.h"
 #import "CCActionInstant.h"
 #import "CCResponderManager.h"
+#import "CCTouch.h"
 
-#ifdef __CC_PLATFORM_IOS
 
-// Includes for iOS
-#import "UITouch+CC.h"
+#if __CC_PLATFORM_IOS
+
 #import <UIKit/UIGestureRecognizerSubclass.h>
 
-// Includes for Mac
-#elif defined(__CC_PLATFORM_MAC)
+#elif __CC_PLATFORM_ANDROID
+
+#import "CCActivity.h"
+#import "CCGestureListener.h"
+#import <AndroidKit/AndroidGestureDetector.h>
+#import <AndroidKit/AndroidMotionEvent.h>
+
+#elif __CC_PLATFORM_MAC
 
 #endif
 
@@ -59,14 +65,14 @@
 #pragma mark -
 #pragma mark Helper classes
 
+#if __CC_PLATFORM_IOS
 
-#ifdef __CC_PLATFORM_IOS
 @interface CCTapDownGestureRecognizer : UIGestureRecognizer
 @end
 
 @implementation CCTapDownGestureRecognizer
 
--(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
+- (void)touchesBegan:(NSSet *)touches withEvent:(CCTouchEvent *)event
 {
     if (self.state == UIGestureRecognizerStatePossible)
     {
@@ -74,16 +80,8 @@
     }
 }
 
--(void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event
-{
-    self.state = UIGestureRecognizerStateFailed;
-}
-
--(void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event
-{
-    self.state = UIGestureRecognizerStateFailed;
-}
 @end
+
 #endif
 
 
@@ -173,8 +171,12 @@
 @implementation CCScrollView {
 	BOOL _decelerating;
 
-#ifdef __CC_PLATFORM_MAC
+#if __CC_PLATFORM_MAC
 	CGPoint _lastPosition;
+#elif __CC_PLATFORM_ANDROID
+    CCGestureListener *_listener;
+    AndroidGestureDetector *_detector;
+    CGPoint _rawScrollTranslation;
 #endif
 }
 
@@ -204,7 +206,7 @@
     _verticalScrollEnabled = YES;
     _bounces = YES;
     
-#ifdef __CC_PLATFORM_IOS
+#if __CC_PLATFORM_IOS
     
     // Create gesture recognizers
     _panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
@@ -212,12 +214,16 @@
     
     _panRecognizer.delegate = self;
     _tapRecognizer.delegate = self;
-    
-#elif defined(__CC_PLATFORM_MAC)
+#elif __CC_PLATFORM_ANDROID
+    dispatch_async(dispatch_get_main_queue(), ^{
+        _listener = [[CCGestureListener alloc] init];
+        _listener.delegate = (id<CCGestureListenerDelegate>)self;
+        _detector = [[AndroidGestureDetector alloc] initWithContext:[CCActivity currentActivity] onGestureListener:_listener];
+    });
+#elif __CC_PLATFORM_MAC
     
     // Use scroll wheel
     self.userInteractionEnabled = YES;
-    
 #endif
     
     self.userInteractionEnabled = YES;
@@ -329,7 +335,7 @@
     if (!_pagingEnabled) return 0;
     if (!self.contentSizeInPoints.width || !_contentNode.contentSizeInPoints.width) return 0;
     
-    return _contentNode.contentSizeInPoints.width / self.contentSizeInPoints.width;
+    return roundf(_contentNode.contentSizeInPoints.width / self.contentSizeInPoints.width);
 }
 
 - (int) numVerticalPages
@@ -337,7 +343,7 @@
     if (!_pagingEnabled) return 0;
     if (!self.contentSizeInPoints.height || !_contentNode.contentSizeInPoints.height) return 0;
     
-    return _contentNode.contentSizeInPoints.height / self.contentSizeInPoints.height;
+    return roundf(_contentNode.contentSizeInPoints.height / self.contentSizeInPoints.height);
 }
 
 #pragma mark Panning and setting position
@@ -353,6 +359,8 @@
 	newPos.x = MAX(MIN(newPos.x, self.maxScrollX), self.minScrollX);
 	newPos.y = MAX(MIN(newPos.y, self.maxScrollY), self.minScrollY);
 
+    [self updateAndroidScrollTranslation:newPos];
+    
     BOOL xMoved = (newPos.x != self.scrollPosition.x);
     BOOL yMoved = (newPos.y != self.scrollPosition.y);
 
@@ -394,12 +402,11 @@
             action = [CCActionSequence actions:action, callFunc, nil];
             action.tag = kCCScrollViewActionYTag;
             [_contentNode runAction:action];
-            
         }
     }
     else
     {
-#ifdef __CC_PLATFORM_MAC
+#if __CC_PLATFORM_MAC
 		_lastPosition = self.scrollPosition;
 #endif
         [_contentNode stopActionByTag:kCCScrollViewActionXTag];
@@ -407,6 +414,14 @@
         _contentNode.position = ccpMult(newPos, -1);
     }
 }
+
+- (void)updateAndroidScrollTranslation:(CGPoint)worldPosition
+{
+#if __CC_PLATFORM_ANDROID
+    _rawScrollTranslation = [self convertToWindowSpace:CGPointMake(-worldPosition.x, worldPosition.y)];
+#endif
+}
+
 
 - (void) xAnimationDone
 {
@@ -457,6 +472,7 @@
         if (newPos.y < self.minScrollY) newPos.y = self.minScrollY;
     }
     [self scrollViewDidScroll];
+    
     _contentNode.position = ccpMult(newPos, -1);
 }
 
@@ -469,12 +485,12 @@
 		[self scrollViewDidScroll];
 	} else {
 
-#ifdef __CC_PLATFORM_IOS
+#if __CC_PLATFORM_IOS
 		if ( _decelerating && !(_animatingX || _animatingY)) {
 			[self scrollViewDidEndDecelerating];
 			_decelerating = NO;
 		}
-#elif defined(__CC_PLATFORM_MAC)
+#elif __CC_PLATFORM_MAC
 		if ( _decelerating && CGPointEqualToPoint(_lastPosition, self.scrollPosition)) {
 			[self scrollViewDidEndDecelerating];
 			_decelerating = NO;
@@ -490,6 +506,8 @@
             
             _contentNode.position = ccpAdd(_contentNode.position, delta);
             
+            [self updateAndroidScrollTranslation:CGPointMake(_contentNode.position.x * -1, _contentNode.position.y * -1)];
+
             // Deaccelerate layer
             float deaccelerationX = kCCScrollViewDeacceleration;
             float deaccelerationY = kCCScrollViewDeacceleration;
@@ -560,7 +578,7 @@
 
 #pragma mark Gesture recognizer
 
-#ifdef __CC_PLATFORM_IOS
+#if __CC_PLATFORM_IOS
 
 - (void)handlePan:(UIGestureRecognizer *)gestureRecognizer
 {
@@ -693,7 +711,7 @@
     return NO;
 }
 
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(CCTouch *)touch
 {
     if (!_contentNode) return NO;
     if (!self.visible) return NO;
@@ -749,7 +767,6 @@
     [recognizers insertObject:_tapRecognizer atIndex:0];
     
     view.gestureRecognizers = recognizers;
-    
     [super onEnterTransitionDidFinish];
 }
 
@@ -767,7 +784,262 @@
     [super onExitTransitionDidStart];
 }
 
-#elif defined(__CC_PLATFORM_MAC)
+#elif __CC_PLATFORM_ANDROID
+
+- (void) onEnterTransitionDidFinish
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if(_detector)
+        {
+            [[[CCDirector sharedDirector] view] addGestureDetector:_detector];
+        }
+    });
+    [super onEnterTransitionDidFinish];
+}
+
+- (void) onExitTransitionDidStart
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if(_detector)
+        {
+            [[[CCDirector sharedDirector] view] removeGestureDetector:_detector];
+        }
+    });
+    
+    [super onExitTransitionDidStart];
+}
+
+- (CCTouchPhase)handleGestureEvent:(AndroidMotionEvent *)start end:(AndroidMotionEvent *)end
+{
+    CCTouchPhase phase = CCTouchPhaseStationary;
+    switch (start.action & AndroidMotionEventActionMask) {
+        case AndroidMotionEventActionPointerDown:
+        case AndroidMotionEventActionDown:
+            phase = CCTouchPhaseBegan;
+            break;
+        case AndroidMotionEventActionMove:
+            phase = CCTouchPhaseMoved;
+            break;
+        case AndroidMotionEventActionPointerUp:
+        case AndroidMotionEventActionUp:
+            phase = CCTouchPhaseEnded;
+            break;
+        case AndroidMotionEventActionCancel:
+            phase = CCTouchPhaseCancelled;
+            break;
+        default:
+            phase = CCTouchPhaseStationary;
+    }
+    switch (end.action & AndroidMotionEventActionMask) {
+        case AndroidMotionEventActionPointerDown:
+        case AndroidMotionEventActionDown:
+            phase = CCTouchPhaseBegan;
+            break;
+        case AndroidMotionEventActionMove:
+            phase = CCTouchPhaseMoved;
+            break;
+        case AndroidMotionEventActionPointerUp:
+        case AndroidMotionEventActionUp:
+            phase = CCTouchPhaseEnded;
+            break;
+        case AndroidMotionEventActionCancel:
+            phase = CCTouchPhaseCancelled;
+            break;
+        default:
+            phase = CCTouchPhaseStationary;
+    }
+    
+    return phase;
+}
+
+- (BOOL)onScroll:(AndroidMotionEvent *)start end:(AndroidMotionEvent *)end distanceX:(float)dx distanceY:(float)dy
+{
+    _isPanning = YES;
+    _velocity = CGPointZero;
+    
+    // Note about start and end events: We will get a CCTouchPhaseBegan for the start event, followed by CCTouchPhaseMoved in the end event
+    CCTouchPhase phase = [self handleGestureEvent:start end:end];
+    
+    if(phase == CCTouchPhaseCancelled || phase == CCTouchPhaseEnded)
+        _rawScrollTranslation = CGPointMake(0.0f, 0.0f);
+    
+    float scaleFactor = [[CCDirector sharedDirector] view].contentScaleFactor;
+
+    dx /= scaleFactor;
+    dy /= scaleFactor;
+
+    _rawScrollTranslation.x -= dx;
+    _rawScrollTranslation.y -= dy;
+    
+    CCDirector* dir = [CCDirector sharedDirector];
+    [[CCActivity currentActivity] runOnGameThread:^{
+        
+        CGPoint translation = [dir convertToGL:_rawScrollTranslation];
+        translation = [self convertToNodeSpace:translation];
+        
+        if (phase == CCTouchPhaseBegan)
+        {
+            [self scrollViewWillBeginDragging];
+            _animatingX = NO;
+            _animatingY = NO;
+            _rawTranslationStart = translation;
+            _startScrollPos = self.scrollPosition;
+            
+            _isPanning = YES;
+            [_contentNode stopActionByTag:kCCScrollViewActionXTag];
+            [_contentNode stopActionByTag:kCCScrollViewActionYTag];
+        }
+        else if (phase == CCTouchPhaseMoved)
+        {
+            // Calculate the translation in node space
+            CGPoint trans = ccpSub(_rawTranslationStart, translation);
+            
+            // Check if scroll directions has been disabled
+            if (!_horizontalScrollEnabled) trans.x = 0;
+            if (!_verticalScrollEnabled) trans.y = 0;
+            
+            if (_flipYCoordinates) trans.y = -trans.y;
+            
+            // Check bounds
+            CGPoint newPos = ccpAdd(_startScrollPos, trans);
+            
+            // Update position
+            [self panLayerToTarget:newPos];
+            
+        }
+        else if (phase == CCTouchPhaseEnded)
+        {
+            // stub
+        }
+        else if (phase == CCTouchPhaseCancelled)
+        {
+            _isPanning = NO;
+            _velocity = CGPointZero;
+            _animatingX = NO;
+            _animatingY = NO;
+            
+            [self setScrollPosition:self.scrollPosition animated:NO];
+        }
+    } waitUntilDone:YES];
+    return YES;
+}
+
+- (BOOL)onFling:(AndroidMotionEvent *)start end:(AndroidMotionEvent *)end velocityX:(float)vx velocityY:(float)vy
+{
+    static CGPoint rawTranslationFling;
+
+    CCTouchPhase phase = [self handleGestureEvent:start end:end];
+    
+    if(phase == CCTouchPhaseCancelled || phase == CCTouchPhaseEnded)
+        rawTranslationFling = CGPointMake(0.0f, 0.0f);
+
+    float scaleFactor = [[CCDirector sharedDirector] view].contentScaleFactor;
+    float x0 = [start xForPointerIndex:0] / scaleFactor;
+    float x1 = [end xForPointerIndex:0] / scaleFactor;
+    
+    float y0 = [start yForPointerIndex:0] / scaleFactor;
+    float y1 = [end yForPointerIndex:0] / scaleFactor;
+    
+    int64_t t0 = start.eventTime;
+    int64_t t1 = end.eventTime;
+    
+    vx /= scaleFactor;
+    vy /= scaleFactor;
+    
+    float dx = (x1 - x0) / scaleFactor;
+    float dy = (y1 - y0) / scaleFactor;
+    
+    CGPoint velocityRaw = CGPointMake(vx, vy);
+    rawTranslationFling.x -= dx / scaleFactor;
+    rawTranslationFling.y -= dy / scaleFactor;
+    
+    CCDirector* dir = [CCDirector sharedDirector];
+    [[CCActivity currentActivity] runOnGameThread:^{
+
+        CGPoint translation = [dir convertToGL:rawTranslationFling];
+        translation = [self convertToNodeSpace:translation];
+        
+        if (phase == CCTouchPhaseBegan)
+        {
+            [self scrollViewWillBeginDragging];
+        }
+        else if (phase == CCTouchPhaseMoved)
+        {
+            // stub
+        }
+        else if (phase == CCTouchPhaseEnded)
+        {
+            // Calculate the velocity in node space
+            CGPoint ref = [dir convertToGL:CGPointZero];
+            ref = [self convertToNodeSpace:ref];
+            
+            CGPoint velocity = [dir convertToGL:velocityRaw];
+            velocity = [self convertToNodeSpace:velocity];
+            
+            _velocity = ccpSub(velocity, ref);
+            if (_flipYCoordinates) _velocity.y = -_velocity.y;
+            
+            // Check if scroll directions has been disabled
+            if (!_horizontalScrollEnabled) _velocity.x = 0;
+            if (!_verticalScrollEnabled) _velocity.y = 0;
+            [self scrollViewDidEndDraggingAndWillDecelerate:!CGPointEqualToPoint(_velocity, CGPointZero)];
+            
+            // Setup a target if paging is enabled
+            if (_pagingEnabled)
+            {
+                CGPoint posTarget = CGPointZero;
+                
+                // Calculate new horizontal page
+                int pageX = roundf(self.scrollPosition.x/self.contentSizeInPoints.width);
+                
+                if (fabs(_velocity.x) >= kCCScrollViewAutoPageSpeed && _horizontalPage == pageX)
+                {
+                    if (_velocity.x < 0) pageX += 1;
+                    else pageX -= 1;
+                }
+                
+                pageX = clampf(pageX, 0, self.numHorizontalPages -1);
+                _horizontalPage = pageX;
+                
+                posTarget.x = pageX * self.contentSizeInPoints.width;
+                
+                // Calculate new vertical page
+                int pageY = roundf(self.scrollPosition.y/self.contentSizeInPoints.height);
+                
+                if (fabs(_velocity.y) >= kCCScrollViewAutoPageSpeed && _verticalPage == pageY)
+                {
+                    if (_velocity.y < 0) pageY += 1;
+                    else pageY -= 1;
+                }
+                
+                pageY = clampf(pageY, 0, self.numVerticalPages -1);
+                _verticalPage = pageY;
+                
+                posTarget.y = pageY * self.contentSizeInPoints.height;
+                
+                [self setScrollPosition:posTarget animated:YES];
+                
+                _velocity = CGPointZero;
+            }
+            [self scrollViewWillBeginDecelerating];
+
+            _decelerating = YES;
+            _isPanning = NO;
+        }
+        else if (phase == CCTouchPhaseCancelled)
+        {
+            _isPanning = NO;
+            _velocity = CGPointZero;
+            _animatingX = NO;
+            _animatingY = NO;
+            
+            [self setScrollPosition:self.scrollPosition animated:NO];
+        }
+    } waitUntilDone:YES];
+    return YES;
+}
+
+#elif __CC_PLATFORM_MAC
 
 #define kCCScrollViewMinPagingDelta 7
 

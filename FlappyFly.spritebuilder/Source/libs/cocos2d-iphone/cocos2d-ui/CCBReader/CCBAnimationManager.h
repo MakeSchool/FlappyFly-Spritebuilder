@@ -25,105 +25,13 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "CCAnimationManager.h"
 
-@class CCBSequence;
-
-#pragma mark Delegate
-
-@protocol CCBAnimationManagerDelegate <NSObject>
-
-- (void) completedAnimationSequenceNamed:(NSString*)name;
-
-@end
-
-#pragma mark Action Manager
-
-@interface CCBAnimationManager : NSObject
+//This has been replaced by CCAnimationManager
+__attribute__ ((deprecated))
+@interface CCBAnimationManager : CCAnimationManager
 {
-    NSMutableArray* sequences;
-    NSMutableDictionary* nodeSequences;
-    NSMutableDictionary* baseValues;
-    int autoPlaySequenceId;
     
-    NSInteger animationManagerId;
-    
-    CCNode* __unsafe_unretained rootNode;
-    id __unsafe_unretained owner;
-    CGSize rootContainerSize;
-    
-    __weak NSObject<CCBAnimationManagerDelegate>* delegate;
-    CCBSequence* runningSequence;
-    
-    void (^block)(id sender);
 }
-@property (nonatomic,readonly) NSMutableArray* sequences;
-@property (nonatomic,assign) int autoPlaySequenceId;
-@property (nonatomic,unsafe_unretained) CCNode* rootNode;
-@property (nonatomic,unsafe_unretained) id owner;
-@property (nonatomic,assign) CGSize rootContainerSize;
-@property (nonatomic,weak) NSObject<CCBAnimationManagerDelegate>* delegate;
-@property (unsafe_unretained, nonatomic,readonly) NSString* runningSequenceName;
-@property (nonatomic,readonly) NSString* lastCompletedSequenceName;
 
-- (CGSize) containerSize:(CCNode*)node;
-
-- (void) addNode:(CCNode*)node andSequences:(NSDictionary*)seq;
-- (void) moveAnimationsFromNode:(CCNode*)fromNode toNode:(CCNode*)toNode;
-
-- (void) setBaseValue:(id)value forNode:(CCNode*)node propertyName:(NSString*)propName;
-
-- (void) runAnimationsForSequenceNamed:(NSString*)name tweenDuration:(float)tweenDuration;
-- (void) runAnimationsForSequenceNamed:(NSString*)name;
-- (void) runAnimationsForSequenceId:(int)seqId tweenDuration:(float) tweenDuration;
-
--(void) setCompletedAnimationCallbackBlock:(void(^)(id sender))b;
-
-- (void) debug;
-
-@end
-
-#pragma mark Custom Animation Actions
-
-@interface CCBSetSpriteFrame : CCActionInstant <NSCopying>
-{
-	CCSpriteFrame* spriteFrame;
-}
-/** creates a Place action with a position */
-+(id) actionWithSpriteFrame: (CCSpriteFrame*) sf;
-/** Initializes a Place action with a position */
--(id) initWithSpriteFrame: (CCSpriteFrame*) sf;
-@end
-
-@interface CCBRotateTo : CCActionInterval <NSCopying>
-{
-    float startAngle_;
-    float dstAngle_;
-    float diffAngle_;
-}
-+(id) actionWithDuration:(CCTime)duration angle:(float)angle;
--(id) initWithDuration:(CCTime)duration angle:(float)angle;
-@end
-
-@interface CCBRotateXTo : CCBRotateTo
-@end
-
-@interface CCBRotateYTo : CCBRotateTo
-@end
-
-@interface CCBSoundEffect : CCActionInstant
-{
-    NSString* soundFile;
-    float pitch;
-    float pan;
-    float gain;
-}
-+(id) actionWithSoundFile:(NSString*)file pitch:(float)pitch pan:(float) pan gain:(float)gain;
--(id) initWithSoundFile:(NSString*)file pitch:(float)pitch pan:(float) pan gain:(float)gain;
-@end
-
-//
-// EeseInstant
-//
-@interface CCActionEaseInstant : CCActionEase <NSCopying>
-{}
 @end

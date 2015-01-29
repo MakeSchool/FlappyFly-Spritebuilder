@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCEffectContrast.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCEffectContrast</TokenIdentifier>
+			<Abstract type="html">CCEffectContrast adjusts the contrast of the sprite or effect node
+it is attached to.</Abstract>
+			<DeclaredIn>CCEffectContrast.h</DeclaredIn>
+            
+			
+			<NodeRef refid="79"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectContrast/setContrast:</TokenIdentifier>
+			<Abstract type="html">The contrast adjustment value that is used to scale the pixel colors of the
+affected node. This value is in the range [-1..1], and the napping of this value
+to the color scale factor is: pow(4.0, contrast). This means that
+an adjustment value of -1 scales the affected color by 0.25, 0 results in no
+change, and 1 scales the affected color by 4.</Abstract>
+			<DeclaredIn>CCEffectContrast.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float contrast</Declaration>
+			
+			
+			<Anchor>//api/name/contrast</Anchor>
+            <NodeRef refid="79"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectContrast/contrast</TokenIdentifier>
+			<Abstract type="html">The contrast adjustment value that is used to scale the pixel colors of the
+affected node. This value is in the range [-1..1], and the napping of this value
+to the color scale factor is: pow(4.0, contrast). This means that
+an adjustment value of -1 scales the affected color by 0.25, 0 results in no
+change, and 1 scales the affected color by 4.</Abstract>
+			<DeclaredIn>CCEffectContrast.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float contrast</Declaration>
+			
+			
+			<Anchor>//api/name/contrast</Anchor>
+            <NodeRef refid="79"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectContrast/contrast</TokenIdentifier>
+			<Abstract type="html">The contrast adjustment value that is used to scale the pixel colors of the
+affected node. This value is in the range [-1..1], and the napping of this value
+to the color scale factor is: pow(4.0, contrast). This means that
+an adjustment value of -1 scales the affected color by 0.25, 0 results in no
+change, and 1 scales the affected color by 4.</Abstract>
+			<DeclaredIn>CCEffectContrast.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float contrast</Declaration>
+			
+			
+			<Anchor>//api/name/contrast</Anchor>
+            <NodeRef refid="79"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectContrast/init</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectContrast object with a contrast adjustment of 0.</Abstract>
+			<DeclaredIn>CCEffectContrast.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCEffectContrast object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="79"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectContrast/initWithContrast:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectContrast object with the supplied parameters.</Abstract>
+			<DeclaredIn>CCEffectContrast.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithContrast:(float)contrast</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contrast</Name>
+					<Abstract type="html">The desired contrast adjustment.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectContrast object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithContrast:</Anchor>
+            <NodeRef refid="79"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCEffectContrast/effectWithContrast:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectContrast object with the supplied parameters.</Abstract>
+			<DeclaredIn>CCEffectContrast.h</DeclaredIn>
+			
+			<Declaration>+ (id)effectWithContrast:(float)contrast</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contrast</Name>
+					<Abstract type="html">The desired contrast adjustment.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectContrast object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effectWithContrast:</Anchor>
+            <NodeRef refid="79"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

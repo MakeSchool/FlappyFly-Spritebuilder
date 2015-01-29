@@ -1,0 +1,907 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>CCAnimationManager Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Cocos2D </a></h1>
+				<a id="developerHome" href="../index.html">3.2.0</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">CCAnimationManager Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/fixedTimestep">&nbsp;&nbsp;&nbsp;&nbsp;fixedTimestep</option>
+	
+	<option value="//api/name/lastCompletedSequenceName">&nbsp;&nbsp;&nbsp;&nbsp;lastCompletedSequenceName</option>
+	
+	<option value="//api/name/paused">&nbsp;&nbsp;&nbsp;&nbsp;paused</option>
+	
+	<option value="//api/name/playbackSpeed">&nbsp;&nbsp;&nbsp;&nbsp;playbackSpeed</option>
+	
+	<option value="//api/name/runningSequenceName">&nbsp;&nbsp;&nbsp;&nbsp;runningSequenceName</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/addAnimationsWithDictionary:node:">&nbsp;&nbsp;&nbsp;&nbsp;- addAnimationsWithDictionary:node:</option>
+	
+	<option value="//api/name/addAnimationsWithFile:node:">&nbsp;&nbsp;&nbsp;&nbsp;- addAnimationsWithFile:node:</option>
+	
+	<option value="//api/name/jumpToSequenceNamed:time:">&nbsp;&nbsp;&nbsp;&nbsp;- jumpToSequenceNamed:time:</option>
+	
+	<option value="//api/name/runAnimationsForSequenceNamed:">&nbsp;&nbsp;&nbsp;&nbsp;- runAnimationsForSequenceNamed:</option>
+	
+	<option value="//api/name/runAnimationsForSequenceNamed:tweenDuration:">&nbsp;&nbsp;&nbsp;&nbsp;- runAnimationsForSequenceNamed:tweenDuration:</option>
+	
+	<option value="//api/name/setCompletedAnimationCallbackBlock:">&nbsp;&nbsp;&nbsp;&nbsp;- setCompletedAnimationCallbackBlock:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_FrameAnimation Methods">FrameAnimation Methods</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fixedTimestep">fixedTimestep</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lastCompletedSequenceName">lastCompletedSequenceName</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/paused">paused</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/playbackSpeed">playbackSpeed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/runningSequenceName">runningSequenceName</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAnimationsWithDictionary:node:">addAnimationsWithDictionary:node:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addAnimationsWithFile:node:">addAnimationsWithFile:node:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/jumpToSequenceNamed:time:">jumpToSequenceNamed:time:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/runAnimationsForSequenceNamed:">runAnimationsForSequenceNamed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/runAnimationsForSequenceNamed:tweenDuration:">runAnimationsForSequenceNamed:tweenDuration:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setCompletedAnimationCallbackBlock:">setCompletedAnimationCallbackBlock:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="CCAnimationManager Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">CCAnimationManager Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">CCSchedulerTarget</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">CCAnimationManager.h</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The animation manager plays back animations, usually created by a tool such as SpriteBuilder. Any animation can have an arbitrary number of sequences (timelines) which each have keyframes for different properties.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fixedTimestep">&nbsp;&nbsp;fixedTimestep</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/runningSequenceName">&nbsp;&nbsp;runningSequenceName</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lastCompletedSequenceName">&nbsp;&nbsp;lastCompletedSequenceName</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/playbackSpeed">&nbsp;&nbsp;playbackSpeed</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/paused">&nbsp;&nbsp;paused</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/runAnimationsForSequenceNamed:">&ndash;&nbsp;runAnimationsForSequenceNamed:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/runAnimationsForSequenceNamed:tweenDuration:">&ndash;&nbsp;runAnimationsForSequenceNamed:tweenDuration:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setCompletedAnimationCallbackBlock:">&ndash;&nbsp;setCompletedAnimationCallbackBlock:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/jumpToSequenceNamed:time:">&ndash;&nbsp;jumpToSequenceNamed:time:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="FrameAnimation Methods" name="task_FrameAnimation Methods"></a>
+						<h3 class="subsubtitle task-title">FrameAnimation Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAnimationsWithDictionary:node:">&ndash;&nbsp;addAnimationsWithDictionary:node:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addAnimationsWithFile:node:">&ndash;&nbsp;addAnimationsWithFile:node:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The animation manager delegate receives updates about the animations currently being played.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) NSObject&lt;CCBAnimationManagerDelegate&gt; *delegate</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fixedTimestep" title="fixedTimestep"></a>
+	<h3 class="subsubtitle method-title">fixedTimestep</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If set to true the animation manager will run on a fixed time step, this is required to run animations toghether with physics.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool fixedTimestep</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lastCompletedSequenceName" title="lastCompletedSequenceName"></a>
+	<h3 class="subsubtitle method-title">lastCompletedSequenceName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the last completed sequence (timeline).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *lastCompletedSequenceName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/paused" title="paused"></a>
+	<h3 class="subsubtitle method-title">paused</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set to true to pause the animation currently being run.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) bool paused</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/playbackSpeed" title="playbackSpeed"></a>
+	<h3 class="subsubtitle method-title">playbackSpeed</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Playback speed, default is 1 and corresponds to the normal playback speed. Use this property for fast forward or slow motion playback.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) float playbackSpeed</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/runningSequenceName" title="runningSequenceName"></a>
+	<h3 class="subsubtitle method-title">runningSequenceName</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The name of the currently running sequence (timeline).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (unsafe_unretained, nonatomic, readonly) NSString *runningSequenceName</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/addAnimationsWithDictionary:node:" title="addAnimationsWithDictionary:node:"></a>
+	<h3 class="subsubtitle method-title">addAnimationsWithDictionary:node:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add an animation from a NSDictionary.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addAnimationsWithDictionary:(NSDictionary *)<em>dictionary</em> node:(CCNode *)<em>node</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dictionary</em></dt>
+			<dd><p>Dictionary.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager+FrameAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addAnimationsWithFile:node:" title="addAnimationsWithFile:node:"></a>
+	<h3 class="subsubtitle method-title">addAnimationsWithFile:node:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Add an animation from a file.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)addAnimationsWithFile:(NSString *)<em>plist</em> node:(CCNode *)<em>node</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>plist</em></dt>
+			<dd><p>File path.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager+FrameAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/jumpToSequenceNamed:time:" title="jumpToSequenceNamed:time:"></a>
+	<h3 class="subsubtitle method-title">jumpToSequenceNamed:time:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Jumps to a specific time in a specific sequence (timeline).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)jumpToSequenceNamed:(NSString *)<em>name</em> time:(float)<em>time</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the sequence to jump to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>time</em></dt>
+			<dd><p>The time in the sequence.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/runAnimationsForSequenceNamed:" title="runAnimationsForSequenceNamed:"></a>
+	<h3 class="subsubtitle method-title">runAnimationsForSequenceNamed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Plays an animation sequence (timeline) by its name.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)runAnimationsForSequenceNamed:(NSString *)<em>name</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the sequence to play.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/runAnimationsForSequenceNamed:tweenDuration:" title="runAnimationsForSequenceNamed:tweenDuration:"></a>
+	<h3 class="subsubtitle method-title">runAnimationsForSequenceNamed:tweenDuration:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Plays an animation sequence (timeline) by its name, tweens smoothly to the new sequence.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)runAnimationsForSequenceNamed:(NSString *)<em>name</em> tweenDuration:(float)<em>tweenDuration</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>name</em></dt>
+			<dd><p>The name of the sequence to play.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tweenDuration</em></dt>
+			<dd><p>Time to tween to the new sequence.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setCompletedAnimationCallbackBlock:" title="setCompletedAnimationCallbackBlock:"></a>
+	<h3 class="subsubtitle method-title">setCompletedAnimationCallbackBlock:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a block to be called when an animation sequence has finished playing.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setCompletedAnimationCallbackBlock:(void ( ^ ) ( id sender ))<em>b</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>b</em></dt>
+			<dd><p>The block to call.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">CCAnimationManager.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 3.2.0. All rights reserved. (Last updated: 2014-08-12)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

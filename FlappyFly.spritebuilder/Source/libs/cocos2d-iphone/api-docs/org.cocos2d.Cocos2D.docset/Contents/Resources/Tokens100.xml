@@ -1,0 +1,1149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCPhysicsBody.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCPhysicsBody</TokenIdentifier>
+			<Abstract type="html">Physics bodies are attached to CCNode objects and contain their physical properties such as mass, shape, friction, etc.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+            
+			
+			<NodeRef refid="100"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCPhysicsBody/bodyWithCircleOfRadius:andCenter:</TokenIdentifier>
+			<Abstract type="html">Creates and retuns a circular physics body using the circle radius and center values specified.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>+ (CCPhysicsBody *)bodyWithCircleOfRadius:(CGFloat)radius andCenter:(CGPoint)center</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>radius</Name>
+					<Abstract type="html">Circle radius.</Abstract>
+				</Parameter><Parameter>
+					<Name>center</Name>
+					<Abstract type="html">Circle center point.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCPhysicsBody Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/bodyWithCircleOfRadius:andCenter:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCPhysicsBody/bodyWithRect:cornerRadius:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a box shaped physics body with rounded corners.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>+ (CCPhysicsBody *)bodyWithRect:(CGRect)rect cornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">Box dimensions.</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">Corner radius.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCPhysicsBody Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/bodyWithRect:cornerRadius:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCPhysicsBody/bodyWithPillFrom:to:cornerRadius:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a pill shaped physics body with rounded corners that stretches from &apos;start&apos; to &apos;end&apos;.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>+ (CCPhysicsBody *)bodyWithPillFrom:(CGPoint)from to:(CGPoint)to cornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>from</Name>
+					<Abstract type="html">Start point.</Abstract>
+				</Parameter><Parameter>
+					<Name>to</Name>
+					<Abstract type="html">End point.</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">Corner radius.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCPhysicsBody Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/bodyWithPillFrom:to:cornerRadius:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCPhysicsBody/bodyWithPolygonFromPoints:count:cornerRadius:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a convex polygon shaped physics body with rounded corners.
+If the points do not form a convex polygon then a convex hull will be created from them automatically.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>+ (CCPhysicsBody *)bodyWithPolygonFromPoints:(CGPoint *)points count:(NSUInteger)count cornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>points</Name>
+					<Abstract type="html">Points array pointer.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">Points count.</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">Corner radius.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCPhysicsBody Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/bodyWithPolygonFromPoints:count:cornerRadius:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCPhysicsBody/bodyWithPolylineFromRect:cornerRadius:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a physics body with four pill shapes around the rectangle&apos;s perimeter.
+Polyline based bodies default to the CCPhysicsBodyTypeStatic body type.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>+ (CCPhysicsBody *)bodyWithPolylineFromRect:(CGRect)rect cornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">Rectangle perimeter.</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">Corner radius.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCPhysicsBody Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/bodyWithPolylineFromRect:cornerRadius:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCPhysicsBody/bodyWithPolylineFromPoints:count:cornerRadius:looped:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a physics body with multiple pill shapes attached, one for each segment in the polyline.
+Polyline based bodies default to the CCPhysicsBodyTypeStatic body type.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>+ (CCPhysicsBody *)bodyWithPolylineFromPoints:(CGPoint *)points count:(NSUInteger)count cornerRadius:(CGFloat)cornerRadius looped:(bool)looped</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>points</Name>
+					<Abstract type="html">Points array pointer.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">Points count.</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">Corner radius.</Abstract>
+				</Parameter><Parameter>
+					<Name>looped</Name>
+					<Abstract type="html">Should there be a pill shape that goes from the first to last point or not.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCPhysicsBody Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/bodyWithPolylineFromPoints:count:cornerRadius:looped:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCPhysicsBody/bodyWithShapes:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a physics body with multiple shapes.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>+ (CCPhysicsBody *)bodyWithShapes:(NSArray *)shapes</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shapes</Name>
+					<Abstract type="html">Array of shapes to attach to the body.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCPhysicsBody Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/bodyWithShapes:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setMass:</TokenIdentifier>
+			<Abstract type="html">Mass of the physics body. The mass of a composite body cannod be changed.
+Defaults to 1.0.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat mass</Declaration>
+			
+			
+			<Anchor>//api/name/mass</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/mass</TokenIdentifier>
+			<Abstract type="html">Mass of the physics body. The mass of a composite body cannod be changed.
+Defaults to 1.0.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat mass</Declaration>
+			
+			
+			<Anchor>//api/name/mass</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/mass</TokenIdentifier>
+			<Abstract type="html">Mass of the physics body. The mass of a composite body cannod be changed.
+Defaults to 1.0.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat mass</Declaration>
+			
+			
+			<Anchor>//api/name/mass</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setArea:</TokenIdentifier>
+			<Abstract type="html">Area of the body in points^2.
+Please note that this is relative to the CCPhysicsNode, changing the node or a parent can change the area.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat area</Declaration>
+			
+			
+			<Anchor>//api/name/area</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/area</TokenIdentifier>
+			<Abstract type="html">Area of the body in points^2.
+Please note that this is relative to the CCPhysicsNode, changing the node or a parent can change the area.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat area</Declaration>
+			
+			
+			<Anchor>//api/name/area</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/area</TokenIdentifier>
+			<Abstract type="html">Area of the body in points^2.
+Please note that this is relative to the CCPhysicsNode, changing the node or a parent can change the area.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat area</Declaration>
+			
+			
+			<Anchor>//api/name/area</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setDensity:</TokenIdentifier>
+			<Abstract type="html">Density of the body in 1/1000 units of mass per point^2. The co-efficent is used to keep the mass of an object a reasonably small value.
+If the body has multiple shapes, you cannot change the density directly.
+Note that mass and not density will remain constant if an object is rescaled.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat density</Declaration>
+			
+			
+			<Anchor>//api/name/density</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/density</TokenIdentifier>
+			<Abstract type="html">Density of the body in 1/1000 units of mass per point^2. The co-efficent is used to keep the mass of an object a reasonably small value.
+If the body has multiple shapes, you cannot change the density directly.
+Note that mass and not density will remain constant if an object is rescaled.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat density</Declaration>
+			
+			
+			<Anchor>//api/name/density</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/density</TokenIdentifier>
+			<Abstract type="html">Density of the body in 1/1000 units of mass per point^2. The co-efficent is used to keep the mass of an object a reasonably small value.
+If the body has multiple shapes, you cannot change the density directly.
+Note that mass and not density will remain constant if an object is rescaled.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat density</Declaration>
+			
+			
+			<Anchor>//api/name/density</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setFriction:</TokenIdentifier>
+			<Abstract type="html">Surface friction of the physics body, when two objects collide, their friction is multiplied together.
+The calculated value can be overridden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.7</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat friction</Declaration>
+			
+			
+			<Anchor>//api/name/friction</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/friction</TokenIdentifier>
+			<Abstract type="html">Surface friction of the physics body, when two objects collide, their friction is multiplied together.
+The calculated value can be overridden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.7</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat friction</Declaration>
+			
+			
+			<Anchor>//api/name/friction</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/friction</TokenIdentifier>
+			<Abstract type="html">Surface friction of the physics body, when two objects collide, their friction is multiplied together.
+The calculated value can be overridden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.7</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat friction</Declaration>
+			
+			
+			<Anchor>//api/name/friction</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setElasticity:</TokenIdentifier>
+			<Abstract type="html">Elasticity of the physics body.
+When two objects collide, their elasticity is multiplied together.
+The calculated value can be ovrriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.2.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat elasticity</Declaration>
+			
+			
+			<Anchor>//api/name/elasticity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/elasticity</TokenIdentifier>
+			<Abstract type="html">Elasticity of the physics body.
+When two objects collide, their elasticity is multiplied together.
+The calculated value can be ovrriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.2.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat elasticity</Declaration>
+			
+			
+			<Anchor>//api/name/elasticity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/elasticity</TokenIdentifier>
+			<Abstract type="html">Elasticity of the physics body.
+When two objects collide, their elasticity is multiplied together.
+The calculated value can be ovrriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.2.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat elasticity</Declaration>
+			
+			
+			<Anchor>//api/name/elasticity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setSurfaceVelocity:</TokenIdentifier>
+			<Abstract type="html">Velocity of the surface of a physics body relative to it&apos;s normal velocity.  This is useful for modelling conveyor belts or the feet of a player avatar.
+The calculated surface velocity of two colliding shapes by default only affects their friction.
+The calculated value can be overriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to CGPointZero.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint surfaceVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/surfaceVelocity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/surfaceVelocity</TokenIdentifier>
+			<Abstract type="html">Velocity of the surface of a physics body relative to it&apos;s normal velocity.  This is useful for modelling conveyor belts or the feet of a player avatar.
+The calculated surface velocity of two colliding shapes by default only affects their friction.
+The calculated value can be overriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to CGPointZero.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint surfaceVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/surfaceVelocity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/surfaceVelocity</TokenIdentifier>
+			<Abstract type="html">Velocity of the surface of a physics body relative to it&apos;s normal velocity.  This is useful for modelling conveyor belts or the feet of a player avatar.
+The calculated surface velocity of two colliding shapes by default only affects their friction.
+The calculated value can be overriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to CGPointZero.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint surfaceVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/surfaceVelocity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setAffectedByGravity:</TokenIdentifier>
+			<Abstract type="html">Affected by gravity flag.  Defaults to Yes.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL affectedByGravity</Declaration>
+			
+			
+			<Anchor>//api/name/affectedByGravity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/affectedByGravity</TokenIdentifier>
+			<Abstract type="html">Affected by gravity flag.  Defaults to Yes.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL affectedByGravity</Declaration>
+			
+			
+			<Anchor>//api/name/affectedByGravity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/affectedByGravity</TokenIdentifier>
+			<Abstract type="html">Affected by gravity flag.  Defaults to Yes.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL affectedByGravity</Declaration>
+			
+			
+			<Anchor>//api/name/affectedByGravity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setAllowsRotation:</TokenIdentifier>
+			<Abstract type="html">Allow body rotation flag.  Defaults to Yes.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL allowsRotation</Declaration>
+			
+			
+			<Anchor>//api/name/allowsRotation</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/allowsRotation</TokenIdentifier>
+			<Abstract type="html">Allow body rotation flag.  Defaults to Yes.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL allowsRotation</Declaration>
+			
+			
+			<Anchor>//api/name/allowsRotation</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/allowsRotation</TokenIdentifier>
+			<Abstract type="html">Allow body rotation flag.  Defaults to Yes.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL allowsRotation</Declaration>
+			
+			
+			<Anchor>//api/name/allowsRotation</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setType:</TokenIdentifier>
+			<Abstract type="html">Physics body type.  Defaults to CCPhysicsBodyTypeDynamic</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCPhysicsBodyType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/type</TokenIdentifier>
+			<Abstract type="html">Physics body type.  Defaults to CCPhysicsBodyTypeDynamic</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCPhysicsBodyType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/type</TokenIdentifier>
+			<Abstract type="html">Physics body type.  Defaults to CCPhysicsBodyTypeDynamic</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCPhysicsBodyType type</Declaration>
+			
+			
+			<Anchor>//api/name/type</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setSensor:</TokenIdentifier>
+			<Abstract type="html">Is this body a sensor? A sensor will call a collision delegate but does not physically cause collisions between bodies.
+Defaults to NO.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sensor</Declaration>
+			
+			
+			<Anchor>//api/name/sensor</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/sensor</TokenIdentifier>
+			<Abstract type="html">Is this body a sensor? A sensor will call a collision delegate but does not physically cause collisions between bodies.
+Defaults to NO.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sensor</Declaration>
+			
+			
+			<Anchor>//api/name/sensor</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/sensor</TokenIdentifier>
+			<Abstract type="html">Is this body a sensor? A sensor will call a collision delegate but does not physically cause collisions between bodies.
+Defaults to NO.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sensor</Declaration>
+			
+			
+			<Anchor>//api/name/sensor</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setCollisionGroup:</TokenIdentifier>
+			<Abstract type="html">The body&apos;s collisionGroup, if two physics bodies share the same group id, they don&apos;t collide. Defaults to nil.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id collisionGroup</Declaration>
+			
+			
+			<Anchor>//api/name/collisionGroup</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/collisionGroup</TokenIdentifier>
+			<Abstract type="html">The body&apos;s collisionGroup, if two physics bodies share the same group id, they don&apos;t collide. Defaults to nil.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id collisionGroup</Declaration>
+			
+			
+			<Anchor>//api/name/collisionGroup</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/collisionGroup</TokenIdentifier>
+			<Abstract type="html">The body&apos;s collisionGroup, if two physics bodies share the same group id, they don&apos;t collide. Defaults to nil.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id collisionGroup</Declaration>
+			
+			
+			<Anchor>//api/name/collisionGroup</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setCollisionType:</TokenIdentifier>
+			<Abstract type="html">A string that identifies the collision pair delegate method that should be called. Default value is @&quot;default&quot;.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *collisionType</Declaration>
+			
+			
+			<Anchor>//api/name/collisionType</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/collisionType</TokenIdentifier>
+			<Abstract type="html">A string that identifies the collision pair delegate method that should be called. Default value is @&quot;default&quot;.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *collisionType</Declaration>
+			
+			
+			<Anchor>//api/name/collisionType</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/collisionType</TokenIdentifier>
+			<Abstract type="html">A string that identifies the collision pair delegate method that should be called. Default value is @&quot;default&quot;.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *collisionType</Declaration>
+			
+			
+			<Anchor>//api/name/collisionType</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setCollisionCategories:</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names of which this physics body is a member. Up to 32 unique categories can be used in a single physics node.
+A value of nil means that a body exists in all possible collision categories.
+The deefault is nil.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionCategories</Declaration>
+			
+			
+			<Anchor>//api/name/collisionCategories</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/collisionCategories</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names of which this physics body is a member. Up to 32 unique categories can be used in a single physics node.
+A value of nil means that a body exists in all possible collision categories.
+The deefault is nil.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionCategories</Declaration>
+			
+			
+			<Anchor>//api/name/collisionCategories</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/collisionCategories</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names of which this physics body is a member. Up to 32 unique categories can be used in a single physics node.
+A value of nil means that a body exists in all possible collision categories.
+The deefault is nil.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionCategories</Declaration>
+			
+			
+			<Anchor>//api/name/collisionCategories</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setCollisionMask:</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names that this physics body wants to collide with.
+The categories/masks of both bodies must agree for a collision to occur.
+A value of nil means that this body will collide with a body in any category.
+The default is nil.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionMask</Declaration>
+			
+			
+			<Anchor>//api/name/collisionMask</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/collisionMask</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names that this physics body wants to collide with.
+The categories/masks of both bodies must agree for a collision to occur.
+A value of nil means that this body will collide with a body in any category.
+The default is nil.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionMask</Declaration>
+			
+			
+			<Anchor>//api/name/collisionMask</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/collisionMask</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names that this physics body wants to collide with.
+The categories/masks of both bodies must agree for a collision to occur.
+A value of nil means that this body will collide with a body in any category.
+The default is nil.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionMask</Declaration>
+			
+			
+			<Anchor>//api/name/collisionMask</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/eachCollisionPair:</TokenIdentifier>
+			<Abstract type="html">Iterate over all of the CCPhysicsCollisionPairs this body is currently in contact with.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>- (void)eachCollisionPair:(void ( ^ ) ( CCPhysicsCollisionPair *pair ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">Collision block.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/eachCollisionPair:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setVelocity:</TokenIdentifier>
+			<Abstract type="html">The velocity of the physics body in absolute coordinates.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/velocity</TokenIdentifier>
+			<Abstract type="html">The velocity of the physics body in absolute coordinates.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/velocity</TokenIdentifier>
+			<Abstract type="html">The velocity of the physics body in absolute coordinates.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint velocity</Declaration>
+			
+			
+			<Anchor>//api/name/velocity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setAngularVelocity:</TokenIdentifier>
+			<Abstract type="html">Angular velocity of the physics body in radians per second.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat angularVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/angularVelocity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/angularVelocity</TokenIdentifier>
+			<Abstract type="html">Angular velocity of the physics body in radians per second.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat angularVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/angularVelocity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/angularVelocity</TokenIdentifier>
+			<Abstract type="html">Angular velocity of the physics body in radians per second.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat angularVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/angularVelocity</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setForce:</TokenIdentifier>
+			<Abstract type="html">Linear force applied to the physics body this fixed timestep.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint force</Declaration>
+			
+			
+			<Anchor>//api/name/force</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/force</TokenIdentifier>
+			<Abstract type="html">Linear force applied to the physics body this fixed timestep.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint force</Declaration>
+			
+			
+			<Anchor>//api/name/force</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/force</TokenIdentifier>
+			<Abstract type="html">Linear force applied to the physics body this fixed timestep.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint force</Declaration>
+			
+			
+			<Anchor>//api/name/force</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setTorque:</TokenIdentifier>
+			<Abstract type="html">Torque applied to this physics body this fixed timestep.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat torque</Declaration>
+			
+			
+			<Anchor>//api/name/torque</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/torque</TokenIdentifier>
+			<Abstract type="html">Torque applied to this physics body this fixed timestep.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat torque</Declaration>
+			
+			
+			<Anchor>//api/name/torque</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/torque</TokenIdentifier>
+			<Abstract type="html">Torque applied to this physics body this fixed timestep.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat torque</Declaration>
+			
+			
+			<Anchor>//api/name/torque</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/applyTorque:</TokenIdentifier>
+			<Abstract type="html">Apply a torque on the physics body.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>- (void)applyTorque:(CGFloat)torque</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>torque</Name>
+					<Abstract type="html">Torque.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applyTorque:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/applyAngularImpulse:</TokenIdentifier>
+			<Abstract type="html">Apply an angular impulse.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>- (void)applyAngularImpulse:(CGFloat)impulse</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>impulse</Name>
+					<Abstract type="html">Angular impulse.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applyAngularImpulse:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/applyForce:</TokenIdentifier>
+			<Abstract type="html">Apply a force to the physics body.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>- (void)applyForce:(CGPoint)force</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>force</Name>
+					<Abstract type="html">Force vector.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applyForce:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/applyImpulse:</TokenIdentifier>
+			<Abstract type="html">Apply an impulse on the physics body.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>- (void)applyImpulse:(CGPoint)impulse</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>impulse</Name>
+					<Abstract type="html">Impulse vector.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applyImpulse:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/applyForce:atLocalPoint:</TokenIdentifier>
+			<Abstract type="html">Apply force and torque on the physics body from a force applied at the given point in the parent CCNode&apos;s coordinates.
+The force will be rotated by, but not scaled by the CCNode&apos;s transform.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>- (void)applyForce:(CGPoint)force atLocalPoint:(CGPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>force</Name>
+					<Abstract type="html">Force vector.</Abstract>
+				</Parameter><Parameter>
+					<Name>point</Name>
+					<Abstract type="html">Point to apply force.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applyForce:atLocalPoint:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/applyImpulse:atLocalPoint:</TokenIdentifier>
+			<Abstract type="html">Apply an impulse and angular impulse on the physics body at the given point in the parent CCNode&apos;s coordinates.
+The impulse will be rotated by, but not scaled by the CCNode&apos;s transform.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>- (void)applyImpulse:(CGPoint)impulse atLocalPoint:(CGPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>impulse</Name>
+					<Abstract type="html">Impulse vector.</Abstract>
+				</Parameter><Parameter>
+					<Name>point</Name>
+					<Abstract type="html">Point to apply impulse.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applyImpulse:atLocalPoint:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/applyForce:atWorldPoint:</TokenIdentifier>
+			<Abstract type="html">Apply an force and angular torque on the physics body at the given point in absolute coordinates.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>- (void)applyForce:(CGPoint)force atWorldPoint:(CGPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>force</Name>
+					<Abstract type="html">Force vector.</Abstract>
+				</Parameter><Parameter>
+					<Name>point</Name>
+					<Abstract type="html">Point to apply force.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applyForce:atWorldPoint:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/applyImpulse:atWorldPoint:</TokenIdentifier>
+			<Abstract type="html">Apply an impulse and angular impulse on the physics body at the given point in absolute coordinates.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>- (void)applyImpulse:(CGPoint)impulse atWorldPoint:(CGPoint)point</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>impulse</Name>
+					<Abstract type="html">Impulse vector.</Abstract>
+				</Parameter><Parameter>
+					<Name>point</Name>
+					<Abstract type="html">Point to apply impulse.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/applyImpulse:atWorldPoint:</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setJoints:</TokenIdentifier>
+			<Abstract type="html">Joints connected to this body.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *joints</Declaration>
+			
+			
+			<Anchor>//api/name/joints</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/joints</TokenIdentifier>
+			<Abstract type="html">Joints connected to this body.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *joints</Declaration>
+			
+			
+			<Anchor>//api/name/joints</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/joints</TokenIdentifier>
+			<Abstract type="html">Joints connected to this body.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *joints</Declaration>
+			
+			
+			<Anchor>//api/name/joints</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setSleeping:</TokenIdentifier>
+			<Abstract type="html">Sleeping bodies use minimal CPU resources as they are removed from the simulation until something collides with them.
+Normally a body will fall alsleep on it&apos;s own, but you can manually force a body to fall a sleep at any time if you desire.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sleeping</Declaration>
+			
+			
+			<Anchor>//api/name/sleeping</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/sleeping</TokenIdentifier>
+			<Abstract type="html">Sleeping bodies use minimal CPU resources as they are removed from the simulation until something collides with them.
+Normally a body will fall alsleep on it&apos;s own, but you can manually force a body to fall a sleep at any time if you desire.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sleeping</Declaration>
+			
+			
+			<Anchor>//api/name/sleeping</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/sleeping</TokenIdentifier>
+			<Abstract type="html">Sleeping bodies use minimal CPU resources as they are removed from the simulation until something collides with them.
+Normally a body will fall alsleep on it&apos;s own, but you can manually force a body to fall a sleep at any time if you desire.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sleeping</Declaration>
+			
+			
+			<Anchor>//api/name/sleeping</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/setNode:</TokenIdentifier>
+			<Abstract type="html">The CCNode to which this physics body is attached.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, weak) CCNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsBody/node</TokenIdentifier>
+			<Abstract type="html">The CCNode to which this physics body is attached.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, weak) CCNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsBody/node</TokenIdentifier>
+			<Abstract type="html">The CCNode to which this physics body is attached.</Abstract>
+			<DeclaredIn>CCPhysicsBody.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, weak) CCNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="100"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

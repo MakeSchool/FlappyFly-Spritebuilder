@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionTintBy.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionTintBy</TokenIdentifier>
+			<Abstract type="html">This action tints the target from current tint by the value specified.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionTintBy/actionWithDuration:red:green:blue:</TokenIdentifier>
+			<Abstract type="html">Creates a tint by action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration red:(CGFloat)deltaRed green:(CGFloat)deltaGreen blue:(CGFloat)deltaBlue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>deltaRed</Name>
+					<Abstract type="html">Red delta color to tint.</Abstract>
+				</Parameter><Parameter>
+					<Name>deltaGreen</Name>
+					<Abstract type="html">Green delta color to tint.</Abstract>
+				</Parameter><Parameter>
+					<Name>deltaBlue</Name>
+					<Abstract type="html">Blue delta color to tint.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New tint by action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:red:green:blue:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionTintBy/initWithDuration:red:green:blue:</TokenIdentifier>
+			<Abstract type="html">Initalizes a tint by action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration red:(CGFloat)deltaRed green:(CGFloat)deltaGreen blue:(CGFloat)deltaBlue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>deltaRed</Name>
+					<Abstract type="html">Red delta color to tint.</Abstract>
+				</Parameter><Parameter>
+					<Name>deltaGreen</Name>
+					<Abstract type="html">Green delta color to tint.</Abstract>
+				</Parameter><Parameter>
+					<Name>deltaBlue</Name>
+					<Abstract type="html">Blue delta color to tint.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New tint by action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:red:green:blue:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

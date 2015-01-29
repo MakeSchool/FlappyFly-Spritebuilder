@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCControl.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCControl</TokenIdentifier>
+			<Abstract type="html">CCControl is the abstract base class of the Cocos2d components that handles touches or mouse events. You cannot instantiate it directly, instead use one of its sub-classes, such as CCButton. If you need to create a new sort of component you should make a sub-class of this class.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+            
+			
+			<NodeRef refid="72"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setPreferredSize:</TokenIdentifier>
+			<Abstract type="html">The preferred (and minimum) size that the component will attempt to layout to. If its contents are larger it may have a larger size.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGSize preferredSize</Declaration>
+			
+			
+			<Anchor>//api/name/preferredSize</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/preferredSize</TokenIdentifier>
+			<Abstract type="html">The preferred (and minimum) size that the component will attempt to layout to. If its contents are larger it may have a larger size.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGSize preferredSize</Declaration>
+			
+			
+			<Anchor>//api/name/preferredSize</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/preferredSize</TokenIdentifier>
+			<Abstract type="html">The preferred (and minimum) size that the component will attempt to layout to. If its contents are larger it may have a larger size.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGSize preferredSize</Declaration>
+			
+			
+			<Anchor>//api/name/preferredSize</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setPreferredSizeType:</TokenIdentifier>
+			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCSizeType preferredSizeType</Declaration>
+			
+			
+			<Anchor>//api/name/preferredSizeType</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/preferredSizeType</TokenIdentifier>
+			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCSizeType preferredSizeType</Declaration>
+			
+			
+			<Anchor>//api/name/preferredSizeType</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/preferredSizeType</TokenIdentifier>
+			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCSizeType preferredSizeType</Declaration>
+			
+			
+			<Anchor>//api/name/preferredSizeType</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setMaxSize:</TokenIdentifier>
+			<Abstract type="html">The maximum size that the component will layout to, the component will not be larger than this size and will instead shrink its content if needed.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGSize maxSize</Declaration>
+			
+			
+			<Anchor>//api/name/maxSize</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/maxSize</TokenIdentifier>
+			<Abstract type="html">The maximum size that the component will layout to, the component will not be larger than this size and will instead shrink its content if needed.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGSize maxSize</Declaration>
+			
+			
+			<Anchor>//api/name/maxSize</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/maxSize</TokenIdentifier>
+			<Abstract type="html">The maximum size that the component will layout to, the component will not be larger than this size and will instead shrink its content if needed.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGSize maxSize</Declaration>
+			
+			
+			<Anchor>//api/name/maxSize</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setMaxSizeType:</TokenIdentifier>
+			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCSizeType maxSizeType</Declaration>
+			
+			
+			<Anchor>//api/name/maxSizeType</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/maxSizeType</TokenIdentifier>
+			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCSizeType maxSizeType</Declaration>
+			
+			
+			<Anchor>//api/name/maxSizeType</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/maxSizeType</TokenIdentifier>
+			<Abstract type="html">The content size type that the preferredSize is using. Please refer to the CCNode documentation on how to use content size types.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCSizeType maxSizeType</Declaration>
+			
+			
+			<Anchor>//api/name/maxSizeType</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setState:</TokenIdentifier>
+			<Abstract type="html">Sets or retrieves the current state of the control. It&apos;s often easier to use the enabled, highlighted and selected properties to indirectly set or read this property. This property is stored as a bit-mask.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCControlState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/state</TokenIdentifier>
+			<Abstract type="html">Sets or retrieves the current state of the control. It&apos;s often easier to use the enabled, highlighted and selected properties to indirectly set or read this property. This property is stored as a bit-mask.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCControlState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/state</TokenIdentifier>
+			<Abstract type="html">Sets or retrieves the current state of the control. It&apos;s often easier to use the enabled, highlighted and selected properties to indirectly set or read this property. This property is stored as a bit-mask.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCControlState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setEnabled:</TokenIdentifier>
+			<Abstract type="html">Determines if the control is currently enabled.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/enabled</TokenIdentifier>
+			<Abstract type="html">Determines if the control is currently enabled.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/enabled</TokenIdentifier>
+			<Abstract type="html">Determines if the control is currently enabled.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setSelected:</TokenIdentifier>
+			<Abstract type="html">Determines if the control is currently selected. E.g. this is used by toggle buttons to handle the on state.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL selected</Declaration>
+			
+			
+			<Anchor>//api/name/selected</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/selected</TokenIdentifier>
+			<Abstract type="html">Determines if the control is currently selected. E.g. this is used by toggle buttons to handle the on state.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL selected</Declaration>
+			
+			
+			<Anchor>//api/name/selected</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/selected</TokenIdentifier>
+			<Abstract type="html">Determines if the control is currently selected. E.g. this is used by toggle buttons to handle the on state.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL selected</Declaration>
+			
+			
+			<Anchor>//api/name/selected</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setHighlighted:</TokenIdentifier>
+			<Abstract type="html">Determines if the control is currently highlighted. E.g. this corresponds to the down state of a button</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL highlighted</Declaration>
+			
+			
+			<Anchor>//api/name/highlighted</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/highlighted</TokenIdentifier>
+			<Abstract type="html">Determines if the control is currently highlighted. E.g. this corresponds to the down state of a button</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL highlighted</Declaration>
+			
+			
+			<Anchor>//api/name/highlighted</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/highlighted</TokenIdentifier>
+			<Abstract type="html">Determines if the control is currently highlighted. E.g. this corresponds to the down state of a button</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL highlighted</Declaration>
+			
+			
+			<Anchor>//api/name/highlighted</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setContinuous:</TokenIdentifier>
+			<Abstract type="html">True if the control continously should generate events when it&apos;s value is changed. E.g. this can be used by slider controls.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL continuous</Declaration>
+			
+			
+			<Anchor>//api/name/continuous</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/continuous</TokenIdentifier>
+			<Abstract type="html">True if the control continously should generate events when it&apos;s value is changed. E.g. this can be used by slider controls.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL continuous</Declaration>
+			
+			
+			<Anchor>//api/name/continuous</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/continuous</TokenIdentifier>
+			<Abstract type="html">True if the control continously should generate events when it&apos;s value is changed. E.g. this can be used by slider controls.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL continuous</Declaration>
+			
+			
+			<Anchor>//api/name/continuous</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setTracking:</TokenIdentifier>
+			<Abstract type="html">True if the control is currently tracking touches or mouse events. That is, if the user has touched down in the component but not lifted his finger (the actual touch may be outside the component).</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL tracking</Declaration>
+			
+			
+			<Anchor>//api/name/tracking</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/tracking</TokenIdentifier>
+			<Abstract type="html">True if the control is currently tracking touches or mouse events. That is, if the user has touched down in the component but not lifted his finger (the actual touch may be outside the component).</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL tracking</Declaration>
+			
+			
+			<Anchor>//api/name/tracking</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/tracking</TokenIdentifier>
+			<Abstract type="html">True if the control is currently tracking touches or mouse events. That is, if the user has touched down in the component but not lifted his finger (the actual touch may be outside the component).</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL tracking</Declaration>
+			
+			
+			<Anchor>//api/name/tracking</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setTouchInside:</TokenIdentifier>
+			<Abstract type="html">True if the control currently has a touch or a mouse event within its bounds.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL touchInside</Declaration>
+			
+			
+			<Anchor>//api/name/touchInside</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/touchInside</TokenIdentifier>
+			<Abstract type="html">True if the control currently has a touch or a mouse event within its bounds.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL touchInside</Declaration>
+			
+			
+			<Anchor>//api/name/touchInside</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/touchInside</TokenIdentifier>
+			<Abstract type="html">True if the control currently has a touch or a mouse event within its bounds.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL touchInside</Declaration>
+			
+			
+			<Anchor>//api/name/touchInside</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setBlock:</TokenIdentifier>
+			<Abstract type="html">A block that handles action callbacks sent by the control. Use either the block property or the setTarget:selector: method to receive actions from controls.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( id sender ) block</Declaration>
+			
+			
+			<Anchor>//api/name/block</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/block</TokenIdentifier>
+			<Abstract type="html">A block that handles action callbacks sent by the control. Use either the block property or the setTarget:selector: method to receive actions from controls.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( id sender ) block</Declaration>
+			
+			
+			<Anchor>//api/name/block</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCControl/block</TokenIdentifier>
+			<Abstract type="html">A block that handles action callbacks sent by the control. Use either the block property or the setTarget:selector: method to receive actions from controls.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) void ( ^ ) ( id sender ) block</Declaration>
+			
+			
+			<Anchor>//api/name/block</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Sets a target and selector that should be called when an action is triggered by the control. Actions are generated when buttons are clicked, sliders are dragged etc. You can also set the action callback using the block property.</Abstract>
+			<DeclaredIn>CCControl.h</DeclaredIn>
+			
+			<Declaration>- (void)setTarget:(id)target selector:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>target</Name>
+					<Abstract type="html">The target object.</Abstract>
+				</Parameter><Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">Selector to call on the target object.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTarget:selector:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/triggerAction</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. This method is called to trigger an action callback. E.g. CCButton calls this method when the button is tapped.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)triggerAction</Declaration>
+			
+			
+			<Anchor>//api/name/triggerAction</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/stateChanged</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. This method is called every time the control&apos;s state changes, it&apos;s default behavior is to call the needsLayout method.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)stateChanged</Declaration>
+			
+			
+			<Anchor>//api/name/stateChanged</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/needsLayout</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. This method should be called whenever the control needs to update its layout. It will force a call to the layout method at the beginning of the next draw cycle.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)needsLayout</Declaration>
+			
+			
+			<Anchor>//api/name/needsLayout</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/layout</TokenIdentifier>
+			<Abstract type="html">Used by sub classes. Override this method to do any layout needed by the component. This can include setting positions or sizes of child labels or sprites as well as the compontents contentSize.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)layout</Declaration>
+			
+			
+			<Anchor>//api/name/layout</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/setValue:forKey:state:</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. Override this method if you are using custom properties and need to set them by name using the setValue:forKey method. This is needed for integration with editors such as SpriteBuilder. When overriding this method, make sure to call its super method if you cannot handle the key.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)setValue:(id)value forKey:(NSString *)key state:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>value</Name>
+					<Abstract type="html">The value to set.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to set the value for.</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The state to set the value for.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setValue:forKey:state:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/valueForKey:state:</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. Override this method to return values of custom properties that are set by state.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/instm/CCControl/setValue:forKey:state:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (id)valueForKey:(NSString *)key state:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">The key to retrieve the value for.</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The state to retrieve the value for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The value for the specified key and value or NULL if no such value exist.</Abstract></ReturnValue>
+			<Anchor>//api/name/valueForKey:state:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/touchEntered:withEvent:</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. Called when a touch enters the component. By default this happes if the touch down is within the control, if the claimsUserEvents property is set to false this will also happen if the touch starts outside of the control.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)touchEntered:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>touch</Name>
+					<Abstract type="html">Touch that entered the component.</Abstract>
+				</Parameter><Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Event associated with the touch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/touchEntered:withEvent:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/touchExited:withEvent:</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. Called when a touch exits the component.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)touchExited:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>touch</Name>
+					<Abstract type="html">Touch that exited the component</Abstract>
+				</Parameter><Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Event associated with the touch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/touchExited:withEvent:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/touchUpInside:withEvent:</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. Called when a touch that started inside the component is ended inside the component. E.g. for CCButton, this triggers the buttons callback action.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)touchUpInside:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>touch</Name>
+					<Abstract type="html">Touch that is released inside the component.</Abstract>
+				</Parameter><Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Event associated with the touch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/touchUpInside:withEvent:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/touchUpOutside:withEvent:</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. Called when a touch that started inside the component is ended outside the component. E.g. for CCButton, this doesn&apos;t trigger any callback action.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)touchUpOutside:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>touch</Name>
+					<Abstract type="html">Touch that is release outside of the component.</Abstract>
+				</Parameter><Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Event associated with the touch.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/touchUpOutside:withEvent:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/mouseDownEntered:</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. Called when a mouse down enters the component. By default this happes if the mouse down is within the control, if the claimsUserEvents property is set to false this will also happen if the mouse down starts outside of the control.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)mouseDownEntered:(NSEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Event associated with the mouse down.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mouseDownEntered:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/mouseDownExited:</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. Called when a mouse down exits the component.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)mouseDownExited:(NSEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Event associated with the mouse down.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mouseDownExited:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/mouseUpInside:</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. Called when a mouse down that started inside the component is ended inside the component. E.g. for CCButton, this triggers the buttons callback action.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)mouseUpInside:(NSEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Event associated with the mouse up.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mouseUpInside:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCControl/mouseUpOutside:</TokenIdentifier>
+			<Abstract type="html">Used by sub-classes. Called when a mouse down that started inside the component is ended outside the component. E.g. for CCButton, this doesn&apos;t trigger any callback action.</Abstract>
+			<DeclaredIn>CCControlSubclass.h</DeclaredIn>
+			
+			<Declaration>- (void)mouseUpOutside:(NSEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Event associated with the mouse up.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mouseUpOutside:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

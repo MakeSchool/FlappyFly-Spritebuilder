@@ -28,7 +28,7 @@
 // Only compile this code on iOS. These files should NOT be included on your Mac project.
 // But in case they are included, it won't be compiled.
 #import "../../ccMacros.h"
-#ifdef __CC_PLATFORM_IOS
+#if __CC_PLATFORM_IOS
 
 #import <unistd.h>
 
@@ -39,19 +39,16 @@
 #import "../../CCTextureCache.h"
 #import "../../ccMacros.h"
 #import "../../CCScene.h"
-#import "../../CCGLProgram.h"
-#import "../../ccGLStateCache.h"
+#import "../../CCShader.h"
 #import "../../ccFPSImages.h"
 #import "../../CCConfiguration.h"
+#import "CCRenderer_Private.h"
+#import "CCTouch.h"
+#import "CCRenderDispatch_Private.h"
 
 // support imports
-#import "../../Support/OpenGL_Internal.h"
 #import "../../Support/CGPointExtension.h"
-#import "../../Support/TransformUtils.h"
 #import "../../Support/CCFileUtils.h"
-
-#import "kazmath/kazmath.h"
-#import "kazmath/GL/matrix.h"
 
 #if CC_ENABLE_PROFILERS
 #import "../../Support/CCProfiling.h"
@@ -103,54 +100,12 @@
 	return self;
 }
 
-
-//
-// Draw the Scene
-//
-- (void) drawScene
-{	
-    /* calculate "global" dt */
-	[self calculateDeltaTime];
-
-	CCGLView *openGLview = (CCGLView*)[self view];
-
-	[EAGLContext setCurrentContext: [openGLview context]];
-
-	/* tick before glClear: issue #533 */
-	if( ! _isPaused )
-		[_scheduler update: _dt];
-
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-	/* to avoid flickr, nextScene MUST be here: after tick and before draw.
-	 XXX: Which bug is this one. It seems that it can't be reproduced with v0.9 */
-	if( _nextScene )
-		[self setNextScene];
-
-	kmGLPushMatrix();
-
-	[_runningScene visit];
-
-	[_notificationNode visit];
-
-	if( _displayStats )
-		[self showStats];
-
-	kmGLPopMatrix();
-
-	_totalFrames++;
-
-	[openGLview swapBuffers];
-
-	if( _displayStats )
-		[self calculateMPF];
-    
-}
-
 -(void) setViewport
 {
 	CGSize size = _winSizeInPixels;
-	glViewport(0, 0, size.width, size.height );
+	CCRenderDispatch(YES, ^{
+		glViewport(0, 0, size.width, size.height );
+	});
 }
 
 -(void) setProjection:(CCDirectorProjection)projection
@@ -161,47 +116,22 @@
 
 	switch (projection) {
 		case CCDirectorProjection2D:
-
-			kmGLMatrixMode(KM_GL_PROJECTION);
-			kmGLLoadIdentity();
-
-			kmMat4 orthoMatrix;
-			kmMat4OrthographicProjection(&orthoMatrix, 0, sizePoint.width, 0, sizePoint.height, -1024, 1024 );
-			kmGLMultMatrix( &orthoMatrix );
-
-			kmGLMatrixMode(KM_GL_MODELVIEW);
-			kmGLLoadIdentity();
+			_projectionMatrix = GLKMatrix4MakeOrtho(0, sizePoint.width, 0, sizePoint.height, -1024, 1024 );
 			break;
 
-		case CCDirectorProjection3D:
-		{
-			float zeye = [self getZEye];
+		case CCDirectorProjection3D: {
+			float zeye = sizePoint.height*sqrtf(3.0f)/2.0f;
+			_projectionMatrix = GLKMatrix4Multiply(
+				GLKMatrix4MakePerspective(CC_DEGREES_TO_RADIANS(60), (float)sizePoint.width/sizePoint.height, 0.1f, zeye*2),
+				GLKMatrix4MakeTranslation(-sizePoint.width/2.0, -sizePoint.height/2, -zeye)
+			);
 
-			kmMat4 matrixPerspective, matrixLookup;
-
-			kmGLMatrixMode(KM_GL_PROJECTION);
-			kmGLLoadIdentity();
-
-			// issue #1334
-			kmMat4PerspectiveProjection( &matrixPerspective, 60, (GLfloat)sizePoint.width/sizePoint.height, 0.1f, zeye*2);
-//			kmMat4PerspectiveProjection( &matrixPerspective, 60, (GLfloat)size.width/size.height, 0.1f, 1500);
-
-			kmGLMultMatrix(&matrixPerspective);
-
-			kmGLMatrixMode(KM_GL_MODELVIEW);
-			kmGLLoadIdentity();
-			kmVec3 eye, center, up;
-			kmVec3Fill( &eye, sizePoint.width/2, sizePoint.height/2, zeye );
-			kmVec3Fill( &center, sizePoint.width/2, sizePoint.height/2, 0 );
-			kmVec3Fill( &up, 0, 1, 0);
-			kmMat4LookAt(&matrixLookup, &eye, &center, &up);
-			kmGLMultMatrix(&matrixLookup);
 			break;
 		}
 
 		case CCDirectorProjectionCustom:
 			if( [_delegate respondsToSelector:@selector(updateProjection)] )
-				[_delegate updateProjection];
+				_projectionMatrix = [_delegate updateProjection];
 			break;
 
 		default:
@@ -210,8 +140,6 @@
 	}
 
 	_projection = projection;
-
-	ccSetProjectionMatrixDirty();
 	[self createStatsLabel];
 }
 
@@ -227,13 +155,9 @@
 	[self performSelector:@selector(drawScene) onThread:thread withObject:nil waitUntilDone:YES];
 }
 
-// overriden, don't call super
--(void) reshapeProjection:(CGSize)size
+-(void) reshapeProjection:(CGSize)newViewSize
 {
-	_winSizeInPixels = size;
-	_winSizeInPoints = CGSizeMake(size.width/__ccContentScaleFactor, size.height/__ccContentScaleFactor);
-	
-	[self setProjection:_projection];
+	[super reshapeProjection:newViewSize];
   
 	if( [_delegate respondsToSelector:@selector(directorDidReshapeProjection:)] )
 		[_delegate directorDidReshapeProjection:self];
@@ -241,7 +165,7 @@
 
 #pragma mark Director Point Convertion
 
--(CGPoint)convertTouchToGL:(UITouch*)touch
+-(CGPoint)convertTouchToGL:(CCTouch*)touch
 {
 	CGPoint uiPoint = [touch locationInView: [touch view]];
 	return [self convertToGL:uiPoint];
@@ -249,16 +173,14 @@
 
 -(void) end
 {
-
 	[super end];
 }
 
 #pragma mark Director - UIViewController delegate
 
 
--(void) setView:(CCGLView *)view
+-(void) setView:(CC_VIEW<CCDirectorView> *)view
 {
-	if( view != __view) {
 		[super setView:view];
 
 		if( view ) {
@@ -267,7 +189,6 @@
 			CGSize size = view.bounds.size;
 			_winSizeInPixels = CGSizeMake(size.width * scale, size.height * scale);
 		}
-	}
 }
 
 // Override to allow orientations other than the default portrait orientation.
@@ -440,6 +361,11 @@
     if(!_animating)
         return;
 
+    if([_delegate respondsToSelector:@selector(stopAnimation)])
+    {
+        [_delegate stopAnimation];
+    }
+    
 	CCLOG(@"cocos2d: animation stopped");
 
 #if CC_DIRECTOR_IOS_USE_BACKGROUND_THREAD
@@ -471,7 +397,7 @@
 	if( _displayStats )
 		gettimeofday( &_lastUpdate, NULL);
 
-#ifdef DEBUG
+#if DEBUG
 	// If we are debugging our code, prevent big delta time
 	if( _dt > 0.2f )
 		_dt = 1/60.0f;

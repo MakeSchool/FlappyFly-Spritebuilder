@@ -27,27 +27,24 @@
 // Only compile this code on Mac. These files should not be included on your iOS project.
 // But in case they are included, it won't be compiled.
 #import "../../ccMacros.h"
-#ifdef __CC_PLATFORM_MAC
+#if __CC_PLATFORM_MAC
 
 #import <sys/time.h>
 
 #import "CCDirectorMac.h"
-#import "CCGLView.h"
 #import "CCWindow.h"
 
 #import "../../CCNode.h"
 #import "../../CCScene.h"
 #import "../../CCScheduler.h"
 #import "../../ccMacros.h"
-#import "../../CCGLProgram.h"
-#import "../../ccGLStateCache.h"
+#import "../../CCShader.h"
 #import "../../ccFPSImages.h"
  
-// external
-#import "kazmath/kazmath.h"
-#import "kazmath/GL/matrix.h"
 
 #import "CCDirector_Private.h"
+#import "CCRenderer_Private.h"
+#import "CCRenderDispatch.h"
 
 #pragma mark -
 #pragma mark Director Mac extensions
@@ -120,17 +117,17 @@
     if (_isFullScreen == fullscreen)
 		return;
 
-	CCGLView *openGLview = (CCGLView*) self.view;
-    BOOL viewAcceptsTouchEvents = openGLview.acceptsTouchEvents;
+    CC_VIEW<CCDirectorView> *view = self.view;
+    BOOL viewAcceptsTouchEvents = view.acceptsTouchEvents;
 
     if( fullscreen ) {
-        _originalWinRect = [openGLview frame];
+        _originalWinRect = [view frame];
 
         // Cache normal window and superview of openGLView
         if(!_windowGLView)
-            _windowGLView = [openGLview window];
+            _windowGLView = [view window];
 
-        _superViewGLView = [openGLview superview];
+        _superViewGLView = [view superview];
 
 
         // Get screen size
@@ -140,13 +137,13 @@
         _fullScreenWindow = [[CCWindow alloc] initWithFrame:displayRect fullscreen:YES];
 
         // Remove glView from window
-        [openGLview removeFromSuperview];
+        [view removeFromSuperview];
 
         // Set new frame
-        [openGLview setFrame:displayRect];
+        [view setFrame:displayRect];
 
         // Attach glView to fullscreen window
-        [_fullScreenWindow setContentView:openGLview];
+        [_fullScreenWindow setContentView:view];
 
         // Show the fullscreen window
         [_fullScreenWindow makeKeyAndOrderFront:self];
@@ -158,16 +155,16 @@
     } else {
 
         // Remove glView from fullscreen window
-        [openGLview removeFromSuperview];
+        [view removeFromSuperview];
 
         // Release fullscreen window
         _fullScreenWindow = nil;
 
         // Attach glView to superview
-        [_superViewGLView addSubview:openGLview];
+        [_superViewGLView addSubview:view];
 
         // Set new frame
-        [openGLview setFrame:_originalWinRect];
+        [view setFrame:_originalWinRect];
 
         // Show the window
         [_windowGLView makeKeyAndOrderFront:self];
@@ -178,30 +175,28 @@
     }
 	
 	// issue #1189
-	[_windowGLView makeFirstResponder:openGLview];
+	[_windowGLView makeFirstResponder:view];
 
     _isFullScreen = fullscreen;
 
      // Retain +1
 
     // re-configure glView
-    [self setView:openGLview];
+    [self setView:view];
     
-    [openGLview setAcceptsTouchEvents:viewAcceptsTouchEvents];
+    [view setAcceptsTouchEvents:viewAcceptsTouchEvents];
     
      // Retain -1
 
-    [openGLview setNeedsDisplay:YES];
+    [view setNeedsDisplay:YES];
 #else
 #error Full screen is not supported for Mac OS 10.5 or older yet
 #error If you don't want FullScreen support, you can safely remove these 2 lines
 #endif
 }
 
--(void) setView:(CCGLView *)view
+-(void) setView:(CC_VIEW<CCDirectorView> *)view
 {
-	if( view != __view) {
-
 		[super setView:view];
 
 		// cache the NSWindow and NSOpenGLView created from the NIB
@@ -209,7 +204,16 @@
 		{
 			_originalWinSizeInPoints = _winSizeInPoints;
 		}
-	}
+}
+
+- (CGFloat)deviceContentScaleFactor {
+    if (self.view) {
+        NSRect backingBounds = [self.view convertRectToBacking:[self.view bounds]];
+        
+        return backingBounds.size.width / self.view.bounds.size.width;
+    }
+    
+    return 1.0;
 }
 
 -(int) resizeMode
@@ -251,64 +255,55 @@
 		
 		offset = _winOffset;
 	}
-
-	glViewport(offset.x, offset.y, widthAspect, heightAspect);
+	
+	CCRenderDispatch(NO, ^{
+		glViewport(offset.x, offset.y, widthAspect, heightAspect);
+	});
 }
 
 -(void) setProjection:(CCDirectorProjection)projection
 {
-	CGSize size = _winSizeInPoints;
+	CGSize sizePoint = _winSizeInPoints;
 	if( _resizeMode == kCCDirectorResize_AutoScale && ! CGSizeEqualToSize(_originalWinSizeInPoints, CGSizeZero ) ) {
-		size = _originalWinSizeInPoints;
+		sizePoint = _originalWinSizeInPoints;
 	}
 
 	[self setViewport];
 
 	switch (projection) {
 		case CCDirectorProjection2D:
-
-			kmGLMatrixMode(KM_GL_PROJECTION);
-			kmGLLoadIdentity();
-
-			kmMat4 orthoMatrix;
-			kmMat4OrthographicProjection(&orthoMatrix, 0, size.width, 0, size.height, -1024, 1024);
-			kmGLMultMatrix( &orthoMatrix );
-
-			kmGLMatrixMode(KM_GL_MODELVIEW);
-			kmGLLoadIdentity();
+			_projectionMatrix = GLKMatrix4MakeOrtho(0, sizePoint.width, 0, sizePoint.height, -1024, 1024 );
 			break;
 
 
-		case CCDirectorProjection3D:
-		{
-
-			float zeye = [self getZEye];
-
-			kmGLMatrixMode(KM_GL_PROJECTION);
-			kmGLLoadIdentity();
-
-			kmMat4 matrixPerspective, matrixLookup;
-
-			// issue #1334
-			kmMat4PerspectiveProjection( &matrixPerspective, 60, (GLfloat)size.width/size.height, 0.1f, MAX(zeye*2,1500) );
-//			kmMat4PerspectiveProjection( &matrixPerspective, 60, (GLfloat)size.width/size.height, 0.1f, 1500);
-
-
-			kmGLMultMatrix(&matrixPerspective);
-
-
-			kmGLMatrixMode(KM_GL_MODELVIEW);
-			kmGLLoadIdentity();
-			kmVec3 eye, center, up;
-
-			float eyeZ = size.height * zeye / size.height;
-
-			kmVec3Fill( &eye, size.width/2, size.height/2, eyeZ );
-			kmVec3Fill( &center, size.width/2, size.height/2, 0 );
-			kmVec3Fill( &up, 0, 1, 0);
-			kmMat4LookAt(&matrixLookup, &eye, &center, &up);
-			kmGLMultMatrix(&matrixLookup);
-			break;
+		case CCDirectorProjection3D: {
+//			float zeye = [self getZEye];
+//
+//			kmGLMatrixMode(KM_GL_PROJECTION);
+//			kmGLLoadIdentity();
+//
+//			kmMat4 matrixPerspective, matrixLookup;
+//
+//			// issue #1334
+//			kmMat4PerspectiveProjection( &matrixPerspective, 60, (GLfloat)size.width/size.height, 0.1f, MAX(zeye*2,1500) );
+////			kmMat4PerspectiveProjection( &matrixPerspective, 60, (GLfloat)size.width/size.height, 0.1f, 1500);
+//
+//
+//			kmGLMultMatrix(&matrixPerspective);
+//
+//
+//			kmGLMatrixMode(KM_GL_MODELVIEW);
+//			kmGLLoadIdentity();
+//			kmVec3 eye, center, up;
+//
+//			float eyeZ = size.height * zeye / size.height;
+//
+//			kmVec3Fill( &eye, size.width/2, size.height/2, eyeZ );
+//			kmVec3Fill( &center, size.width/2, size.height/2, 0 );
+//			kmVec3Fill( &up, 0, 1, 0);
+//			kmMat4LookAt(&matrixLookup, &eye, &center, &up);
+//			kmGLMultMatrix(&matrixLookup);
+//			break;
 		}
 
 		case CCDirectorProjectionCustom:
@@ -322,8 +317,6 @@
 	}
 
 	_projection = projection;
-
-	ccSetProjectionMatrixDirty();
 	[self createStatsLabel];
 }
 
@@ -543,66 +536,15 @@ static CVReturn MyDisplayLinkCallback(CVDisplayLinkRef displayLink, const CVTime
 	}
 }
 
-//
-// Draw the Scene
-//
-- (void) drawScene
-{
-	/* calculate "global" dt */
-	[self calculateDeltaTime];
-
-	// We draw on a secondary thread through the display link
-	// When resizing the view, -reshape is called automatically on the main thread
-	// Add a mutex around to avoid the threads accessing the context simultaneously	when resizing
-
-	[self.view lockOpenGLContext];
-
-	/* tick before glClear: issue #533 */
-	if( ! _isPaused )
-		[_scheduler update: _dt];
-
-	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-	/* to avoid flickr, nextScene MUST be here: after tick and before draw.
-	 XXX: Which bug is this one. It seems that it can't be reproduced with v0.9 */
-	if( _nextScene )
-		[self setNextScene];
-
-	kmGLPushMatrix();
-
-
-	/* draw the scene */
-	[_runningScene visit];
-
-	/* draw the notification node */
-	[_notificationNode visit];
-
-	if( _displayStats )
-		[self showStats];
-
-	kmGLPopMatrix();
-
-	_totalFrames++;
-	
-
-	// flush buffer
-	[self.view.openGLContext flushBuffer];	
-
-	[self.view unlockOpenGLContext];
-
-	if( _displayStats )
-		[self calculateMPF];
-}
-
 // set the event dispatcher
--(void) setView:(CCGLView *)view
+-(void) setView:(CC_VIEW<CCDirectorView> *)view
 {
-	[super setView:view];
-
 	// Synchronize buffer swaps with vertical refresh rate
 	[[view openGLContext] makeCurrentContext];
 	GLint swapInt = 1;
 	[[view openGLContext] setValues:&swapInt forParameter:NSOpenGLCPSwapInterval];
+	
+	[super setView:view];
 }
 
 @end

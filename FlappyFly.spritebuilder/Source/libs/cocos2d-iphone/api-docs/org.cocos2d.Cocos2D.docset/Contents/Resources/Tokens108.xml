@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCRenderTexture.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCRenderTexture</TokenIdentifier>
+			<Abstract type="html">CCRenderTexture is a generic rendering target. To render things into it,
+simply construct a render target, call begin on it, call visit on any cocos2d
+scenes or objects to render them, and call end. For convenience, render texture
+adds a sprite as its display child with the results, so you can simply add
+the render texture to your scene and treat it like any other CCNode.
+There are also functions for saving the render texture to disk in PNG or JPG format.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+            
+			
+			<NodeRef refid="108"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/setSprite:</TokenIdentifier>
+			<Abstract type="html">The CCSprite that is used for rendering.
+	A subtle change introduced in v3.1.1 is that this sprite is rendered explicitly and is not a child of the render texture.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCSprite *sprite</Declaration>
+			
+			
+			<Anchor>//api/name/sprite</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/sprite</TokenIdentifier>
+			<Abstract type="html">The CCSprite that is used for rendering.
+	A subtle change introduced in v3.1.1 is that this sprite is rendered explicitly and is not a child of the render texture.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCSprite *sprite</Declaration>
+			
+			
+			<Anchor>//api/name/sprite</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCRenderTexture/sprite</TokenIdentifier>
+			<Abstract type="html">The CCSprite that is used for rendering.
+	A subtle change introduced in v3.1.1 is that this sprite is rendered explicitly and is not a child of the render texture.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCSprite *sprite</Declaration>
+			
+			
+			<Anchor>//api/name/sprite</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/setClearFlags:</TokenIdentifier>
+			<Abstract type="html">Valid flags: GLCOLORBUFFERBIT, GLDEPTHBUFFERBIT, GLSTENCILBUFFER_BIT. They can be OR&apos;ed. Valid when &quot;autoDraw is YES.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) GLbitfield clearFlags</Declaration>
+			
+			
+			<Anchor>//api/name/clearFlags</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/clearFlags</TokenIdentifier>
+			<Abstract type="html">Valid flags: GLCOLORBUFFERBIT, GLDEPTHBUFFERBIT, GLSTENCILBUFFER_BIT. They can be OR&apos;ed. Valid when &quot;autoDraw is YES.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) GLbitfield clearFlags</Declaration>
+			
+			
+			<Anchor>//api/name/clearFlags</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCRenderTexture/clearFlags</TokenIdentifier>
+			<Abstract type="html">Valid flags: GLCOLORBUFFERBIT, GLDEPTHBUFFERBIT, GLSTENCILBUFFER_BIT. They can be OR&apos;ed. Valid when &quot;autoDraw is YES.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) GLbitfield clearFlags</Declaration>
+			
+			
+			<Anchor>//api/name/clearFlags</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/setClearColor:</TokenIdentifier>
+			<Abstract type="html">Clear color value. Valid only when &quot;autoDraw&quot; is YES.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *clearColor</Declaration>
+			
+			
+			<Anchor>//api/name/clearColor</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/clearColor</TokenIdentifier>
+			<Abstract type="html">Clear color value. Valid only when &quot;autoDraw&quot; is YES.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *clearColor</Declaration>
+			
+			
+			<Anchor>//api/name/clearColor</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCRenderTexture/clearColor</TokenIdentifier>
+			<Abstract type="html">Clear color value. Valid only when &quot;autoDraw&quot; is YES.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *clearColor</Declaration>
+			
+			
+			<Anchor>//api/name/clearColor</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/setClearDepth:</TokenIdentifier>
+			<Abstract type="html">Value for clearDepth. Valid only when autoDraw is YES.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) GLclampf clearDepth</Declaration>
+			
+			
+			<Anchor>//api/name/clearDepth</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/clearDepth</TokenIdentifier>
+			<Abstract type="html">Value for clearDepth. Valid only when autoDraw is YES.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) GLclampf clearDepth</Declaration>
+			
+			
+			<Anchor>//api/name/clearDepth</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCRenderTexture/clearDepth</TokenIdentifier>
+			<Abstract type="html">Value for clearDepth. Valid only when autoDraw is YES.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) GLclampf clearDepth</Declaration>
+			
+			
+			<Anchor>//api/name/clearDepth</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/setClearStencil:</TokenIdentifier>
+			<Abstract type="html">Value for clear Stencil. Valid only when autoDraw is YES</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) GLint clearStencil</Declaration>
+			
+			
+			<Anchor>//api/name/clearStencil</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/clearStencil</TokenIdentifier>
+			<Abstract type="html">Value for clear Stencil. Valid only when autoDraw is YES</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) GLint clearStencil</Declaration>
+			
+			
+			<Anchor>//api/name/clearStencil</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCRenderTexture/clearStencil</TokenIdentifier>
+			<Abstract type="html">Value for clear Stencil. Valid only when autoDraw is YES</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) GLint clearStencil</Declaration>
+			
+			
+			<Anchor>//api/name/clearStencil</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/setAutoDraw:</TokenIdentifier>
+			<Abstract type="html">When enabled, it will render its children into the texture automatically. Disabled by default for compatiblity reasons.
+Will be enabled in the future.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL autoDraw</Declaration>
+			
+			
+			<Anchor>//api/name/autoDraw</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/autoDraw</TokenIdentifier>
+			<Abstract type="html">When enabled, it will render its children into the texture automatically. Disabled by default for compatiblity reasons.
+Will be enabled in the future.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL autoDraw</Declaration>
+			
+			
+			<Anchor>//api/name/autoDraw</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCRenderTexture/autoDraw</TokenIdentifier>
+			<Abstract type="html">When enabled, it will render its children into the texture automatically. Disabled by default for compatiblity reasons.
+Will be enabled in the future.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL autoDraw</Declaration>
+			
+			
+			<Anchor>//api/name/autoDraw</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCRenderTexture/renderTextureWithWidth:height:pixelFormat:depthStencilFormat:</TokenIdentifier>
+			<Abstract type="html">initializes a RenderTexture object with width and height in Points and a pixel format( only RGB and RGBA formats are valid ) and depthStencil format</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>+ (id)renderTextureWithWidth:(int)w height:(int)h pixelFormat:(CCTexturePixelFormat)format depthStencilFormat:(GLuint)depthStencilFormat</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>w</Name>
+					<Abstract type="html">Width of render target.</Abstract>
+				</Parameter><Parameter>
+					<Name>h</Name>
+					<Abstract type="html">Height of render target.</Abstract>
+				</Parameter><Parameter>
+					<Name>format</Name>
+					<Abstract type="html">Pixel format of render target.</Abstract>
+				</Parameter><Parameter>
+					<Name>depthStencilFormat</Name>
+					<Abstract type="html">Stencil format of render target.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCRenderTarget object.</Abstract></ReturnValue>
+			<Anchor>//api/name/renderTextureWithWidth:height:pixelFormat:depthStencilFormat:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCRenderTexture/renderTextureWithWidth:height:pixelFormat:</TokenIdentifier>
+			<Abstract type="html">Creates a RenderTexture object with width and height in Points and a pixel format, only RGB and RGBA formats are valid</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>+ (id)renderTextureWithWidth:(int)w height:(int)h pixelFormat:(CCTexturePixelFormat)format</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>w</Name>
+					<Abstract type="html">Width of render target.</Abstract>
+				</Parameter><Parameter>
+					<Name>h</Name>
+					<Abstract type="html">Height of render target.</Abstract>
+				</Parameter><Parameter>
+					<Name>format</Name>
+					<Abstract type="html">Pixel format of render target.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCRenderTarget object.</Abstract></ReturnValue>
+			<Anchor>//api/name/renderTextureWithWidth:height:pixelFormat:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCRenderTexture/renderTextureWithWidth:height:</TokenIdentifier>
+			<Abstract type="html">Creates a RenderTexture object with width and height in Points, pixel format is RGBA8888</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>+ (id)renderTextureWithWidth:(int)w height:(int)h</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>w</Name>
+					<Abstract type="html">Width of render target.</Abstract>
+				</Parameter><Parameter>
+					<Name>h</Name>
+					<Abstract type="html">Height of render target.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCRenderTarget object.</Abstract></ReturnValue>
+			<Anchor>//api/name/renderTextureWithWidth:height:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/initWithWidth:height:pixelFormat:</TokenIdentifier>
+			<Abstract type="html">Initializes a RenderTexture object with width and height in Points and a pixel format, only RGB and RGBA formats are valid</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithWidth:(int)w height:(int)h pixelFormat:(CCTexturePixelFormat)format</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>w</Name>
+					<Abstract type="html">Width of render target.</Abstract>
+				</Parameter><Parameter>
+					<Name>h</Name>
+					<Abstract type="html">Height of render target.</Abstract>
+				</Parameter><Parameter>
+					<Name>format</Name>
+					<Abstract type="html">Pixel format of render target.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCRenderTarget object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithWidth:height:pixelFormat:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/initWithWidth:height:pixelFormat:depthStencilFormat:</TokenIdentifier>
+			<Abstract type="html">Initializes a RenderTexture object with width and height in Points and a pixel format( only RGB and RGBA formats are valid ) and depthStencil format</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithWidth:(int)w height:(int)h pixelFormat:(CCTexturePixelFormat)format depthStencilFormat:(GLuint)depthStencilFormat</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>w</Name>
+					<Abstract type="html">Width of render target.</Abstract>
+				</Parameter><Parameter>
+					<Name>h</Name>
+					<Abstract type="html">Height of render target.</Abstract>
+				</Parameter><Parameter>
+					<Name>format</Name>
+					<Abstract type="html">Pixel format of render target.</Abstract>
+				</Parameter><Parameter>
+					<Name>depthStencilFormat</Name>
+					<Abstract type="html">Stencil format of render target.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCRenderTarget object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithWidth:height:pixelFormat:depthStencilFormat:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/begin</TokenIdentifier>
+			<Abstract type="html">Starts rendering to the texture whitout clearing the texture first.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (void)begin</Declaration>
+			
+			
+			<Anchor>//api/name/begin</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/beginWithClear:g:b:a:</TokenIdentifier>
+			<Abstract type="html">starts rendering to the texture while clearing the texture first.
+This is more efficient then calling -clear first and then begin.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (void)beginWithClear:(float)r g:(float)g b:(float)b a:(float)a</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>r</Name>
+					<Abstract type="html">Red color.</Abstract>
+				</Parameter><Parameter>
+					<Name>g</Name>
+					<Abstract type="html">Green color.</Abstract>
+				</Parameter><Parameter>
+					<Name>b</Name>
+					<Abstract type="html">Blue color.</Abstract>
+				</Parameter><Parameter>
+					<Name>a</Name>
+					<Abstract type="html">Alpha.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginWithClear:g:b:a:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/beginWithClear:g:b:a:depth:</TokenIdentifier>
+			<Abstract type="html">starts rendering to the texture while clearing the texture first.
+This is more efficient then calling -clear first and then begin.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (void)beginWithClear:(float)r g:(float)g b:(float)b a:(float)a depth:(float)depthValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>r</Name>
+					<Abstract type="html">Red color.</Abstract>
+				</Parameter><Parameter>
+					<Name>g</Name>
+					<Abstract type="html">Green color.</Abstract>
+				</Parameter><Parameter>
+					<Name>b</Name>
+					<Abstract type="html">Blue color.</Abstract>
+				</Parameter><Parameter>
+					<Name>a</Name>
+					<Abstract type="html">Alpha.</Abstract>
+				</Parameter><Parameter>
+					<Name>depthValue</Name>
+					<Abstract type="html">Depth value.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginWithClear:g:b:a:depth:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/beginWithClear:g:b:a:depth:stencil:</TokenIdentifier>
+			<Abstract type="html">starts rendering to the texture while clearing the texture first.
+This is more efficient then calling -clear first and then begin.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (void)beginWithClear:(float)r g:(float)g b:(float)b a:(float)a depth:(float)depthValue stencil:(int)stencilValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>r</Name>
+					<Abstract type="html">Red color.</Abstract>
+				</Parameter><Parameter>
+					<Name>g</Name>
+					<Abstract type="html">Green color.</Abstract>
+				</Parameter><Parameter>
+					<Name>b</Name>
+					<Abstract type="html">Blue color.</Abstract>
+				</Parameter><Parameter>
+					<Name>a</Name>
+					<Abstract type="html">Alpha.</Abstract>
+				</Parameter><Parameter>
+					<Name>depthValue</Name>
+					<Abstract type="html">Depth value.</Abstract>
+				</Parameter><Parameter>
+					<Name>stencilValue</Name>
+					<Abstract type="html">Stencil value.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/beginWithClear:g:b:a:depth:stencil:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/end</TokenIdentifier>
+			<Abstract type="html">Ends grabbing</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (void)end</Declaration>
+			
+			
+			<Anchor>//api/name/end</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/clear:g:b:a:</TokenIdentifier>
+			<Abstract type="html">Clears the texture with a color</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (void)clear:(float)r g:(float)g b:(float)b a:(float)a</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>r</Name>
+					<Abstract type="html">Red color.</Abstract>
+				</Parameter><Parameter>
+					<Name>g</Name>
+					<Abstract type="html">Green color.</Abstract>
+				</Parameter><Parameter>
+					<Name>b</Name>
+					<Abstract type="html">Blue color.</Abstract>
+				</Parameter><Parameter>
+					<Name>a</Name>
+					<Abstract type="html">Alpha.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/clear:g:b:a:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/clearDepth:</TokenIdentifier>
+			<Abstract type="html">Clears the texture with a specified depth value.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (void)clearDepth:(float)depthValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>depthValue</Name>
+					<Abstract type="html">Depth value.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/clearDepth:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/clearStencil:</TokenIdentifier>
+			<Abstract type="html">Clears the texture with a specified stencil value.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (void)clearStencil:(int)stencilValue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>stencilValue</Name>
+					<Abstract type="html">Stencil value.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/clearStencil:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/saveToFile:</TokenIdentifier>
+			<Abstract type="html">Saves the texture into a file using JPEG format. The file will be saved in the Documents folder.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)saveToFile:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">Filename to save image to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the operation is successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/saveToFile:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/saveToFile:format:</TokenIdentifier>
+			<Abstract type="html">Saves the texture into a file. The format could be JPG or PNG. The file will be saved in the Documents folder.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)saveToFile:(NSString *)name format:(CCRenderTextureImageFormat)format</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">Filename to save image to.</Abstract>
+				</Parameter><Parameter>
+					<Name>format</Name>
+					<Abstract type="html">File format.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the operation is successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/saveToFile:format:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/saveToFilePath:</TokenIdentifier>
+			<Abstract type="html">Saves the texture into a file using JPEG format.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)saveToFilePath:(NSString *)filePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">File path to save image to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the operation was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/saveToFilePath:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/saveToFilePath:format:</TokenIdentifier>
+			<Abstract type="html">Saves the texture into a file. The format could be JPG or PNG.</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)saveToFilePath:(NSString *)filePath format:(CCRenderTextureImageFormat)format</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>filePath</Name>
+					<Abstract type="html">File path to save image to.</Abstract>
+				</Parameter><Parameter>
+					<Name>format</Name>
+					<Abstract type="html">File format.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">YES if the operation was successful.</Abstract></ReturnValue>
+			<Anchor>//api/name/saveToFilePath:format:</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderTexture/getUIImage</TokenIdentifier>
+			<Abstract type="html">Returns an autoreleased UIImage from the texture</Abstract>
+			<DeclaredIn>CCRenderTexture.h</DeclaredIn>
+			
+			<Declaration>- (UIImage *)getUIImage</Declaration>
+			
+			
+			<Anchor>//api/name/getUIImage</Anchor>
+            <NodeRef refid="108"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

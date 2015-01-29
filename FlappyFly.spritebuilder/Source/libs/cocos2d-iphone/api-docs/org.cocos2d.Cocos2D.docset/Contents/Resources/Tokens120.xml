@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCTiledMap.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCTiledMap</TokenIdentifier>
+			<Abstract type="html">CCTiledMap knows how to parse and render a TMX map.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+            
+			
+			<NodeRef refid="120"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/setMapSize:</TokenIdentifier>
+			<Abstract type="html">Map size measured in tiles.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGSize mapSize</Declaration>
+			
+			
+			<Anchor>//api/name/mapSize</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/mapSize</TokenIdentifier>
+			<Abstract type="html">Map size measured in tiles.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGSize mapSize</Declaration>
+			
+			
+			<Anchor>//api/name/mapSize</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMap/mapSize</TokenIdentifier>
+			<Abstract type="html">Map size measured in tiles.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGSize mapSize</Declaration>
+			
+			
+			<Anchor>//api/name/mapSize</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/setTileSize:</TokenIdentifier>
+			<Abstract type="html">Map Tile size measured in pixels.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/tileSize</TokenIdentifier>
+			<Abstract type="html">Map Tile size measured in pixels.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMap/tileSize</TokenIdentifier>
+			<Abstract type="html">Map Tile size measured in pixels.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/setMapOrientation:</TokenIdentifier>
+			<Abstract type="html">Map Orientation method.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCTiledMapOrientation mapOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/mapOrientation</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/mapOrientation</TokenIdentifier>
+			<Abstract type="html">Map Orientation method.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCTiledMapOrientation mapOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/mapOrientation</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMap/mapOrientation</TokenIdentifier>
+			<Abstract type="html">Map Orientation method.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCTiledMapOrientation mapOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/mapOrientation</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/setObjectGroups:</TokenIdentifier>
+			<Abstract type="html">Object Groups.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *objectGroups</Declaration>
+			
+			
+			<Anchor>//api/name/objectGroups</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/objectGroups</TokenIdentifier>
+			<Abstract type="html">Object Groups.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *objectGroups</Declaration>
+			
+			
+			<Anchor>//api/name/objectGroups</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMap/objectGroups</TokenIdentifier>
+			<Abstract type="html">Object Groups.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *objectGroups</Declaration>
+			
+			
+			<Anchor>//api/name/objectGroups</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/setProperties:</TokenIdentifier>
+			<Abstract type="html">Tile Properties.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/properties</TokenIdentifier>
+			<Abstract type="html">Tile Properties.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMap/properties</TokenIdentifier>
+			<Abstract type="html">Tile Properties.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTiledMap/tiledMapWithFile:</TokenIdentifier>
+			<Abstract type="html">Creates a returns a Tile Map object using the specified TMX file.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>+ (id)tiledMapWithFile:(NSString *)tmxFile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tmxFile</Name>
+					<Abstract type="html">TMX file to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTiledMap Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/tiledMapWithFile:</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTiledMap/tiledMapWithXML:resourcePath:</TokenIdentifier>
+			<Abstract type="html">Creates a returns a Tile Map object using the specified TMX XML and path to TMX resources.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>+ (id)tiledMapWithXML:(NSString *)tmxString resourcePath:(NSString *)resourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tmxString</Name>
+					<Abstract type="html">TMX XML to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">TMX resource path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTiledMap Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/tiledMapWithXML:resourcePath:</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/initWithFile:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a Tile Map object using the specified TMX file.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFile:(NSString *)tmxFile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tmxFile</Name>
+					<Abstract type="html">TMX file to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCTiledMap Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFile:</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/initWithXML:resourcePath:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a Tile Map object using the specified TMX XML and path to TMX resources.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithXML:(NSString *)tmxString resourcePath:(NSString *)resourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tmxString</Name>
+					<Abstract type="html">TMX XML to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">TMX resource path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTiledMap Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithXML:resourcePath:</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/layerNamed:</TokenIdentifier>
+			<Abstract type="html">Return the Tiled Map Layer specified by the layer name.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>- (CCTiledMapLayer *)layerNamed:(NSString *)layerName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>layerName</Name>
+					<Abstract type="html">Name of layer to lookup.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTiledMapLayer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/layerNamed:</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/objectGroupNamed:</TokenIdentifier>
+			<Abstract type="html">Return the Tiled Map Object Group specified by the object group name.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>- (CCTiledMapObjectGroup *)objectGroupNamed:(NSString *)groupName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>groupName</Name>
+					<Abstract type="html">Object group name to lookup.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTiledMapObjectGroup object.</Abstract></ReturnValue>
+			<Anchor>//api/name/objectGroupNamed:</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/propertyNamed:</TokenIdentifier>
+			<Abstract type="html">Return the value held by the specified property name.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>- (id)propertyNamed:(NSString *)propertyName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>propertyName</Name>
+					<Abstract type="html">Property name to lookup.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The property value object.</Abstract></ReturnValue>
+			<Anchor>//api/name/propertyNamed:</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMap/propertiesForGID:</TokenIdentifier>
+			<Abstract type="html">Return the properties dictionary for the specified tile GID.</Abstract>
+			<DeclaredIn>CCTiledMap.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)propertiesForGID:(unsigned int)GID</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>GID</Name>
+					<Abstract type="html">GID to lookup.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The properties NSDictionary.</Abstract></ReturnValue>
+			<Anchor>//api/name/propertiesForGID:</Anchor>
+            <NodeRef refid="120"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

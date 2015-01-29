@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionMoveTo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionMoveTo</TokenIdentifier>
+			<Abstract type="html">This action moves the target to the position specified, these are absolute coordinates.
+Several CCMoveTo actions can be concurrently called, and the resulting movement will be the sum of individual movements.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="42"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionMoveTo/actionWithDuration:position:</TokenIdentifier>
+			<Abstract type="html">Creates the action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration position:(CGPoint)position</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action interval.</Abstract>
+				</Parameter><Parameter>
+					<Name>position</Name>
+					<Abstract type="html">Absolute position to move to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New moveto action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:position:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionMoveTo/initWithDuration:position:</TokenIdentifier>
+			<Abstract type="html">Initializes the action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration position:(CGPoint)position</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action interval.</Abstract>
+				</Parameter><Parameter>
+					<Name>position</Name>
+					<Abstract type="html">Absolute position to move to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New moveto action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:position:</Anchor>
+            <NodeRef refid="42"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

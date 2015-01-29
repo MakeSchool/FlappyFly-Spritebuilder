@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCEffectNode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCEffectNode</TokenIdentifier>
+			<Abstract type="html">CCEffectNode allows the user to apply effects to the collection of nodes that
+are its children.</Abstract>
+			<DeclaredIn>CCEffectNode.h</DeclaredIn>
+            
+			
+			<NodeRef refid="82"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectNode/initWithWidth:height:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectNode object with the specified parameters.</Abstract>
+			<DeclaredIn>CCEffectNode.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithWidth:(int)w height:(int)h</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>w</Name>
+					<Abstract type="html">The width of the effect node in points.</Abstract>
+				</Parameter><Parameter>
+					<Name>h</Name>
+					<Abstract type="html">The height of the effect node in points.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectNode object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithWidth:height:</Anchor>
+            <NodeRef refid="82"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

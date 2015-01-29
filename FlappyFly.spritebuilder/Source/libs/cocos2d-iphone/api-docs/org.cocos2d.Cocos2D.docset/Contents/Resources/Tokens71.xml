@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCColor.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCColor</TokenIdentifier>
+			<Abstract type="html">A CCColor object represents color and sometimes opacity (alpha value) for use with Cocos2D objects.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+            
+			
+			<NodeRef refid="71"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/colorWithWhite:alpha:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a color object using the specified opacity and grayscale values.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)colorWithWhite:(float)white alpha:(float)alpha</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>white</Name>
+					<Abstract type="html">The grayscale value of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>alpha</Name>
+					<Abstract type="html">The opacity value of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The color object.</Abstract></ReturnValue>
+			<Anchor>//api/name/colorWithWhite:alpha:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/colorWithRed:green:blue:alpha:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a color object using the specified opacity and RGBA component values.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)colorWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>red</Name>
+					<Abstract type="html">The red component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>green</Name>
+					<Abstract type="html">The green component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>blue</Name>
+					<Abstract type="html">The blue component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>alpha</Name>
+					<Abstract type="html">The opacity value of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The color object.</Abstract></ReturnValue>
+			<Anchor>//api/name/colorWithRed:green:blue:alpha:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/colorWithRed:green:blue:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a color object using the specified opacity and RGB component values. Alpha will default to 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)colorWithRed:(float)red green:(float)green blue:(float)blue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>red</Name>
+					<Abstract type="html">The red component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>green</Name>
+					<Abstract type="html">The green component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>blue</Name>
+					<Abstract type="html">The blue component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The color object.</Abstract></ReturnValue>
+			<Anchor>//api/name/colorWithRed:green:blue:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/colorWithCGColor:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a color object using the specified Quartz color reference.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)colorWithCGColor:(CGColorRef)cgColor</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cgColor</Name>
+					<Abstract type="html">A reference to a Quartz color.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The color object.</Abstract></ReturnValue>
+			<Anchor>//api/name/colorWithCGColor:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/colorWithAlphaComponent:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a color object that has the same color space and component values as the receiver, but has the specified alpha component.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>- (CCColor *)colorWithAlphaComponent:(float)alpha</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>alpha</Name>
+					<Abstract type="html">The opacity value of the new CCColor object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The color object.</Abstract></ReturnValue>
+			<Anchor>//api/name/colorWithAlphaComponent:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/colorWithUIColor:</TokenIdentifier>
+			<Abstract type="html">Converts a UIColor object to its CCColor equivalent.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)colorWithUIColor:(UIColor *)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">UIColor object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The color object.</Abstract></ReturnValue>
+			<Anchor>//api/name/colorWithUIColor:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/initWithWhite:alpha:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a color object using the specified opacity and grayscale values.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>- (CCColor *)initWithWhite:(float)white alpha:(float)alpha</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>white</Name>
+					<Abstract type="html">The grayscale value of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>alpha</Name>
+					<Abstract type="html">The opacity value of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized color object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithWhite:alpha:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/initWithRed:green:blue:alpha:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a color object using the specified opacity and RGBA component values.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>- (CCColor *)initWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>red</Name>
+					<Abstract type="html">The red component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>green</Name>
+					<Abstract type="html">The green component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>blue</Name>
+					<Abstract type="html">The blue component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>alpha</Name>
+					<Abstract type="html">The opacity value of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized color object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithRed:green:blue:alpha:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/initWithRed:green:blue:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a color object using the specified opacity and RGB component values. Alpha will default to 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>- (CCColor *)initWithRed:(float)red green:(float)green blue:(float)blue</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>red</Name>
+					<Abstract type="html">The red component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>green</Name>
+					<Abstract type="html">The green component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter><Parameter>
+					<Name>blue</Name>
+					<Abstract type="html">The blue component of the color object, specified as a value from 0.0 to 1.0.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized color object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithRed:green:blue:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/initWithCGColor:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a color object using the specified Quartz color reference.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>- (CCColor *)initWithCGColor:(CGColorRef)cgColor</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cgColor</Name>
+					<Abstract type="html">A reference to a Quartz color.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized color object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCGColor:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/initWithUIColor:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a UIColor object to its CCColor equivalent.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>- (CCColor *)initWithUIColor:(UIColor *)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">UIColor object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized color object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithUIColor:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/blackColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose RGB values are 0.0, 1.0, and 1.0 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)blackColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/blackColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/darkGrayColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose grayscale value is 1/3 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)darkGrayColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/darkGrayColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/lightGrayColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose grayscale value is 2/3 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)lightGrayColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/lightGrayColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/whiteColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose grayscale value is 1.0 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)whiteColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/whiteColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/grayColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose grayscale value is 0.5 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)grayColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/grayColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/redColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose RGB values are 1.0, 0.0, and 0.0 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)redColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/redColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/greenColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose RGB values are 0.0, 1.0, and 0.0 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)greenColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/greenColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/blueColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose RGB values are 0.0, 0.0, and 1.0 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)blueColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/blueColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/cyanColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose RGB values are 0.0, 1.0, and 1.0 and whose alpha value is 1.0..</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)cyanColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/cyanColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/yellowColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose RGB values are 1.0, 1.0, and 0.0 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)yellowColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/yellowColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/magentaColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose RGB values are 1.0, 0.0, and 1.0 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)magentaColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/magentaColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/orangeColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose RGB values are 1.0, 0.5, and 0.0 and whose alpha value is 1.0..</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)orangeColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/orangeColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/purpleColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose RGB values are 0.5, 0.0, and 0.5 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)purpleColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/purpleColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/brownColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose RGB values are 0.6, 0.4, and 0.2 and whose alpha value is 1.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)brownColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/brownColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCColor/clearColor</TokenIdentifier>
+			<Abstract type="html">Returns a color object whose RGB values are 0.0, 0.0, and 0.0 and whose alpha value is 0.0.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>+ (CCColor *)clearColor</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCColor object.</Abstract></ReturnValue>
+			<Anchor>//api/name/clearColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/setCGColor:</TokenIdentifier>
+			<Abstract type="html">The Quartz color reference that corresponds to the CCColor color.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGColorRef CGColor</Declaration>
+			
+			
+			<Anchor>//api/name/CGColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/CGColor</TokenIdentifier>
+			<Abstract type="html">The Quartz color reference that corresponds to the CCColor color.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGColorRef CGColor</Declaration>
+			
+			
+			<Anchor>//api/name/CGColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCColor/CGColor</TokenIdentifier>
+			<Abstract type="html">The Quartz color reference that corresponds to the CCColor color.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGColorRef CGColor</Declaration>
+			
+			
+			<Anchor>//api/name/CGColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/setUIColor:</TokenIdentifier>
+			<Abstract type="html">The UIColor color reference that corresponds to the CCColor color.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) *UIColor</Declaration>
+			
+			
+			<Anchor>//api/name/UIColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/UIColor</TokenIdentifier>
+			<Abstract type="html">The UIColor color reference that corresponds to the CCColor color.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) *UIColor</Declaration>
+			
+			
+			<Anchor>//api/name/UIColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCColor/UIColor</TokenIdentifier>
+			<Abstract type="html">The UIColor color reference that corresponds to the CCColor color.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) *UIColor</Declaration>
+			
+			
+			<Anchor>//api/name/UIColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/setNSColor:</TokenIdentifier>
+			<Abstract type="html">The NSColor color reference that corresponds to the CCColor color.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) *NSColor</Declaration>
+			
+			
+			<Anchor>//api/name/NSColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/NSColor</TokenIdentifier>
+			<Abstract type="html">The NSColor color reference that corresponds to the CCColor color.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) *NSColor</Declaration>
+			
+			
+			<Anchor>//api/name/NSColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCColor/NSColor</TokenIdentifier>
+			<Abstract type="html">The NSColor color reference that corresponds to the CCColor color.</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) *NSColor</Declaration>
+			
+			
+			<Anchor>//api/name/NSColor</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCColor/interpolateTo:alpha:</TokenIdentifier>
+			<Abstract type="html">Linearly interpolate from this color to &apos;toColor&apos;. Parameter alpha is normalised</Abstract>
+			<DeclaredIn>CCColor.h</DeclaredIn>
+			
+			<Declaration>- (CCColor *)interpolateTo:(CCColor *)toColor alpha:(float)alpha</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>toColor</Name>
+					<Abstract type="html">Color to interpolate to.</Abstract>
+				</Parameter><Parameter>
+					<Name>alpha</Name>
+					<Abstract type="html">Normalised alpha opacity of toColor.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The interpolated color.</Abstract></ReturnValue>
+			<Anchor>//api/name/interpolateTo:alpha:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

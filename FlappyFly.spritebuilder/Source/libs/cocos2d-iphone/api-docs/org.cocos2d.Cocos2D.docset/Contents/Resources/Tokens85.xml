@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCEffectRefraction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCEffectRefraction</TokenIdentifier>
+			<Abstract type="html">CCEffectRefraction uses refraction to simulate the appearance of a transparent object contained within an
+environment. Refraction is controlled with a single refraction strength value, the normal map, and a refraction
+environment sprite.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+            
+			
+			<NodeRef refid="85"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectRefraction/setRefraction:</TokenIdentifier>
+			<Abstract type="html">The refraction strength value. This value is in the range [-1..1] with -1
+resulting in maximum minification of the refracted image, 0 resulting in no
+refraction, and 1 resulting in maximum magnification of the refracted image.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float refraction</Declaration>
+			
+			
+			<Anchor>//api/name/refraction</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectRefraction/refraction</TokenIdentifier>
+			<Abstract type="html">The refraction strength value. This value is in the range [-1..1] with -1
+resulting in maximum minification of the refracted image, 0 resulting in no
+refraction, and 1 resulting in maximum magnification of the refracted image.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float refraction</Declaration>
+			
+			
+			<Anchor>//api/name/refraction</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectRefraction/refraction</TokenIdentifier>
+			<Abstract type="html">The refraction strength value. This value is in the range [-1..1] with -1
+resulting in maximum minification of the refracted image, 0 resulting in no
+refraction, and 1 resulting in maximum magnification of the refracted image.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float refraction</Declaration>
+			
+			
+			<Anchor>//api/name/refraction</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectRefraction/setEnvironment:</TokenIdentifier>
+			<Abstract type="html">The environment that will be refracted by the affected node. Typically this is a
+sprite that serves as the background for the affected node so it appears that the viewer
+is seeing the refracted environment through the refracting node.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSprite *environment</Declaration>
+			
+			
+			<Anchor>//api/name/environment</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectRefraction/environment</TokenIdentifier>
+			<Abstract type="html">The environment that will be refracted by the affected node. Typically this is a
+sprite that serves as the background for the affected node so it appears that the viewer
+is seeing the refracted environment through the refracting node.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSprite *environment</Declaration>
+			
+			
+			<Anchor>//api/name/environment</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectRefraction/environment</TokenIdentifier>
+			<Abstract type="html">The environment that will be refracted by the affected node. Typically this is a
+sprite that serves as the background for the affected node so it appears that the viewer
+is seeing the refracted environment through the refracting node.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSprite *environment</Declaration>
+			
+			
+			<Anchor>//api/name/environment</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectRefraction/setNormalMap:</TokenIdentifier>
+			<Abstract type="html">The normal map that encodes the normal vectors of the affected node. Each pixel in the normal
+map is a 3 component vector that is perpendicular to the surface of the sprite at that point.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *normalMap</Declaration>
+			
+			
+			<Anchor>//api/name/normalMap</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectRefraction/normalMap</TokenIdentifier>
+			<Abstract type="html">The normal map that encodes the normal vectors of the affected node. Each pixel in the normal
+map is a 3 component vector that is perpendicular to the surface of the sprite at that point.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *normalMap</Declaration>
+			
+			
+			<Anchor>//api/name/normalMap</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectRefraction/normalMap</TokenIdentifier>
+			<Abstract type="html">The normal map that encodes the normal vectors of the affected node. Each pixel in the normal
+map is a 3 component vector that is perpendicular to the surface of the sprite at that point.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *normalMap</Declaration>
+			
+			
+			<Anchor>//api/name/normalMap</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectRefraction/init</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectRefraction object with the following default parameters:
+refraction = 1.0, environment = nil, normalMap = nil</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCEffectRefraction object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectRefraction/initWithRefraction:environment:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectRefraction object with the supplied parameters and a nil normal map.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithRefraction:(float)refraction environment:(CCSprite *)environment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>refraction</Name>
+					<Abstract type="html">The refraction strength.</Abstract>
+				</Parameter><Parameter>
+					<Name>environment</Name>
+					<Abstract type="html">The environment image that will be refracted by the affected node.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectRefraction object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithRefraction:environment:</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectRefraction/initWithRefraction:environment:normalMap:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectRefraction object with the supplied parameters.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithRefraction:(float)refraction environment:(CCSprite *)environment normalMap:(CCSpriteFrame *)normalMap</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>refraction</Name>
+					<Abstract type="html">The refraction strength.</Abstract>
+				</Parameter><Parameter>
+					<Name>environment</Name>
+					<Abstract type="html">The environment image that will be refracted by the affected node.</Abstract>
+				</Parameter><Parameter>
+					<Name>normalMap</Name>
+					<Abstract type="html">The normal map of the affected node. This can also be specified as a property of the affected sprite.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectRefraction object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithRefraction:environment:normalMap:</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCEffectRefraction/effectWithRefraction:environment:</TokenIdentifier>
+			<Abstract type="html">Creates a CCEffectRefraction object with the supplied parameters and a nil normal map.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>+ (id)effectWithRefraction:(float)refraction environment:(CCSprite *)environment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>refraction</Name>
+					<Abstract type="html">The refraction strength.</Abstract>
+				</Parameter><Parameter>
+					<Name>environment</Name>
+					<Abstract type="html">The environment image that will be refracted by the affected node.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectRefraction object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effectWithRefraction:environment:</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCEffectRefraction/effectWithRefraction:environment:normalMap:</TokenIdentifier>
+			<Abstract type="html">Creates a CCEffectRefraction object with the supplied parameters.</Abstract>
+			<DeclaredIn>CCEffectRefraction.h</DeclaredIn>
+			
+			<Declaration>+ (id)effectWithRefraction:(float)refraction environment:(CCSprite *)environment normalMap:(CCSpriteFrame *)normalMap</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>refraction</Name>
+					<Abstract type="html">The refraction strength.</Abstract>
+				</Parameter><Parameter>
+					<Name>environment</Name>
+					<Abstract type="html">The environment image that will be refracted by the affected node.</Abstract>
+				</Parameter><Parameter>
+					<Name>normalMap</Name>
+					<Abstract type="html">The normal map of the affected node. This can also be specified as a property of the affected sprite.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectRefraction object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effectWithRefraction:environment:normalMap:</Anchor>
+            <NodeRef refid="85"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

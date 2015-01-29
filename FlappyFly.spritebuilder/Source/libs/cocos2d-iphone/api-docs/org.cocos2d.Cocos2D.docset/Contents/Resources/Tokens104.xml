@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCPhysicsShape.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCPhysicsShape</TokenIdentifier>
+			<Abstract type="html">Every CCPhysicsBody has at least one shape attached to it. Normally the shape is created for you when creating the body.
+If you wish to create a composite body that is composed of multiple shapes, you can create them yourself and then create the body from them.
+This gives you extra flexibility in designing a complex shape or setting up different physics properties on different parts of the body.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+            
+			
+			<NodeRef refid="104"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCPhysicsShape/circleShapeWithRadius:center:</TokenIdentifier>
+			<Abstract type="html">Creates and retuns a circular physics shape using the circle radius and center values specified.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>+ (CCPhysicsShape *)circleShapeWithRadius:(CGFloat)radius center:(CGPoint)center</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>radius</Name>
+					<Abstract type="html">Circle radius.</Abstract>
+				</Parameter><Parameter>
+					<Name>center</Name>
+					<Abstract type="html">Circle center point.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCPhysicsShape Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/circleShapeWithRadius:center:</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCPhysicsShape/rectShape:cornerRadius:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a physics box shape with rounded corners.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>+ (CCPhysicsShape *)rectShape:(CGRect)rect cornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">Box dimensions.</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">Corner radius.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCPhysicsShape Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/rectShape:cornerRadius:</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCPhysicsShape/pillShapeFrom:to:cornerRadius:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a pill shaped physics shape with rounded corners that stretches from &apos;start&apos; to &apos;end&apos;.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>+ (CCPhysicsShape *)pillShapeFrom:(CGPoint)from to:(CGPoint)to cornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>from</Name>
+					<Abstract type="html">Start point.</Abstract>
+				</Parameter><Parameter>
+					<Name>to</Name>
+					<Abstract type="html">End point.</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">Corner radius.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCPhysicsShape Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/pillShapeFrom:to:cornerRadius:</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCPhysicsShape/polygonShapeWithPoints:count:cornerRadius:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a convex polygon physics shape with rounded corners.  If the points do not form a convex polygon then a convex hull will be created from them automatically.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>+ (CCPhysicsShape *)polygonShapeWithPoints:(CGPoint *)points count:(NSUInteger)count cornerRadius:(CGFloat)cornerRadius</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>points</Name>
+					<Abstract type="html">Points array pointer.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">Points count.</Abstract>
+				</Parameter><Parameter>
+					<Name>cornerRadius</Name>
+					<Abstract type="html">Corner radius.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCPhysicsShape Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/polygonShapeWithPoints:count:cornerRadius:</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setMass:</TokenIdentifier>
+			<Abstract type="html">Mass of the physics shape.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat mass</Declaration>
+			
+			
+			<Anchor>//api/name/mass</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/mass</TokenIdentifier>
+			<Abstract type="html">Mass of the physics shape.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat mass</Declaration>
+			
+			
+			<Anchor>//api/name/mass</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/mass</TokenIdentifier>
+			<Abstract type="html">Mass of the physics shape.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat mass</Declaration>
+			
+			
+			<Anchor>//api/name/mass</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setArea:</TokenIdentifier>
+			<Abstract type="html">Area of the shape in points^2.
+Please note that this is relative to the CCPhysicsNode the shape is attached to, changing the node or a parent can change the area.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat area</Declaration>
+			
+			
+			<Anchor>//api/name/area</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/area</TokenIdentifier>
+			<Abstract type="html">Area of the shape in points^2.
+Please note that this is relative to the CCPhysicsNode the shape is attached to, changing the node or a parent can change the area.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat area</Declaration>
+			
+			
+			<Anchor>//api/name/area</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/area</TokenIdentifier>
+			<Abstract type="html">Area of the shape in points^2.
+Please note that this is relative to the CCPhysicsNode the shape is attached to, changing the node or a parent can change the area.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat area</Declaration>
+			
+			
+			<Anchor>//api/name/area</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setDensity:</TokenIdentifier>
+			<Abstract type="html">Density of the shape in 1/1000 units of mass per points^2. The co-efficent is used to keep the mass of an object a reasonably small value.
+Note that mass and not density will remain constant if an object is rescaled.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat density</Declaration>
+			
+			
+			<Anchor>//api/name/density</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/density</TokenIdentifier>
+			<Abstract type="html">Density of the shape in 1/1000 units of mass per points^2. The co-efficent is used to keep the mass of an object a reasonably small value.
+Note that mass and not density will remain constant if an object is rescaled.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat density</Declaration>
+			
+			
+			<Anchor>//api/name/density</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/density</TokenIdentifier>
+			<Abstract type="html">Density of the shape in 1/1000 units of mass per points^2. The co-efficent is used to keep the mass of an object a reasonably small value.
+Note that mass and not density will remain constant if an object is rescaled.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat density</Declaration>
+			
+			
+			<Anchor>//api/name/density</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setFriction:</TokenIdentifier>
+			<Abstract type="html">Surface friction of the shape, when two objects collide, their friction is multiplied together.
+The calculated value can be overridden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.7</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat friction</Declaration>
+			
+			
+			<Anchor>//api/name/friction</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/friction</TokenIdentifier>
+			<Abstract type="html">Surface friction of the shape, when two objects collide, their friction is multiplied together.
+The calculated value can be overridden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.7</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat friction</Declaration>
+			
+			
+			<Anchor>//api/name/friction</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/friction</TokenIdentifier>
+			<Abstract type="html">Surface friction of the shape, when two objects collide, their friction is multiplied together.
+The calculated value can be overridden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.7</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat friction</Declaration>
+			
+			
+			<Anchor>//api/name/friction</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setElasticity:</TokenIdentifier>
+			<Abstract type="html">Elasticity of the physics shape.
+When two objects collide, their elasticity is multiplied together.
+The calculated value can be ovrriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.2.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat elasticity</Declaration>
+			
+			
+			<Anchor>//api/name/elasticity</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/elasticity</TokenIdentifier>
+			<Abstract type="html">Elasticity of the physics shape.
+When two objects collide, their elasticity is multiplied together.
+The calculated value can be ovrriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.2.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat elasticity</Declaration>
+			
+			
+			<Anchor>//api/name/elasticity</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/elasticity</TokenIdentifier>
+			<Abstract type="html">Elasticity of the physics shape.
+When two objects collide, their elasticity is multiplied together.
+The calculated value can be ovrriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to 0.2.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat elasticity</Declaration>
+			
+			
+			<Anchor>//api/name/elasticity</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setSurfaceVelocity:</TokenIdentifier>
+			<Abstract type="html">Velocity of the surface of a shape relative to it&apos;s normal velocity.  This is useful for modelling conver belts or the feet of a player&apos;s avatar.
+The calculated surface velocity of two colliding shapes by default only affects their friction.
+The calculated value can be overriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to CGPointZero.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint surfaceVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/surfaceVelocity</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/surfaceVelocity</TokenIdentifier>
+			<Abstract type="html">Velocity of the surface of a shape relative to it&apos;s normal velocity.  This is useful for modelling conver belts or the feet of a player&apos;s avatar.
+The calculated surface velocity of two colliding shapes by default only affects their friction.
+The calculated value can be overriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to CGPointZero.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint surfaceVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/surfaceVelocity</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/surfaceVelocity</TokenIdentifier>
+			<Abstract type="html">Velocity of the surface of a shape relative to it&apos;s normal velocity.  This is useful for modelling conver belts or the feet of a player&apos;s avatar.
+The calculated surface velocity of two colliding shapes by default only affects their friction.
+The calculated value can be overriden in a CCCollisionPairDelegate pre-solve method.
+Defaults to CGPointZero.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint surfaceVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/surfaceVelocity</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setSensor:</TokenIdentifier>
+			<Abstract type="html">Is this shape a sensor? A sensor will call a collision delegate but does not physically cause collisions between bodies.
+Defaults to NO</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sensor</Declaration>
+			
+			
+			<Anchor>//api/name/sensor</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/sensor</TokenIdentifier>
+			<Abstract type="html">Is this shape a sensor? A sensor will call a collision delegate but does not physically cause collisions between bodies.
+Defaults to NO</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sensor</Declaration>
+			
+			
+			<Anchor>//api/name/sensor</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/sensor</TokenIdentifier>
+			<Abstract type="html">Is this shape a sensor? A sensor will call a collision delegate but does not physically cause collisions between bodies.
+Defaults to NO</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL sensor</Declaration>
+			
+			
+			<Anchor>//api/name/sensor</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setCollisionGroup:</TokenIdentifier>
+			<Abstract type="html">The shape&apos;s collisionGroup, if two physics bodies share the same group id, they don&apos;t collide. Defaults to nil.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id collisionGroup</Declaration>
+			
+			
+			<Anchor>//api/name/collisionGroup</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/collisionGroup</TokenIdentifier>
+			<Abstract type="html">The shape&apos;s collisionGroup, if two physics bodies share the same group id, they don&apos;t collide. Defaults to nil.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id collisionGroup</Declaration>
+			
+			
+			<Anchor>//api/name/collisionGroup</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/collisionGroup</TokenIdentifier>
+			<Abstract type="html">The shape&apos;s collisionGroup, if two physics bodies share the same group id, they don&apos;t collide. Defaults to nil.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id collisionGroup</Declaration>
+			
+			
+			<Anchor>//api/name/collisionGroup</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setCollisionType:</TokenIdentifier>
+			<Abstract type="html">A string that identifies the collision pair delegate method that should be called. Default value is @&quot;default&quot;.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *collisionType</Declaration>
+			
+			
+			<Anchor>//api/name/collisionType</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/collisionType</TokenIdentifier>
+			<Abstract type="html">A string that identifies the collision pair delegate method that should be called. Default value is @&quot;default&quot;.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *collisionType</Declaration>
+			
+			
+			<Anchor>//api/name/collisionType</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/collisionType</TokenIdentifier>
+			<Abstract type="html">A string that identifies the collision pair delegate method that should be called. Default value is @&quot;default&quot;.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *collisionType</Declaration>
+			
+			
+			<Anchor>//api/name/collisionType</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setCollisionCategories:</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names of which this shape is a member. Up to 32 unique categories can be used in a single physics node.
+A value of nil means that a shape exists in all possible collision categories.
+The deefault is nil.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionCategories</Declaration>
+			
+			
+			<Anchor>//api/name/collisionCategories</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/collisionCategories</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names of which this shape is a member. Up to 32 unique categories can be used in a single physics node.
+A value of nil means that a shape exists in all possible collision categories.
+The deefault is nil.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionCategories</Declaration>
+			
+			
+			<Anchor>//api/name/collisionCategories</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/collisionCategories</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names of which this shape is a member. Up to 32 unique categories can be used in a single physics node.
+A value of nil means that a shape exists in all possible collision categories.
+The deefault is nil.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionCategories</Declaration>
+			
+			
+			<Anchor>//api/name/collisionCategories</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setCollisionMask:</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names that this shape wants to collide with.
+The categories/masks of both shapes must agree for a collision to occur.
+A value of nil means that this body will collide with a shape in any category.
+The default is nil.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionMask</Declaration>
+			
+			
+			<Anchor>//api/name/collisionMask</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/collisionMask</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names that this shape wants to collide with.
+The categories/masks of both shapes must agree for a collision to occur.
+A value of nil means that this body will collide with a shape in any category.
+The default is nil.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionMask</Declaration>
+			
+			
+			<Anchor>//api/name/collisionMask</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/collisionMask</TokenIdentifier>
+			<Abstract type="html">An array of NSString category names that this shape wants to collide with.
+The categories/masks of both shapes must agree for a collision to occur.
+A value of nil means that this body will collide with a shape in any category.
+The default is nil.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSArray *collisionMask</Declaration>
+			
+			
+			<Anchor>//api/name/collisionMask</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/setNode:</TokenIdentifier>
+			<Abstract type="html">The CCNode to which this physics shape is attached.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsShape/node</TokenIdentifier>
+			<Abstract type="html">The CCNode to which this physics shape is attached.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsShape/node</TokenIdentifier>
+			<Abstract type="html">The CCNode to which this physics shape is attached.</Abstract>
+			<DeclaredIn>CCPhysicsShape.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCNode *node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="104"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

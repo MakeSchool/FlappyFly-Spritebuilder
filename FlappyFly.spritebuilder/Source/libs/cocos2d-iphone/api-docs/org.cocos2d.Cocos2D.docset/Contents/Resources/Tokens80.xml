@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCEffectGlass.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCEffectGlass</TokenIdentifier>
+			<Abstract type="html">CCEffectGlass uses reflection and refraction to simulate the appearance of a transparent object
+contained within an environment. Refraction is controlled with a single refraction strength value,
+the normal map, and a refraction environment sprite. Reflection is controlled with two fresnel
+reflectance values, the normal map, and a reflection environment sprite (which may be different
+from the refraction environment).</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+            
+			
+			<NodeRef refid="80"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/setRefraction:</TokenIdentifier>
+			<Abstract type="html">The refraction strength value. This value is in the range [-1..1] with -1
+resulting in maximum minification of the refracted image, 0 resulting in no
+refraction, and 1 resulting in maximum magnification of the refracted image.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float refraction</Declaration>
+			
+			
+			<Anchor>//api/name/refraction</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/refraction</TokenIdentifier>
+			<Abstract type="html">The refraction strength value. This value is in the range [-1..1] with -1
+resulting in maximum minification of the refracted image, 0 resulting in no
+refraction, and 1 resulting in maximum magnification of the refracted image.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float refraction</Declaration>
+			
+			
+			<Anchor>//api/name/refraction</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectGlass/refraction</TokenIdentifier>
+			<Abstract type="html">The refraction strength value. This value is in the range [-1..1] with -1
+resulting in maximum minification of the refracted image, 0 resulting in no
+refraction, and 1 resulting in maximum magnification of the refracted image.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float refraction</Declaration>
+			
+			
+			<Anchor>//api/name/refraction</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/setShininess:</TokenIdentifier>
+			<Abstract type="html">The overall shininess of the attached sprite. This value is in the range [0..1] and it controls
+how much of the reflected environment contributes to the final color of the affected pixels.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float shininess</Declaration>
+			
+			
+			<Anchor>//api/name/shininess</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/shininess</TokenIdentifier>
+			<Abstract type="html">The overall shininess of the attached sprite. This value is in the range [0..1] and it controls
+how much of the reflected environment contributes to the final color of the affected pixels.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float shininess</Declaration>
+			
+			
+			<Anchor>//api/name/shininess</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectGlass/shininess</TokenIdentifier>
+			<Abstract type="html">The overall shininess of the attached sprite. This value is in the range [0..1] and it controls
+how much of the reflected environment contributes to the final color of the affected pixels.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float shininess</Declaration>
+			
+			
+			<Anchor>//api/name/shininess</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/setFresnelBias:</TokenIdentifier>
+			<Abstract type="html">The bias term in the fresnel reflectance equation:
+reflectance = max(0.0, fresnelBias + (1 - fresnelBias) * pow((1 - nDotV), fresnelPower
+This value is in the range [0..1] and it controls the constant (view angle independent) contribution
+to the reflectance equation.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float fresnelBias</Declaration>
+			
+			
+			<Anchor>//api/name/fresnelBias</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/fresnelBias</TokenIdentifier>
+			<Abstract type="html">The bias term in the fresnel reflectance equation:
+reflectance = max(0.0, fresnelBias + (1 - fresnelBias) * pow((1 - nDotV), fresnelPower
+This value is in the range [0..1] and it controls the constant (view angle independent) contribution
+to the reflectance equation.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float fresnelBias</Declaration>
+			
+			
+			<Anchor>//api/name/fresnelBias</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectGlass/fresnelBias</TokenIdentifier>
+			<Abstract type="html">The bias term in the fresnel reflectance equation:
+reflectance = max(0.0, fresnelBias + (1 - fresnelBias) * pow((1 - nDotV), fresnelPower
+This value is in the range [0..1] and it controls the constant (view angle independent) contribution
+to the reflectance equation.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float fresnelBias</Declaration>
+			
+			
+			<Anchor>//api/name/fresnelBias</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/setFresnelPower:</TokenIdentifier>
+			<Abstract type="html">The power term in the fresnel reflectance equation:
+reflectance = max(0.0, fresnelBias + (1 - fresnelBias * pow((1 - nDotV), fresnelPower))
+This value is in the range [0..inf] and it controls the view angle dependent contribution
+to the reflectance equation.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float fresnelPower</Declaration>
+			
+			
+			<Anchor>//api/name/fresnelPower</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/fresnelPower</TokenIdentifier>
+			<Abstract type="html">The power term in the fresnel reflectance equation:
+reflectance = max(0.0, fresnelBias + (1 - fresnelBias * pow((1 - nDotV), fresnelPower))
+This value is in the range [0..inf] and it controls the view angle dependent contribution
+to the reflectance equation.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float fresnelPower</Declaration>
+			
+			
+			<Anchor>//api/name/fresnelPower</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectGlass/fresnelPower</TokenIdentifier>
+			<Abstract type="html">The power term in the fresnel reflectance equation:
+reflectance = max(0.0, fresnelBias + (1 - fresnelBias * pow((1 - nDotV), fresnelPower))
+This value is in the range [0..inf] and it controls the view angle dependent contribution
+to the reflectance equation.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float fresnelPower</Declaration>
+			
+			
+			<Anchor>//api/name/fresnelPower</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/setRefractionEnvironment:</TokenIdentifier>
+			<Abstract type="html">The environment that will be refracted by the affected node. Typically this is a
+sprite that serves as the background for the affected node so it appears that the viewer
+is seeing the refracted environment through the refracting node.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSprite *refractionEnvironment</Declaration>
+			
+			
+			<Anchor>//api/name/refractionEnvironment</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/refractionEnvironment</TokenIdentifier>
+			<Abstract type="html">The environment that will be refracted by the affected node. Typically this is a
+sprite that serves as the background for the affected node so it appears that the viewer
+is seeing the refracted environment through the refracting node.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSprite *refractionEnvironment</Declaration>
+			
+			
+			<Anchor>//api/name/refractionEnvironment</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectGlass/refractionEnvironment</TokenIdentifier>
+			<Abstract type="html">The environment that will be refracted by the affected node. Typically this is a
+sprite that serves as the background for the affected node so it appears that the viewer
+is seeing the refracted environment through the refracting node.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSprite *refractionEnvironment</Declaration>
+			
+			
+			<Anchor>//api/name/refractionEnvironment</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/setReflectionEnvironment:</TokenIdentifier>
+			<Abstract type="html">The environment that will be reflected by the affected node. Typically this is a sprite
+that is not visible in the scene as it is conceptually &quot;behind the viewer&quot; and only visible
+where reflected by the affected node.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSprite *reflectionEnvironment</Declaration>
+			
+			
+			<Anchor>//api/name/reflectionEnvironment</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/reflectionEnvironment</TokenIdentifier>
+			<Abstract type="html">The environment that will be reflected by the affected node. Typically this is a sprite
+that is not visible in the scene as it is conceptually &quot;behind the viewer&quot; and only visible
+where reflected by the affected node.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSprite *reflectionEnvironment</Declaration>
+			
+			
+			<Anchor>//api/name/reflectionEnvironment</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectGlass/reflectionEnvironment</TokenIdentifier>
+			<Abstract type="html">The environment that will be reflected by the affected node. Typically this is a sprite
+that is not visible in the scene as it is conceptually &quot;behind the viewer&quot; and only visible
+where reflected by the affected node.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSprite *reflectionEnvironment</Declaration>
+			
+			
+			<Anchor>//api/name/reflectionEnvironment</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/setNormalMap:</TokenIdentifier>
+			<Abstract type="html">The normal map that encodes the normal vectors of the affected node. Each pixel in the normal
+map is a 3 component vector that is perpendicular to the surface of the sprite at that point.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *normalMap</Declaration>
+			
+			
+			<Anchor>//api/name/normalMap</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/normalMap</TokenIdentifier>
+			<Abstract type="html">The normal map that encodes the normal vectors of the affected node. Each pixel in the normal
+map is a 3 component vector that is perpendicular to the surface of the sprite at that point.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *normalMap</Declaration>
+			
+			
+			<Anchor>//api/name/normalMap</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectGlass/normalMap</TokenIdentifier>
+			<Abstract type="html">The normal map that encodes the normal vectors of the affected node. Each pixel in the normal
+map is a 3 component vector that is perpendicular to the surface of the sprite at that point.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *normalMap</Declaration>
+			
+			
+			<Anchor>//api/name/normalMap</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/init</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectGlass object with the following default parameters:
+refraction = 1.0, fresnelBias = 0.1, fresnelPower = 2.0, refractionEnvironment = nil, reflectionEnvironment = nil, normalMap = nil</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCEffectGlass object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/initWithShininess:refraction:refractionEnvironment:reflectionEnvironment:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectGlass object with the supplied parameters and a nil normal map.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithShininess:(float)shininess refraction:(float)refraction refractionEnvironment:(CCSprite *)refractionEnvironment reflectionEnvironment:(CCSprite *)reflectionEnvironment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shininess</Name>
+					<Abstract type="html">The overall shininess.</Abstract>
+				</Parameter><Parameter>
+					<Name>refraction</Name>
+					<Abstract type="html">The refraction strength.</Abstract>
+				</Parameter><Parameter>
+					<Name>refractionEnvironment</Name>
+					<Abstract type="html">The environment image that will be refracted by the affected node.</Abstract>
+				</Parameter><Parameter>
+					<Name>reflectionEnvironment</Name>
+					<Abstract type="html">The environment image that will be reflected by the affected node.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectGlass object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithShininess:refraction:refractionEnvironment:reflectionEnvironment:</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectGlass/initWithShininess:refraction:refractionEnvironment:reflectionEnvironment:normalMap:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectGlass object with the supplied parameters.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithShininess:(float)shininess refraction:(float)refraction refractionEnvironment:(CCSprite *)refractionEnvironment reflectionEnvironment:(CCSprite *)reflectionEnvironment normalMap:(CCSpriteFrame *)normalMap</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shininess</Name>
+					<Abstract type="html">The overall shininess.</Abstract>
+				</Parameter><Parameter>
+					<Name>refraction</Name>
+					<Abstract type="html">The refraction strength.</Abstract>
+				</Parameter><Parameter>
+					<Name>refractionEnvironment</Name>
+					<Abstract type="html">The environment image that will be refracted by the affected node.</Abstract>
+				</Parameter><Parameter>
+					<Name>reflectionEnvironment</Name>
+					<Abstract type="html">The environment image that will be reflected by the affected node.</Abstract>
+				</Parameter><Parameter>
+					<Name>normalMap</Name>
+					<Abstract type="html">The normal map of the affected node. This can also be specified as a property of the affected sprite.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectGlass object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithShininess:refraction:refractionEnvironment:reflectionEnvironment:normalMap:</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCEffectGlass/effectWithShininess:refraction:refractionEnvironment:reflectionEnvironment:</TokenIdentifier>
+			<Abstract type="html">Creates a CCEffectGlass object with the supplied parameters and a nil normal map.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>+ (id)effectWithShininess:(float)shininess refraction:(float)refraction refractionEnvironment:(CCSprite *)refractionEnvironment reflectionEnvironment:(CCSprite *)reflectionEnvironment</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shininess</Name>
+					<Abstract type="html">The overall shininess.</Abstract>
+				</Parameter><Parameter>
+					<Name>refraction</Name>
+					<Abstract type="html">The refraction strength.</Abstract>
+				</Parameter><Parameter>
+					<Name>refractionEnvironment</Name>
+					<Abstract type="html">The environment image that will be refracted by the affected node.</Abstract>
+				</Parameter><Parameter>
+					<Name>reflectionEnvironment</Name>
+					<Abstract type="html">The environment image that will be reflected by the affected node.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectGlass object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effectWithShininess:refraction:refractionEnvironment:reflectionEnvironment:</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCEffectGlass/effectWithShininess:refraction:refractionEnvironment:reflectionEnvironment:normalMap:</TokenIdentifier>
+			<Abstract type="html">Creates a CCEffectGlass object with the supplied parameters.</Abstract>
+			<DeclaredIn>CCEffectGlass.h</DeclaredIn>
+			
+			<Declaration>+ (id)effectWithShininess:(float)shininess refraction:(float)refraction refractionEnvironment:(CCSprite *)refractionEnvironment reflectionEnvironment:(CCSprite *)reflectionEnvironment normalMap:(CCSpriteFrame *)normalMap</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shininess</Name>
+					<Abstract type="html">The overall shininess.</Abstract>
+				</Parameter><Parameter>
+					<Name>refraction</Name>
+					<Abstract type="html">The refraction strength.</Abstract>
+				</Parameter><Parameter>
+					<Name>refractionEnvironment</Name>
+					<Abstract type="html">The environment image that will be refracted by the affected node.</Abstract>
+				</Parameter><Parameter>
+					<Name>reflectionEnvironment</Name>
+					<Abstract type="html">The environment image that will be reflected by the affected node.</Abstract>
+				</Parameter><Parameter>
+					<Name>normalMap</Name>
+					<Abstract type="html">The normal map of the affected node. This can also be specified as a property of the affected sprite.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectGlass object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effectWithShininess:refraction:refractionEnvironment:reflectionEnvironment:normalMap:</Anchor>
+            <NodeRef refid="80"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

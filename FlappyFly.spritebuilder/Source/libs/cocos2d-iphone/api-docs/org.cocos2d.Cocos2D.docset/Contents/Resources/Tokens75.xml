@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCEffect.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCEffect</TokenIdentifier>
+			<Abstract type="html">CCEffect is the foundation of the Cocos2D effects system. Subclasses of CCEffect can be
+used to easily add exciting visual effects such has blur, bloom, reflection, refraction, and
+other image processing filters to your applications.</Abstract>
+			<DeclaredIn>CCEffect.h</DeclaredIn>
+            
+			
+			<NodeRef refid="75"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffect/setDebugName:</TokenIdentifier>
+			<Abstract type="html">An identifier for debugging effects.</Abstract>
+			<DeclaredIn>CCEffect.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *debugName</Declaration>
+			
+			
+			<Anchor>//api/name/debugName</Anchor>
+            <NodeRef refid="75"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffect/debugName</TokenIdentifier>
+			<Abstract type="html">An identifier for debugging effects.</Abstract>
+			<DeclaredIn>CCEffect.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *debugName</Declaration>
+			
+			
+			<Anchor>//api/name/debugName</Anchor>
+            <NodeRef refid="75"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffect/debugName</TokenIdentifier>
+			<Abstract type="html">An identifier for debugging effects.</Abstract>
+			<DeclaredIn>CCEffect.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSString *debugName</Declaration>
+			
+			
+			<Anchor>//api/name/debugName</Anchor>
+            <NodeRef refid="75"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

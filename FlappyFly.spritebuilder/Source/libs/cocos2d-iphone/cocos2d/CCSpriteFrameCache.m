@@ -44,33 +44,9 @@
 #import "CCTexture_Private.h"
 
 
-@implementation CCSpriteFrame(Proxy)
-
-- (BOOL)hasProxy
-{
-    @synchronized(self)
-    {
-        // NSLog(@"hasProxy: %p", self);
-        return(_proxy != nil);
-    }
-}
-
-- (CCProxy *)proxy
-{
-    @synchronized(self)
-    {
-        __strong CCProxy *proxy = _proxy;
-
-        if (_proxy == nil)
-        {
-            proxy = [[CCProxy alloc] initWithTarget:self];
-            _proxy = proxy;
-        }
-    
-        return(proxy);
-    }
-}
-
+@interface CCSpriteFrame(Proxy)
+- (BOOL)hasProxy;
+- (CCProxy *)proxy;
 @end
 
 
@@ -103,7 +79,7 @@ static CCSpriteFrameCache *_sharedSpriteFrameCache=nil;
 
 +(void)purgeSharedSpriteFrameCache
 {
-	_sharedSpriteFrameCache = nil;
+	[[CCSpriteFrameCache sharedSpriteFrameCache] removeSpriteFrames];
 }
 
 -(id) init
@@ -112,7 +88,7 @@ static CCSpriteFrameCache *_sharedSpriteFrameCache=nil;
 		_spriteFrames = [[NSMutableDictionary alloc] initWithCapacity: 100];
 		_spriteFramesAliases = [[NSMutableDictionary alloc] initWithCapacity:10];
 		_loadedFilenames = [[NSMutableSet alloc] initWithCapacity:30];
-        _spriteFrameFileLookup = [[NSMutableDictionary alloc] init];
+		_spriteFrameFileLookup = [[NSMutableDictionary alloc] init];
 	}
 
 	return self;
@@ -151,6 +127,30 @@ static CCSpriteFrameCache *_sharedSpriteFrameCache=nil;
             [self registerSpriteFramesFile:spriteFrameFile];
         }
 	}
+}
+
+- (void)loadSpriteFrameLookupsInAllSearchPathsWithName:(NSString *)filename
+{
+    NSArray *paths = [[CCFileUtils sharedFileUtils] fullPathsOfFileNameInAllSearchPaths:filename];
+
+    for (NSString *spriteFrameLookupFullPath in paths)
+    {
+        NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:spriteFrameLookupFullPath];
+
+        NSDictionary *metadata = dict[@"metadata"];
+        NSInteger version = [metadata[@"version"] integerValue];
+        if (version != 1)
+        {
+            CCLOG(@"cocos2d: ERROR: Invalid filenameLookup dictionary version: %ld. Filename: %@", (long) version, filename);
+            return;
+        }
+
+        NSArray *spriteFrameFiles = dict[@"spriteFrameFiles"];
+        for (NSString *spriteFrameFile in spriteFrameFiles)
+        {
+            [self registerSpriteFramesFile:spriteFrameFile];
+        }
+    }
 }
 
 - (void) registerSpriteFramesFile:(NSString*)plist
@@ -473,6 +473,10 @@ static CCSpriteFrameCache *_sharedSpriteFrameCache=nil;
     
     if (!frame)
     {
+        // Check fileLookup.plist
+        NSString *newName = [[CCFileUtils sharedFileUtils].filenameLookup objectForKey:name];
+        name = newName ?: name;
+        
         // Try finding the frame in one of the registered sprite sheets
         NSString* spriteFrameFile = [_spriteFrameFileLookup objectForKey:name];
         if (spriteFrameFile) [self addSpriteFramesWithFile:spriteFrameFile];

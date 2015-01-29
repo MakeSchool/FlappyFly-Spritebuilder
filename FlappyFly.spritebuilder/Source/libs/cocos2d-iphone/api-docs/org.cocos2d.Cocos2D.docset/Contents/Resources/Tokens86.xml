@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCEffectSaturation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCEffectSaturation</TokenIdentifier>
+			<Abstract type="html">CCEffectSaturation adjusts the saturation of the sprite or effect node it is attached to.</Abstract>
+			<DeclaredIn>CCEffectSaturation.h</DeclaredIn>
+            
+			
+			<NodeRef refid="86"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectSaturation/setSaturation:</TokenIdentifier>
+			<Abstract type="html">The saturation adjustment value which is in the range [-1..1]. -1 completely
+desaturates all affected pixels resulting in a grayscale image, 0 results in
+no change, 1 results in an increase in saturation by 100%.</Abstract>
+			<DeclaredIn>CCEffectSaturation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectSaturation/saturation</TokenIdentifier>
+			<Abstract type="html">The saturation adjustment value which is in the range [-1..1]. -1 completely
+desaturates all affected pixels resulting in a grayscale image, 0 results in
+no change, 1 results in an increase in saturation by 100%.</Abstract>
+			<DeclaredIn>CCEffectSaturation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectSaturation/saturation</TokenIdentifier>
+			<Abstract type="html">The saturation adjustment value which is in the range [-1..1]. -1 completely
+desaturates all affected pixels resulting in a grayscale image, 0 results in
+no change, 1 results in an increase in saturation by 100%.</Abstract>
+			<DeclaredIn>CCEffectSaturation.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) float saturation</Declaration>
+			
+			
+			<Anchor>//api/name/saturation</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectSaturation/init</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectSaturation object with a saturation adjustment of 0.</Abstract>
+			<DeclaredIn>CCEffectSaturation.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCEffecSaturation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectSaturation/initWithSaturation:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCEffectSaturation object with the supplied parameters.</Abstract>
+			<DeclaredIn>CCEffectSaturation.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithSaturation:(float)saturation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>saturation</Name>
+					<Abstract type="html">The desired saturation adjustment.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectSaturation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSaturation:</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCEffectSaturation/effectWithSaturation:</TokenIdentifier>
+			<Abstract type="html">Creates a CCEffectSaturation object with the supplied parameters.</Abstract>
+			<DeclaredIn>CCEffectSaturation.h</DeclaredIn>
+			
+			<Declaration>+ (id)effectWithSaturation:(float)saturation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>saturation</Name>
+					<Abstract type="html">The desired saturation adjustment.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectSaturation object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effectWithSaturation:</Anchor>
+            <NodeRef refid="86"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

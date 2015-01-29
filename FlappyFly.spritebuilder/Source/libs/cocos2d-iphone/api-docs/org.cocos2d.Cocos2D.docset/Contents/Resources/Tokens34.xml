@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionFlipX.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionFlipX</TokenIdentifier>
+			<Abstract type="html">This action flips the target in x direction.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+            
+			
+			<NodeRef refid="34"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionFlipX/actionWithFlipX:</TokenIdentifier>
+			<Abstract type="html">Creates a flip action with x direction flipped or non flipped.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithFlipX:(BOOL)x</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>x</Name>
+					<Abstract type="html">Defines if target is flipped.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The flip action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithFlipX:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionFlipX/initWithFlipX:</TokenIdentifier>
+			<Abstract type="html">Initializes a flip action with x direction flipped or non flipped.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFlipX:(BOOL)x</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>x</Name>
+					<Abstract type="html">Defines if target is flipped.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized flip action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFlipX:</Anchor>
+            <NodeRef refid="34"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

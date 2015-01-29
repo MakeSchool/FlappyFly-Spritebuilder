@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CCParticleSystemPositionType.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CCParticleSystemPositionType</TokenIdentifier>
+			<Abstract type="html">Particle system position type.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="137"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemPositionTypeFree</TokenIdentifier>
+            <Abstract type="html">Living particles are attached to the world and are unaffected by emitter repositioning.</Abstract>
+            <Declaration>CCParticleSystemPositionTypeFree</Declaration>
+            
+            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+            
+            <NodeRef refid="137"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemPositionTypeRelative</TokenIdentifier>
+            <Abstract type="html">Living particles are attached to the world but will follow the emitter repositioning.
+	 Use case: Attach an emitter to an sprite, and you want that the emitter follows the sprite.
+	 </Abstract>
+            <Declaration>CCParticleSystemPositionTypeRelative</Declaration>
+            
+            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+            
+            <NodeRef refid="137"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCParticleSystemPositionTypeGrouped</TokenIdentifier>
+            <Abstract type="html">Living particles are attached to the emitter and are translated along with it.</Abstract>
+            <Declaration>CCParticleSystemPositionTypeGrouped</Declaration>
+            
+            <DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+            
+            <NodeRef refid="137"/>
+        </Token>
+        
+	</File>
+</Tokens>

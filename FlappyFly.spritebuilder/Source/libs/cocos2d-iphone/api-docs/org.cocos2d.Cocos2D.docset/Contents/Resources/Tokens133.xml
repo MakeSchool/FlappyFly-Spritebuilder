@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CCEffectFunctionStitchFlags.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CCEffectFunctionStitchFlags</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CCEffect_Private.h</DeclaredIn>
+            
+			
+			<NodeRef refid="133"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCEffectFunctionStitchBefore</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CCEffectFunctionStitchBefore</Declaration>
+            
+            <DeclaredIn>CCEffect_Private.h</DeclaredIn>
+            
+            <NodeRef refid="133"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCEffectFunctionStitchAfter</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CCEffectFunctionStitchAfter</Declaration>
+            
+            <DeclaredIn>CCEffect_Private.h</DeclaredIn>
+            
+            <NodeRef refid="133"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCEffectFunctionStitchBoth</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CCEffectFunctionStitchBoth</Declaration>
+            
+            <DeclaredIn>CCEffect_Private.h</DeclaredIn>
+            
+            <NodeRef refid="133"/>
+        </Token>
+        
+	</File>
+</Tokens>

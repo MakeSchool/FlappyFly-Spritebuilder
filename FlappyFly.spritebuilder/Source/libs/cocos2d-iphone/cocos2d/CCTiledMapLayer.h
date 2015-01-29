@@ -25,82 +25,26 @@
  *
  */
 
-#import "CCAtlasNode.h"
 #import "CCSpriteBatchNode.h"
 #import "CCTMXXMLParser.h"
+#import "CCTiledMap.h"
+#import "CCMathTypesAndroid.h"
 
 @class CCTiledMapInfo;
 @class CCTiledMapLayerInfo;
 @class CCTiledMapTilesetInfo;
 
 /** 
- 
- CCTiledMapLayer represents the Tiled Map layer.
+ CCTiledMapLayer represents a tile layer in a Tiled map.
 
- If you modify a tile on runtime, then that tile will become a CCSprite otherwise no CCSprite objects are initially created.
- 
- ### Notes
- Tiles can have tile flags for additional properties. 
- At the moment only flip horizontal and flip vertical are used. These bit flags are defined in CCTMXXMLParser.h.
- 
+ If you modify a tile on runtime, then that tile will be converted into a CCSprite. Accessing all tiles of a layer
+ will turn them all into sprites, possibly adding a significant memory overhead.
  */
 
-@interface CCTiledMapLayer : CCSpriteBatchNode {
-    
-    // Various Map data storage.
-	CCTiledMapTilesetInfo	*_tileset;
-	NSString                *_layerName;
-	CGSize                  _layerSize;
-	CGSize                  _mapTileSize; // TODO: in pixels or points?
-	uint32_t                *_tiles;
-	NSUInteger              _layerOrientation;
-	NSMutableDictionary     *_properties;
-    
-    // TMX Layer Opacity.
-	unsigned char           _opacity;
-
-    // GID Range
-	NSUInteger              _minGID;
-	NSUInteger              _maxGID;
-
-	// Only used when vertexZ is used.
-	NSInteger               _vertexZvalue;
-	BOOL                    _useAutomaticVertexZ;
-
-	// Used for optimization.
-	CCSprite                *_reusedTile;
-	NSMutableArray          *_atlasIndexArray;
-}
-
+@interface CCTiledMapLayer : CCNode<CCShaderProtocol, CCTextureProtocol, CCBlendProtocol> 
 
 /// -----------------------------------------------------------------------
-/// @name Accessing the Tile Map Layer Attributes
-/// -----------------------------------------------------------------------
-
-/** Name of the layer. */
-@property (nonatomic,readwrite,strong) NSString *layerName;
-
-/** Size of the layer in tiles. */
-@property (nonatomic,readwrite) CGSize layerSize;
-
-/** Size of the Map's tile, could be different from the tile size. */
-@property (nonatomic,readwrite) CGSize mapTileSize;
-
-/** Tile pointer. */
-@property (nonatomic,readonly) uint32_t *tiles;
-
-/** Tileset information for the layer. */
-@property (nonatomic,readwrite,strong) CCTiledMapTilesetInfo *tileset;
-
-/** Layer orientation method, which is the same as the map orientation method. */
-@property (nonatomic,readwrite) NSUInteger layerOrientation;
-
-/** Properties from the layer. They can be added using tiled. */
-@property (nonatomic,readwrite,strong) NSMutableDictionary *properties;
-
-
-/// -----------------------------------------------------------------------
-/// @name Creating a CCTiledMapLayer Object
+/// @name Creating a Tiled Map Layer
 /// -----------------------------------------------------------------------
 
 /**
@@ -111,13 +55,11 @@
  *  @param mapInfo     Map Info to use.
  *
  *  @return The CCTiledMapLayer Object.
+ *  @see CCTiledMapTilesetInfo
+ *  @see CCTiledMapLayerInfo
+ *  @see CCTiledMapInfo
  */
 +(id) layerWithTilesetInfo:(CCTiledMapTilesetInfo*)tilesetInfo layerInfo:(CCTiledMapLayerInfo*)layerInfo mapInfo:(CCTiledMapInfo*)mapInfo;
-
-
-/// -----------------------------------------------------------------------
-/// @name Initializing a CCTiledMapLayer Object
-/// -----------------------------------------------------------------------
 
 /**
  *  Initializes and returns a CCTiledMapLayer using the specified tileset info, layerinfo and mapinfo values.
@@ -127,22 +69,32 @@
  *  @param mapInfo     Map Info to use.
  *
  *  @return An initialized CCTiledMapLayer Object.
+ *  @see CCTiledMapTilesetInfo
+ *  @see CCTiledMapLayerInfo
+ *  @see CCTiledMapInfo
  */
 -(id) initWithTilesetInfo:(CCTiledMapTilesetInfo*)tilesetInfo layerInfo:(CCTiledMapLayerInfo*)layerInfo mapInfo:(CCTiledMapInfo*)mapInfo;
 
+/// -----------------------------------------------------------------------
+/// @name Tiled Map Layer Attributes
+/// -----------------------------------------------------------------------
+
+/** Name of the tile layer. */
+@property (nonatomic,readwrite,strong) NSString *layerName;
+
+/** Size of the layer, in tiles. */
+@property (nonatomic,readwrite) CGSize layerSize;
+
+/** Size of the Map's tiles, could be different from the tile size but typically is the same. */
+@property (nonatomic,readwrite) CGSize mapTileSize;
+
+/** Layer orientation. Is always the same as the map's orientation.
+ @see CCTiledMapOrientation */
+@property (nonatomic,readwrite) CCTiledMapOrientation layerOrientation;
 
 /// -----------------------------------------------------------------------
-/// @name Tile Map Layer Helpers
+/// @name Modifying Tiles by Global Identifier (GID)
 /// -----------------------------------------------------------------------
-
-/**
- *  Returns the tile at the specified tile coordinates.
- *
- *  @param tileCoordinate Tile Coordinate to use.
- *
- *  @return CCSprite tile object.
- */
--(CCSprite*) tileAt:(CGPoint)tileCoordinate;
 
 /**
  *  Returns the tile GID at the specified tile coordinates.
@@ -160,6 +112,7 @@
  *  @param flags Flags options to use.
  *
  *  @return Tile GID value.
+ *  @see ccTMXTileFlags
  */
 -(uint32_t) tileGIDAt:(CGPoint)pos withFlags:(ccTMXTileFlags*)flags;
 
@@ -177,6 +130,7 @@
  *  @param gid   GID value to use.
  *  @param pos   Tile Coordinate to use.
  *  @param flags Flag options to use.
+ *  @see ccTMXTileFlags
  */
 -(void) setTileGID:(uint32_t)gid at:(CGPoint)pos withFlags:(ccTMXTileFlags)flags;
 
@@ -186,6 +140,21 @@
  *  @param tileCoordinate Tile Coordinate to use.
  */
 -(void) removeTileAt:(CGPoint)tileCoordinate;
+
+/// -----------------------------------------------------------------------
+/// @name Accessing Tiles and Tileset
+/// -----------------------------------------------------------------------
+
+/** Tile pointer. */
+@property (nonatomic,readonly) uint32_t *tiles;
+
+/** Tileset information for the layer.
+ @see CCTiledMapTilesetInfo */
+@property (nonatomic,readwrite,strong) CCTiledMapTilesetInfo *tileset;
+
+/// -----------------------------------------------------------------------
+/// @name Converting Coordinates
+/// -----------------------------------------------------------------------
 
 /**
  *  Return the position in points of the tile specified by the tile coordinates.
@@ -197,6 +166,22 @@
 -(CGPoint) positionAt:(CGPoint)tileCoordinate;
 
 /**
+ *  Return the position in tile coordinates of the tile specified by position in points.
+ *
+ *  @param position Position in points.
+ *
+ *  @return Coordinate of the tile at that position.
+ */
+-(CGPoint) tileCoordinateAt:(CGPoint)position;
+
+/// -----------------------------------------------------------------------
+/// @name Accessing Tiled Layer Properties
+/// -----------------------------------------------------------------------
+
+/** Properties from the layer. They can be added using tiled. */
+@property (nonatomic,readwrite,strong) NSMutableDictionary *properties;
+
+/**
  *  Return the value for the specified property name value.
  *
  *  @param propertyName Propery name to lookup.
@@ -205,12 +190,15 @@
  */
 -(id) propertyNamed:(NSString *)propertyName;
 
-/**
+
+// purposefully undocumented: users should not use this method
+/*
  *  @warning addchild:z:tag: is not supported on CCTMXLayer.  Instead use setTileGID:at: and tileAt: methods.
  *
  *  @param node Node to use.
  *  @param z    Z value to use.
  *  @param tag  Tag to use.
+ *  @see CCNode
  */
 -(void) addChild:(CCNode*)node z:(NSInteger)z tag:(NSInteger)tag;
 

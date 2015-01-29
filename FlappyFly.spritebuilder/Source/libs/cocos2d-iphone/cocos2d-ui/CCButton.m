@@ -195,9 +195,9 @@
     
     [super layout];
 }
-#ifdef __CC_PLATFORM_IOS
+#if __CC_PLATFORM_IOS || __CC_PLATFORM_ANDROID
 
-- (void) touchEntered:(UITouch *)touch withEvent:(UIEvent *)event
+- (void) touchEntered:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
     if (!self.enabled)
     {
@@ -211,12 +211,12 @@
     self.highlighted = YES;
 }
 
-- (void) touchExited:(UITouch *)touch withEvent:(UIEvent *)event
+- (void) touchExited:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
     self.highlighted = NO;
 }
 
-- (void) touchUpInside:(UITouch *)touch withEvent:(UIEvent *)event
+- (void) touchUpInside:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
     [super setHitAreaExpansion:_originalHitAreaExpansion];
     
@@ -228,7 +228,7 @@
     self.highlighted = NO;
 }
 
-- (void) touchUpOutside:(UITouch *)touch withEvent:(UIEvent *)event
+- (void) touchUpOutside:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
     [super setHitAreaExpansion:_originalHitAreaExpansion];
     self.highlighted = NO;
@@ -321,6 +321,8 @@
             }
             
             [_label stopAllActions];
+            [_background stopAllActions];
+			
             if (_zoomWhenHighlighted)
             {
                 _label.scaleX = _originalScaleX;
@@ -343,7 +345,7 @@
 - (void) setHitAreaExpansion:(float)hitAreaExpansion
 {
     _originalHitAreaExpansion = hitAreaExpansion;
-    [super hitAreaExpansion];
+    [super setHitAreaExpansion:hitAreaExpansion];
 }
 
 - (float) hitAreaExpansion
@@ -450,8 +452,7 @@
 
 - (NSArray*) keysForwardedToLabel
 {
-    return [NSArray arrayWithObjects:
-            @"fontName",
+    return @[@"fontName",
             @"fontSize",
             @"opacity",
             @"color",
@@ -462,7 +463,8 @@
             @"shadowBlurRadius",
             @"shadowOffset",
             @"shadowOffsetType",
-            nil];
+            @"horizontalAlignment",
+            @"verticalAlignment"];
 }
 
 - (void) setValue:(id)value forKey:(NSString *)key

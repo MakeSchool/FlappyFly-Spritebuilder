@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCTiledMapLayer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCTiledMapLayer</TokenIdentifier>
+			<Abstract type="html">CCTiledMapLayer represents the Tiled Map layer.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="122"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/setLayerName:</TokenIdentifier>
+			<Abstract type="html">Name of the layer.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *layerName</Declaration>
+			
+			
+			<Anchor>//api/name/layerName</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/layerName</TokenIdentifier>
+			<Abstract type="html">Name of the layer.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *layerName</Declaration>
+			
+			
+			<Anchor>//api/name/layerName</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayer/layerName</TokenIdentifier>
+			<Abstract type="html">Name of the layer.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *layerName</Declaration>
+			
+			
+			<Anchor>//api/name/layerName</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/setLayerSize:</TokenIdentifier>
+			<Abstract type="html">Size of the layer in tiles.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGSize layerSize</Declaration>
+			
+			
+			<Anchor>//api/name/layerSize</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/layerSize</TokenIdentifier>
+			<Abstract type="html">Size of the layer in tiles.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGSize layerSize</Declaration>
+			
+			
+			<Anchor>//api/name/layerSize</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayer/layerSize</TokenIdentifier>
+			<Abstract type="html">Size of the layer in tiles.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGSize layerSize</Declaration>
+			
+			
+			<Anchor>//api/name/layerSize</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/setMapTileSize:</TokenIdentifier>
+			<Abstract type="html">Size of the Map&apos;s tile, could be different from the tile size.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGSize mapTileSize</Declaration>
+			
+			
+			<Anchor>//api/name/mapTileSize</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/mapTileSize</TokenIdentifier>
+			<Abstract type="html">Size of the Map&apos;s tile, could be different from the tile size.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGSize mapTileSize</Declaration>
+			
+			
+			<Anchor>//api/name/mapTileSize</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayer/mapTileSize</TokenIdentifier>
+			<Abstract type="html">Size of the Map&apos;s tile, could be different from the tile size.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGSize mapTileSize</Declaration>
+			
+			
+			<Anchor>//api/name/mapTileSize</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/setTiles:</TokenIdentifier>
+			<Abstract type="html">Tile pointer.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) uint32_t *tiles</Declaration>
+			
+			
+			<Anchor>//api/name/tiles</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/tiles</TokenIdentifier>
+			<Abstract type="html">Tile pointer.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) uint32_t *tiles</Declaration>
+			
+			
+			<Anchor>//api/name/tiles</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayer/tiles</TokenIdentifier>
+			<Abstract type="html">Tile pointer.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) uint32_t *tiles</Declaration>
+			
+			
+			<Anchor>//api/name/tiles</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/setTileset:</TokenIdentifier>
+			<Abstract type="html">Tileset information for the layer.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCTiledMapTilesetInfo *tileset</Declaration>
+			
+			
+			<Anchor>//api/name/tileset</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/tileset</TokenIdentifier>
+			<Abstract type="html">Tileset information for the layer.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCTiledMapTilesetInfo *tileset</Declaration>
+			
+			
+			<Anchor>//api/name/tileset</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayer/tileset</TokenIdentifier>
+			<Abstract type="html">Tileset information for the layer.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCTiledMapTilesetInfo *tileset</Declaration>
+			
+			
+			<Anchor>//api/name/tileset</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/setLayerOrientation:</TokenIdentifier>
+			<Abstract type="html">Layer orientation method, which is the same as the map orientation method.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCTiledMapOrientation layerOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/layerOrientation</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/layerOrientation</TokenIdentifier>
+			<Abstract type="html">Layer orientation method, which is the same as the map orientation method.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCTiledMapOrientation layerOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/layerOrientation</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayer/layerOrientation</TokenIdentifier>
+			<Abstract type="html">Layer orientation method, which is the same as the map orientation method.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCTiledMapOrientation layerOrientation</Declaration>
+			
+			
+			<Anchor>//api/name/layerOrientation</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/setProperties:</TokenIdentifier>
+			<Abstract type="html">Properties from the layer. They can be added using tiled.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/properties</TokenIdentifier>
+			<Abstract type="html">Properties from the layer. They can be added using tiled.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayer/properties</TokenIdentifier>
+			<Abstract type="html">Properties from the layer. They can be added using tiled.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTiledMapLayer/layerWithTilesetInfo:layerInfo:mapInfo:</TokenIdentifier>
+			<Abstract type="html">Create and return a CCTiledMapLayer using the specified tileset info, layerinfo and mapinfo values.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>+ (id)layerWithTilesetInfo:(CCTiledMapTilesetInfo *)tilesetInfo layerInfo:(CCTiledMapLayerInfo *)layerInfo mapInfo:(CCTiledMapInfo *)mapInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tilesetInfo</Name>
+					<Abstract type="html">Tileset Info to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>layerInfo</Name>
+					<Abstract type="html">Layer Info to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapInfo</Name>
+					<Abstract type="html">Map Info to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTiledMapLayer Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/layerWithTilesetInfo:layerInfo:mapInfo:</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/initWithTilesetInfo:layerInfo:mapInfo:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a CCTiledMapLayer using the specified tileset info, layerinfo and mapinfo values.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithTilesetInfo:(CCTiledMapTilesetInfo *)tilesetInfo layerInfo:(CCTiledMapLayerInfo *)layerInfo mapInfo:(CCTiledMapInfo *)mapInfo</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tilesetInfo</Name>
+					<Abstract type="html">Tileset Info to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>layerInfo</Name>
+					<Abstract type="html">Layer Info to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>mapInfo</Name>
+					<Abstract type="html">Map Info to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCTiledMapLayer Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTilesetInfo:layerInfo:mapInfo:</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/tileGIDAt:</TokenIdentifier>
+			<Abstract type="html">Returns the tile GID at the specified tile coordinates.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>- (uint32_t)tileGIDAt:(CGPoint)tileCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileCoordinate</Name>
+					<Abstract type="html">Tile Coordinate to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Tile GID value.</Abstract></ReturnValue>
+			<Anchor>//api/name/tileGIDAt:</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/setTileGID:at:</TokenIdentifier>
+			<Abstract type="html">Sets the tile GID using the specified tile coordinates and GID value.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>- (void)setTileGID:(uint32_t)gid at:(CGPoint)tileCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gid</Name>
+					<Abstract type="html">GID value to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>tileCoordinate</Name>
+					<Abstract type="html">Tile Coordinate to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTileGID:at:</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/setTileGID:at:withFlags:</TokenIdentifier>
+			<Abstract type="html">Sets the tile GID using the specified GID value, tile coordinates and flag option values.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>- (void)setTileGID:(uint32_t)gid at:(CGPoint)pos withFlags:(ccTMXTileFlags)flags</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>gid</Name>
+					<Abstract type="html">GID value to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>pos</Name>
+					<Abstract type="html">Tile Coordinate to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>flags</Name>
+					<Abstract type="html">Flag options to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTileGID:at:withFlags:</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/removeTileAt:</TokenIdentifier>
+			<Abstract type="html">Remove tile at specified tile coordinates.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>- (void)removeTileAt:(CGPoint)tileCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileCoordinate</Name>
+					<Abstract type="html">Tile Coordinate to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeTileAt:</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/positionAt:</TokenIdentifier>
+			<Abstract type="html">Return the position in points of the tile specified by the tile coordinates.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)positionAt:(CGPoint)tileCoordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tileCoordinate</Name>
+					<Abstract type="html">Tile Coordinate to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Return position of tile.</Abstract></ReturnValue>
+			<Anchor>//api/name/positionAt:</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/tileCoordinateAt:</TokenIdentifier>
+			<Abstract type="html">Return the position in tile coordinates of the tile specified by position in points.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)tileCoordinateAt:(CGPoint)position</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>position</Name>
+					<Abstract type="html">Position in points.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Coordinate of the tile at that position.</Abstract></ReturnValue>
+			<Anchor>//api/name/tileCoordinateAt:</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/propertyNamed:</TokenIdentifier>
+			<Abstract type="html">Return the value for the specified property name value.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>- (id)propertyNamed:(NSString *)propertyName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>propertyName</Name>
+					<Abstract type="html">Propery name to lookup.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Property name value.</Abstract></ReturnValue>
+			<Anchor>//api/name/propertyNamed:</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayer/addChild:z:tag:</TokenIdentifier>
+			<Abstract type="html">addchild:z:tag: is not supported on CCTMXLayer.  Instead use setTileGID:at: and tileAt: methods.</Abstract>
+			<DeclaredIn>CCTiledMapLayer.h</DeclaredIn>
+			
+			<Declaration>- (void)addChild:(CCNode *)node z:(NSInteger)z tag:(NSInteger)tag</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>node</Name>
+					<Abstract type="html">Node to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>z</Name>
+					<Abstract type="html">Z value to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>tag</Name>
+					<Abstract type="html">Tag to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addChild:z:tag:</Anchor>
+            <NodeRef refid="122"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCTransition.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCTransition</TokenIdentifier>
+			<Abstract type="html">Creates a transition.
+The transition will replace the outgoing scene, with the incoming scene.
+Both scenes can be animated during the transition ( default disabled ).</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+            
+			
+			<NodeRef refid="126"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setOutgoingDownScale:</TokenIdentifier>
+			<Abstract type="html">Will downscale outgoing scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float outgoingDownScale</Declaration>
+			
+			
+			<Anchor>//api/name/outgoingDownScale</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/outgoingDownScale</TokenIdentifier>
+			<Abstract type="html">Will downscale outgoing scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float outgoingDownScale</Declaration>
+			
+			
+			<Anchor>//api/name/outgoingDownScale</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/outgoingDownScale</TokenIdentifier>
+			<Abstract type="html">Will downscale outgoing scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float outgoingDownScale</Declaration>
+			
+			
+			<Anchor>//api/name/outgoingDownScale</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setIncomingDownScale:</TokenIdentifier>
+			<Abstract type="html">Will downscale incoming scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float incomingDownScale</Declaration>
+			
+			
+			<Anchor>//api/name/incomingDownScale</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/incomingDownScale</TokenIdentifier>
+			<Abstract type="html">Will downscale incoming scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float incomingDownScale</Declaration>
+			
+			
+			<Anchor>//api/name/incomingDownScale</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/incomingDownScale</TokenIdentifier>
+			<Abstract type="html">Will downscale incoming scene.
+Can be used as an effect, or to decrease render time on complex scenes.
+Default 1.0.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float incomingDownScale</Declaration>
+			
+			
+			<Anchor>//api/name/incomingDownScale</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setRetinaTransition:</TokenIdentifier>
+			<Abstract type="html">Transition will be performed in retina resolution.
+Will force outgoingDownScale and incomingDownScale to 1.0 on non retina devices, and 2.0 on retina devices if not set.
+Default YES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isRetinaTransition) BOOL retinaTransition</Declaration>
+			
+			
+			<Anchor>//api/name/retinaTransition</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/isRetinaTransition</TokenIdentifier>
+			<Abstract type="html">Transition will be performed in retina resolution.
+Will force outgoingDownScale and incomingDownScale to 1.0 on non retina devices, and 2.0 on retina devices if not set.
+Default YES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isRetinaTransition) BOOL retinaTransition</Declaration>
+			
+			
+			<Anchor>//api/name/retinaTransition</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/retinaTransition</TokenIdentifier>
+			<Abstract type="html">Transition will be performed in retina resolution.
+Will force outgoingDownScale and incomingDownScale to 1.0 on non retina devices, and 2.0 on retina devices if not set.
+Default YES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isRetinaTransition) BOOL retinaTransition</Declaration>
+			
+			
+			<Anchor>//api/name/retinaTransition</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setTransitionPixelFormat:</TokenIdentifier>
+			<Abstract type="html">Pixel format used for transition.
+Default CCTexturePixelFormat_RGBA8888.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCTexturePixelFormat transitionPixelFormat</Declaration>
+			
+			
+			<Anchor>//api/name/transitionPixelFormat</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/transitionPixelFormat</TokenIdentifier>
+			<Abstract type="html">Pixel format used for transition.
+Default CCTexturePixelFormat_RGBA8888.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCTexturePixelFormat transitionPixelFormat</Declaration>
+			
+			
+			<Anchor>//api/name/transitionPixelFormat</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/transitionPixelFormat</TokenIdentifier>
+			<Abstract type="html">Pixel format used for transition.
+Default CCTexturePixelFormat_RGBA8888.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCTexturePixelFormat transitionPixelFormat</Declaration>
+			
+			
+			<Anchor>//api/name/transitionPixelFormat</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setTransitionDepthStencilFormat:</TokenIdentifier>
+			<Abstract type="html">Depth/stencil format used for transition.
+Default GLDEPTH24STENCIL8_OES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) GLuint transitionDepthStencilFormat</Declaration>
+			
+			
+			<Anchor>//api/name/transitionDepthStencilFormat</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/transitionDepthStencilFormat</TokenIdentifier>
+			<Abstract type="html">Depth/stencil format used for transition.
+Default GLDEPTH24STENCIL8_OES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) GLuint transitionDepthStencilFormat</Declaration>
+			
+			
+			<Anchor>//api/name/transitionDepthStencilFormat</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/transitionDepthStencilFormat</TokenIdentifier>
+			<Abstract type="html">Depth/stencil format used for transition.
+Default GLDEPTH24STENCIL8_OES.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) GLuint transitionDepthStencilFormat</Declaration>
+			
+			
+			<Anchor>//api/name/transitionDepthStencilFormat</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setOutgoingSceneAnimated:</TokenIdentifier>
+			<Abstract type="html">Defines whether outgoing scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isOutgoingSceneAnimated) BOOL outgoingSceneAnimated</Declaration>
+			
+			
+			<Anchor>//api/name/outgoingSceneAnimated</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/isOutgoingSceneAnimated</TokenIdentifier>
+			<Abstract type="html">Defines whether outgoing scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isOutgoingSceneAnimated) BOOL outgoingSceneAnimated</Declaration>
+			
+			
+			<Anchor>//api/name/outgoingSceneAnimated</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/outgoingSceneAnimated</TokenIdentifier>
+			<Abstract type="html">Defines whether outgoing scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isOutgoingSceneAnimated) BOOL outgoingSceneAnimated</Declaration>
+			
+			
+			<Anchor>//api/name/outgoingSceneAnimated</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setIncomingSceneAnimated:</TokenIdentifier>
+			<Abstract type="html">Defines whether incoming scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isIncomingSceneAnimated) BOOL incomingSceneAnimated</Declaration>
+			
+			
+			<Anchor>//api/name/incomingSceneAnimated</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/isIncomingSceneAnimated</TokenIdentifier>
+			<Abstract type="html">Defines whether incoming scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isIncomingSceneAnimated) BOOL incomingSceneAnimated</Declaration>
+			
+			
+			<Anchor>//api/name/incomingSceneAnimated</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/incomingSceneAnimated</TokenIdentifier>
+			<Abstract type="html">Defines whether incoming scene will be animated during transition.
+Default NO.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isIncomingSceneAnimated) BOOL incomingSceneAnimated</Declaration>
+			
+			
+			<Anchor>//api/name/incomingSceneAnimated</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setRunTime:</TokenIdentifier>
+			<Abstract type="html">The actual transition runtime in seconds.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval runTime</Declaration>
+			
+			
+			<Anchor>//api/name/runTime</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/runTime</TokenIdentifier>
+			<Abstract type="html">The actual transition runtime in seconds.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval runTime</Declaration>
+			
+			
+			<Anchor>//api/name/runTime</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/runTime</TokenIdentifier>
+			<Abstract type="html">The actual transition runtime in seconds.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSTimeInterval runTime</Declaration>
+			
+			
+			<Anchor>//api/name/runTime</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/setProgress:</TokenIdentifier>
+			<Abstract type="html">Normalized transition progress.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTransition/progress</TokenIdentifier>
+			<Abstract type="html">Normalized transition progress.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTransition/progress</TokenIdentifier>
+			<Abstract type="html">Normalized transition progress.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float progress</Declaration>
+			
+			
+			<Anchor>//api/name/progress</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionCrossFadeWithDuration:</TokenIdentifier>
+			<Abstract type="html">Creates a cross fade transition directly from outgoing to incoming scene.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>+ (CCTransition *)transitionCrossFadeWithDuration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionCrossFadeWithDuration:</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionFadeWithColor:duration:</TokenIdentifier>
+			<Abstract type="html">Creates a fade transition from outgoing to incoming scene, through color.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>+ (CCTransition *)transitionFadeWithColor:(CCColor *)color duration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">The color to fade through</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionFadeWithColor:duration:</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionFadeWithDuration:</TokenIdentifier>
+			<Abstract type="html">Creates a fade transition from outgoing to incoming scene, through black.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>+ (CCTransition *)transitionFadeWithDuration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionFadeWithDuration:</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionMoveInWithDirection:duration:</TokenIdentifier>
+			<Abstract type="html">Creates a transition where the incoming scene is moved in over the outgoing scene.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>+ (CCTransition *)transitionMoveInWithDirection:(CCTransitionDirection)direction duration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>direction</Name>
+					<Abstract type="html">Direction to move the incoming scene.</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionMoveInWithDirection:duration:</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionPushWithDirection:duration:</TokenIdentifier>
+			<Abstract type="html">Creates a transition where the incoming scene pushed the outgoing scene out.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>+ (CCTransition *)transitionPushWithDirection:(CCTransitionDirection)direction duration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>direction</Name>
+					<Abstract type="html">Direction to move incoming and outgoing scenes.</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionPushWithDirection:duration:</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTransition/transitionRevealWithDirection:duration:</TokenIdentifier>
+			<Abstract type="html">Creates a transition where the incoming scene is revealed by sliding the outgoing scene out.</Abstract>
+			<DeclaredIn>CCTransition.h</DeclaredIn>
+			
+			<Declaration>+ (CCTransition *)transitionRevealWithDirection:(CCTransitionDirection)direction duration:(NSTimeInterval)duration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>direction</Name>
+					<Abstract type="html">Direction to slide outcoing scene.</Abstract>
+				</Parameter><Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">The duration of the transition in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTransition Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/transitionRevealWithDirection:duration:</Anchor>
+            <NodeRef refid="126"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

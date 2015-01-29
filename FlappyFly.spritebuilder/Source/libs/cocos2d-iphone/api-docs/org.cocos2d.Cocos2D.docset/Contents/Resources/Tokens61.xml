@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionSpriteFrame.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionSpriteFrame</TokenIdentifier>
+			<Abstract type="html">This actions changes the target sprite frame.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+            
+			
+			<NodeRef refid="61"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionSpriteFrame/actionWithSpriteFrame:</TokenIdentifier>
+			<Abstract type="html">Creates the action action with the specified sprite frame.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithSpriteFrame:(CCSpriteFrame *)spriteFrame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>spriteFrame</Name>
+					<Abstract type="html">SpriteFrame to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The sprite frame action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithSpriteFrame:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionSpriteFrame/initWithSpriteFrame:</TokenIdentifier>
+			<Abstract type="html">Initializes the action action with the specified sprite frame.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithSpriteFrame:(CCSpriteFrame *)spriteFrame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>spriteFrame</Name>
+					<Abstract type="html">SpriteFrame to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized sprite frame action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSpriteFrame:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

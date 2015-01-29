@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CCBAnimationManagerDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CCBAnimationManagerDelegate</TokenIdentifier>
+			<Abstract type="html">The animation manager delegate receives callbacks when animation sequences finishes playing.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="128"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CCBAnimationManagerDelegate/completedAnimationSequenceNamed:</TokenIdentifier>
+			<Abstract type="html">Called when an animation sequence has finished playing.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)completedAnimationSequenceNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the sequence that just finished playing.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/completedAnimationSequenceNamed:</Anchor>
+            <NodeRef refid="128"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

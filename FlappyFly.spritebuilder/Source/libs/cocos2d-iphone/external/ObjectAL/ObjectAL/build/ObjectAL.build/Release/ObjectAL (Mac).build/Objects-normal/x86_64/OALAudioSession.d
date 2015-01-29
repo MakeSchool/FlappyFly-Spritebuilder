@@ -1,0 +1,28 @@
+dependencies: \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Session/OALAudioSession.m \
+  ObjectAL/Session/OALAudioSession.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/ccMacros.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/ccConfig.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/Support/CGPointExtension.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Support/SynthesizeSingleton.h \
+  ObjectAL/Session/OALSuspendHandler.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Support/ObjectALMacros.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/ObjectALConfig.h \
+  ObjectAL/Support/OALTools.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Support/ARCSafe_MemMgmt.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Support/OALNotifications.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCDirector.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/ccTypes.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/Platforms/CCGL.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/Platforms/Mac/CCGLView.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/Platforms/CCDirectorView.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCProtocols.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/Support/CCColor.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCResponderManager.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCTouch.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCTouchEvent.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCRenderer.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCShader.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/NSValue+CCRenderer.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCRendererBasicTypes.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/CCRendererSharedTypes.h

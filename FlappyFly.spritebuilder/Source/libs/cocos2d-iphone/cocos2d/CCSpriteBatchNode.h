@@ -27,45 +27,28 @@
  */
 
 #import "CCNode.h"
-#import "CCProtocols.h"
-#import "CCTextureAtlas.h"
-#import "ccMacros.h"
 
+@class CCTexture;
 @class CCSprite;
 
 /**
- A CCSpriteBatchNode offers improved rendering performance for multiple sprite rendering by utilising a single OpenGL call to render all sprites from one (and only one) texture (one image file, one texture atlas), often knows as a 'batch draw'.
+ A CCSpriteBatchNode offers improved rendering performance for multiple sprite rendering by utilising a single OpenGL call to render 
+ all of its child sprites from one texture. This is called batch drawing.
  
- ### Notes
+ ### Requirements
  
- - Only CCSprites or any subclass of CCSprite may be added to the CCSpriteBatchNode.
- - All CCSprites must reference the same texture atlas.
- - Default child capacity is 29 children and will be increased by 33% at runtime each time capacity is reached.
+ - Only CCSprite or CCSprite subclass instances can be added to the CCSpriteBatchNode
+ - All sprites added must use the same CCTexture object
+ 
+ Failing to meet these requirements will result in a runtime error.
  
  */
-@interface CCSpriteBatchNode : CCNode <CCTextureProtocol> {
-    
-    // Texture atlas for batch.
-	CCTextureAtlas	*_textureAtlas;
-    
-    // Blend mode.
-	ccBlendFunc		_blendFunc;
-
-	// Node children.
-	NSMutableArray *_descendants;
-}
+__attribute__((deprecated))
+@interface CCSpriteBatchNode : CCNode<CCTextureProtocol, CCBlendProtocol>
 
 
 /// -----------------------------------------------------------------------
-/// @name Accessing the Batch Node Attributes
-/// -----------------------------------------------------------------------
-
-/** Blend mode. */
-@property (nonatomic,readwrite) ccBlendFunc blendFunc;
-
-
-/// -----------------------------------------------------------------------
-/// @name Creating a CCSpriteBatchNode Object
+/// @name Creating a Sprite Batch Node
 /// -----------------------------------------------------------------------
 
 /**
@@ -74,6 +57,7 @@
  *  @param tex Texture to use.
  *
  *  @return The CCSpriteBatchNode Object.
+ *  @see CCTexture
  */
 +(id)batchNodeWithTexture:(CCTexture *)tex;
 
@@ -86,11 +70,6 @@
  */
 +(id)batchNodeWithFile:(NSString*) fileImage;
 
-
-/// -----------------------------------------------------------------------
-/// @name Initializing a CCSpriteBatchNode Object
-/// -----------------------------------------------------------------------
-
 /**
  *  Creates and returns a batch node with the specified texture and capacity values.
  *
@@ -98,6 +77,7 @@
  *  @param capacity Initial capacity.
  *
  *  @return An initialized CCSpriteBatchNode Object.
+ *  @see CCTexture
  */
 -(id)initWithTexture:(CCTexture *)tex capacity:(NSUInteger)capacity;
 
@@ -110,18 +90,5 @@
  *  @return An initialized CCSpriteBatchNode Object.
  */
 -(id)initWithFile:(NSString*)fileImage capacity:(NSUInteger)capacity;
-
-
-/// -----------------------------------------------------------------------
-/// @name Managing the Batch Node
-/// -----------------------------------------------------------------------
-
-/**
- *  Removes a sprite from the batch node.
- *
- *  @param sprite    Sprite reference.
- *  @param doCleanup Perform additional cleanup.
- */
--(void)removeChild: (CCSprite *)sprite cleanup:(BOOL)doCleanup;
 
 @end

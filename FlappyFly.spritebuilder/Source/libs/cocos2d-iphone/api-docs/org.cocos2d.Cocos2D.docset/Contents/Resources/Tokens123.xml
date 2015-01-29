@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCTiledMapLayerInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCTiledMapLayerInfo</TokenIdentifier>
+			<Abstract type="html">CCTiledMapLayerInfo contains information about the Tile Map Layer. This information is obtained from the supplied Tile Map File (TMX).</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="123"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/setName:</TokenIdentifier>
+			<Abstract type="html">Layer name.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/name</TokenIdentifier>
+			<Abstract type="html">Layer name.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayerInfo/name</TokenIdentifier>
+			<Abstract type="html">Layer name.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/setLayerSize:</TokenIdentifier>
+			<Abstract type="html">Layer size in tiles.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGSize layerSize</Declaration>
+			
+			
+			<Anchor>//api/name/layerSize</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/layerSize</TokenIdentifier>
+			<Abstract type="html">Layer size in tiles.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGSize layerSize</Declaration>
+			
+			
+			<Anchor>//api/name/layerSize</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayerInfo/layerSize</TokenIdentifier>
+			<Abstract type="html">Layer size in tiles.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGSize layerSize</Declaration>
+			
+			
+			<Anchor>//api/name/layerSize</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/setTiles:</TokenIdentifier>
+			<Abstract type="html">Layer tile array.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) unsigned int *tiles</Declaration>
+			
+			
+			<Anchor>//api/name/tiles</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/tiles</TokenIdentifier>
+			<Abstract type="html">Layer tile array.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) unsigned int *tiles</Declaration>
+			
+			
+			<Anchor>//api/name/tiles</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayerInfo/tiles</TokenIdentifier>
+			<Abstract type="html">Layer tile array.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) unsigned int *tiles</Declaration>
+			
+			
+			<Anchor>//api/name/tiles</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/setVisible:</TokenIdentifier>
+			<Abstract type="html">Layer visibility.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL visible</Declaration>
+			
+			
+			<Anchor>//api/name/visible</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/visible</TokenIdentifier>
+			<Abstract type="html">Layer visibility.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL visible</Declaration>
+			
+			
+			<Anchor>//api/name/visible</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayerInfo/visible</TokenIdentifier>
+			<Abstract type="html">Layer visibility.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL visible</Declaration>
+			
+			
+			<Anchor>//api/name/visible</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/setOpacity:</TokenIdentifier>
+			<Abstract type="html">Layer Opacity.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) float opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/opacity</TokenIdentifier>
+			<Abstract type="html">Layer Opacity.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) float opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayerInfo/opacity</TokenIdentifier>
+			<Abstract type="html">Layer Opacity.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) float opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/setOwnTiles:</TokenIdentifier>
+			<Abstract type="html">True to release ownership of layer tiles.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL ownTiles</Declaration>
+			
+			
+			<Anchor>//api/name/ownTiles</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/ownTiles</TokenIdentifier>
+			<Abstract type="html">True to release ownership of layer tiles.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL ownTiles</Declaration>
+			
+			
+			<Anchor>//api/name/ownTiles</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayerInfo/ownTiles</TokenIdentifier>
+			<Abstract type="html">True to release ownership of layer tiles.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL ownTiles</Declaration>
+			
+			
+			<Anchor>//api/name/ownTiles</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/setMinGID:</TokenIdentifier>
+			<Abstract type="html">Minimum GID.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) unsigned int minGID</Declaration>
+			
+			
+			<Anchor>//api/name/minGID</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/minGID</TokenIdentifier>
+			<Abstract type="html">Minimum GID.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) unsigned int minGID</Declaration>
+			
+			
+			<Anchor>//api/name/minGID</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayerInfo/minGID</TokenIdentifier>
+			<Abstract type="html">Minimum GID.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) unsigned int minGID</Declaration>
+			
+			
+			<Anchor>//api/name/minGID</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/setMaxGID:</TokenIdentifier>
+			<Abstract type="html">Maximum GID.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) unsigned int maxGID</Declaration>
+			
+			
+			<Anchor>//api/name/maxGID</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/maxGID</TokenIdentifier>
+			<Abstract type="html">Maximum GID.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) unsigned int maxGID</Declaration>
+			
+			
+			<Anchor>//api/name/maxGID</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayerInfo/maxGID</TokenIdentifier>
+			<Abstract type="html">Maximum GID.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) unsigned int maxGID</Declaration>
+			
+			
+			<Anchor>//api/name/maxGID</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/setProperties:</TokenIdentifier>
+			<Abstract type="html">Properties dictionary.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/properties</TokenIdentifier>
+			<Abstract type="html">Properties dictionary.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayerInfo/properties</TokenIdentifier>
+			<Abstract type="html">Properties dictionary.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/setOffset:</TokenIdentifier>
+			<Abstract type="html">Layer offset position.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint offset</Declaration>
+			
+			
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapLayerInfo/offset</TokenIdentifier>
+			<Abstract type="html">Layer offset position.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint offset</Declaration>
+			
+			
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapLayerInfo/offset</TokenIdentifier>
+			<Abstract type="html">Layer offset position.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint offset</Declaration>
+			
+			
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="123"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

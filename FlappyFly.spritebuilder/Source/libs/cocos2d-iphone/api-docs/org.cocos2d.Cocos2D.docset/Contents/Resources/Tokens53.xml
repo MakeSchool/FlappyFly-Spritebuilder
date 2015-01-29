@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionScaleTo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionScaleTo</TokenIdentifier>
+			<Abstract type="html">This action scales the target to the specified factor value.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionScaleTo/actionWithDuration:scale:</TokenIdentifier>
+			<Abstract type="html">Creates the action with the same scale factor for X and Y.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration scale:(float)s</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>s</Name>
+					<Abstract type="html">Scale to scale to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New scale action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:scale:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionScaleTo/initWithDuration:scale:</TokenIdentifier>
+			<Abstract type="html">Initializes the action with the same scale factor for X and Y.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration scale:(float)s</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>s</Name>
+					<Abstract type="html">Scale to scale to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New scale action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:scale:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionScaleTo/actionWithDuration:scaleX:scaleY:</TokenIdentifier>
+			<Abstract type="html">Creates the action with individual scale factor for X and Y.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration scaleX:(float)sx scaleY:(float)sy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>sx</Name>
+					<Abstract type="html">X scale to scale to.</Abstract>
+				</Parameter><Parameter>
+					<Name>sy</Name>
+					<Abstract type="html">Y scale to scale to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New scale action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:scaleX:scaleY:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionScaleTo/initWithDuration:scaleX:scaleY:</TokenIdentifier>
+			<Abstract type="html">Initializes the action with individual scale factor for X and Y.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration scaleX:(float)sx scaleY:(float)sy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>sx</Name>
+					<Abstract type="html">X scale to scale to.</Abstract>
+				</Parameter><Parameter>
+					<Name>sy</Name>
+					<Abstract type="html">Y scale to scale to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New scale action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:scaleX:scaleY:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCTiledMapInfo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCTiledMapInfo</TokenIdentifier>
+			<Abstract type="html">CCTiledMapInfo contains information regarding the Tile Map. This information is obtained from the supplied Tile Map File (TMX).</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="121"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/setOrientation:</TokenIdentifier>
+			<Abstract type="html">Map orienatation method.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) int orientation</Declaration>
+			
+			
+			<Anchor>//api/name/orientation</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/orientation</TokenIdentifier>
+			<Abstract type="html">Map orienatation method.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) int orientation</Declaration>
+			
+			
+			<Anchor>//api/name/orientation</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapInfo/orientation</TokenIdentifier>
+			<Abstract type="html">Map orienatation method.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) int orientation</Declaration>
+			
+			
+			<Anchor>//api/name/orientation</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/setMapSize:</TokenIdentifier>
+			<Abstract type="html">Map size.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize mapSize</Declaration>
+			
+			
+			<Anchor>//api/name/mapSize</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/mapSize</TokenIdentifier>
+			<Abstract type="html">Map size.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize mapSize</Declaration>
+			
+			
+			<Anchor>//api/name/mapSize</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapInfo/mapSize</TokenIdentifier>
+			<Abstract type="html">Map size.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize mapSize</Declaration>
+			
+			
+			<Anchor>//api/name/mapSize</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/setTileSize:</TokenIdentifier>
+			<Abstract type="html">Map tile size.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/tileSize</TokenIdentifier>
+			<Abstract type="html">Map tile size.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapInfo/tileSize</TokenIdentifier>
+			<Abstract type="html">Map tile size.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize tileSize</Declaration>
+			
+			
+			<Anchor>//api/name/tileSize</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/setLayers:</TokenIdentifier>
+			<Abstract type="html">Map layers array.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *layers</Declaration>
+			
+			
+			<Anchor>//api/name/layers</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/layers</TokenIdentifier>
+			<Abstract type="html">Map layers array.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *layers</Declaration>
+			
+			
+			<Anchor>//api/name/layers</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapInfo/layers</TokenIdentifier>
+			<Abstract type="html">Map layers array.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *layers</Declaration>
+			
+			
+			<Anchor>//api/name/layers</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/setTilesets:</TokenIdentifier>
+			<Abstract type="html">Map tileset array.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *tilesets</Declaration>
+			
+			
+			<Anchor>//api/name/tilesets</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/tilesets</TokenIdentifier>
+			<Abstract type="html">Map tileset array.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *tilesets</Declaration>
+			
+			
+			<Anchor>//api/name/tilesets</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapInfo/tilesets</TokenIdentifier>
+			<Abstract type="html">Map tileset array.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *tilesets</Declaration>
+			
+			
+			<Anchor>//api/name/tilesets</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/setFilename:</TokenIdentifier>
+			<Abstract type="html">Tile Map file path.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *filename</Declaration>
+			
+			
+			<Anchor>//api/name/filename</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/filename</TokenIdentifier>
+			<Abstract type="html">Tile Map file path.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *filename</Declaration>
+			
+			
+			<Anchor>//api/name/filename</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapInfo/filename</TokenIdentifier>
+			<Abstract type="html">Tile Map file path.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *filename</Declaration>
+			
+			
+			<Anchor>//api/name/filename</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/setResources:</TokenIdentifier>
+			<Abstract type="html">Tile Map resource file path.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *resources</Declaration>
+			
+			
+			<Anchor>//api/name/resources</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/resources</TokenIdentifier>
+			<Abstract type="html">Tile Map resource file path.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *resources</Declaration>
+			
+			
+			<Anchor>//api/name/resources</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapInfo/resources</TokenIdentifier>
+			<Abstract type="html">Tile Map resource file path.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSString *resources</Declaration>
+			
+			
+			<Anchor>//api/name/resources</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/setObjectGroups:</TokenIdentifier>
+			<Abstract type="html">Object groups.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *objectGroups</Declaration>
+			
+			
+			<Anchor>//api/name/objectGroups</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/objectGroups</TokenIdentifier>
+			<Abstract type="html">Object groups.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *objectGroups</Declaration>
+			
+			
+			<Anchor>//api/name/objectGroups</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapInfo/objectGroups</TokenIdentifier>
+			<Abstract type="html">Object groups.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableArray *objectGroups</Declaration>
+			
+			
+			<Anchor>//api/name/objectGroups</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/setProperties:</TokenIdentifier>
+			<Abstract type="html">Properties dictionary.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/properties</TokenIdentifier>
+			<Abstract type="html">Properties dictionary.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapInfo/properties</TokenIdentifier>
+			<Abstract type="html">Properties dictionary.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) NSMutableDictionary *properties</Declaration>
+			
+			
+			<Anchor>//api/name/properties</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/setContentScale:</TokenIdentifier>
+			<Abstract type="html">Content scale of the TMX file. Mostly for backwords compatibility.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGFloat contentScale</Declaration>
+			
+			
+			<Anchor>//api/name/contentScale</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/contentScale</TokenIdentifier>
+			<Abstract type="html">Content scale of the TMX file. Mostly for backwords compatibility.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGFloat contentScale</Declaration>
+			
+			
+			<Anchor>//api/name/contentScale</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTiledMapInfo/contentScale</TokenIdentifier>
+			<Abstract type="html">Content scale of the TMX file. Mostly for backwords compatibility.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGFloat contentScale</Declaration>
+			
+			
+			<Anchor>//api/name/contentScale</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTiledMapInfo/formatWithTMXFile:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a CCTiledMapInfo object using the TMX format file specified.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>+ (id)formatWithTMXFile:(NSString *)tmxFile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tmxFile</Name>
+					<Abstract type="html">CCTiledMapInfo.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTiledMapInfo Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/formatWithTMXFile:</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTiledMapInfo/formatWithXML:resourcePath:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a CCTiledMapInfo object using the TMX XML and resource file path.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>+ (id)formatWithXML:(NSString *)tmxString resourcePath:(NSString *)resourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tmxString</Name>
+					<Abstract type="html">TMX XML.</Abstract>
+				</Parameter><Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">Resource file path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCTiledMapInfo Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/formatWithXML:resourcePath:</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/initWithFile:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a CCTiledMapInfo object using the TMX format file specified.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFile:(NSString *)tmxFile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tmxFile</Name>
+					<Abstract type="html">CCTiledMapInfo.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCTiledMapInfo Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFile:</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTiledMapInfo/initWithXML:resourcePath:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a  CCTiledMapInfo object using the TMX XML and resource file path.</Abstract>
+			<DeclaredIn>CCTMXXMLParser.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithXML:(NSString *)tmxString resourcePath:(NSString *)resourcePath</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tmxString</Name>
+					<Abstract type="html">TMX XML.</Abstract>
+				</Parameter><Parameter>
+					<Name>resourcePath</Name>
+					<Abstract type="html">Resource file path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCTiledMapInfo Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithXML:resourcePath:</Anchor>
+            <NodeRef refid="121"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

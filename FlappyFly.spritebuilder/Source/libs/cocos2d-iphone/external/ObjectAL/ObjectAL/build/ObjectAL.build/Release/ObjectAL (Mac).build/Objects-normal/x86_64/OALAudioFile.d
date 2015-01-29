@@ -1,0 +1,10 @@
+dependencies: \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/Support/OALAudioFile.m \
+  ObjectAL/Support/OALAudioFile.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/ccMacros.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/ccConfig.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/../../../cocos2d/Support/CGPointExtension.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/OpenAL/ALBuffer.h \
+  ObjectAL/Support/ObjectALMacros.h \
+  /Users/Lidholt/Projects/SpriteBuilder/SpriteBuilder/libs/cocos2d-iphone/external/ObjectAL/ObjectAL/ObjectAL/ObjectALConfig.h \
+  ObjectAL/Support/OALTools.h ObjectAL/Support/ARCSafe_MemMgmt.h

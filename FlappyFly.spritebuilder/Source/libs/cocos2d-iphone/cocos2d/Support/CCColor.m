@@ -9,7 +9,14 @@
 #import "CCColor.h"
 #import <CoreGraphics/CoreGraphics.h>
 
-@implementation CCColor
+@implementation CCColor {
+    CGColorRef _color;
+}
+
+- (void)dealloc
+{
+    CGColorRelease(_color);
+}
 
 + (CCColor*) colorWithWhite:(float)white alpha:(float)alpha
 {
@@ -31,7 +38,7 @@
     return [[CCColor alloc] initWithCGColor:cgColor];
 }
 
-#ifdef __CC_PLATFORM_IOS
+#if __CC_PLATFORM_IOS
 + (CCColor*) colorWithUIColor:(UIColor *)color
 {
     return [[CCColor alloc] initWithUIColor:color];
@@ -140,7 +147,7 @@
     return self;
 }
 
-#ifdef __CC_PLATFORM_IOS
+#if __CC_PLATFORM_IOS
 - (CCColor*) initWithUIColor:(UIColor *)color
 {
     self = [super init];
@@ -164,7 +171,6 @@
     {
         NSAssert(NO, @"UIColor has unsupported color space model");
     }
-    CGColorRelease(colorRef);
     
     return self;
 }
@@ -173,10 +179,13 @@
 - (CGColorRef) CGColor
 {
     CGFloat components[4] = {(CGFloat)_r, (CGFloat)_g, (CGFloat)_b, (CGFloat)_a};
-    return CGColorCreate(CGColorSpaceCreateDeviceRGB(), components);
+    CGColorSpaceRef colorspace = CGColorSpaceCreateDeviceRGB();
+    _color = CGColorCreate(colorspace, components);
+    CGColorSpaceRelease(colorspace);
+    return _color;
 }
 
-#ifdef __CC_PLATFORM_IOS
+#if __CC_PLATFORM_IOS
 
 - (UIColor*) UIColor
 {
@@ -185,7 +194,7 @@
 
 #endif
 
-#ifdef __CC_PLATFORM_MAC
+#if __CC_PLATFORM_MAC
 - (NSColor*) NSColor
 {
 	return [NSColor colorWithCalibratedRed:(CGFloat)_r green:(CGFloat)_g blue:(CGFloat)_b alpha:(CGFloat)_a];
@@ -215,80 +224,46 @@
 	return [CCColor colorWithCcColor4f:ccc4FInterpolated(self.ccColor4f, toColor.ccColor4f, t)];
 }
 
-+ (CCColor*) blackColor
-{
-    return [CCColor colorWithRed:0 green:0 blue:0 alpha:1];
+static NSDictionary *namedColors() {
+    static NSDictionary *namedColors = nil;
+    static dispatch_once_t once = 0L;
+    dispatch_once(&once, ^{
+        namedColors = @{
+            @"black": [CCColor colorWithRed:0 green:0 blue:0 alpha:1],
+            @"darkGray": [CCColor colorWithWhite:1.0/3.0 alpha:1],
+            @"lightGray": [CCColor colorWithWhite:2.0/3.0 alpha:1],
+            @"white": [CCColor colorWithWhite:1 alpha:1],
+            @"gray": [CCColor colorWithWhite:0.5 alpha:1],
+            @"red": [CCColor colorWithRed:1 green:0 blue:0 alpha:1],
+            @"green": [CCColor colorWithRed:0 green:1 blue:0 alpha:1],
+            @"blue": [CCColor colorWithRed:0 green:0 blue:1 alpha:1],
+            @"cyan": [CCColor colorWithRed:0 green:1 blue:1 alpha:1],
+            @"yellow": [CCColor colorWithRed:1 green:1 blue:0 alpha:1],
+            @"magenta": [CCColor colorWithRed:1 green:0 blue:1 alpha:1],
+            @"orange": [CCColor colorWithRed:1 green:0.5 blue:0 alpha:1],
+            @"purple": [CCColor colorWithRed:0.5 green:0 blue:0.5 alpha:1],
+            @"brown": [CCColor colorWithRed:0.6 green:0.4 blue:0.2 alpha:1],
+            @"clear": [CCColor colorWithRed:0 green:0 blue:0 alpha:0],
+        };
+    });
+    return namedColors;
 }
 
-+ (CCColor*) darkGrayColor
-{
-    return [CCColor colorWithWhite:1.0/3.0 alpha:1];
-}
-
-+ (CCColor*) lightGrayColor
-{
-    return [CCColor colorWithWhite:2.0/3.0 alpha:1];
-}
-
-+ (CCColor*) whiteColor
-{
-    return [CCColor colorWithWhite:1 alpha:1];
-}
-
-+ (CCColor*) grayColor
-{
-    return [CCColor colorWithWhite:0.5 alpha:1];
-}
-
-+ (CCColor*) redColor
-{
-    return [CCColor colorWithRed:1 green:0 blue:0 alpha:1];
-}
-
-+ (CCColor*) greenColor
-{
-    return [CCColor colorWithRed:0 green:1 blue:0 alpha:1];
-}
-
-+ (CCColor*) blueColor
-{
-    return [CCColor colorWithRed:0 green:0 blue:1 alpha:1];
-}
-
-+ (CCColor*) cyanColor
-{
-    return [CCColor colorWithRed:0 green:1 blue:1 alpha:1];
-}
-
-+ (CCColor*) yellowColor
-{
-    return [CCColor colorWithRed:1 green:1 blue:0 alpha:1];
-}
-
-+ (CCColor*) magentaColor
-{
-    return [CCColor colorWithRed:1 green:0 blue:1 alpha:1];
-}
-
-+ (CCColor*) orangeColor
-{
-    return [CCColor colorWithRed:1 green:0.5 blue:0 alpha:1];
-}
-
-+ (CCColor*) purpleColor
-{
-    return [CCColor colorWithRed:0.5 green:0 blue:0.5 alpha:1];
-}
-
-+ (CCColor*) brownColor
-{
-    return [CCColor colorWithRed:0.6 green:0.4 blue:0.2 alpha:1];
-}
-
-+ (CCColor*) clearColor
-{
-    return [CCColor colorWithRed:0 green:0 blue:0 alpha:0];
-}
++ (CCColor*) blackColor { return namedColors()[@"black"]; }
++ (CCColor*) darkGrayColor { return namedColors()[@"darkGray"]; }
++ (CCColor*) lightGrayColor { return namedColors()[@"lightGray"]; }
++ (CCColor*) whiteColor { return namedColors()[@"white"]; }
++ (CCColor*) grayColor { return namedColors()[@"gray"]; }
++ (CCColor*) redColor { return namedColors()[@"red"]; }
++ (CCColor*) greenColor { return namedColors()[@"green"]; }
++ (CCColor*) blueColor { return namedColors()[@"blue"]; }
++ (CCColor*) cyanColor { return namedColors()[@"cyan"]; }
++ (CCColor*) yellowColor { return namedColors()[@"yellow"]; }
++ (CCColor*) magentaColor { return namedColors()[@"magenta"]; }
++ (CCColor*) orangeColor { return namedColors()[@"orange"]; }
++ (CCColor*) purpleColor { return namedColors()[@"purple"]; }
++ (CCColor*) brownColor { return namedColors()[@"brown"]; }
++ (CCColor*) clearColor { return namedColors()[@"clear"]; }
 
 @end
 
@@ -310,6 +285,11 @@
     return [[CCColor alloc] initWithCcColor4f:c];
 }
 
++ (CCColor*) colorWithGLKVector4:(GLKVector4)c
+{
+    return [[CCColor alloc] initWithGLKVector4:c];
+}
+
 - (CCColor*) initWithCcColor3b: (ccColor3B) c
 {
     return [self initWithRed:c.r/255.0 green:c.g/255.0 blue:c.b/255.0 alpha:1];
@@ -321,6 +301,11 @@
 }
 
 - (CCColor*) initWithCcColor4f: (ccColor4F) c
+{
+    return [self initWithRed:c.r green:c.g blue:c.b alpha:c.a];
+}
+
+- (CCColor*) initWithGLKVector4: (GLKVector4) c
 {
     return [self initWithRed:c.r green:c.g blue:c.b alpha:c.a];
 }
@@ -338,6 +323,11 @@
 - (ccColor4F) ccColor4f
 {
     return ccc4f(_r, _g, _b, _a);
+}
+
+-(GLKVector4)glkVector4
+{
+	return GLKVector4Make(_r, _g, _b, _a);
 }
 
 @end

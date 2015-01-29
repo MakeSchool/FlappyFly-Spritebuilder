@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/CCRenderCommand.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/CCRenderCommand</TokenIdentifier>
+			<Abstract type="html">Describes the behaviour for an command object that can be submitted to the queue of a
+CCRenderer in order to perform some drawing operations.</Abstract>
+			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+            
+			
+			<NodeRef refid="130"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/CCRenderCommand/invokeOnRenderer:</TokenIdentifier>
+			<Abstract type="html">Invokes this command on the specified renderer.</Abstract>
+			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+			
+			<Declaration>- (void)invokeOnRenderer:(CCRenderer *)renderer</Declaration>
+			
+			
+			<Anchor>//api/name/invokeOnRenderer:</Anchor>
+            <NodeRef refid="130"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

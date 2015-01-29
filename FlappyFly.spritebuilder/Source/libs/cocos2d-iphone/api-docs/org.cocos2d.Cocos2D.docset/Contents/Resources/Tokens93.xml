@@ -1,0 +1,2230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCNode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCNode</TokenIdentifier>
+			<Abstract type="html">CCNode is the base class for all objects displayed by Cocos2d. The nodes are hierachically organized in a tree, normally with a CCScene as its root node. Example of CCNode:s are CCSprite, CCScene and CCButton. The CCNode handles transformations, can have a content size and provides a coordinate system to its children. Any CCNode or subclass can handle user interaction, such as touches and mouse events, see the CCResponder for more information on this.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+            
+			
+			<NodeRef refid="93"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCNode/node</TokenIdentifier>
+			<Abstract type="html">Allocates and initializes a node. The node will be created as &quot;autorelease&quot;.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>+ (id)node</Declaration>
+			
+			
+			<Anchor>//api/name/node</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/init</TokenIdentifier>
+			<Abstract type="html">Initializes the node.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setPaused:</TokenIdentifier>
+			<Abstract type="html">If paused, no callbacks will be called, and no actions will be run.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/paused</TokenIdentifier>
+			<Abstract type="html">If paused, no callbacks will be called, and no actions will be run.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/paused</TokenIdentifier>
+			<Abstract type="html">If paused, no callbacks will be called, and no actions will be run.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setVisible:</TokenIdentifier>
+			<Abstract type="html">Whether of not the node is visible. Default is YES.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) BOOL visible</Declaration>
+			
+			
+			<Anchor>//api/name/visible</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/visible</TokenIdentifier>
+			<Abstract type="html">Whether of not the node is visible. Default is YES.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) BOOL visible</Declaration>
+			
+			
+			<Anchor>//api/name/visible</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/visible</TokenIdentifier>
+			<Abstract type="html">Whether of not the node is visible. Default is YES.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) BOOL visible</Declaration>
+			
+			
+			<Anchor>//api/name/visible</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setName:</TokenIdentifier>
+			<Abstract type="html">A name tag used to help identify the node easily.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/name</TokenIdentifier>
+			<Abstract type="html">A name tag used to help identify the node easily.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/name</TokenIdentifier>
+			<Abstract type="html">A name tag used to help identify the node easily.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setUserObject:</TokenIdentifier>
+			<Abstract type="html">Similar to userData, but instead of holding a void* it holds an id.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) id userObject</Declaration>
+			
+			
+			<Anchor>//api/name/userObject</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/userObject</TokenIdentifier>
+			<Abstract type="html">Similar to userData, but instead of holding a void* it holds an id.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) id userObject</Declaration>
+			
+			
+			<Anchor>//api/name/userObject</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/userObject</TokenIdentifier>
+			<Abstract type="html">Similar to userData, but instead of holding a void* it holds an id.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) id userObject</Declaration>
+			
+			
+			<Anchor>//api/name/userObject</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setPosition:</TokenIdentifier>
+			<Abstract type="html">Position (x,y) of the node in the unit specified by the positionType property. The distance is measured from one of the corners of the node&apos;s parent container, which corner is specified by the positionType property. Default setting is referencing the bottom left corner in points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/position</TokenIdentifier>
+			<Abstract type="html">Position (x,y) of the node in the unit specified by the positionType property. The distance is measured from one of the corners of the node&apos;s parent container, which corner is specified by the positionType property. Default setting is referencing the bottom left corner in points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/position</TokenIdentifier>
+			<Abstract type="html">Position (x,y) of the node in the unit specified by the positionType property. The distance is measured from one of the corners of the node&apos;s parent container, which corner is specified by the positionType property. Default setting is referencing the bottom left corner in points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint position</Declaration>
+			
+			
+			<Anchor>//api/name/position</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setPositionInPoints:</TokenIdentifier>
+			<Abstract type="html">Position (x,y) of the node in points from the bottom left corner.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint positionInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/positionInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/positionInPoints</TokenIdentifier>
+			<Abstract type="html">Position (x,y) of the node in points from the bottom left corner.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint positionInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/positionInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/positionInPoints</TokenIdentifier>
+			<Abstract type="html">Position (x,y) of the node in points from the bottom left corner.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint positionInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/positionInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setPositionType:</TokenIdentifier>
+			<Abstract type="html">Defines the position type used for the position property. Changing the position type affects the meaning of the position, and allows you to change the referenceCorner, relative to the parent container. It allso allows changing from points to UIPoints. UIPoints are scaled by [CCDirector sharedDirector].UIScaleFactor. See &quot;Coordinate System and Positioning&quot; for more information.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CCPositionType positionType</Declaration>
+			
+			
+			<Anchor>//api/name/positionType</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/positionType</TokenIdentifier>
+			<Abstract type="html">Defines the position type used for the position property. Changing the position type affects the meaning of the position, and allows you to change the referenceCorner, relative to the parent container. It allso allows changing from points to UIPoints. UIPoints are scaled by [CCDirector sharedDirector].UIScaleFactor. See &quot;Coordinate System and Positioning&quot; for more information.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CCPositionType positionType</Declaration>
+			
+			
+			<Anchor>//api/name/positionType</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/positionType</TokenIdentifier>
+			<Abstract type="html">Defines the position type used for the position property. Changing the position type affects the meaning of the position, and allows you to change the referenceCorner, relative to the parent container. It allso allows changing from points to UIPoints. UIPoints are scaled by [CCDirector sharedDirector].UIScaleFactor. See &quot;Coordinate System and Positioning&quot; for more information.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CCPositionType positionType</Declaration>
+			
+			
+			<Anchor>//api/name/positionType</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setRotation:</TokenIdentifier>
+			<Abstract type="html">The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node CW.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotation</Declaration>
+			
+			
+			<Anchor>//api/name/rotation</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/rotation</TokenIdentifier>
+			<Abstract type="html">The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node CW.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotation</Declaration>
+			
+			
+			<Anchor>//api/name/rotation</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/rotation</TokenIdentifier>
+			<Abstract type="html">The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node CW.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotation</Declaration>
+			
+			
+			<Anchor>//api/name/rotation</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setRotationalSkewX:</TokenIdentifier>
+			<Abstract type="html">The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node CW. It only modifies the X rotation performing a horizontal rotational skew.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotationalSkewX</Declaration>
+			
+			
+			<Anchor>//api/name/rotationalSkewX</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/rotationalSkewX</TokenIdentifier>
+			<Abstract type="html">The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node CW. It only modifies the X rotation performing a horizontal rotational skew.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotationalSkewX</Declaration>
+			
+			
+			<Anchor>//api/name/rotationalSkewX</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/rotationalSkewX</TokenIdentifier>
+			<Abstract type="html">The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node CW. It only modifies the X rotation performing a horizontal rotational skew.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotationalSkewX</Declaration>
+			
+			
+			<Anchor>//api/name/rotationalSkewX</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setRotationalSkewY:</TokenIdentifier>
+			<Abstract type="html">The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node CW. It only modifies the Y rotation performing a vertical rotational skew.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotationalSkewY</Declaration>
+			
+			
+			<Anchor>//api/name/rotationalSkewY</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/rotationalSkewY</TokenIdentifier>
+			<Abstract type="html">The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node CW. It only modifies the Y rotation performing a vertical rotational skew.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotationalSkewY</Declaration>
+			
+			
+			<Anchor>//api/name/rotationalSkewY</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/rotationalSkewY</TokenIdentifier>
+			<Abstract type="html">The rotation (angle) of the node in degrees. 0 is the default rotation angle. Positive values rotate node CW. It only modifies the Y rotation performing a vertical rotational skew.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotationalSkewY</Declaration>
+			
+			
+			<Anchor>//api/name/rotationalSkewY</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setScale:</TokenIdentifier>
+			<Abstract type="html">The scale factor of the node. 1.0 is the default scale factor. It modifies the X and Y scale at the same time.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float scale</Declaration>
+			
+			
+			<Anchor>//api/name/scale</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/scale</TokenIdentifier>
+			<Abstract type="html">The scale factor of the node. 1.0 is the default scale factor. It modifies the X and Y scale at the same time.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float scale</Declaration>
+			
+			
+			<Anchor>//api/name/scale</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/scale</TokenIdentifier>
+			<Abstract type="html">The scale factor of the node. 1.0 is the default scale factor. It modifies the X and Y scale at the same time.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float scale</Declaration>
+			
+			
+			<Anchor>//api/name/scale</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setScaleX:</TokenIdentifier>
+			<Abstract type="html">The scale factor of the node. 1.0 is the default scale factor. It only modifies the X scale factor.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float scaleX</Declaration>
+			
+			
+			<Anchor>//api/name/scaleX</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/scaleX</TokenIdentifier>
+			<Abstract type="html">The scale factor of the node. 1.0 is the default scale factor. It only modifies the X scale factor.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float scaleX</Declaration>
+			
+			
+			<Anchor>//api/name/scaleX</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/scaleX</TokenIdentifier>
+			<Abstract type="html">The scale factor of the node. 1.0 is the default scale factor. It only modifies the X scale factor.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float scaleX</Declaration>
+			
+			
+			<Anchor>//api/name/scaleX</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setScaleY:</TokenIdentifier>
+			<Abstract type="html">The scale factor of the node. 1.0 is the default scale factor. It only modifies the Y scale factor.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float scaleY</Declaration>
+			
+			
+			<Anchor>//api/name/scaleY</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/scaleY</TokenIdentifier>
+			<Abstract type="html">The scale factor of the node. 1.0 is the default scale factor. It only modifies the Y scale factor.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float scaleY</Declaration>
+			
+			
+			<Anchor>//api/name/scaleY</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/scaleY</TokenIdentifier>
+			<Abstract type="html">The scale factor of the node. 1.0 is the default scale factor. It only modifies the Y scale factor.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float scaleY</Declaration>
+			
+			
+			<Anchor>//api/name/scaleY</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setScaleInPoints:</TokenIdentifier>
+			<Abstract type="html">The scaleInPoints is the scale factor of the node in both X and Y, measured in points. The scaleType indicates if the scaleInPoints will be scaled byt the UIScaleFactor or not. See &quot;Coordinate System and Positioning&quot; for more information.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float scaleInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/scaleInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/scaleInPoints</TokenIdentifier>
+			<Abstract type="html">The scaleInPoints is the scale factor of the node in both X and Y, measured in points. The scaleType indicates if the scaleInPoints will be scaled byt the UIScaleFactor or not. See &quot;Coordinate System and Positioning&quot; for more information.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float scaleInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/scaleInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/scaleInPoints</TokenIdentifier>
+			<Abstract type="html">The scaleInPoints is the scale factor of the node in both X and Y, measured in points. The scaleType indicates if the scaleInPoints will be scaled byt the UIScaleFactor or not. See &quot;Coordinate System and Positioning&quot; for more information.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float scaleInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/scaleInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setScaleXInPoints:</TokenIdentifier>
+			<Abstract type="html">The scaleInPoints is the scale factor of the node in X, measured in points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float scaleXInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/scaleXInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/scaleXInPoints</TokenIdentifier>
+			<Abstract type="html">The scaleInPoints is the scale factor of the node in X, measured in points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float scaleXInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/scaleXInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/scaleXInPoints</TokenIdentifier>
+			<Abstract type="html">The scaleInPoints is the scale factor of the node in X, measured in points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float scaleXInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/scaleXInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setScaleYInPoints:</TokenIdentifier>
+			<Abstract type="html">The scaleInPoints is the scale factor of the node in Y, measured in points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float scaleYInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/scaleYInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/scaleYInPoints</TokenIdentifier>
+			<Abstract type="html">The scaleInPoints is the scale factor of the node in Y, measured in points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float scaleYInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/scaleYInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/scaleYInPoints</TokenIdentifier>
+			<Abstract type="html">The scaleInPoints is the scale factor of the node in Y, measured in points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) float scaleYInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/scaleYInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setScaleType:</TokenIdentifier>
+			<Abstract type="html">The scaleType defines scale behavior for this node. CCScaleTypeScaled indicates that the node will be scaled by [CCDirector sharedDirector].UIScaleFactor. This property is analagous to positionType. ScaleType affects the scaleInPoints of a CCNode. See &quot;Coordinate System and Positioning&quot; for more information.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCScaleType scaleType</Declaration>
+			
+			
+			<Anchor>//api/name/scaleType</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/scaleType</TokenIdentifier>
+			<Abstract type="html">The scaleType defines scale behavior for this node. CCScaleTypeScaled indicates that the node will be scaled by [CCDirector sharedDirector].UIScaleFactor. This property is analagous to positionType. ScaleType affects the scaleInPoints of a CCNode. See &quot;Coordinate System and Positioning&quot; for more information.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCScaleType scaleType</Declaration>
+			
+			
+			<Anchor>//api/name/scaleType</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/scaleType</TokenIdentifier>
+			<Abstract type="html">The scaleType defines scale behavior for this node. CCScaleTypeScaled indicates that the node will be scaled by [CCDirector sharedDirector].UIScaleFactor. This property is analagous to positionType. ScaleType affects the scaleInPoints of a CCNode. See &quot;Coordinate System and Positioning&quot; for more information.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CCScaleType scaleType</Declaration>
+			
+			
+			<Anchor>//api/name/scaleType</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setSkewX:</TokenIdentifier>
+			<Abstract type="html">The X skew angle of the node in degrees.
+This angle describes the shear distortion in the X direction.
+Thus, it is the angle between the Y axis and the left edge of the shape
+The default skewX angle is 0. Positive values distort the node in a CW direction.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float skewX</Declaration>
+			
+			
+			<Anchor>//api/name/skewX</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/skewX</TokenIdentifier>
+			<Abstract type="html">The X skew angle of the node in degrees.
+This angle describes the shear distortion in the X direction.
+Thus, it is the angle between the Y axis and the left edge of the shape
+The default skewX angle is 0. Positive values distort the node in a CW direction.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float skewX</Declaration>
+			
+			
+			<Anchor>//api/name/skewX</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/skewX</TokenIdentifier>
+			<Abstract type="html">The X skew angle of the node in degrees.
+This angle describes the shear distortion in the X direction.
+Thus, it is the angle between the Y axis and the left edge of the shape
+The default skewX angle is 0. Positive values distort the node in a CW direction.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float skewX</Declaration>
+			
+			
+			<Anchor>//api/name/skewX</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setSkewY:</TokenIdentifier>
+			<Abstract type="html">The Y skew angle of the node in degrees.
+This angle describes the shear distortion in the Y direction.
+Thus, it is the angle between the X axis and the bottom edge of the shape
+The default skewY angle is 0. Positive values distort the node in a CCW direction.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float skewY</Declaration>
+			
+			
+			<Anchor>//api/name/skewY</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/skewY</TokenIdentifier>
+			<Abstract type="html">The Y skew angle of the node in degrees.
+This angle describes the shear distortion in the Y direction.
+Thus, it is the angle between the X axis and the bottom edge of the shape
+The default skewY angle is 0. Positive values distort the node in a CCW direction.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float skewY</Declaration>
+			
+			
+			<Anchor>//api/name/skewY</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/skewY</TokenIdentifier>
+			<Abstract type="html">The Y skew angle of the node in degrees.
+This angle describes the shear distortion in the Y direction.
+Thus, it is the angle between the X axis and the bottom edge of the shape
+The default skewY angle is 0. Positive values distort the node in a CCW direction.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float skewY</Declaration>
+			
+			
+			<Anchor>//api/name/skewY</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setContentSize:</TokenIdentifier>
+			<Abstract type="html">The untransformed size of the node in the unit specified by contentSizeType property. The contentSize remains the same no matter the node is scaled or rotated. contentSize is relative to the node.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize contentSize</Declaration>
+			
+			
+			<Anchor>//api/name/contentSize</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/contentSize</TokenIdentifier>
+			<Abstract type="html">The untransformed size of the node in the unit specified by contentSizeType property. The contentSize remains the same no matter the node is scaled or rotated. contentSize is relative to the node.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize contentSize</Declaration>
+			
+			
+			<Anchor>//api/name/contentSize</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/contentSize</TokenIdentifier>
+			<Abstract type="html">The untransformed size of the node in the unit specified by contentSizeType property. The contentSize remains the same no matter the node is scaled or rotated. contentSize is relative to the node.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize contentSize</Declaration>
+			
+			
+			<Anchor>//api/name/contentSize</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setContentSizeInPoints:</TokenIdentifier>
+			<Abstract type="html">The untransformed size of the node in Points. The contentSize remains the same no matter the node is scaled or rotated. contentSizeInPoints is affected by the contentSizeType and will be scaled by the [CCDirector sharedDirector].UIScaleFactor if the type is CCSizeUnitUIPoints.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize contentSizeInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/contentSizeInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/contentSizeInPoints</TokenIdentifier>
+			<Abstract type="html">The untransformed size of the node in Points. The contentSize remains the same no matter the node is scaled or rotated. contentSizeInPoints is affected by the contentSizeType and will be scaled by the [CCDirector sharedDirector].UIScaleFactor if the type is CCSizeUnitUIPoints.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize contentSizeInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/contentSizeInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/contentSizeInPoints</TokenIdentifier>
+			<Abstract type="html">The untransformed size of the node in Points. The contentSize remains the same no matter the node is scaled or rotated. contentSizeInPoints is affected by the contentSizeType and will be scaled by the [CCDirector sharedDirector].UIScaleFactor if the type is CCSizeUnitUIPoints.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGSize contentSizeInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/contentSizeInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setContentSizeType:</TokenIdentifier>
+			<Abstract type="html">Defines the contentSize type used for the widht and height component of the contentSize property.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CCSizeType contentSizeType</Declaration>
+			
+			
+			<Anchor>//api/name/contentSizeType</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/contentSizeType</TokenIdentifier>
+			<Abstract type="html">Defines the contentSize type used for the widht and height component of the contentSize property.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CCSizeType contentSizeType</Declaration>
+			
+			
+			<Anchor>//api/name/contentSizeType</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/contentSizeType</TokenIdentifier>
+			<Abstract type="html">Defines the contentSize type used for the widht and height component of the contentSize property.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CCSizeType contentSizeType</Declaration>
+			
+			
+			<Anchor>//api/name/contentSizeType</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setAnchorPoint:</TokenIdentifier>
+			<Abstract type="html">The anchorPoint is the point around which all transformations and positioning manipulations take place.
+It&apos;s like a pin in the node where it is &quot;attached&quot; to its parent.
+The anchorPoint is normalized, like a percentage. (0,0) means the bottom-left corner and (1,1) means the top-right corner.
+But you can use values higher than (1,1) and lower than (0,0) too.
+The default anchorPoint is (0,0). It starts in the bottom-left corner. CCSprite and other subclasses have a different default anchorPoint.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint anchorPoint</Declaration>
+			
+			
+			<Anchor>//api/name/anchorPoint</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/anchorPoint</TokenIdentifier>
+			<Abstract type="html">The anchorPoint is the point around which all transformations and positioning manipulations take place.
+It&apos;s like a pin in the node where it is &quot;attached&quot; to its parent.
+The anchorPoint is normalized, like a percentage. (0,0) means the bottom-left corner and (1,1) means the top-right corner.
+But you can use values higher than (1,1) and lower than (0,0) too.
+The default anchorPoint is (0,0). It starts in the bottom-left corner. CCSprite and other subclasses have a different default anchorPoint.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint anchorPoint</Declaration>
+			
+			
+			<Anchor>//api/name/anchorPoint</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/anchorPoint</TokenIdentifier>
+			<Abstract type="html">The anchorPoint is the point around which all transformations and positioning manipulations take place.
+It&apos;s like a pin in the node where it is &quot;attached&quot; to its parent.
+The anchorPoint is normalized, like a percentage. (0,0) means the bottom-left corner and (1,1) means the top-right corner.
+But you can use values higher than (1,1) and lower than (0,0) too.
+The default anchorPoint is (0,0). It starts in the bottom-left corner. CCSprite and other subclasses have a different default anchorPoint.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CGPoint anchorPoint</Declaration>
+			
+			
+			<Anchor>//api/name/anchorPoint</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setAnchorPointInPoints:</TokenIdentifier>
+			<Abstract type="html">The anchorPoint in absolute pixels.  Since v0.8 you can only read it. If you wish to modify it, use anchorPoint instead.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGPoint anchorPointInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/anchorPointInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/anchorPointInPoints</TokenIdentifier>
+			<Abstract type="html">The anchorPoint in absolute pixels.  Since v0.8 you can only read it. If you wish to modify it, use anchorPoint instead.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGPoint anchorPointInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/anchorPointInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/anchorPointInPoints</TokenIdentifier>
+			<Abstract type="html">The anchorPoint in absolute pixels.  Since v0.8 you can only read it. If you wish to modify it, use anchorPoint instead.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGPoint anchorPointInPoints</Declaration>
+			
+			
+			<Anchor>//api/name/anchorPointInPoints</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/viewDidResizeTo:</TokenIdentifier>
+			<Abstract type="html">Invoked automatically when the OS view has been resized.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)viewDidResizeTo:(CGSize)newViewSize</Declaration>
+			
+			
+			<Anchor>//api/name/viewDidResizeTo:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/boundingBox</TokenIdentifier>
+			<Abstract type="html">Returns a &quot;local&quot; axis aligned bounding box of the node in points.
+The returned box is relative only to its parent.
+The returned box is in Points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CGRect)boundingBox</Declaration>
+			
+			
+			<Anchor>//api/name/boundingBox</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/addChild:</TokenIdentifier>
+			<Abstract type="html">Adds a child to the container with z-order as 0.
+If the child is added to a &apos;running&apos; node, then &apos;onEnter&apos; and &apos;onEnterTransitionDidFinish&apos; will be called immediately.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)addChild:(CCNode *)node</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>node</Name>
+					<Abstract type="html">CCNode to add as a child.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addChild:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/addChild:z:</TokenIdentifier>
+			<Abstract type="html">Adds a child to the container with a z-order.
+If the child is added to a &apos;running&apos; node, then &apos;onEnter&apos; and &apos;onEnterTransitionDidFinish&apos; will be called immediately.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)addChild:(CCNode *)node z:(NSInteger)z</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>node</Name>
+					<Abstract type="html">CCNode to add as a child.</Abstract>
+				</Parameter><Parameter>
+					<Name>z</Name>
+					<Abstract type="html">Z depth of node.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addChild:z:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/addChild:z:name:</TokenIdentifier>
+			<Abstract type="html">Adds a child to the container with z order and tag.
+If the child is added to a &apos;running&apos; node, then &apos;onEnter&apos; and &apos;onEnterTransitionDidFinish&apos; will be called immediately.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)addChild:(CCNode *)node z:(NSInteger)z name:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>node</Name>
+					<Abstract type="html">CCNode to add as a child.</Abstract>
+				</Parameter><Parameter>
+					<Name>z</Name>
+					<Abstract type="html">Z depth of node.</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">name tag.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addChild:z:name:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/removeFromParent</TokenIdentifier>
+			<Abstract type="html">Remove itself from its parent node forcing a cleanup.
+If the node orphan, then nothing happens.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)removeFromParent</Declaration>
+			
+			
+			<Anchor>//api/name/removeFromParent</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/removeFromParentAndCleanup:</TokenIdentifier>
+			<Abstract type="html">Remove itself from its parent node. If cleanup is YES, then also remove all actions and callbacks.
+If the node orphan, then nothing happens.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)removeFromParentAndCleanup:(BOOL)cleanup</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cleanup</Name>
+					<Abstract type="html">Stops all scheduled events and actions.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeFromParentAndCleanup:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/removeChild:</TokenIdentifier>
+			<Abstract type="html">Removes a child from the container forcing a cleanup. This method checks to ensure the parameter node is actually a child of this node.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)removeChild:(CCNode *)child</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>child</Name>
+					<Abstract type="html">The child node to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeChild:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/removeChild:cleanup:</TokenIdentifier>
+			<Abstract type="html">Removes a child from the container. It will also cleanup all running and scheduled actions depending on the cleanup parameter.
+This method checks to ensure the parameter node is actually a child of this node.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)removeChild:(CCNode *)node cleanup:(BOOL)cleanup</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>node</Name>
+					<Abstract type="html">The child node to remove.</Abstract>
+				</Parameter><Parameter>
+					<Name>cleanup</Name>
+					<Abstract type="html">Stops all scheduled events and actions.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeChild:cleanup:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/removeChildByName:</TokenIdentifier>
+			<Abstract type="html">Removes a child from the container by name value forcing a cleanup.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)removeChildByName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">Name of node to be removed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeChildByName:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/removeChildByName:cleanup:</TokenIdentifier>
+			<Abstract type="html">Removes a child from the container by name value. It will also cleanup all running actions depending on the cleanup parameter</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)removeChildByName:(NSString *)name cleanup:(BOOL)cleanup</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">Name of node to be removed.</Abstract>
+				</Parameter><Parameter>
+					<Name>cleanup</Name>
+					<Abstract type="html">Stops all scheduled events and actions.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeChildByName:cleanup:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/removeAllChildren</TokenIdentifier>
+			<Abstract type="html">Removes all children from the container forcing a cleanup.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllChildren</Declaration>
+			
+			
+			<Anchor>//api/name/removeAllChildren</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/removeAllChildrenWithCleanup:</TokenIdentifier>
+			<Abstract type="html">Removes all children from the container and do a cleanup all running actions depending on the cleanup parameter.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)removeAllChildrenWithCleanup:(BOOL)cleanup</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>cleanup</Name>
+					<Abstract type="html">Stops all scheduled events and actions.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/removeAllChildrenWithCleanup:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setParent:</TokenIdentifier>
+			<Abstract type="html">A weak reference to the parent.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, unsafe_unretained) CCNode *parent</Declaration>
+			
+			
+			<Anchor>//api/name/parent</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/parent</TokenIdentifier>
+			<Abstract type="html">A weak reference to the parent.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, unsafe_unretained) CCNode *parent</Declaration>
+			
+			
+			<Anchor>//api/name/parent</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/parent</TokenIdentifier>
+			<Abstract type="html">A weak reference to the parent.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, unsafe_unretained) CCNode *parent</Declaration>
+			
+			
+			<Anchor>//api/name/parent</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setChildren:</TokenIdentifier>
+			<Abstract type="html">Array of child nodes.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
+			
+			
+			<Anchor>//api/name/children</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/children</TokenIdentifier>
+			<Abstract type="html">Array of child nodes.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
+			
+			
+			<Anchor>//api/name/children</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/children</TokenIdentifier>
+			<Abstract type="html">Array of child nodes.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSArray *children</Declaration>
+			
+			
+			<Anchor>//api/name/children</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/getChildByName:recursively:</TokenIdentifier>
+			<Abstract type="html">Search through the children of the container for one matching the name tag.
+If recursive, it returns the first matching node, via a depth first search.
+Otherwise, only immediate children are checked.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CCNode *)getChildByName:(NSString *)name recursively:(bool)isRecursive</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">Name tag.</Abstract>
+				</Parameter><Parameter>
+					<Name>isRecursive</Name>
+					<Abstract type="html">Search recursively through children of children.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a CCNode, or nil if no marching nodes are found.</Abstract></ReturnValue>
+			<Anchor>//api/name/getChildByName:recursively:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setZOrder:</TokenIdentifier>
+			<Abstract type="html">The z order of the node relative to its &quot;siblings&quot;: children of the same parent.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger zOrder</Declaration>
+			
+			
+			<Anchor>//api/name/zOrder</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/zOrder</TokenIdentifier>
+			<Abstract type="html">The z order of the node relative to its &quot;siblings&quot;: children of the same parent.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger zOrder</Declaration>
+			
+			
+			<Anchor>//api/name/zOrder</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/zOrder</TokenIdentifier>
+			<Abstract type="html">The z order of the node relative to its &quot;siblings&quot;: children of the same parent.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) NSInteger zOrder</Declaration>
+			
+			
+			<Anchor>//api/name/zOrder</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/onEnter</TokenIdentifier>
+			<Abstract type="html">Event that is called every time the CCNode enters the &apos;stage&apos;.
+If the CCNode enters the &apos;stage&apos; with a transition, this event is called when the transition starts.
+During onEnter you can&apos;t access a sibling node.
+If you override onEnter, you shall call [super onEnter].</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)onEnter</Declaration>
+			
+			
+			<Anchor>//api/name/onEnter</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/onEnterTransitionDidFinish</TokenIdentifier>
+			<Abstract type="html">Event that is called when the CCNode enters in the &apos;stage&apos;.
+If the CCNode enters the &apos;stage&apos; with a transition, this event is called when the transition finishes.
+If you override onEnterTransitionDidFinish, you shall call [super onEnterTransitionDidFinish].</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)onEnterTransitionDidFinish</Declaration>
+			
+			
+			<Anchor>//api/name/onEnterTransitionDidFinish</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/onExit</TokenIdentifier>
+			<Abstract type="html">Event that is called every time the CCNode leaves the &apos;stage&apos;.
+If the CCNode leaves the &apos;stage&apos; with a transition, this event is called when the transition finishes.
+During onExit you can&apos;t access a sibling node.
+If you override onExit, you shall call [super onExit].</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)onExit</Declaration>
+			
+			
+			<Anchor>//api/name/onExit</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/onExitTransitionDidStart</TokenIdentifier>
+			<Abstract type="html">Callback that is called every time the CCNode leaves the &apos;stage&apos;.
+If the CCNode leaves the &apos;stage&apos; with a transition, this callback is called when the transition starts.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)onExitTransitionDidStart</Declaration>
+			
+			
+			<Anchor>//api/name/onExitTransitionDidStart</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setScene:</TokenIdentifier>
+			<Abstract type="html">The scene this node is added to, or nil if it&apos;s not part of a scene.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCScene *scene</Declaration>
+			
+			
+			<Anchor>//api/name/scene</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/scene</TokenIdentifier>
+			<Abstract type="html">The scene this node is added to, or nil if it&apos;s not part of a scene.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCScene *scene</Declaration>
+			
+			
+			<Anchor>//api/name/scene</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/scene</TokenIdentifier>
+			<Abstract type="html">The scene this node is added to, or nil if it&apos;s not part of a scene.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCScene *scene</Declaration>
+			
+			
+			<Anchor>//api/name/scene</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setRunningInActiveScene:</TokenIdentifier>
+			<Abstract type="html">Returns YES if the node is added to an active scene and neither it nor any of it&apos;s ancestors is paused.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isRunningInActiveScene) BOOL runningInActiveScene</Declaration>
+			
+			
+			<Anchor>//api/name/runningInActiveScene</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/isRunningInActiveScene</TokenIdentifier>
+			<Abstract type="html">Returns YES if the node is added to an active scene and neither it nor any of it&apos;s ancestors is paused.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isRunningInActiveScene) BOOL runningInActiveScene</Declaration>
+			
+			
+			<Anchor>//api/name/runningInActiveScene</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/runningInActiveScene</TokenIdentifier>
+			<Abstract type="html">Returns YES if the node is added to an active scene and neither it nor any of it&apos;s ancestors is paused.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly, getter=isRunningInActiveScene) BOOL runningInActiveScene</Declaration>
+			
+			
+			<Anchor>//api/name/runningInActiveScene</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setPhysicsBody:</TokenIdentifier>
+			<Abstract type="html">The physics body (if any) that this node is attached to.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCPhysicsBody *physicsBody</Declaration>
+			
+			
+			<Anchor>//api/name/physicsBody</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/physicsBody</TokenIdentifier>
+			<Abstract type="html">The physics body (if any) that this node is attached to.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCPhysicsBody *physicsBody</Declaration>
+			
+			
+			<Anchor>//api/name/physicsBody</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/physicsBody</TokenIdentifier>
+			<Abstract type="html">The physics body (if any) that this node is attached to.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCPhysicsBody *physicsBody</Declaration>
+			
+			
+			<Anchor>//api/name/physicsBody</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/runAction:</TokenIdentifier>
+			<Abstract type="html">Executes an action, and returns the action that is executed.
+The node becomes the action&apos;s target.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CCAction *)runAction:(CCAction *)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Action to run.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An Action pointer</Abstract></ReturnValue>
+			<Anchor>//api/name/runAction:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/stopAllActions</TokenIdentifier>
+			<Abstract type="html">Removes all actions from the running action list</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)stopAllActions</Declaration>
+			
+			
+			<Anchor>//api/name/stopAllActions</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/stopAction:</TokenIdentifier>
+			<Abstract type="html">Removes an action from the running action list.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)stopAction:(CCAction *)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Action to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/stopAction:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/stopActionByTag:</TokenIdentifier>
+			<Abstract type="html">Removes an action from the running action list given its tag.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)stopActionByTag:(NSInteger)tag</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tag</Name>
+					<Abstract type="html">Tag to remove.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/stopActionByTag:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/getActionByTag:</TokenIdentifier>
+			<Abstract type="html">Gets an action from the running action list given its tag.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CCAction *)getActionByTag:(NSInteger)tag</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tag</Name>
+					<Abstract type="html">Tag to retrieve.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the Action the with the given tag.</Abstract></ReturnValue>
+			<Anchor>//api/name/getActionByTag:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/numberOfRunningActions</TokenIdentifier>
+			<Abstract type="html">Returns the numbers of actions that are running plus the ones that are schedule to run (actions in actionsToAdd and actions arrays).
+Composable actions are counted as 1 action. Example:
+If you are running 1 Sequence of 7 actions, it will return 1.
+If you are running 7 Sequences of 2 actions, it will return 7.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)numberOfRunningActions</Declaration>
+			
+			
+			<Anchor>//api/name/numberOfRunningActions</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/scheduleBlock:delay:</TokenIdentifier>
+			<Abstract type="html">Schedules a block to run once, after a certain delay.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CCTimer *)scheduleBlock:(CCTimerBlock)block delay:(CCTime)delay</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract type="html">Block to execute.</Abstract>
+				</Parameter><Parameter>
+					<Name>delay</Name>
+					<Abstract type="html">Delay in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly initialized CCTimer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/scheduleBlock:delay:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/schedule:interval:</TokenIdentifier>
+			<Abstract type="html">Schedules a custom selector with an interval time in seconds.
+If time is 0 it will be ticked every frame. In that case, it is recommended to override update: in stead.
+If the selector is already scheduled, then the interval parameter will be updated without scheduling it again.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CCTimer *)schedule:(SEL)s interval:(CCTime)seconds</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>s</Name>
+					<Abstract type="html">Selector to execute.</Abstract>
+				</Parameter><Parameter>
+					<Name>seconds</Name>
+					<Abstract type="html">Interval between execution in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly initialized CCTimer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/schedule:interval:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/schedule:interval:repeat:delay:</TokenIdentifier>
+			<Abstract type="html">Schedules a custom selector with an interval time in seconds.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CCTimer *)schedule:(SEL)selector interval:(CCTime)interval repeat:(NSUInteger)repeat delay:(CCTime)delay</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">Selector to execute.</Abstract>
+				</Parameter><Parameter>
+					<Name>interval</Name>
+					<Abstract type="html">Interval between execution in seconds.</Abstract>
+				</Parameter><Parameter>
+					<Name>repeat</Name>
+					<Abstract type="html">Number of times to repeat.</Abstract>
+				</Parameter><Parameter>
+					<Name>delay</Name>
+					<Abstract type="html">Initial delay in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly initialized CCTimer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/schedule:interval:repeat:delay:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/scheduleOnce:delay:</TokenIdentifier>
+			<Abstract type="html">Schedules a selector that runs only once, with a delay of 0 or larger.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CCTimer *)scheduleOnce:(SEL)selector delay:(CCTime)delay</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">Selector to execute.</Abstract>
+				</Parameter><Parameter>
+					<Name>delay</Name>
+					<Abstract type="html">Initial delay in seconds.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly initialized CCTimer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/scheduleOnce:delay:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/unschedule:</TokenIdentifier>
+			<Abstract type="html">Unschedule a scheduled selector.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)unschedule:(SEL)selector</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>selector</Name>
+					<Abstract type="html">Selector to unschedule.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/unschedule:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/unscheduleAllSelectors</TokenIdentifier>
+			<Abstract type="html">Unschedule all scheduled selectors.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)unscheduleAllSelectors</Declaration>
+			
+			
+			<Anchor>//api/name/unscheduleAllSelectors</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setAnimationManager:</TokenIdentifier>
+			<Abstract type="html">Returns the CCB Animation Manager of this node, or that of its parent.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCAnimationManager *animationManager</Declaration>
+			
+			
+			<Anchor>//api/name/animationManager</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/animationManager</TokenIdentifier>
+			<Abstract type="html">Returns the CCB Animation Manager of this node, or that of its parent.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCAnimationManager *animationManager</Declaration>
+			
+			
+			<Anchor>//api/name/animationManager</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/animationManager</TokenIdentifier>
+			<Abstract type="html">Returns the CCB Animation Manager of this node, or that of its parent.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCAnimationManager *animationManager</Declaration>
+			
+			
+			<Anchor>//api/name/animationManager</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/nodeToParentTransform</TokenIdentifier>
+			<Abstract type="html">Returns the matrix that transform the node&apos;s (local) space coordinates into the parent&apos;s space coordinates.
+The matrix is in Pixels.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CGAffineTransform)nodeToParentTransform</Declaration>
+			
+			
+			<Anchor>//api/name/nodeToParentTransform</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/parentToNodeTransform</TokenIdentifier>
+			<Abstract type="html">Returns the matrix that transform parent&apos;s space coordinates to the node&apos;s (local) space coordinates. The matrix is in Pixels.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CGAffineTransform)parentToNodeTransform</Declaration>
+			
+			
+			<Anchor>//api/name/parentToNodeTransform</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/nodeToWorldTransform</TokenIdentifier>
+			<Abstract type="html">Returns the world affine transform matrix. The matrix is in Pixels.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CGAffineTransform)nodeToWorldTransform</Declaration>
+			
+			
+			<Anchor>//api/name/nodeToWorldTransform</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/worldToNodeTransform</TokenIdentifier>
+			<Abstract type="html">Returns the inverse world affine transform matrix. The matrix is in Pixels.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CGAffineTransform)worldToNodeTransform</Declaration>
+			
+			
+			<Anchor>//api/name/worldToNodeTransform</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/convertToNodeSpace:</TokenIdentifier>
+			<Abstract type="html">Converts a Point to node (local) space coordinates. The result is in Points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)convertToNodeSpace:(CGPoint)worldPoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>worldPoint</Name>
+					<Abstract type="html">World position in points.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Local position in points.</Abstract></ReturnValue>
+			<Anchor>//api/name/convertToNodeSpace:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/convertToWorldSpace:</TokenIdentifier>
+			<Abstract type="html">Converts a Point to world space coordinates. The result is in Points.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)convertToWorldSpace:(CGPoint)nodePoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>nodePoint</Name>
+					<Abstract type="html">Local position in points.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">World position in points.</Abstract></ReturnValue>
+			<Anchor>//api/name/convertToWorldSpace:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/convertToNodeSpaceAR:</TokenIdentifier>
+			<Abstract type="html">Converts a Point to node (local) space coordinates. The result is in Points.
+Treats the returned/received node point as anchor relative.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)convertToNodeSpaceAR:(CGPoint)worldPoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>worldPoint</Name>
+					<Abstract type="html">World position in points.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Local position in points.</Abstract></ReturnValue>
+			<Anchor>//api/name/convertToNodeSpaceAR:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/convertToWorldSpaceAR:</TokenIdentifier>
+			<Abstract type="html">Converts a local Point to world space coordinates.The result is in Points.
+Treats the returned/received node point as anchor relative.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (CGPoint)convertToWorldSpaceAR:(CGPoint)nodePoint</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>nodePoint</Name>
+					<Abstract type="html">Local position in points.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">World position in points.</Abstract></ReturnValue>
+			<Anchor>//api/name/convertToWorldSpaceAR:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/draw:transform:</TokenIdentifier>
+			<Abstract type="html">Override this method to draw your own node.
+You should use cocos2d&apos;s GL API to enable/disable the GL state / shaders.
+For further info, please see ccGLstate.h.
+You shall NOT call [super draw];</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)draw:(CCRenderer *)renderer transform:(const GLKMatrix4 *)transform</Declaration>
+			
+			
+			<Anchor>//api/name/draw:transform:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/visit</TokenIdentifier>
+			<Abstract type="html">Calls visit:parentTransform using the current renderer and projection.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)visit</Declaration>
+			
+			
+			<Anchor>//api/name/visit</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setColor:</TokenIdentifier>
+			<Abstract type="html">Sets and returns the color (tint), alpha is ignored when setting.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/color</TokenIdentifier>
+			<Abstract type="html">Sets and returns the color (tint), alpha is ignored when setting.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/color</TokenIdentifier>
+			<Abstract type="html">Sets and returns the color (tint), alpha is ignored when setting.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *color</Declaration>
+			
+			
+			<Anchor>//api/name/color</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setColorRGBA:</TokenIdentifier>
+			<Abstract type="html">Sets and returns the color (tint) with alpha.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *colorRGBA</Declaration>
+			
+			
+			<Anchor>//api/name/colorRGBA</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/colorRGBA</TokenIdentifier>
+			<Abstract type="html">Sets and returns the color (tint) with alpha.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *colorRGBA</Declaration>
+			
+			
+			<Anchor>//api/name/colorRGBA</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/colorRGBA</TokenIdentifier>
+			<Abstract type="html">Sets and returns the color (tint) with alpha.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCColor *colorRGBA</Declaration>
+			
+			
+			<Anchor>//api/name/colorRGBA</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setDisplayedColor:</TokenIdentifier>
+			<Abstract type="html">Returns the displayed color.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCColor *displayedColor</Declaration>
+			
+			
+			<Anchor>//api/name/displayedColor</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/displayedColor</TokenIdentifier>
+			<Abstract type="html">Returns the displayed color.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCColor *displayedColor</Declaration>
+			
+			
+			<Anchor>//api/name/displayedColor</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/displayedColor</TokenIdentifier>
+			<Abstract type="html">Returns the displayed color.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCColor *displayedColor</Declaration>
+			
+			
+			<Anchor>//api/name/displayedColor</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setCascadeColorEnabled:</TokenIdentifier>
+			<Abstract type="html">CascadeColorEnabled causes changes to this node&apos;s color to cascade down to it&apos;s children. The new color is multiplied
+in with the color of each child, so it doesn&apos;t bash the current color of those nodes. Opacity is unaffected by this
+property, see cascadeOpacityEnabled to change the alpha of nodes.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isCascadeColorEnabled) BOOL cascadeColorEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/cascadeColorEnabled</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/isCascadeColorEnabled</TokenIdentifier>
+			<Abstract type="html">CascadeColorEnabled causes changes to this node&apos;s color to cascade down to it&apos;s children. The new color is multiplied
+in with the color of each child, so it doesn&apos;t bash the current color of those nodes. Opacity is unaffected by this
+property, see cascadeOpacityEnabled to change the alpha of nodes.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isCascadeColorEnabled) BOOL cascadeColorEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/cascadeColorEnabled</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/cascadeColorEnabled</TokenIdentifier>
+			<Abstract type="html">CascadeColorEnabled causes changes to this node&apos;s color to cascade down to it&apos;s children. The new color is multiplied
+in with the color of each child, so it doesn&apos;t bash the current color of those nodes. Opacity is unaffected by this
+property, see cascadeOpacityEnabled to change the alpha of nodes.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isCascadeColorEnabled) BOOL cascadeColorEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/cascadeColorEnabled</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/updateDisplayedColor:</TokenIdentifier>
+			<Abstract type="html">Recursive method that updates display color.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)updateDisplayedColor:(ccColor4F)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color used for update.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateDisplayedColor:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setOpacity:</TokenIdentifier>
+			<Abstract type="html">Sets and returns the opacity.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/opacity</TokenIdentifier>
+			<Abstract type="html">Sets and returns the opacity.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/opacity</TokenIdentifier>
+			<Abstract type="html">Sets and returns the opacity.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) CGFloat opacity</Declaration>
+			
+			
+			<Anchor>//api/name/opacity</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setDisplayedOpacity:</TokenIdentifier>
+			<Abstract type="html">Returns the displayed opacity.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat displayedOpacity</Declaration>
+			
+			
+			<Anchor>//api/name/displayedOpacity</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/displayedOpacity</TokenIdentifier>
+			<Abstract type="html">Returns the displayed opacity.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat displayedOpacity</Declaration>
+			
+			
+			<Anchor>//api/name/displayedOpacity</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/displayedOpacity</TokenIdentifier>
+			<Abstract type="html">Returns the displayed opacity.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat displayedOpacity</Declaration>
+			
+			
+			<Anchor>//api/name/displayedOpacity</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setCascadeOpacityEnabled:</TokenIdentifier>
+			<Abstract type="html">CascadeOpacity causes changes to this node&apos;s opacity to cascade down to it&apos;s children. The new opacity is multiplied
+in with the opacity of each child, so it doesn&apos;t bash the current opacity of those nodes. Color is unaffected by this
+property, see cascadeColorEnabled for color tint changes.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isCascadeOpacityEnabled) BOOL cascadeOpacityEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/cascadeOpacityEnabled</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/isCascadeOpacityEnabled</TokenIdentifier>
+			<Abstract type="html">CascadeOpacity causes changes to this node&apos;s opacity to cascade down to it&apos;s children. The new opacity is multiplied
+in with the opacity of each child, so it doesn&apos;t bash the current opacity of those nodes. Color is unaffected by this
+property, see cascadeColorEnabled for color tint changes.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isCascadeOpacityEnabled) BOOL cascadeOpacityEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/cascadeOpacityEnabled</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCNode/cascadeOpacityEnabled</TokenIdentifier>
+			<Abstract type="html">CascadeOpacity causes changes to this node&apos;s opacity to cascade down to it&apos;s children. The new opacity is multiplied
+in with the opacity of each child, so it doesn&apos;t bash the current opacity of those nodes. Color is unaffected by this
+property, see cascadeColorEnabled for color tint changes.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, getter=isCascadeOpacityEnabled) BOOL cascadeOpacityEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/cascadeOpacityEnabled</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/updateDisplayedOpacity:</TokenIdentifier>
+			<Abstract type="html">Recursive method that updates the displayed opacity.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)updateDisplayedOpacity:(CGFloat)opacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>opacity</Name>
+					<Abstract type="html">Opacity to use for update.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateDisplayedOpacity:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/setOpacityModifyRGB:</TokenIdentifier>
+			<Abstract type="html">Sets the premultipliedAlphaOpacity property.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)setOpacityModifyRGB:(BOOL)boolean</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>boolean</Name>
+					<Abstract type="html">Enables or disables setting of opacity with color.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setOpacityModifyRGB:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/doesOpacityModifyRGB</TokenIdentifier>
+			<Abstract type="html">Returns whether or not the opacity will be applied using glColor(R,G,B,opacity or glColor(opacity, opacity, opacity, opacity.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)doesOpacityModifyRGB</Declaration>
+			
+			
+			<Anchor>//api/name/doesOpacityModifyRGB</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/walkSceneGraph:</TokenIdentifier>
+			<Abstract type="html">Prints on the debug console the scene graph</Abstract>
+			<DeclaredIn>CCNode+Debug.h</DeclaredIn>
+			
+			<Declaration>- (void)walkSceneGraph:(NSUInteger)level</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>level</Name>
+					<Abstract type="html">Level of debug information.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/walkSceneGraph:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/transform:</TokenIdentifier>
+			<Abstract type="html">Returns the 4x4 drawing transformation for this node. Really only useful when overriding visit:parentTransform:</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (GLKMatrix4)transform:(const GLKMatrix4 *)parentTransform</Declaration>
+			
+			
+			<Anchor>//api/name/transform:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/visit:parentTransform:</TokenIdentifier>
+			<Abstract type="html">Recursive method that visit its children and draw them.</Abstract>
+			<DeclaredIn>CCNode.h</DeclaredIn>
+			
+			<Declaration>- (void)visit:(CCRenderer *)renderer parentTransform:(const GLKMatrix4 *)parentTransform</Declaration>
+			
+			
+			<Anchor>//api/name/visit:parentTransform:</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNode/physicsNode</TokenIdentifier>
+			<Abstract type="html">Nearest CCPhysicsNode ancestor of this node, or nil if none.
+Unlike CCPhysicsBody.physicsNode, this will return a value before onEnter is called on the node.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>- (CCPhysicsNode *)physicsNode</Declaration>
+			
+			
+			<Anchor>//api/name/physicsNode</Anchor>
+            <NodeRef refid="93"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

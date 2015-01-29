@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCEffectStack.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCEffectStack</TokenIdentifier>
+			<Abstract type="html">CCEffectStack allows multiple effects to be stacked together to form interesting
+visual combinations. Effect stacks are immutable in the sense that the effects they
+contain cannot be changed once the stack is created. However, the parameters of the
+contained effects can be changed.</Abstract>
+			<DeclaredIn>CCEffectStack.h</DeclaredIn>
+            
+			
+			<NodeRef refid="87"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectStack/setEffectCount:</TokenIdentifier>
+			<Abstract type="html">The number of effects contained in the stack.</Abstract>
+			<DeclaredIn>CCEffectStack.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger effectCount</Declaration>
+			
+			
+			<Anchor>//api/name/effectCount</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectStack/effectCount</TokenIdentifier>
+			<Abstract type="html">The number of effects contained in the stack.</Abstract>
+			<DeclaredIn>CCEffectStack.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger effectCount</Declaration>
+			
+			
+			<Anchor>//api/name/effectCount</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCEffectStack/effectCount</TokenIdentifier>
+			<Abstract type="html">The number of effects contained in the stack.</Abstract>
+			<DeclaredIn>CCEffectStack.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger effectCount</Declaration>
+			
+			
+			<Anchor>//api/name/effectCount</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectStack/init</TokenIdentifier>
+			<Abstract type="html">Initializes an empty effect stack object.</Abstract>
+			<DeclaredIn>CCEffectStack.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">The CCEffectStack object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectStack/initWithArray:</TokenIdentifier>
+			<Abstract type="html">Initializes an effect stack object with the specified array of effects.</Abstract>
+			<DeclaredIn>CCEffectStack.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithArray:(NSArray *)arrayOfEffects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>arrayOfEffects</Name>
+					<Abstract type="html">The array of effects to add to the stack.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectStack object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithArray:</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectStack/initWithEffects:</TokenIdentifier>
+			<Abstract type="html">Initializes an effect stack object with the specified effects.</Abstract>
+			<DeclaredIn>CCEffectStack.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithEffects:(CCEffect *)effect1, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>effect1</Name>
+					<Abstract type="html">First effect to add to the stack.</Abstract>
+				</Parameter><Parameter>
+					<Name>...</Name>
+					<Abstract type="html">Nil terminated list of effects to stack.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectStack object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithEffects:</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCEffectStack/effectWithArray:</TokenIdentifier>
+			<Abstract type="html">Creates an effect stack object with the specified array of effects.</Abstract>
+			<DeclaredIn>CCEffectStack.h</DeclaredIn>
+			
+			<Declaration>+ (id)effectWithArray:(NSArray *)arrayOfEffects</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>arrayOfEffects</Name>
+					<Abstract type="html">The array of effects to add to the stack.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectStack object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effectWithArray:</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCEffectStack/effects:</TokenIdentifier>
+			<Abstract type="html">Creates an effect stack object with the specified effects.</Abstract>
+			<DeclaredIn>CCEffectStack.h</DeclaredIn>
+			
+			<Declaration>+ (id)effects:(CCEffect *)effect1, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>effect1</Name>
+					<Abstract type="html">First effect to add to the stack.</Abstract>
+				</Parameter><Parameter>
+					<Name>...</Name>
+					<Abstract type="html">Nil terminated list of effects to stack.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCEffectStack object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effects:</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCEffectStack/effectAtIndex:</TokenIdentifier>
+			<Abstract type="html">Retrieve a contained effect.</Abstract>
+			<DeclaredIn>CCEffectStack.h</DeclaredIn>
+			
+			<Declaration>- (CCEffect *)effectAtIndex:(NSUInteger)effectIndex</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>effectIndex</Name>
+					<Abstract type="html">The index of the effect object to retrieve.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The selected effect object.</Abstract></ReturnValue>
+			<Anchor>//api/name/effectAtIndex:</Anchor>
+            <NodeRef refid="87"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

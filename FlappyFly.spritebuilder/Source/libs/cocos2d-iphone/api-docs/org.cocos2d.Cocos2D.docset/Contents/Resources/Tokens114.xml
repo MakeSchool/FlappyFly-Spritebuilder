@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCSprite.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCSprite</TokenIdentifier>
+			<Abstract type="html">CCSprite is a 2D image ( http://en.wikipedia.org/wiki/Sprite )</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+            
+			
+			<NodeRef refid="114"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/setTextureRect:</TokenIdentifier>
+			<Abstract type="html">Returns the texture rect of the CCSprite in points.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGRect textureRect</Declaration>
+			
+			
+			<Anchor>//api/name/textureRect</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/textureRect</TokenIdentifier>
+			<Abstract type="html">Returns the texture rect of the CCSprite in points.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGRect textureRect</Declaration>
+			
+			
+			<Anchor>//api/name/textureRect</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite/textureRect</TokenIdentifier>
+			<Abstract type="html">Returns the texture rect of the CCSprite in points.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGRect textureRect</Declaration>
+			
+			
+			<Anchor>//api/name/textureRect</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/setTextureRectRotated:</TokenIdentifier>
+			<Abstract type="html">Returns whether or not the texture rectangle is rotated.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL textureRectRotated</Declaration>
+			
+			
+			<Anchor>//api/name/textureRectRotated</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/textureRectRotated</TokenIdentifier>
+			<Abstract type="html">Returns whether or not the texture rectangle is rotated.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL textureRectRotated</Declaration>
+			
+			
+			<Anchor>//api/name/textureRectRotated</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite/textureRectRotated</TokenIdentifier>
+			<Abstract type="html">Returns whether or not the texture rectangle is rotated.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL textureRectRotated</Declaration>
+			
+			
+			<Anchor>//api/name/textureRectRotated</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/setSpriteFrame:</TokenIdentifier>
+			<Abstract type="html">The currently displayed spriteFrame.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *spriteFrame</Declaration>
+			
+			
+			<Anchor>//api/name/spriteFrame</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/spriteFrame</TokenIdentifier>
+			<Abstract type="html">The currently displayed spriteFrame.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *spriteFrame</Declaration>
+			
+			
+			<Anchor>//api/name/spriteFrame</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite/spriteFrame</TokenIdentifier>
+			<Abstract type="html">The currently displayed spriteFrame.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *spriteFrame</Declaration>
+			
+			
+			<Anchor>//api/name/spriteFrame</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/setFlipX:</TokenIdentifier>
+			<Abstract type="html">Whether or not the sprite is flipped horizontally.
+It only flips the texture of the sprite, and not the texture of the sprite&apos;s children.
+Also, flipping the texture doesn&apos;t alter the anchorPoint.
+If you want to flip the anchorPoint too, and/or to flip the children too use:
+sprite.scaleX *= -1;</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL flipX</Declaration>
+			
+			
+			<Anchor>//api/name/flipX</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/flipX</TokenIdentifier>
+			<Abstract type="html">Whether or not the sprite is flipped horizontally.
+It only flips the texture of the sprite, and not the texture of the sprite&apos;s children.
+Also, flipping the texture doesn&apos;t alter the anchorPoint.
+If you want to flip the anchorPoint too, and/or to flip the children too use:
+sprite.scaleX *= -1;</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL flipX</Declaration>
+			
+			
+			<Anchor>//api/name/flipX</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite/flipX</TokenIdentifier>
+			<Abstract type="html">Whether or not the sprite is flipped horizontally.
+It only flips the texture of the sprite, and not the texture of the sprite&apos;s children.
+Also, flipping the texture doesn&apos;t alter the anchorPoint.
+If you want to flip the anchorPoint too, and/or to flip the children too use:
+sprite.scaleX *= -1;</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL flipX</Declaration>
+			
+			
+			<Anchor>//api/name/flipX</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/setFlipY:</TokenIdentifier>
+			<Abstract type="html">Whether or not the sprite is flipped vertically.
+It only flips the texture of the sprite, and not the texture of the sprite&apos;s children.
+Also, flipping the texture doesn&apos;t alter the anchorPoint.
+If you want to flip the anchorPoint too, and/or to flip the children too use:
+sprite.scaleY *= -1;</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL flipY</Declaration>
+			
+			
+			<Anchor>//api/name/flipY</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/flipY</TokenIdentifier>
+			<Abstract type="html">Whether or not the sprite is flipped vertically.
+It only flips the texture of the sprite, and not the texture of the sprite&apos;s children.
+Also, flipping the texture doesn&apos;t alter the anchorPoint.
+If you want to flip the anchorPoint too, and/or to flip the children too use:
+sprite.scaleY *= -1;</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL flipY</Declaration>
+			
+			
+			<Anchor>//api/name/flipY</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite/flipY</TokenIdentifier>
+			<Abstract type="html">Whether or not the sprite is flipped vertically.
+It only flips the texture of the sprite, and not the texture of the sprite&apos;s children.
+Also, flipping the texture doesn&apos;t alter the anchorPoint.
+If you want to flip the anchorPoint too, and/or to flip the children too use:
+sprite.scaleY *= -1;</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL flipY</Declaration>
+			
+			
+			<Anchor>//api/name/flipY</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/setOffsetPosition:</TokenIdentifier>
+			<Abstract type="html">The offset position in points of the sprite in points. Calculated automatically by sprite sheet editors.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGPoint offsetPosition</Declaration>
+			
+			
+			<Anchor>//api/name/offsetPosition</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/offsetPosition</TokenIdentifier>
+			<Abstract type="html">The offset position in points of the sprite in points. Calculated automatically by sprite sheet editors.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGPoint offsetPosition</Declaration>
+			
+			
+			<Anchor>//api/name/offsetPosition</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite/offsetPosition</TokenIdentifier>
+			<Abstract type="html">The offset position in points of the sprite in points. Calculated automatically by sprite sheet editors.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGPoint offsetPosition</Declaration>
+			
+			
+			<Anchor>//api/name/offsetPosition</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/setNormalMapSpriteFrame:</TokenIdentifier>
+			<Abstract type="html">The current normal map spriteFrame.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *normalMapSpriteFrame</Declaration>
+			
+			
+			<Anchor>//api/name/normalMapSpriteFrame</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/normalMapSpriteFrame</TokenIdentifier>
+			<Abstract type="html">The current normal map spriteFrame.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *normalMapSpriteFrame</Declaration>
+			
+			
+			<Anchor>//api/name/normalMapSpriteFrame</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSprite/normalMapSpriteFrame</TokenIdentifier>
+			<Abstract type="html">The current normal map spriteFrame.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *normalMapSpriteFrame</Declaration>
+			
+			
+			<Anchor>//api/name/normalMapSpriteFrame</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCSprite/spriteWithImageNamed:</TokenIdentifier>
+			<Abstract type="html">Creates a sprite with the name of an image. The name can be either a name in a sprite sheet or the name of a file.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>+ (id)spriteWithImageNamed:(NSString *)imageName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageName</Name>
+					<Abstract type="html">name of the image to load.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCSprite Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/spriteWithImageNamed:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCSprite/spriteWithTexture:</TokenIdentifier>
+			<Abstract type="html">Creates an sprite with a texture.
+The rect used will be the size of the texture.
+The offset will be (0,0).</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>+ (id)spriteWithTexture:(CCTexture *)texture</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>texture</Name>
+					<Abstract type="html">Texture to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCSprite Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/spriteWithTexture:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCSprite/spriteWithTexture:rect:</TokenIdentifier>
+			<Abstract type="html">Creates an sprite with a texture.
+The offset will be (0,0).</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>+ (id)spriteWithTexture:(CCTexture *)texture rect:(CGRect)rect</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>texture</Name>
+					<Abstract type="html">Texture to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">Rect to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCSprite Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/spriteWithTexture:rect:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCSprite/spriteWithSpriteFrame:</TokenIdentifier>
+			<Abstract type="html">Creates an sprite from a sprite frame.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>+ (id)spriteWithSpriteFrame:(CCSpriteFrame *)spriteFrame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>spriteFrame</Name>
+					<Abstract type="html">Sprite frame to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCSprite Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/spriteWithSpriteFrame:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCSprite/spriteWithCGImage:key:</TokenIdentifier>
+			<Abstract type="html">Creates an sprite with a CGImageRef and a key.
+The key is used by the CCTextureCache to know if a texture was already created with this CGImage.
+For example, a valid key is: @&quot;spriteframe01&quot;.
+If key is nil, then a new texture will be created each time by the CCTextureCache.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>+ (id)spriteWithCGImage:(CGImageRef)image key:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">Image ref.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">Key description.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCSprite Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/spriteWithCGImage:key:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/initWithImageNamed:</TokenIdentifier>
+			<Abstract type="html">Initializes a sprite with the name of an image. The name can be either a name in a sprite sheet or the name of a file.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithImageNamed:(NSString *)imageName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>imageName</Name>
+					<Abstract type="html">name of the image to load.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly initialized CCSprite object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithImageNamed:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/initWithTexture:</TokenIdentifier>
+			<Abstract type="html">Initializes an sprite with a texture.
+The rect used will be the size of the texture.
+The offset will be (0,0).</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithTexture:(CCTexture *)texture</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>texture</Name>
+					<Abstract type="html">The texture to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly initialized CCSprite object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTexture:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/initWithTexture:rect:</TokenIdentifier>
+			<Abstract type="html">Initializes an sprite with a texture and a rect in points (unrotated)
+The offset will be (0,0).</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithTexture:(CCTexture *)texture rect:(CGRect)rect</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>texture</Name>
+					<Abstract type="html">The texture to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">The rect to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly initialized CCSprite object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTexture:rect:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/initWithSpriteFrame:</TokenIdentifier>
+			<Abstract type="html">Initializes an sprite with an sprite frame.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithSpriteFrame:(CCSpriteFrame *)spriteFrame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>spriteFrame</Name>
+					<Abstract type="html">Sprite frame to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly initialized CCSprite object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSpriteFrame:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/initWithCGImage:key:</TokenIdentifier>
+			<Abstract type="html">Initializes an sprite with a CGImageRef and a key.
+The key is used by the CCTextureCache to know if a texture was already created with this CGImage.
+For example, a valid key is: @&quot;spriteframe01&quot;.
+If key is nil, then a new texture will be created each time by the CCTextureCache.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithCGImage:(CGImageRef)image key:(NSString *)key</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>image</Name>
+					<Abstract type="html">Image ref.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">Key description.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly initialized CCSprite object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithCGImage:key:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCSprite/emptySprite</TokenIdentifier>
+			<Abstract type="html">Creates a non rendered sprite, the primary use of this type of sprite would be for adding control sprites for more complex animations.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>+ (id)emptySprite</Declaration>
+			
+			<ReturnValue><Abstract type="html">A newly initialized CCSprite object.</Abstract></ReturnValue>
+			<Anchor>//api/name/emptySprite</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/initWithTexture:rect:rotated:</TokenIdentifier>
+			<Abstract type="html">Designated initializer.
+Initializes an sprite with a texture and a rect in points, optionally rotated.
+The offset will be (0,0).
+IMPORTANT: This is the designated initializer.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithTexture:(CCTexture *)texture rect:(CGRect)rect rotated:(BOOL)rotated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>texture</Name>
+					<Abstract type="html">The texture to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">The rect to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>rotated</Name>
+					<Abstract type="html">YES if texture is rotated.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A newly initialized CCSprite object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTexture:rect:rotated:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/setTextureRect:</TokenIdentifier>
+			<Abstract type="html">Set the texture rect of the CCSprite in points.
+It will call setTextureRect:rotated:untrimmedSize with rotated = NO, and utrimmedSize = rect.size.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>- (void)setTextureRect:(CGRect)rect</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">Rect to use.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTextureRect:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/setTextureRect:rotated:untrimmedSize:</TokenIdentifier>
+			<Abstract type="html">Set the texture rect, rectRotated and untrimmed size of the CCSprite in points.
+It will update the texture coordinates and the vertex rectangle.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>- (void)setTextureRect:(CGRect)rect rotated:(BOOL)rotated untrimmedSize:(CGSize)size</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rect</Name>
+					<Abstract type="html">Rect to use.</Abstract>
+				</Parameter><Parameter>
+					<Name>rotated</Name>
+					<Abstract type="html">YES if texture is rotated.</Abstract>
+				</Parameter><Parameter>
+					<Name>size</Name>
+					<Abstract type="html">Untrimmed size.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setTextureRect:rotated:untrimmedSize:</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSprite/nodeToTextureTransform</TokenIdentifier>
+			<Abstract type="html">Returns the matrix that transforms the sprite&apos;s (local) space coordinates into the sprite&apos;s texture space coordinates.</Abstract>
+			<DeclaredIn>CCSprite.h</DeclaredIn>
+			
+			<Declaration>- (CGAffineTransform)nodeToTextureTransform</Declaration>
+			
+			
+			<Anchor>//api/name/nodeToTextureTransform</Anchor>
+            <NodeRef refid="114"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

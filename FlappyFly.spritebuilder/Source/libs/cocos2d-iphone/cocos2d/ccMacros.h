@@ -39,10 +39,27 @@
  cocos2d helper macros
  */
 
-#ifdef __IPHONE_OS_VERSION_MAX_ALLOWED
+#if defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && !defined(COCOS2D_ANDROID)
 #define __CC_PLATFORM_IOS 1
-#elif defined(__MAC_OS_X_VERSION_MAX_ALLOWED)
+#define __CC_PLATFORM_MAC 0
+#define __CC_PLATFORM_ANDROID_FIXME 1
+#elif defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && !defined(COCOS2D_ANDROID)
 #define __CC_PLATFORM_MAC 1
+#define __CC_PLATFORM_IOS 0
+#endif
+
+#ifdef COCOS2D_ANDROID
+#define __CC_PLATFORM_MAC 0
+#define __CC_PLATFORM_IOS 0
+#define __CC_PLATFORM_ANDROID 1
+#define __CC_PLATFORM_ANDROID_FIXME 1
+#endif
+
+// Metal is only supported on iOS devices (currently does not include the simulator) and on iOS 8 and greater.
+#if __CC_PLATFORM_IOS && defined(__IPHONE_8_0) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
+#define __CC_METAL_SUPPORTED_AND_ENABLED (CC_ENABLE_METAL_RENDERING && !TARGET_IPHONE_SIMULATOR)
+#else
+#define __CC_METAL_SUPPORTED_AND_ENABLED 0
 #endif
 
 /*
@@ -125,37 +142,28 @@ CCRANDOM_ON_UNIT_CIRCLE()
 	while(TRUE){
 		CGPoint p = ccp(CCRANDOM_MINUS1_1(), CCRANDOM_MINUS1_1());
 		CGFloat lsq = ccpLengthSQ(p);
-		if(0.1 < lsq && lsq < 1.0f) return ccpMult(p, 1.0/sqrt(lsq));
+		if(0.1 < lsq && lsq < 1.0) return ccpMult(p, (CGFloat)(1.0/sqrt(lsq)));
 	}
 }
 
 /** @def CC_DEGREES_TO_RADIANS
  converts degrees to radians
  */
-#define CC_DEGREES_TO_RADIANS(__ANGLE__) ((__ANGLE__) * 0.01745329252f) // PI / 180
+static inline float
+CC_DEGREES_TO_RADIANS(const float angle)
+{
+	return angle*0.01745329252f;
+} 
 
 /** @def CC_RADIANS_TO_DEGREES
  converts radians to degrees
  */
-#define CC_RADIANS_TO_DEGREES(__ANGLE__) ((__ANGLE__) * 57.29577951f) // PI * 180
+static inline float
+CC_RADIANS_TO_DEGREES(const float angle)
+{
+	return angle*57.29577951f;
+} 
 
-#define kCCRepeatForever (UINT_MAX -1)
-/** @def CC_BLEND_SRC
-default gl blend src function. Compatible with premultiplied alpha images.
-*/
-#define CC_BLEND_SRC GL_ONE
-#define CC_BLEND_DST GL_ONE_MINUS_SRC_ALPHA
-
-/** @def CC_NODE_DRAW_SETUP
- Helpful macro that setups the GL server state, the correct GL program and sets the Model View Projection matrix
- */
-#define CC_NODE_DRAW_SETUP()																	\
-do {																							\
-	ccGLEnable( _glServerState );																\
-    NSAssert1(_shaderProgram, @"No shader program set for node: %@", self);						\
-	[_shaderProgram use];																		\
-	[_shaderProgram setUniformsForBuiltins];									\
-} while(0)
 
 
 /** @def CC_CONTENT_SCALE_FACTOR

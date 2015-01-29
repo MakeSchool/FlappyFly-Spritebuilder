@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCAnimationManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCAnimationManager</TokenIdentifier>
+			<Abstract type="html">The animation manager plays back animations, usually created by a tool such as SpriteBuilder. Any animation can have an arbitrary number of sequences (timelines) which each have keyframes for different properties.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="66"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/setFixedTimestep:</TokenIdentifier>
+			<Abstract type="html">If set to true the animation manager will run on a fixed time step, this is required to run animations toghether with physics.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) bool fixedTimestep</Declaration>
+			
+			
+			<Anchor>//api/name/fixedTimestep</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/fixedTimestep</TokenIdentifier>
+			<Abstract type="html">If set to true the animation manager will run on a fixed time step, this is required to run animations toghether with physics.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) bool fixedTimestep</Declaration>
+			
+			
+			<Anchor>//api/name/fixedTimestep</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCAnimationManager/fixedTimestep</TokenIdentifier>
+			<Abstract type="html">If set to true the animation manager will run on a fixed time step, this is required to run animations toghether with physics.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) bool fixedTimestep</Declaration>
+			
+			
+			<Anchor>//api/name/fixedTimestep</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/setDelegate:</TokenIdentifier>
+			<Abstract type="html">The animation manager delegate receives updates about the animations currently being played.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NSObject&lt;CCBAnimationManagerDelegate&gt; *delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/delegate</TokenIdentifier>
+			<Abstract type="html">The animation manager delegate receives updates about the animations currently being played.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NSObject&lt;CCBAnimationManagerDelegate&gt; *delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCAnimationManager/delegate</TokenIdentifier>
+			<Abstract type="html">The animation manager delegate receives updates about the animations currently being played.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) NSObject&lt;CCBAnimationManagerDelegate&gt; *delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/setRunningSequenceName:</TokenIdentifier>
+			<Abstract type="html">The name of the currently running sequence (timeline).</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, nonatomic, readonly) NSString *runningSequenceName</Declaration>
+			
+			
+			<Anchor>//api/name/runningSequenceName</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/runningSequenceName</TokenIdentifier>
+			<Abstract type="html">The name of the currently running sequence (timeline).</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, nonatomic, readonly) NSString *runningSequenceName</Declaration>
+			
+			
+			<Anchor>//api/name/runningSequenceName</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCAnimationManager/runningSequenceName</TokenIdentifier>
+			<Abstract type="html">The name of the currently running sequence (timeline).</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (unsafe_unretained, nonatomic, readonly) NSString *runningSequenceName</Declaration>
+			
+			
+			<Anchor>//api/name/runningSequenceName</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/setLastCompletedSequenceName:</TokenIdentifier>
+			<Abstract type="html">The name of the last completed sequence (timeline).</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lastCompletedSequenceName</Declaration>
+			
+			
+			<Anchor>//api/name/lastCompletedSequenceName</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/lastCompletedSequenceName</TokenIdentifier>
+			<Abstract type="html">The name of the last completed sequence (timeline).</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lastCompletedSequenceName</Declaration>
+			
+			
+			<Anchor>//api/name/lastCompletedSequenceName</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCAnimationManager/lastCompletedSequenceName</TokenIdentifier>
+			<Abstract type="html">The name of the last completed sequence (timeline).</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *lastCompletedSequenceName</Declaration>
+			
+			
+			<Anchor>//api/name/lastCompletedSequenceName</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/setPlaybackSpeed:</TokenIdentifier>
+			<Abstract type="html">Playback speed, default is 1 and corresponds to the normal playback speed. Use this property for fast forward or slow motion playback.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float playbackSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/playbackSpeed</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/playbackSpeed</TokenIdentifier>
+			<Abstract type="html">Playback speed, default is 1 and corresponds to the normal playback speed. Use this property for fast forward or slow motion playback.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float playbackSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/playbackSpeed</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCAnimationManager/playbackSpeed</TokenIdentifier>
+			<Abstract type="html">Playback speed, default is 1 and corresponds to the normal playback speed. Use this property for fast forward or slow motion playback.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float playbackSpeed</Declaration>
+			
+			
+			<Anchor>//api/name/playbackSpeed</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/setPaused:</TokenIdentifier>
+			<Abstract type="html">Set to true to pause the animation currently being run.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) bool paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/paused</TokenIdentifier>
+			<Abstract type="html">Set to true to pause the animation currently being run.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) bool paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCAnimationManager/paused</TokenIdentifier>
+			<Abstract type="html">Set to true to pause the animation currently being run.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) bool paused</Declaration>
+			
+			
+			<Anchor>//api/name/paused</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/runAnimationsForSequenceNamed:</TokenIdentifier>
+			<Abstract type="html">Plays an animation sequence (timeline) by its name.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)runAnimationsForSequenceNamed:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the sequence to play.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/runAnimationsForSequenceNamed:</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/runAnimationsForSequenceNamed:tweenDuration:</TokenIdentifier>
+			<Abstract type="html">Plays an animation sequence (timeline) by its name, tweens smoothly to the new sequence.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)runAnimationsForSequenceNamed:(NSString *)name tweenDuration:(float)tweenDuration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the sequence to play.</Abstract>
+				</Parameter><Parameter>
+					<Name>tweenDuration</Name>
+					<Abstract type="html">Time to tween to the new sequence.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/runAnimationsForSequenceNamed:tweenDuration:</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/setCompletedAnimationCallbackBlock:</TokenIdentifier>
+			<Abstract type="html">Sets a block to be called when an animation sequence has finished playing.</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)setCompletedAnimationCallbackBlock:(void ( ^ ) ( id sender ))b</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>b</Name>
+					<Abstract type="html">The block to call.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCompletedAnimationCallbackBlock:</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/jumpToSequenceNamed:time:</TokenIdentifier>
+			<Abstract type="html">Jumps to a specific time in a specific sequence (timeline).</Abstract>
+			<DeclaredIn>CCAnimationManager.h</DeclaredIn>
+			
+			<Declaration>- (void)jumpToSequenceNamed:(NSString *)name time:(float)time</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the sequence to jump to.</Abstract>
+				</Parameter><Parameter>
+					<Name>time</Name>
+					<Abstract type="html">The time in the sequence.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/jumpToSequenceNamed:time:</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/addAnimationsWithDictionary:node:</TokenIdentifier>
+			<Abstract type="html">Add an animation from a NSDictionary.</Abstract>
+			<DeclaredIn>CCAnimationManager+FrameAnimation.h</DeclaredIn>
+			
+			<Declaration>- (void)addAnimationsWithDictionary:(NSDictionary *)dictionary node:(CCNode *)node</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">Dictionary.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAnimationsWithDictionary:node:</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCAnimationManager/addAnimationsWithFile:node:</TokenIdentifier>
+			<Abstract type="html">Add an animation from a file.</Abstract>
+			<DeclaredIn>CCAnimationManager+FrameAnimation.h</DeclaredIn>
+			
+			<Declaration>- (void)addAnimationsWithFile:(NSString *)plist node:(CCNode *)node</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plist</Name>
+					<Abstract type="html">File path.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addAnimationsWithFile:node:</Anchor>
+            <NodeRef refid="66"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

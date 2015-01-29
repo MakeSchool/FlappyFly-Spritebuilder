@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionRotateTo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionRotateTo</TokenIdentifier>
+			<Abstract type="html">  
+This action rotates the target to the specified angle.
+The direction will be decided by the shortest route.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="51"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionRotateTo/actionWithDuration:angle:</TokenIdentifier>
+			<Abstract type="html">Creates the action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration angle:(float)angle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>angle</Name>
+					<Abstract type="html">Angle to rotate to (degrees).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New rotate action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:angle:</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionRotateTo/actionWithDuration:angle:simple:</TokenIdentifier>
+			<Abstract type="html">Creates the action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration angle:(float)angle simple:(bool)simple</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>angle</Name>
+					<Abstract type="html">Angle to rotate to (degrees).</Abstract>
+				</Parameter><Parameter>
+					<Name>direct</Name>
+					<Abstract type="html">Simple rotation, no smart checks.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New rotate action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:angle:simple:</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionRotateTo/initWithDuration:angle:simple:</TokenIdentifier>
+			<Abstract type="html">Initializes the action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration angle:(float)angle simple:(bool)simple</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>angle</Name>
+					<Abstract type="html">Angle to rotate to (degrees).</Abstract>
+				</Parameter><Parameter>
+					<Name>direct</Name>
+					<Abstract type="html">Simple rotation, no smart checks.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New rotate action</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:angle:simple:</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionRotateTo/initWithDuration:angle:</TokenIdentifier>
+			<Abstract type="html">Initializes the action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration angle:(float)angle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>angle</Name>
+					<Abstract type="html">Angle to rotate to (degrees).</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New rotate action</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:angle:</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionRotateTo/actionWithDuration:angleX:</TokenIdentifier>
+			<Abstract type="html">Creates the action with angleX rotation angle.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)t angleX:(float)aX</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>t</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>aX</Name>
+					<Abstract type="html">X rotation in degrees.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New rotate action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:angleX:</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionRotateTo/initWithDuration:angleX:</TokenIdentifier>
+			<Abstract type="html">Initializes the action with angleX rotation angle.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)t angleX:(float)aX</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>t</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>aX</Name>
+					<Abstract type="html">X rotation in degrees.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New rotate action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:angleX:</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionRotateTo/actionWithDuration:angleY:</TokenIdentifier>
+			<Abstract type="html">Creates the action with angleY rotation angle.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)t angleY:(float)aY</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>t</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>aY</Name>
+					<Abstract type="html">Y rotation in degrees.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New rotate action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:angleY:</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionRotateTo/initWithDuration:angleY:</TokenIdentifier>
+			<Abstract type="html">Initializes the action with angleY rotation angle.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)t angleY:(float)aY</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>t</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>aY</Name>
+					<Abstract type="html">Y rotation in degrees.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New rotate action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:angleY:</Anchor>
+            <NodeRef refid="51"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

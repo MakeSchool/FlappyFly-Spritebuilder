@@ -1,0 +1,1622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCParticleSystemBase.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCParticleSystemBase</TokenIdentifier>
+			<Abstract type="html">Felxbile particle system.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+            
+			
+			<NodeRef refid="99"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setActive:</TokenIdentifier>
+			<Abstract type="html">True if particle system active.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/active</TokenIdentifier>
+			<Abstract type="html">True if particle system active.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/active</TokenIdentifier>
+			<Abstract type="html">True if particle system active.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) BOOL active</Declaration>
+			
+			
+			<Anchor>//api/name/active</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setParticleCount:</TokenIdentifier>
+			<Abstract type="html">Quantity of particles that are being simulated at the moment.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger particleCount</Declaration>
+			
+			
+			<Anchor>//api/name/particleCount</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/particleCount</TokenIdentifier>
+			<Abstract type="html">Quantity of particles that are being simulated at the moment.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger particleCount</Declaration>
+			
+			
+			<Anchor>//api/name/particleCount</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/particleCount</TokenIdentifier>
+			<Abstract type="html">Quantity of particles that are being simulated at the moment.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSUInteger particleCount</Declaration>
+			
+			
+			<Anchor>//api/name/particleCount</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setDuration:</TokenIdentifier>
+			<Abstract type="html">How many seconds the emitter wil run. -1 means &apos;forever&apos;.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/duration</TokenIdentifier>
+			<Abstract type="html">How many seconds the emitter wil run. -1 means &apos;forever&apos;.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/duration</TokenIdentifier>
+			<Abstract type="html">How many seconds the emitter wil run. -1 means &apos;forever&apos;.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float duration</Declaration>
+			
+			
+			<Anchor>//api/name/duration</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setSourcePosition:</TokenIdentifier>
+			<Abstract type="html">The source position of the emitter.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint sourcePosition</Declaration>
+			
+			
+			<Anchor>//api/name/sourcePosition</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/sourcePosition</TokenIdentifier>
+			<Abstract type="html">The source position of the emitter.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint sourcePosition</Declaration>
+			
+			
+			<Anchor>//api/name/sourcePosition</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/sourcePosition</TokenIdentifier>
+			<Abstract type="html">The source position of the emitter.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint sourcePosition</Declaration>
+			
+			
+			<Anchor>//api/name/sourcePosition</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setPosVar:</TokenIdentifier>
+			<Abstract type="html">The Position variance of the emitter.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint posVar</Declaration>
+			
+			
+			<Anchor>//api/name/posVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/posVar</TokenIdentifier>
+			<Abstract type="html">The Position variance of the emitter.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint posVar</Declaration>
+			
+			
+			<Anchor>//api/name/posVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/posVar</TokenIdentifier>
+			<Abstract type="html">The Position variance of the emitter.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint posVar</Declaration>
+			
+			
+			<Anchor>//api/name/posVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setLife:</TokenIdentifier>
+			<Abstract type="html">Life time of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float life</Declaration>
+			
+			
+			<Anchor>//api/name/life</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/life</TokenIdentifier>
+			<Abstract type="html">Life time of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float life</Declaration>
+			
+			
+			<Anchor>//api/name/life</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/life</TokenIdentifier>
+			<Abstract type="html">Life time of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float life</Declaration>
+			
+			
+			<Anchor>//api/name/life</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setLifeVar:</TokenIdentifier>
+			<Abstract type="html">Life variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float lifeVar</Declaration>
+			
+			
+			<Anchor>//api/name/lifeVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/lifeVar</TokenIdentifier>
+			<Abstract type="html">Life variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float lifeVar</Declaration>
+			
+			
+			<Anchor>//api/name/lifeVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/lifeVar</TokenIdentifier>
+			<Abstract type="html">Life variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float lifeVar</Declaration>
+			
+			
+			<Anchor>//api/name/lifeVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setAngle:</TokenIdentifier>
+			<Abstract type="html">Angle of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float angle</Declaration>
+			
+			
+			<Anchor>//api/name/angle</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/angle</TokenIdentifier>
+			<Abstract type="html">Angle of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float angle</Declaration>
+			
+			
+			<Anchor>//api/name/angle</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/angle</TokenIdentifier>
+			<Abstract type="html">Angle of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float angle</Declaration>
+			
+			
+			<Anchor>//api/name/angle</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setAngleVar:</TokenIdentifier>
+			<Abstract type="html">Angle variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float angleVar</Declaration>
+			
+			
+			<Anchor>//api/name/angleVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/angleVar</TokenIdentifier>
+			<Abstract type="html">Angle variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float angleVar</Declaration>
+			
+			
+			<Anchor>//api/name/angleVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/angleVar</TokenIdentifier>
+			<Abstract type="html">Angle variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float angleVar</Declaration>
+			
+			
+			<Anchor>//api/name/angleVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setStartSize:</TokenIdentifier>
+			<Abstract type="html">Start size in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSize</Declaration>
+			
+			
+			<Anchor>//api/name/startSize</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/startSize</TokenIdentifier>
+			<Abstract type="html">Start size in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSize</Declaration>
+			
+			
+			<Anchor>//api/name/startSize</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/startSize</TokenIdentifier>
+			<Abstract type="html">Start size in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSize</Declaration>
+			
+			
+			<Anchor>//api/name/startSize</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setStartSizeVar:</TokenIdentifier>
+			<Abstract type="html">Size variance in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSizeVar</Declaration>
+			
+			
+			<Anchor>//api/name/startSizeVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/startSizeVar</TokenIdentifier>
+			<Abstract type="html">Size variance in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSizeVar</Declaration>
+			
+			
+			<Anchor>//api/name/startSizeVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/startSizeVar</TokenIdentifier>
+			<Abstract type="html">Size variance in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSizeVar</Declaration>
+			
+			
+			<Anchor>//api/name/startSizeVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setEndSize:</TokenIdentifier>
+			<Abstract type="html">End size in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSize</Declaration>
+			
+			
+			<Anchor>//api/name/endSize</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/endSize</TokenIdentifier>
+			<Abstract type="html">End size in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSize</Declaration>
+			
+			
+			<Anchor>//api/name/endSize</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/endSize</TokenIdentifier>
+			<Abstract type="html">End size in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSize</Declaration>
+			
+			
+			<Anchor>//api/name/endSize</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setEndSizeVar:</TokenIdentifier>
+			<Abstract type="html">End size variance in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSizeVar</Declaration>
+			
+			
+			<Anchor>//api/name/endSizeVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/endSizeVar</TokenIdentifier>
+			<Abstract type="html">End size variance in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSizeVar</Declaration>
+			
+			
+			<Anchor>//api/name/endSizeVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/endSizeVar</TokenIdentifier>
+			<Abstract type="html">End size variance in pixels of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSizeVar</Declaration>
+			
+			
+			<Anchor>//api/name/endSizeVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setStartColor:</TokenIdentifier>
+			<Abstract type="html">Start color of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *startColor</Declaration>
+			
+			
+			<Anchor>//api/name/startColor</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/startColor</TokenIdentifier>
+			<Abstract type="html">Start color of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *startColor</Declaration>
+			
+			
+			<Anchor>//api/name/startColor</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/startColor</TokenIdentifier>
+			<Abstract type="html">Start color of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *startColor</Declaration>
+			
+			
+			<Anchor>//api/name/startColor</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setStartColorVar:</TokenIdentifier>
+			<Abstract type="html">Start color variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *startColorVar</Declaration>
+			
+			
+			<Anchor>//api/name/startColorVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/startColorVar</TokenIdentifier>
+			<Abstract type="html">Start color variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *startColorVar</Declaration>
+			
+			
+			<Anchor>//api/name/startColorVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/startColorVar</TokenIdentifier>
+			<Abstract type="html">Start color variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *startColorVar</Declaration>
+			
+			
+			<Anchor>//api/name/startColorVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setEndColor:</TokenIdentifier>
+			<Abstract type="html">End color and end color variation of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *endColor</Declaration>
+			
+			
+			<Anchor>//api/name/endColor</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/endColor</TokenIdentifier>
+			<Abstract type="html">End color and end color variation of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *endColor</Declaration>
+			
+			
+			<Anchor>//api/name/endColor</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/endColor</TokenIdentifier>
+			<Abstract type="html">End color and end color variation of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *endColor</Declaration>
+			
+			
+			<Anchor>//api/name/endColor</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setEndColorVar:</TokenIdentifier>
+			<Abstract type="html">End color variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *endColorVar</Declaration>
+			
+			
+			<Anchor>//api/name/endColorVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/endColorVar</TokenIdentifier>
+			<Abstract type="html">End color variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *endColorVar</Declaration>
+			
+			
+			<Anchor>//api/name/endColorVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/endColorVar</TokenIdentifier>
+			<Abstract type="html">End color variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCColor *endColorVar</Declaration>
+			
+			
+			<Anchor>//api/name/endColorVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setStartSpin:</TokenIdentifier>
+			<Abstract type="html">Start spin of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSpin</Declaration>
+			
+			
+			<Anchor>//api/name/startSpin</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/startSpin</TokenIdentifier>
+			<Abstract type="html">Start spin of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSpin</Declaration>
+			
+			
+			<Anchor>//api/name/startSpin</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/startSpin</TokenIdentifier>
+			<Abstract type="html">Start spin of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSpin</Declaration>
+			
+			
+			<Anchor>//api/name/startSpin</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setStartSpinVar:</TokenIdentifier>
+			<Abstract type="html">Start spin variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSpinVar</Declaration>
+			
+			
+			<Anchor>//api/name/startSpinVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/startSpinVar</TokenIdentifier>
+			<Abstract type="html">Start spin variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSpinVar</Declaration>
+			
+			
+			<Anchor>//api/name/startSpinVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/startSpinVar</TokenIdentifier>
+			<Abstract type="html">Start spin variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startSpinVar</Declaration>
+			
+			
+			<Anchor>//api/name/startSpinVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setEndSpin:</TokenIdentifier>
+			<Abstract type="html">End spin of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSpin</Declaration>
+			
+			
+			<Anchor>//api/name/endSpin</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/endSpin</TokenIdentifier>
+			<Abstract type="html">End spin of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSpin</Declaration>
+			
+			
+			<Anchor>//api/name/endSpin</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/endSpin</TokenIdentifier>
+			<Abstract type="html">End spin of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSpin</Declaration>
+			
+			
+			<Anchor>//api/name/endSpin</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setEndSpinVar:</TokenIdentifier>
+			<Abstract type="html">End spin variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSpinVar</Declaration>
+			
+			
+			<Anchor>//api/name/endSpinVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/endSpinVar</TokenIdentifier>
+			<Abstract type="html">End spin variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSpinVar</Declaration>
+			
+			
+			<Anchor>//api/name/endSpinVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/endSpinVar</TokenIdentifier>
+			<Abstract type="html">End spin variance of each particle.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endSpinVar</Declaration>
+			
+			
+			<Anchor>//api/name/endSpinVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setEmissionRate:</TokenIdentifier>
+			<Abstract type="html">Emission rate of the particles.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float emissionRate</Declaration>
+			
+			
+			<Anchor>//api/name/emissionRate</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/emissionRate</TokenIdentifier>
+			<Abstract type="html">Emission rate of the particles.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float emissionRate</Declaration>
+			
+			
+			<Anchor>//api/name/emissionRate</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/emissionRate</TokenIdentifier>
+			<Abstract type="html">Emission rate of the particles.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float emissionRate</Declaration>
+			
+			
+			<Anchor>//api/name/emissionRate</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setTotalParticles:</TokenIdentifier>
+			<Abstract type="html">Maxmium particles of the system.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) NSUInteger totalParticles</Declaration>
+			
+			
+			<Anchor>//api/name/totalParticles</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/totalParticles</TokenIdentifier>
+			<Abstract type="html">Maxmium particles of the system.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) NSUInteger totalParticles</Declaration>
+			
+			
+			<Anchor>//api/name/totalParticles</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/totalParticles</TokenIdentifier>
+			<Abstract type="html">Maxmium particles of the system.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) NSUInteger totalParticles</Declaration>
+			
+			
+			<Anchor>//api/name/totalParticles</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setBlendAdditive:</TokenIdentifier>
+			<Abstract type="html">True to enable blend additive mode. (GLSRCALPHA, GL_ONE).</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL blendAdditive</Declaration>
+			
+			
+			<Anchor>//api/name/blendAdditive</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/blendAdditive</TokenIdentifier>
+			<Abstract type="html">True to enable blend additive mode. (GLSRCALPHA, GL_ONE).</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL blendAdditive</Declaration>
+			
+			
+			<Anchor>//api/name/blendAdditive</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/blendAdditive</TokenIdentifier>
+			<Abstract type="html">True to enable blend additive mode. (GLSRCALPHA, GL_ONE).</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL blendAdditive</Declaration>
+			
+			
+			<Anchor>//api/name/blendAdditive</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setParticlePositionType:</TokenIdentifier>
+			<Abstract type="html">Particles movement type: Free or Grouped.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCParticleSystemPositionType particlePositionType</Declaration>
+			
+			
+			<Anchor>//api/name/particlePositionType</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/particlePositionType</TokenIdentifier>
+			<Abstract type="html">Particles movement type: Free or Grouped.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCParticleSystemPositionType particlePositionType</Declaration>
+			
+			
+			<Anchor>//api/name/particlePositionType</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/particlePositionType</TokenIdentifier>
+			<Abstract type="html">Particles movement type: Free or Grouped.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCParticleSystemPositionType particlePositionType</Declaration>
+			
+			
+			<Anchor>//api/name/particlePositionType</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setAutoRemoveOnFinish:</TokenIdentifier>
+			<Abstract type="html">True will remove particle system on completition.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL autoRemoveOnFinish</Declaration>
+			
+			
+			<Anchor>//api/name/autoRemoveOnFinish</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/autoRemoveOnFinish</TokenIdentifier>
+			<Abstract type="html">True will remove particle system on completition.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL autoRemoveOnFinish</Declaration>
+			
+			
+			<Anchor>//api/name/autoRemoveOnFinish</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/autoRemoveOnFinish</TokenIdentifier>
+			<Abstract type="html">True will remove particle system on completition.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL autoRemoveOnFinish</Declaration>
+			
+			
+			<Anchor>//api/name/autoRemoveOnFinish</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setResetOnVisibilityToggle:</TokenIdentifier>
+			<Abstract type="html">True particle system will reset upon visibility  toggling to True.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL resetOnVisibilityToggle</Declaration>
+			
+			
+			<Anchor>//api/name/resetOnVisibilityToggle</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/resetOnVisibilityToggle</TokenIdentifier>
+			<Abstract type="html">True particle system will reset upon visibility  toggling to True.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL resetOnVisibilityToggle</Declaration>
+			
+			
+			<Anchor>//api/name/resetOnVisibilityToggle</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/resetOnVisibilityToggle</TokenIdentifier>
+			<Abstract type="html">True particle system will reset upon visibility  toggling to True.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) BOOL resetOnVisibilityToggle</Declaration>
+			
+			
+			<Anchor>//api/name/resetOnVisibilityToggle</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setEmitterMode:</TokenIdentifier>
+			<Abstract type="html">Set emitter mode mechanism.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCParticleSystemMode emitterMode</Declaration>
+			
+			
+			<Anchor>//api/name/emitterMode</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/emitterMode</TokenIdentifier>
+			<Abstract type="html">Set emitter mode mechanism.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCParticleSystemMode emitterMode</Declaration>
+			
+			
+			<Anchor>//api/name/emitterMode</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/emitterMode</TokenIdentifier>
+			<Abstract type="html">Set emitter mode mechanism.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite) CCParticleSystemMode emitterMode</Declaration>
+			
+			
+			<Anchor>//api/name/emitterMode</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setGravity:</TokenIdentifier>
+			<Abstract type="html">Gravity value. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint gravity</Declaration>
+			
+			
+			<Anchor>//api/name/gravity</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/gravity</TokenIdentifier>
+			<Abstract type="html">Gravity value. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint gravity</Declaration>
+			
+			
+			<Anchor>//api/name/gravity</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/gravity</TokenIdentifier>
+			<Abstract type="html">Gravity value. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) CGPoint gravity</Declaration>
+			
+			
+			<Anchor>//api/name/gravity</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setSpeed:</TokenIdentifier>
+			<Abstract type="html">Speed of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float speed</Declaration>
+			
+			
+			<Anchor>//api/name/speed</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/speed</TokenIdentifier>
+			<Abstract type="html">Speed of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float speed</Declaration>
+			
+			
+			<Anchor>//api/name/speed</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/speed</TokenIdentifier>
+			<Abstract type="html">Speed of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float speed</Declaration>
+			
+			
+			<Anchor>//api/name/speed</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setSpeedVar:</TokenIdentifier>
+			<Abstract type="html">Speed variance of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float speedVar</Declaration>
+			
+			
+			<Anchor>//api/name/speedVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/speedVar</TokenIdentifier>
+			<Abstract type="html">Speed variance of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float speedVar</Declaration>
+			
+			
+			<Anchor>//api/name/speedVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/speedVar</TokenIdentifier>
+			<Abstract type="html">Speed variance of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float speedVar</Declaration>
+			
+			
+			<Anchor>//api/name/speedVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setTangentialAccel:</TokenIdentifier>
+			<Abstract type="html">Tangential acceleration of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float tangentialAccel</Declaration>
+			
+			
+			<Anchor>//api/name/tangentialAccel</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/tangentialAccel</TokenIdentifier>
+			<Abstract type="html">Tangential acceleration of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float tangentialAccel</Declaration>
+			
+			
+			<Anchor>//api/name/tangentialAccel</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/tangentialAccel</TokenIdentifier>
+			<Abstract type="html">Tangential acceleration of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float tangentialAccel</Declaration>
+			
+			
+			<Anchor>//api/name/tangentialAccel</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setTangentialAccelVar:</TokenIdentifier>
+			<Abstract type="html">Tangential acceleration variance of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float tangentialAccelVar</Declaration>
+			
+			
+			<Anchor>//api/name/tangentialAccelVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/tangentialAccelVar</TokenIdentifier>
+			<Abstract type="html">Tangential acceleration variance of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float tangentialAccelVar</Declaration>
+			
+			
+			<Anchor>//api/name/tangentialAccelVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/tangentialAccelVar</TokenIdentifier>
+			<Abstract type="html">Tangential acceleration variance of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float tangentialAccelVar</Declaration>
+			
+			
+			<Anchor>//api/name/tangentialAccelVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setRadialAccel:</TokenIdentifier>
+			<Abstract type="html">Radial acceleration of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float radialAccel</Declaration>
+			
+			
+			<Anchor>//api/name/radialAccel</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/radialAccel</TokenIdentifier>
+			<Abstract type="html">Radial acceleration of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float radialAccel</Declaration>
+			
+			
+			<Anchor>//api/name/radialAccel</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/radialAccel</TokenIdentifier>
+			<Abstract type="html">Radial acceleration of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float radialAccel</Declaration>
+			
+			
+			<Anchor>//api/name/radialAccel</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setRadialAccelVar:</TokenIdentifier>
+			<Abstract type="html">Radial acceleration variance of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float radialAccelVar</Declaration>
+			
+			
+			<Anchor>//api/name/radialAccelVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/radialAccelVar</TokenIdentifier>
+			<Abstract type="html">Radial acceleration variance of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float radialAccelVar</Declaration>
+			
+			
+			<Anchor>//api/name/radialAccelVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/radialAccelVar</TokenIdentifier>
+			<Abstract type="html">Radial acceleration variance of each particle. Only available in &apos;Gravity&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float radialAccelVar</Declaration>
+			
+			
+			<Anchor>//api/name/radialAccelVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setStartRadius:</TokenIdentifier>
+			<Abstract type="html">The starting radius of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startRadius</Declaration>
+			
+			
+			<Anchor>//api/name/startRadius</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/startRadius</TokenIdentifier>
+			<Abstract type="html">The starting radius of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startRadius</Declaration>
+			
+			
+			<Anchor>//api/name/startRadius</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/startRadius</TokenIdentifier>
+			<Abstract type="html">The starting radius of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startRadius</Declaration>
+			
+			
+			<Anchor>//api/name/startRadius</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setStartRadiusVar:</TokenIdentifier>
+			<Abstract type="html">The starting radius variance of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startRadiusVar</Declaration>
+			
+			
+			<Anchor>//api/name/startRadiusVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/startRadiusVar</TokenIdentifier>
+			<Abstract type="html">The starting radius variance of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startRadiusVar</Declaration>
+			
+			
+			<Anchor>//api/name/startRadiusVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/startRadiusVar</TokenIdentifier>
+			<Abstract type="html">The starting radius variance of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float startRadiusVar</Declaration>
+			
+			
+			<Anchor>//api/name/startRadiusVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setEndRadius:</TokenIdentifier>
+			<Abstract type="html">The ending radius of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endRadius</Declaration>
+			
+			
+			<Anchor>//api/name/endRadius</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/endRadius</TokenIdentifier>
+			<Abstract type="html">The ending radius of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endRadius</Declaration>
+			
+			
+			<Anchor>//api/name/endRadius</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/endRadius</TokenIdentifier>
+			<Abstract type="html">The ending radius of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endRadius</Declaration>
+			
+			
+			<Anchor>//api/name/endRadius</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setEndRadiusVar:</TokenIdentifier>
+			<Abstract type="html">The ending radius variance of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endRadiusVar</Declaration>
+			
+			
+			<Anchor>//api/name/endRadiusVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/endRadiusVar</TokenIdentifier>
+			<Abstract type="html">The ending radius variance of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endRadiusVar</Declaration>
+			
+			
+			<Anchor>//api/name/endRadiusVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/endRadiusVar</TokenIdentifier>
+			<Abstract type="html">The ending radius variance of the particles. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float endRadiusVar</Declaration>
+			
+			
+			<Anchor>//api/name/endRadiusVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setRotatePerSecond:</TokenIdentifier>
+			<Abstract type="html">Number of degress to rotate a particle around the source pos per second. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotatePerSecond</Declaration>
+			
+			
+			<Anchor>//api/name/rotatePerSecond</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/rotatePerSecond</TokenIdentifier>
+			<Abstract type="html">Number of degress to rotate a particle around the source pos per second. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotatePerSecond</Declaration>
+			
+			
+			<Anchor>//api/name/rotatePerSecond</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/rotatePerSecond</TokenIdentifier>
+			<Abstract type="html">Number of degress to rotate a particle around the source pos per second. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotatePerSecond</Declaration>
+			
+			
+			<Anchor>//api/name/rotatePerSecond</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/setRotatePerSecondVar:</TokenIdentifier>
+			<Abstract type="html">Variance in degrees for rotatePerSecond. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotatePerSecondVar</Declaration>
+			
+			
+			<Anchor>//api/name/rotatePerSecondVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/rotatePerSecondVar</TokenIdentifier>
+			<Abstract type="html">Variance in degrees for rotatePerSecond. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotatePerSecondVar</Declaration>
+			
+			
+			<Anchor>//api/name/rotatePerSecondVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCParticleSystemBase/rotatePerSecondVar</TokenIdentifier>
+			<Abstract type="html">Variance in degrees for rotatePerSecond. Only available in &apos;Radius&apos; mode.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign) float rotatePerSecondVar</Declaration>
+			
+			
+			<Anchor>//api/name/rotatePerSecondVar</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCParticleSystemBase/particleWithFile:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a particle system object from the specified plist source file.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>+ (id)particleWithFile:(NSString *)plistFile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plistFile</Name>
+					<Abstract type="html">Particle configuration file.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCParticleSystem Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/particleWithFile:</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCParticleSystemBase/particleWithTotalParticles:</TokenIdentifier>
+			<Abstract type="html">Creates and returns an empty particle system object with the specified maxmium number of particles.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>+ (id)particleWithTotalParticles:(NSUInteger)numberOfParticles</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>numberOfParticles</Name>
+					<Abstract type="html">Maximum particles.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCParticleSystem Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/particleWithTotalParticles:</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/initWithFile:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a particle system object from the specified plist source file.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFile:(NSString *)plistFile</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>plistFile</Name>
+					<Abstract type="html">Particle configuration file.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCParticleSystem Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFile:</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/initWithDictionary:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a particle system object from the specified dictionary.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDictionary:(NSDictionary *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">Particle dictionary object.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCParticleSystem Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDictionary:</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/initWithDictionary:path:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a particle system object from the specified dictionary and texture directory path values.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDictionary:(NSDictionary *)dictionary path:(NSString *)dirname</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">Particle dictionary object.</Abstract>
+				</Parameter><Parameter>
+					<Name>dirname</Name>
+					<Abstract type="html">Path to dictionary</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCParticleSystem Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDictionary:path:</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/initWithTotalParticles:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns an empty particle system object with the specified maxmium number of particles.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithTotalParticles:(NSUInteger)numberOfParticles</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>numberOfParticles</Name>
+					<Abstract type="html">Maximum particles.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCParticleSystem Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTotalParticles:</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/stopSystem</TokenIdentifier>
+			<Abstract type="html">Stop emitting new particles, existing particles will die off.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>- (void)stopSystem</Declaration>
+			
+			
+			<Anchor>//api/name/stopSystem</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCParticleSystemBase/resetSystem</TokenIdentifier>
+			<Abstract type="html">Destroy all particles.</Abstract>
+			<DeclaredIn>CCParticleSystemBase.h</DeclaredIn>
+			
+			<Declaration>- (void)resetSystem</Declaration>
+			
+			
+			<Anchor>//api/name/resetSystem</Anchor>
+            <NodeRef refid="99"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

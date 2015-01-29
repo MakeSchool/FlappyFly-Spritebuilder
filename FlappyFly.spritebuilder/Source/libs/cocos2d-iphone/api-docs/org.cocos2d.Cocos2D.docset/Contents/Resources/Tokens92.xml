@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCMotionStreak.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCMotionStreak</TokenIdentifier>
+			<Abstract type="html">CCMotionStreak creates a motion trail special effect.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
+            
+			
+			<NodeRef refid="92"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCMotionStreak/setFastMode:</TokenIdentifier>
+			<Abstract type="html">Fast mode toggle.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign, getter=isFastMode) BOOL fastMode</Declaration>
+			
+			
+			<Anchor>//api/name/fastMode</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCMotionStreak/isFastMode</TokenIdentifier>
+			<Abstract type="html">Fast mode toggle.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign, getter=isFastMode) BOOL fastMode</Declaration>
+			
+			
+			<Anchor>//api/name/fastMode</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCMotionStreak/fastMode</TokenIdentifier>
+			<Abstract type="html">Fast mode toggle.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, assign, getter=isFastMode) BOOL fastMode</Declaration>
+			
+			
+			<Anchor>//api/name/fastMode</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCMotionStreak/streakWithFade:minSeg:width:color:textureFilename:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a motion streak object from the specified fade time, segments, stroke, color and texture file path values.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
+			
+			<Declaration>+ (id)streakWithFade:(float)fade minSeg:(float)minSeg width:(float)stroke color:(CCColor *)color textureFilename:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fade</Name>
+					<Abstract type="html">Fade time.</Abstract>
+				</Parameter><Parameter>
+					<Name>minSeg</Name>
+					<Abstract type="html">Minimum segments.</Abstract>
+				</Parameter><Parameter>
+					<Name>stroke</Name>
+					<Abstract type="html">Stroke width.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color.</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">Texture file path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCMotionStreak object.</Abstract></ReturnValue>
+			<Anchor>//api/name/streakWithFade:minSeg:width:color:textureFilename:</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCMotionStreak/streakWithFade:minSeg:width:color:texture:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a motion streak object from the specified fade time, segments, stroke, color and texture values.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
+			
+			<Declaration>+ (id)streakWithFade:(float)fade minSeg:(float)minSeg width:(float)stroke color:(CCColor *)color texture:(CCTexture *)texture</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fade</Name>
+					<Abstract type="html">Fade time.</Abstract>
+				</Parameter><Parameter>
+					<Name>minSeg</Name>
+					<Abstract type="html">Minimum segments.</Abstract>
+				</Parameter><Parameter>
+					<Name>stroke</Name>
+					<Abstract type="html">Stroke width.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color.</Abstract>
+				</Parameter><Parameter>
+					<Name>texture</Name>
+					<Abstract type="html">Texture.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCMotionStreak object.</Abstract></ReturnValue>
+			<Anchor>//api/name/streakWithFade:minSeg:width:color:texture:</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCMotionStreak/initWithFade:minSeg:width:color:textureFilename:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a motion streak object from the specified fade time, segments, stroke, color and texture file path values.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFade:(float)fade minSeg:(float)minSeg width:(float)stroke color:(CCColor *)color textureFilename:(NSString *)path</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fade</Name>
+					<Abstract type="html">Fade time.</Abstract>
+				</Parameter><Parameter>
+					<Name>minSeg</Name>
+					<Abstract type="html">Minimum segments.</Abstract>
+				</Parameter><Parameter>
+					<Name>stroke</Name>
+					<Abstract type="html">Stroke width.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color.</Abstract>
+				</Parameter><Parameter>
+					<Name>path</Name>
+					<Abstract type="html">Texture file path.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCMotionStreak object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFade:minSeg:width:color:textureFilename:</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCMotionStreak/initWithFade:minSeg:width:color:texture:</TokenIdentifier>
+			<Abstract type="html">Initializes and returns a motion streak object from the specified fade time, segments, stroke, color and texture values.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithFade:(float)fade minSeg:(float)minSeg width:(float)stroke color:(CCColor *)color texture:(CCTexture *)texture</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fade</Name>
+					<Abstract type="html">Fade time.</Abstract>
+				</Parameter><Parameter>
+					<Name>minSeg</Name>
+					<Abstract type="html">Minimum segments.</Abstract>
+				</Parameter><Parameter>
+					<Name>stroke</Name>
+					<Abstract type="html">Stroke width.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Color.</Abstract>
+				</Parameter><Parameter>
+					<Name>texture</Name>
+					<Abstract type="html">Texture.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCMotionStreak object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithFade:minSeg:width:color:texture:</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCMotionStreak/reset</TokenIdentifier>
+			<Abstract type="html">Remove all living segments.</Abstract>
+			<DeclaredIn>CCMotionStreak.h</DeclaredIn>
+			
+			<Declaration>- (void)reset</Declaration>
+			
+			
+			<Anchor>//api/name/reset</Anchor>
+            <NodeRef refid="92"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

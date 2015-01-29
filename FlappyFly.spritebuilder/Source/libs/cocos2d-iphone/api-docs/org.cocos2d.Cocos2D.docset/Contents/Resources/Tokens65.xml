@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionTween.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionTween</TokenIdentifier>
+			<Abstract type="html">CCActionTween is an action that lets you modify over time any property of a node.</Abstract>
+			<DeclaredIn>CCActionTween.h</DeclaredIn>
+            
+			
+			<NodeRef refid="65"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionTween/actionWithDuration:key:from:to:</TokenIdentifier>
+			<Abstract type="html">Creates an initializes a tween action.</Abstract>
+			<DeclaredIn>CCActionTween.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)aDuration key:(NSString *)key from:(float)from to:(float)to</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aDuration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">Property key to modify.</Abstract>
+				</Parameter><Parameter>
+					<Name>from</Name>
+					<Abstract type="html">Value to tween from.</Abstract>
+				</Parameter><Parameter>
+					<Name>to</Name>
+					<Abstract type="html">Value to tween to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New tween action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:key:from:to:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionTween/initWithDuration:key:from:to:</TokenIdentifier>
+			<Abstract type="html">Initializes an initializes a tween action.</Abstract>
+			<DeclaredIn>CCActionTween.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)aDuration key:(NSString *)key from:(float)from to:(float)to</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>aDuration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>key</Name>
+					<Abstract type="html">Property key to modify.</Abstract>
+				</Parameter><Parameter>
+					<Name>from</Name>
+					<Abstract type="html">Value to tween from.</Abstract>
+				</Parameter><Parameter>
+					<Name>to</Name>
+					<Abstract type="html">Value to tween to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New tween action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:key:from:to:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

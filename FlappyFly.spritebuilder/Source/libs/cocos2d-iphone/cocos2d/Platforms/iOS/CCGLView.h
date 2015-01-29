@@ -64,7 +64,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 // Only compile this code on iOS. These files should NOT be included on your Mac project.
 // But in case they are included, it won't be compiled.
 #import "../../ccMacros.h"
-#ifdef __CC_PLATFORM_IOS
+#if __CC_PLATFORM_IOS
 
 #import <UIKit/UIKit.h>
 #import <OpenGLES/EAGL.h>
@@ -72,7 +72,8 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 #import <OpenGLES/ES2/gl.h>
 #import <OpenGLES/ES2/glext.h>
 
-#import "CCESRenderer.h"
+#import "CCDirectorView.h"
+
 
 //CLASSES:
 
@@ -100,22 +101,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
  - numberOfSamples: Only valid if multisampling is enabled
 	- Possible values: 0 to glGetIntegerv(GL_MAX_SAMPLES_APPLE)
  */
-@interface CCGLView : UIView
-{
-    id<CCESRenderer>		_renderer;
-	EAGLContext				*__unsafe_unretained _context; // weak ref
-
-	NSString				*__unsafe_unretained _pixelformat;
-	GLuint					_depthFormat;
-	BOOL					_preserveBackbuffer;
-
-	CGSize					_size;
-	BOOL					_discardFramebufferSupported;
-
-	//fsaa addition
-	BOOL					_multisampling;
-	unsigned int			_requestedSamples;
-}
+@interface CCGLView : UIView <CCDirectorView>
 
 /** creates an initializes an CCGLView with a frame and 0-bit depth buffer, and a RGB565 color buffer. */
 + (id) viewWithFrame:(CGRect)frame;
@@ -134,7 +120,7 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 - (id) initWithFrame:(CGRect)frame pixelFormat:(NSString*)format depthFormat:(GLuint)depth preserveBackbuffer:(BOOL)retained sharegroup:(EAGLSharegroup*)sharegroup multiSampling:(BOOL)sampling numberOfSamples:(unsigned int)nSamples;
 
 /** pixel format: it could be RGBA8 (32-bit) or RGB565 (16-bit) */
-@property(unsafe_unretained, nonatomic,readonly) NSString* pixelFormat;
+@property(nonatomic,readonly) NSString* pixelFormat;
 /** depth format of the render buffer: 0, 16 or 24 bits*/
 @property(nonatomic,readonly) GLuint depthFormat;
 
@@ -142,21 +128,12 @@ Copyright (C) 2008 Apple Inc. All Rights Reserved.
 @property(nonatomic,readonly) CGSize surfaceSize;
 
 /** OpenGL context */
-@property(unsafe_unretained, nonatomic,readonly) EAGLContext *context;
+@property(nonatomic,readonly) EAGLContext *context;
 
 @property(nonatomic,readwrite) BOOL multiSampling;
 
-/** CCGLView uses double-buffer. This method swaps the buffers */
--(void) swapBuffers;
+@property(nonatomic, readonly) GLuint fbo;
 
-/** uses and locks the OpenGL context */
--(void) lockOpenGLContext;
-
-/** unlocks the openGL context */
--(void) unlockOpenGLContext;
-
-- (CGPoint) convertPointFromViewToSurface:(CGPoint)point;
-- (CGRect) convertRectFromViewToSurface:(CGRect)rect;
 @end
 
 #endif // __CC_PLATFORM_IOS

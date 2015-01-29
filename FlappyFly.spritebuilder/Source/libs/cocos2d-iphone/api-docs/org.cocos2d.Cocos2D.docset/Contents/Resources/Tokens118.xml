@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCTextField.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCTextField</TokenIdentifier>
+			<Abstract type="html">The CCTextField is used for editing text by encapsulating a native text field (NSTextField on Mac and UITextField on iOS). An action callback will be sent when the text finishes editing or if the return key is pressed.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+            
+			
+			<NodeRef refid="118"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCTextField/textFieldWithSpriteFrame:</TokenIdentifier>
+			<Abstract type="html">Creates a new text field with the specified sprite frame used as its background.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>+ (id)textFieldWithSpriteFrame:(CCSpriteFrame *)frame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">Sprite frame to use as the text fields background.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a new text field.</Abstract></ReturnValue>
+			<Anchor>//api/name/textFieldWithSpriteFrame:</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTextField/initWithSpriteFrame:</TokenIdentifier>
+			<Abstract type="html">Initializes a text field with the specified sprite frame used as its background.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithSpriteFrame:(CCSpriteFrame *)frame</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>frame</Name>
+					<Abstract type="html">Sprite frame to use as the text fields background.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a new text field.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithSpriteFrame:</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTextField/setTextField:</TokenIdentifier>
+			<Abstract type="html">iOS: UITextField used by the CCTextField.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UITextField *textField</Declaration>
+			
+			
+			<Anchor>//api/name/textField</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTextField/textField</TokenIdentifier>
+			<Abstract type="html">iOS: UITextField used by the CCTextField.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UITextField *textField</Declaration>
+			
+			
+			<Anchor>//api/name/textField</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTextField/textField</TokenIdentifier>
+			<Abstract type="html">iOS: UITextField used by the CCTextField.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) UITextField *textField</Declaration>
+			
+			
+			<Anchor>//api/name/textField</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTextField/setBackgroundSpriteFrame:</TokenIdentifier>
+			<Abstract type="html">The sprite frame used to render the text field&apos;s background.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *backgroundSpriteFrame</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundSpriteFrame</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTextField/backgroundSpriteFrame</TokenIdentifier>
+			<Abstract type="html">The sprite frame used to render the text field&apos;s background.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *backgroundSpriteFrame</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundSpriteFrame</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTextField/backgroundSpriteFrame</TokenIdentifier>
+			<Abstract type="html">The sprite frame used to render the text field&apos;s background.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) CCSpriteFrame *backgroundSpriteFrame</Declaration>
+			
+			
+			<Anchor>//api/name/backgroundSpriteFrame</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTextField/setFontSize:</TokenIdentifier>
+			<Abstract type="html">The font size of the text field, defined in the unit specified by the heightUnit component of the contentSizeType.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/fontSize</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTextField/fontSize</TokenIdentifier>
+			<Abstract type="html">The font size of the text field, defined in the unit specified by the heightUnit component of the contentSizeType.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/fontSize</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTextField/fontSize</TokenIdentifier>
+			<Abstract type="html">The font size of the text field, defined in the unit specified by the heightUnit component of the contentSizeType.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float fontSize</Declaration>
+			
+			
+			<Anchor>//api/name/fontSize</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTextField/setPadding:</TokenIdentifier>
+			<Abstract type="html">Padding from the edge of the text field&apos;s background to the native text field component.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float padding</Declaration>
+			
+			
+			<Anchor>//api/name/padding</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTextField/padding</TokenIdentifier>
+			<Abstract type="html">Padding from the edge of the text field&apos;s background to the native text field component.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float padding</Declaration>
+			
+			
+			<Anchor>//api/name/padding</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTextField/padding</TokenIdentifier>
+			<Abstract type="html">Padding from the edge of the text field&apos;s background to the native text field component.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float padding</Declaration>
+			
+			
+			<Anchor>//api/name/padding</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTextField/setString:</TokenIdentifier>
+			<Abstract type="html">The text displayed by the text field.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *string</Declaration>
+			
+			
+			<Anchor>//api/name/string</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCTextField/string</TokenIdentifier>
+			<Abstract type="html">The text displayed by the text field.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *string</Declaration>
+			
+			
+			<Anchor>//api/name/string</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCTextField/string</TokenIdentifier>
+			<Abstract type="html">The text displayed by the text field.</Abstract>
+			<DeclaredIn>CCTextField.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *string</Declaration>
+			
+			
+			<Anchor>//api/name/string</Anchor>
+            <NodeRef refid="118"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCRenderer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCRenderer</TokenIdentifier>
+			<Abstract type="html">A rendering queue.
+All drawing commands in Cocos2D must be sequenced using a CCRenderer.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="109"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/invalidateState</TokenIdentifier>
+			<Abstract type="html">Mark the renderer&apos;s cached GL state as invalid executing custom OpenGL code.
+You only need to call this if you change the shader, texture or blending mode states.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>- (void)invalidateState</Declaration>
+			
+			
+			<Anchor>//api/name/invalidateState</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/enqueueClear:color:depth:stencil:globalSortOrder:</TokenIdentifier>
+			<Abstract type="html">Enqueue a OpenGL clear operation for the given buffers and the given values.
+Enqueued commands are sorted by their globalSortOrder value before rendering. Currently this value is 0 for everything except custom draw methods.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>- (void)enqueueClear:(GLbitfield)mask color:(GLKVector4)color4 depth:(GLclampf)depth stencil:(GLint)stencil globalSortOrder:(NSInteger)globalSortOrder</Declaration>
+			
+			
+			<Anchor>//api/name/enqueueClear:color:depth:stencil:globalSortOrder:</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/enqueueBlock:globalSortOrder:debugLabel:threadSafe:</TokenIdentifier>
+			<Abstract type="html">Enqueue a block that performs GL commands. The debugLabel is optional and will show up in in the GLES frame debugger.
+Enqueued commands are sorted by their globalSortOrder value before rendering. Currently this value is 0 for everything except custom draw methods.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>- (void)enqueueBlock:(void ( ^ ) ( ))block globalSortOrder:(NSInteger)globalSortOrder debugLabel:(NSString *)debugLabel threadSafe:(BOOL)threadSafe</Declaration>
+			
+			
+			<Anchor>//api/name/enqueueBlock:globalSortOrder:debugLabel:threadSafe:</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/enqueueMethod:target:</TokenIdentifier>
+			<Abstract type="html">Enqueue a method that performs GL commands.
+Enqueued commands are sorted by their globalSortOrder value before rendering. Currently this value is 0 for everything except custom draw methods.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>- (void)enqueueMethod:(SEL)selector target:(id)target</Declaration>
+			
+			
+			<Anchor>//api/name/enqueueMethod:target:</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/pushGroup</TokenIdentifier>
+			<Abstract type="html">Begin a rendering group. Must be matched with a call to popGroup:. Can be nested.
+Commands in the group are sorted relative to each other.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>- (void)pushGroup</Declaration>
+			
+			
+			<Anchor>//api/name/pushGroup</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/popGroupWithDebugLabel:globalSortOrder:</TokenIdentifier>
+			<Abstract type="html">End the most recent group started using pushGroup.
+The grouped commands are sorted together using the gives sorting order.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>- (void)popGroupWithDebugLabel:(NSString *)debugLabel globalSortOrder:(NSInteger)globalSortOrder</Declaration>
+			
+			
+			<Anchor>//api/name/popGroupWithDebugLabel:globalSortOrder:</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/enqueueTriangles:andVertexes:withState:globalSortOrder:</TokenIdentifier>
+			<Abstract type="html">Enqueue a drawing command for some triangles.
+Returns a CCRendereBuffer that you should fill using CCRenderBufferSetVertex() and CCRenderBufferSetTriangle().
+Enqueued commands are sorted by their globalSortOrder value before rendering. Currently this value is 0 for everything except custom draw methods.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>- (CCRenderBuffer)enqueueTriangles:(NSUInteger)triangleCount andVertexes:(NSUInteger)vertexCount withState:(CCRenderState *)renderState globalSortOrder:(NSInteger)globalSortOrder</Declaration>
+			
+			
+			<Anchor>//api/name/enqueueTriangles:andVertexes:withState:globalSortOrder:</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/enqueueLines:andVertexes:withState:globalSortOrder:</TokenIdentifier>
+			<Abstract type="html">Enqueue a drawing command for some lines.
+Returns a CCRendereBuffer that you should fill using CCRenderBufferSetVertex() and CCRenderBufferSetLine().
+Note: These are primitive OpenGL lines that you&apos;ll only want to use for debug rendering. They are not batched.
+Enqueued commands are sorted by their globalSortOrder value before rendering. Currently this value is 0 for everything except custom draw methods.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>- (CCRenderBuffer)enqueueLines:(NSUInteger)lineCount andVertexes:(NSUInteger)vertexCount withState:(CCRenderState *)renderState globalSortOrder:(NSInteger)globalSortOrder</Declaration>
+			
+			
+			<Anchor>//api/name/enqueueLines:andVertexes:withState:globalSortOrder:</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/setGlobalShaderUniforms:</TokenIdentifier>
+			<Abstract type="html">Current global shader uniform values.</Abstract>
+			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *globalShaderUniforms</Declaration>
+			
+			
+			<Anchor>//api/name/globalShaderUniforms</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/globalShaderUniforms</TokenIdentifier>
+			<Abstract type="html">Current global shader uniform values.</Abstract>
+			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *globalShaderUniforms</Declaration>
+			
+			
+			<Anchor>//api/name/globalShaderUniforms</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCRenderer/globalShaderUniforms</TokenIdentifier>
+			<Abstract type="html">Current global shader uniform values.</Abstract>
+			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy) NSDictionary *globalShaderUniforms</Declaration>
+			
+			
+			<Anchor>//api/name/globalShaderUniforms</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCRenderer/currentRenderer</TokenIdentifier>
+			<Abstract type="html">Retrieve the current renderer for the current thread.</Abstract>
+			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)currentRenderer</Declaration>
+			
+			
+			<Anchor>//api/name/currentRenderer</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCRenderer/bindRenderer:</TokenIdentifier>
+			<Abstract type="html">Set the current renderer for the current thread.</Abstract>
+			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+			
+			<Declaration>+ (void)bindRenderer:(CCRenderer *)renderer</Declaration>
+			
+			
+			<Anchor>//api/name/bindRenderer:</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/enqueueRenderCommand:</TokenIdentifier>
+			<Abstract type="html">Enqueue a general or custom render command.</Abstract>
+			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+			
+			<Declaration>- (void)enqueueRenderCommand:(id&lt;CCRenderCommand&gt;)renderCommand</Declaration>
+			
+			
+			<Anchor>//api/name/enqueueRenderCommand:</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/flush</TokenIdentifier>
+			<Abstract type="html">Render any currently queued commands.</Abstract>
+			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+			
+			<Declaration>- (void)flush</Declaration>
+			
+			
+			<Anchor>//api/name/flush</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/bindVAO:</TokenIdentifier>
+			<Abstract type="html">Bind the renderer&apos;s VAO if it is not currently bound.</Abstract>
+			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+			
+			<Declaration>- (void)bindVAO:(BOOL)bind</Declaration>
+			
+			
+			<Anchor>//api/name/bindVAO:</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderer/resizeBuffer:capacity:</TokenIdentifier>
+			<Abstract type="html">Resize the capacity of a graphics buffer.</Abstract>
+			<DeclaredIn>CCRenderer_private.h</DeclaredIn>
+			
+			<Declaration>- (void)resizeBuffer:(struct CCGraphicsBuffer *)buffer capacity:(size_t)capacity</Declaration>
+			
+			
+			<Anchor>//api/name/resizeBuffer:capacity:</Anchor>
+            <NodeRef refid="109"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

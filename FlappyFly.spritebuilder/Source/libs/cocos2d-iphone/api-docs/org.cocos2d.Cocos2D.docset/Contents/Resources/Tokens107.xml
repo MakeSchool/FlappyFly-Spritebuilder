@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCRenderState.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCRenderState</TokenIdentifier>
+			<Abstract type="html">A render state encapsulates how an object will be draw.
+What shader it will use, what texture, what blending mode, etc.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+            
+			
+			<NodeRef refid="107"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCRenderState/debugColor</TokenIdentifier>
+			<Abstract type="html">A simple render state you can use that draws solid colors.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)debugColor</Declaration>
+			
+			
+			<Anchor>//api/name/debugColor</Anchor>
+            <NodeRef refid="107"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCRenderState/renderStateWithBlendMode:shader:mainTexture:</TokenIdentifier>
+			<Abstract type="html">Create a cached blending mode for a given blending mode, shader and main texture.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)renderStateWithBlendMode:(CCBlendMode *)blendMode shader:(CCShader *)shader mainTexture:(CCTexture *)mainTexture</Declaration>
+			
+			
+			<Anchor>//api/name/renderStateWithBlendMode:shader:mainTexture:</Anchor>
+            <NodeRef refid="107"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderState/initWithBlendMode:shader:shaderUniforms:</TokenIdentifier>
+			<Abstract type="html">Create an uncached blending mode for a given blending mode, shader and set of uncopied uniform values.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithBlendMode:(CCBlendMode *)blendMode shader:(CCShader *)shader shaderUniforms:(NSDictionary *)shaderUniforms</Declaration>
+			
+			
+			<Anchor>//api/name/initWithBlendMode:shader:shaderUniforms:</Anchor>
+            <NodeRef refid="107"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCRenderState/initWithBlendMode:shader:shaderUniforms:copyUniforms:</TokenIdentifier>
+			<Abstract type="html">Create an uncached blending mode for a given blending mode, shader and set of uniform values.
+Allowing the uniform dictionary to be copied allows the render state to be immutable and used more optimally.</Abstract>
+			<DeclaredIn>CCRenderer.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithBlendMode:(CCBlendMode *)blendMode shader:(CCShader *)shader shaderUniforms:(NSDictionary *)shaderUniforms copyUniforms:(BOOL)copyUniforms</Declaration>
+			
+			
+			<Anchor>//api/name/initWithBlendMode:shader:shaderUniforms:copyUniforms:</Anchor>
+            <NodeRef refid="107"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

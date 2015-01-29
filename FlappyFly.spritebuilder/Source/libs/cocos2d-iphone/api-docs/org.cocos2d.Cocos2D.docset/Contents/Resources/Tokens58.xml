@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionSoundEffect.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionSoundEffect</TokenIdentifier>
+			<Abstract type="html">This actions plays a sound effect.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+            
+			
+			<NodeRef refid="58"/>
+		</Token>
+		
+		
+        
+	</File>
+</Tokens>

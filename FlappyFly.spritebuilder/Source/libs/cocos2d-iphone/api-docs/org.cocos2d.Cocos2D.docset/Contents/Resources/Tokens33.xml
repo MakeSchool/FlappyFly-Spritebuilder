@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionFadeTo.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionFadeTo</TokenIdentifier>
+			<Abstract type="html">This action fades the target, it modifies the opacity from the current value to the specified value.
+Notes:
+Works with cascadeOpacity, if you want children to fade too.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionFadeTo/actionWithDuration:opacity:</TokenIdentifier>
+			<Abstract type="html">Creates a fade action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithDuration:(CCTime)duration opacity:(CGFloat)opactiy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>opactiy</Name>
+					<Abstract type="html">Opacity to fade to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New fade action.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithDuration:opacity:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionFadeTo/initWithDuration:opacity:</TokenIdentifier>
+			<Abstract type="html">Initalizes a fade action.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithDuration:(CCTime)duration opacity:(CGFloat)opacity</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>duration</Name>
+					<Abstract type="html">Action duration.</Abstract>
+				</Parameter><Parameter>
+					<Name>opacity</Name>
+					<Abstract type="html">Opacity to fade to.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New fade action.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDuration:opacity:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

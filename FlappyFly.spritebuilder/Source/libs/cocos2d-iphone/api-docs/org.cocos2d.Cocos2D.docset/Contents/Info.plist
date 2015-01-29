@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cocos2d.Cocos2D</string>
+	<key>CFBundleName</key>
+	<string>Cocos2D Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	
+	<key>DocSetFallbackURL</key>
+	<string>http://www.cocos2d-iphone.org/testpath1</string>
+	<key>DocSetFeedName</key>
+	<string>Cocos2D Documentation</string>
+	<key>DocSetFeedURL</key>
+	<string>http://www.cocos2d-iphone.org/testpath1/testpath4.atom</string>
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	<key>DocSetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>DashDocSetFamily</key>
+	<string>appledoc</string>
+	<key>DocSetPublisherIdentifier</key>
+	<string>org.cocos2d.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>3.2.0</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2014 3.2.0. All rights reserved.</string>
+</dict>
+</plist>

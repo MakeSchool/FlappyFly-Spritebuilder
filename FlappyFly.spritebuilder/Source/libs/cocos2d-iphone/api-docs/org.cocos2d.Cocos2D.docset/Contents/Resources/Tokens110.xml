@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCResponder.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCResponder</TokenIdentifier>
+			<Abstract type="html">CCResponder is the base class for all nodes.
+It exposes the touch and mouse interface to any node, which enables user interaction.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+            
+			
+			<NodeRef refid="110"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/setUserInteractionEnabled:</TokenIdentifier>
+			<Abstract type="html">Enables user interaction on a node.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isUserInteractionEnabled) BOOL userInteractionEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/userInteractionEnabled</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/isUserInteractionEnabled</TokenIdentifier>
+			<Abstract type="html">Enables user interaction on a node.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isUserInteractionEnabled) BOOL userInteractionEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/userInteractionEnabled</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCResponder/userInteractionEnabled</TokenIdentifier>
+			<Abstract type="html">Enables user interaction on a node.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isUserInteractionEnabled) BOOL userInteractionEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/userInteractionEnabled</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/setMultipleTouchEnabled:</TokenIdentifier>
+			<Abstract type="html">Enables multiple touches inside a single node.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isMultipleTouchEnabled) BOOL multipleTouchEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/multipleTouchEnabled</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/isMultipleTouchEnabled</TokenIdentifier>
+			<Abstract type="html">Enables multiple touches inside a single node.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isMultipleTouchEnabled) BOOL multipleTouchEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/multipleTouchEnabled</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCResponder/multipleTouchEnabled</TokenIdentifier>
+			<Abstract type="html">Enables multiple touches inside a single node.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isMultipleTouchEnabled) BOOL multipleTouchEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/multipleTouchEnabled</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/setClaimsUserInteraction:</TokenIdentifier>
+			<Abstract type="html">Locks the touch to the node if touch moved outside
+If a node claims user interaction, the touch will continue to be sent to the node, no matter where the touch is moved
+If the node does not claim user interaction, a touch will be cancelled, if moved outside the nodes detection area
+If the node does not claim user interaction, and a touch is moved from outside the nodes detection area, to inside, a touchBegan will be generated.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL claimsUserInteraction</Declaration>
+			
+			
+			<Anchor>//api/name/claimsUserInteraction</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/claimsUserInteraction</TokenIdentifier>
+			<Abstract type="html">Locks the touch to the node if touch moved outside
+If a node claims user interaction, the touch will continue to be sent to the node, no matter where the touch is moved
+If the node does not claim user interaction, a touch will be cancelled, if moved outside the nodes detection area
+If the node does not claim user interaction, and a touch is moved from outside the nodes detection area, to inside, a touchBegan will be generated.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL claimsUserInteraction</Declaration>
+			
+			
+			<Anchor>//api/name/claimsUserInteraction</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCResponder/claimsUserInteraction</TokenIdentifier>
+			<Abstract type="html">Locks the touch to the node if touch moved outside
+If a node claims user interaction, the touch will continue to be sent to the node, no matter where the touch is moved
+If the node does not claim user interaction, a touch will be cancelled, if moved outside the nodes detection area
+If the node does not claim user interaction, and a touch is moved from outside the nodes detection area, to inside, a touchBegan will be generated.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) BOOL claimsUserInteraction</Declaration>
+			
+			
+			<Anchor>//api/name/claimsUserInteraction</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/setExclusiveTouch:</TokenIdentifier>
+			<Abstract type="html">All other touches will be cancelled / ignored, if a node with exclusive touch, is active
+Only one exclusive touch can be active at a time.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isExclusiveTouch) BOOL exclusiveTouch</Declaration>
+			
+			
+			<Anchor>//api/name/exclusiveTouch</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/isExclusiveTouch</TokenIdentifier>
+			<Abstract type="html">All other touches will be cancelled / ignored, if a node with exclusive touch, is active
+Only one exclusive touch can be active at a time.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isExclusiveTouch) BOOL exclusiveTouch</Declaration>
+			
+			
+			<Anchor>//api/name/exclusiveTouch</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCResponder/exclusiveTouch</TokenIdentifier>
+			<Abstract type="html">All other touches will be cancelled / ignored, if a node with exclusive touch, is active
+Only one exclusive touch can be active at a time.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign, getter=isExclusiveTouch) BOOL exclusiveTouch</Declaration>
+			
+			
+			<Anchor>//api/name/exclusiveTouch</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/setHitAreaExpansion:</TokenIdentifier>
+			<Abstract type="html">Expands ( or contracts ) the hit area of the node.
+The expansion is calculated as a margin around the sprite, in points.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float hitAreaExpansion</Declaration>
+			
+			
+			<Anchor>//api/name/hitAreaExpansion</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/hitAreaExpansion</TokenIdentifier>
+			<Abstract type="html">Expands ( or contracts ) the hit area of the node.
+The expansion is calculated as a margin around the sprite, in points.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float hitAreaExpansion</Declaration>
+			
+			
+			<Anchor>//api/name/hitAreaExpansion</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCResponder/hitAreaExpansion</TokenIdentifier>
+			<Abstract type="html">Expands ( or contracts ) the hit area of the node.
+The expansion is calculated as a margin around the sprite, in points.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float hitAreaExpansion</Declaration>
+			
+			
+			<Anchor>//api/name/hitAreaExpansion</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/init</TokenIdentifier>
+			<Abstract type="html">Initialzes a new CCResponder.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (id)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">An CCResponder CCLabelBMFont Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/hitTestWithWorldPos:</TokenIdentifier>
+			<Abstract type="html">Check if a touch is inside the node.
+To allow for custom detection, override this method.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)hitTestWithWorldPos:(CGPoint)pos</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pos</Name>
+					<Abstract type="html">World position.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns true, if the position is inside the node.</Abstract></ReturnValue>
+			<Anchor>//api/name/hitTestWithWorldPos:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/touchBegan:withEvent:</TokenIdentifier>
+			<Abstract type="html">Called when a touch began.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>touch</Name>
+					<Abstract type="html">Contains the touch.</Abstract>
+				</Parameter><Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Current event information.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/touchBegan:withEvent:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/touchMoved:withEvent:</TokenIdentifier>
+			<Abstract type="html">Called whan a touch moves.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)touchMoved:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>touch</Name>
+					<Abstract type="html">Contains the touch.</Abstract>
+				</Parameter><Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Current event information.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/touchMoved:withEvent:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/touchEnded:withEvent:</TokenIdentifier>
+			<Abstract type="html">Called when a touch ends.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)touchEnded:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>touch</Name>
+					<Abstract type="html">Contains the touch.</Abstract>
+				</Parameter><Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Current event information.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/touchEnded:withEvent:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/touchCancelled:withEvent:</TokenIdentifier>
+			<Abstract type="html">Called when a touch was cancelled.
+If a touch is dragged outside a node which does not claim user interaction, touchCancelled will be called.
+If another node with exclusive touch is activated, touchCancelled will be called for all ongoing touches.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)touchCancelled:(UITouch *)touch withEvent:(UIEvent *)event</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>touch</Name>
+					<Abstract type="html">Contains the touch.</Abstract>
+				</Parameter><Parameter>
+					<Name>event</Name>
+					<Abstract type="html">Current event information.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/touchCancelled:withEvent:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/mouseDown:</TokenIdentifier>
+			<Abstract type="html">Called when left mouse button is pressed inside a node accepting user interaction.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)mouseDown:(NSEvent *)theEvent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theEvent</Name>
+					<Abstract type="html">The event created.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mouseDown:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/mouseDragged:</TokenIdentifier>
+			<Abstract type="html">Called when left mouse button is dragged for a node accepting user interaction.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)mouseDragged:(NSEvent *)theEvent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theEvent</Name>
+					<Abstract type="html">The event created.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mouseDragged:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/mouseUp:</TokenIdentifier>
+			<Abstract type="html">Called when left mouse button is released for a node accepting user interaction.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)mouseUp:(NSEvent *)theEvent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theEvent</Name>
+					<Abstract type="html">The event created.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/mouseUp:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/rightMouseDown:</TokenIdentifier>
+			<Abstract type="html">Called when right mouse button is pressed inside a node accepting user interaction.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)rightMouseDown:(NSEvent *)theEvent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theEvent</Name>
+					<Abstract type="html">The event created.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/rightMouseDown:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/rightMouseDragged:</TokenIdentifier>
+			<Abstract type="html">Called when right mouse button is dragged for a node accepting user interaction.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)rightMouseDragged:(NSEvent *)theEvent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theEvent</Name>
+					<Abstract type="html">The event created.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/rightMouseDragged:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/rightMouseUp:</TokenIdentifier>
+			<Abstract type="html">Called when right mouse button is released for a node accepting user interaction.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)rightMouseUp:(NSEvent *)theEvent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theEvent</Name>
+					<Abstract type="html">The event created.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/rightMouseUp:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/otherMouseDown:</TokenIdentifier>
+			<Abstract type="html">Called when middle mouse button is pressed inside a node accepting user interaction.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)otherMouseDown:(NSEvent *)theEvent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theEvent</Name>
+					<Abstract type="html">The event created.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/otherMouseDown:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/otherMouseDragged:</TokenIdentifier>
+			<Abstract type="html">Called when middle mouse button is dragged for a node accepting user interaction.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)otherMouseDragged:(NSEvent *)theEvent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theEvent</Name>
+					<Abstract type="html">The event created.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/otherMouseDragged:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/otherMouseUp:</TokenIdentifier>
+			<Abstract type="html">Called when middle mouse button is released for a node accepting user interaction.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)otherMouseUp:(NSEvent *)theEvent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theEvent</Name>
+					<Abstract type="html">The event created.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/otherMouseUp:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCResponder/scrollWheel:</TokenIdentifier>
+			<Abstract type="html">Called when scroll wheel is activated inside a node accepting user interaction.</Abstract>
+			<DeclaredIn>CCResponder.h</DeclaredIn>
+			
+			<Declaration>- (void)scrollWheel:(NSEvent *)theEvent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>theEvent</Name>
+					<Abstract type="html">The event created.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/scrollWheel:</Anchor>
+            <NodeRef refid="110"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

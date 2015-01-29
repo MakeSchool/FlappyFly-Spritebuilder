@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCPhysicsCollisionPair.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCPhysicsCollisionPair</TokenIdentifier>
+			<Abstract type="html">Contains information about two colliding physics objects. See CCPhysicsCollisionDelegate for more information.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+            
+			
+			<NodeRef refid="101"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/setContacts:</TokenIdentifier>
+			<Abstract type="html">The contact information from the two colliding bodies.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCContactSet contacts</Declaration>
+			
+			
+			<Anchor>//api/name/contacts</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/contacts</TokenIdentifier>
+			<Abstract type="html">The contact information from the two colliding bodies.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCContactSet contacts</Declaration>
+			
+			
+			<Anchor>//api/name/contacts</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsCollisionPair/contacts</TokenIdentifier>
+			<Abstract type="html">The contact information from the two colliding bodies.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCContactSet contacts</Declaration>
+			
+			
+			<Anchor>//api/name/contacts</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/setFriction:</TokenIdentifier>
+			<Abstract type="html">The friction coefficient for this pair of colliding shapes.
+The default value is pair.bodyA.friction*pair.bodyB.friction.
+Can be overriden in a CCCollisionPairDelegate pre-solve method to change the collision.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat friction</Declaration>
+			
+			
+			<Anchor>//api/name/friction</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/friction</TokenIdentifier>
+			<Abstract type="html">The friction coefficient for this pair of colliding shapes.
+The default value is pair.bodyA.friction*pair.bodyB.friction.
+Can be overriden in a CCCollisionPairDelegate pre-solve method to change the collision.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat friction</Declaration>
+			
+			
+			<Anchor>//api/name/friction</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsCollisionPair/friction</TokenIdentifier>
+			<Abstract type="html">The friction coefficient for this pair of colliding shapes.
+The default value is pair.bodyA.friction*pair.bodyB.friction.
+Can be overriden in a CCCollisionPairDelegate pre-solve method to change the collision.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat friction</Declaration>
+			
+			
+			<Anchor>//api/name/friction</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/setRestitution:</TokenIdentifier>
+			<Abstract type="html">The restitution coefficient for this pair of colliding shapes.
+The default value is &quot;pair.bodyA.elasticity*pair.bodyB.elasticity&quot;.
+Can be overriden in a CCCollisionPairDelegate pre-solve method to change the collision.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat restitution</Declaration>
+			
+			
+			<Anchor>//api/name/restitution</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/restitution</TokenIdentifier>
+			<Abstract type="html">The restitution coefficient for this pair of colliding shapes.
+The default value is &quot;pair.bodyA.elasticity*pair.bodyB.elasticity&quot;.
+Can be overriden in a CCCollisionPairDelegate pre-solve method to change the collision.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat restitution</Declaration>
+			
+			
+			<Anchor>//api/name/restitution</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsCollisionPair/restitution</TokenIdentifier>
+			<Abstract type="html">The restitution coefficient for this pair of colliding shapes.
+The default value is &quot;pair.bodyA.elasticity*pair.bodyB.elasticity&quot;.
+Can be overriden in a CCCollisionPairDelegate pre-solve method to change the collision.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGFloat restitution</Declaration>
+			
+			
+			<Anchor>//api/name/restitution</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/setSurfaceVelocity:</TokenIdentifier>
+			<Abstract type="html">The relative surface velocities of the two colliding shapes. See CCPhysicsBody.surfaceVelocity for more information.
+The default value is the surface velocity of the first body subtracted from the second, then clamped to the collision tangent.
+Can be overriden in a CCCollisionPairDelegate pre-solve method to change the collision.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint surfaceVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/surfaceVelocity</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/surfaceVelocity</TokenIdentifier>
+			<Abstract type="html">The relative surface velocities of the two colliding shapes. See CCPhysicsBody.surfaceVelocity for more information.
+The default value is the surface velocity of the first body subtracted from the second, then clamped to the collision tangent.
+Can be overriden in a CCCollisionPairDelegate pre-solve method to change the collision.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint surfaceVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/surfaceVelocity</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsCollisionPair/surfaceVelocity</TokenIdentifier>
+			<Abstract type="html">The relative surface velocities of the two colliding shapes. See CCPhysicsBody.surfaceVelocity for more information.
+The default value is the surface velocity of the first body subtracted from the second, then clamped to the collision tangent.
+Can be overriden in a CCCollisionPairDelegate pre-solve method to change the collision.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) CGPoint surfaceVelocity</Declaration>
+			
+			
+			<Anchor>//api/name/surfaceVelocity</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/setTotalKineticEnergy:</TokenIdentifier>
+			<Abstract type="html">The amount of kinetic energy dissipated by the last collision of the two shapes.
+This is roughly equivalent to the idea of damage.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat totalKineticEnergy</Declaration>
+			
+			
+			<Anchor>//api/name/totalKineticEnergy</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/totalKineticEnergy</TokenIdentifier>
+			<Abstract type="html">The amount of kinetic energy dissipated by the last collision of the two shapes.
+This is roughly equivalent to the idea of damage.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat totalKineticEnergy</Declaration>
+			
+			
+			<Anchor>//api/name/totalKineticEnergy</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsCollisionPair/totalKineticEnergy</TokenIdentifier>
+			<Abstract type="html">The amount of kinetic energy dissipated by the last collision of the two shapes.
+This is roughly equivalent to the idea of damage.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGFloat totalKineticEnergy</Declaration>
+			
+			
+			<Anchor>//api/name/totalKineticEnergy</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/setTotalImpulse:</TokenIdentifier>
+			<Abstract type="html">The total impulse applied by this collision to the colliding shapes.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGPoint totalImpulse</Declaration>
+			
+			
+			<Anchor>//api/name/totalImpulse</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/totalImpulse</TokenIdentifier>
+			<Abstract type="html">The total impulse applied by this collision to the colliding shapes.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGPoint totalImpulse</Declaration>
+			
+			
+			<Anchor>//api/name/totalImpulse</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsCollisionPair/totalImpulse</TokenIdentifier>
+			<Abstract type="html">The total impulse applied by this collision to the colliding shapes.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CGPoint totalImpulse</Declaration>
+			
+			
+			<Anchor>//api/name/totalImpulse</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/setUserData:</TokenIdentifier>
+			<Abstract type="html">A persistent object reference associated with these two colliding objects.
+If you want to store some information about a collision from time step to time step, store it here.
+@todo Possible to add a default to release it automatically?</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/userData</TokenIdentifier>
+			<Abstract type="html">A persistent object reference associated with these two colliding objects.
+If you want to store some information about a collision from time step to time step, store it here.
+@todo Possible to add a default to release it automatically?</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCPhysicsCollisionPair/userData</TokenIdentifier>
+			<Abstract type="html">A persistent object reference associated with these two colliding objects.
+If you want to store some information about a collision from time step to time step, store it here.
+@todo Possible to add a default to release it automatically?</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) id userData</Declaration>
+			
+			
+			<Anchor>//api/name/userData</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/shapeA:shapeB:</TokenIdentifier>
+			<Abstract type="html">Retrive the specific physics shapes that were involved in the collision.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>- (void)shapeA:(__autoreleasing CCPhysicsShape **)shapeA shapeB:(__autoreleasing CCPhysicsShape **)shapeB</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>shapeA</Name>
+					<Abstract type="html">Shape A.</Abstract>
+				</Parameter><Parameter>
+					<Name>shapeB</Name>
+					<Abstract type="html">Shape B.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/shapeA:shapeB:</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCPhysicsCollisionPair/ignore</TokenIdentifier>
+			<Abstract type="html">Ignore the collision between these two shapes bodies until they stop colliding.
+It&apos;s idomatic to write &quot;return [pair ignore];&quot; if using this method from a CCCollisionPairDelegate pre-solve method.</Abstract>
+			<DeclaredIn>CCPhysicsNode.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)ignore</Declaration>
+			
+			<ReturnValue><Abstract type="html">FALSE</Abstract></ReturnValue>
+			<Anchor>//api/name/ignore</Anchor>
+            <NodeRef refid="101"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

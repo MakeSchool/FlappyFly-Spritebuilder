@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Constants/CCEffectPrepareStatus.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/c/tdef/CCEffectPrepareStatus</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>CCEffect_Private.h</DeclaredIn>
+            
+			
+			<NodeRef refid="134"/>
+		</Token>
+		
+		
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCEffectPrepareNothingToDo</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CCEffectPrepareNothingToDo</Declaration>
+            
+            <DeclaredIn>CCEffect_Private.h</DeclaredIn>
+            
+            <NodeRef refid="134"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCEffectPrepareFailure</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CCEffectPrepareFailure</Declaration>
+            
+            <DeclaredIn>CCEffect_Private.h</DeclaredIn>
+            
+            <NodeRef refid="134"/>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/CCEffectPrepareSuccess</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>CCEffectPrepareSuccess</Declaration>
+            
+            <DeclaredIn>CCEffect_Private.h</DeclaredIn>
+            
+            <NodeRef refid="134"/>
+        </Token>
+        
+	</File>
+</Tokens>

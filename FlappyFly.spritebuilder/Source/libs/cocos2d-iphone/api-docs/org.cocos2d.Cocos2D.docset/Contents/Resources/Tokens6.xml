@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionCallFunc.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionCallFunc</TokenIdentifier>
+			<Abstract type="html">This action allows a custom function to be called.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionCallFunc/setTargetCallback:</TokenIdentifier>
+			<Abstract type="html">Target function that will be called.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, weak) id targetCallback</Declaration>
+			
+			
+			<Anchor>//api/name/targetCallback</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionCallFunc/targetCallback</TokenIdentifier>
+			<Abstract type="html">Target function that will be called.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, weak) id targetCallback</Declaration>
+			
+			
+			<Anchor>//api/name/targetCallback</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCActionCallFunc/targetCallback</TokenIdentifier>
+			<Abstract type="html">Target function that will be called.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, weak) id targetCallback</Declaration>
+			
+			
+			<Anchor>//api/name/targetCallback</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionCallFunc/actionWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Creates the action with the callback.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithTarget:(id)t selector:(SEL)s</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>t</Name>
+					<Abstract type="html">Target the selector is sent to.</Abstract>
+				</Parameter><Parameter>
+					<Name>s</Name>
+					<Abstract type="html">Selector to execute.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The call func action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithTarget:selector:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionCallFunc/initWithTarget:selector:</TokenIdentifier>
+			<Abstract type="html">Initializes the action with the callback.</Abstract>
+			<DeclaredIn>CCActionInstant.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithTarget:(id)t selector:(SEL)s</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>t</Name>
+					<Abstract type="html">Target the selector is sent to</Abstract>
+				</Parameter><Parameter>
+					<Name>s</Name>
+					<Abstract type="html">Selector to execute</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized call func action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTarget:selector:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

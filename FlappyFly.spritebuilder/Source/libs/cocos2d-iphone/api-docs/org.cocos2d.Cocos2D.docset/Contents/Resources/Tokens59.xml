@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionSpawn.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionSpawn</TokenIdentifier>
+			<Abstract type="html">This action can be used to execute two to actions in parallel.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+            
+			
+			<NodeRef refid="59"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionSpawn/actions:</TokenIdentifier>
+			<Abstract type="html">Helper constructor to create an array of spawned actions.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actions:(CCActionFiniteTime *)action1, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action1</Name>
+					<Abstract type="html">First action to spawn.</Abstract>
+				</Parameter><Parameter>
+					<Name>...</Name>
+					<Abstract type="html">Nil terminated list of action to spawn.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New action spawn.</Abstract></ReturnValue>
+			<Anchor>//api/name/actions:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionSpawn/actions:vaList:</TokenIdentifier>
+			<Abstract type="html">Helper constructor to create an array of spawned actions.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actions:(CCActionFiniteTime *)action1 vaList:(va_list)args</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action1</Name>
+					<Abstract type="html">Action to spawn.</Abstract>
+				</Parameter><Parameter>
+					<Name>args</Name>
+					<Abstract type="html">C++ style list of actions.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New action spawn.</Abstract></ReturnValue>
+			<Anchor>//api/name/actions:vaList:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionSpawn/actionWithArray:</TokenIdentifier>
+			<Abstract type="html">Helper constructor to create an array of spawned actions given an array.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithArray:(NSArray *)arrayOfActions</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>arrayOfActions</Name>
+					<Abstract type="html">Array of actions to spawn.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New action spawn.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithArray:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionSpawn/actionOne:two:</TokenIdentifier>
+			<Abstract type="html">Creates the Spawn action from two actions</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionOne:(CCActionFiniteTime *)one two:(CCActionFiniteTime *)two</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>one</Name>
+					<Abstract type="html">Action one.</Abstract>
+				</Parameter><Parameter>
+					<Name>two</Name>
+					<Abstract type="html">Action two.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New action spawn.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionOne:two:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionSpawn/initOne:two:</TokenIdentifier>
+			<Abstract type="html">Initializes the Spawn action with the 2 actions to spawn.</Abstract>
+			<DeclaredIn>CCActionInterval.h</DeclaredIn>
+			
+			<Declaration>- (id)initOne:(CCActionFiniteTime *)one two:(CCActionFiniteTime *)two</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>one</Name>
+					<Abstract type="html">Action one.</Abstract>
+				</Parameter><Parameter>
+					<Name>two</Name>
+					<Abstract type="html">Action two.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">New action spawn.</Abstract></ReturnValue>
+			<Anchor>//api/name/initOne:two:</Anchor>
+            <NodeRef refid="59"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

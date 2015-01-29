@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCActionRepeatForever.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCActionRepeatForever</TokenIdentifier>
+			<Abstract type="html">Repeats an action for ever.
+To repeat the action for a limited number of times use the CCActionRepeat action.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+            
+			
+			<NodeRef refid="48"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionRepeatForever/setInnerAction:</TokenIdentifier>
+			<Abstract type="html">Inner action.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCActionInterval *innerAction</Declaration>
+			
+			
+			<Anchor>//api/name/innerAction</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionRepeatForever/innerAction</TokenIdentifier>
+			<Abstract type="html">Inner action.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCActionInterval *innerAction</Declaration>
+			
+			
+			<Anchor>//api/name/innerAction</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCActionRepeatForever/innerAction</TokenIdentifier>
+			<Abstract type="html">Inner action.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readwrite, strong) CCActionInterval *innerAction</Declaration>
+			
+			
+			<Anchor>//api/name/innerAction</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCActionRepeatForever/actionWithAction:</TokenIdentifier>
+			<Abstract type="html">Creates the repeat forever action.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>+ (id)actionWithAction:(CCActionInterval *)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Action to repeat forever.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The repeat action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/actionWithAction:</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCActionRepeatForever/initWithAction:</TokenIdentifier>
+			<Abstract type="html">Initalizes the repeat forever action.</Abstract>
+			<DeclaredIn>CCAction.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithAction:(CCActionInterval *)action</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">Action to repeat forever</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialised repeat action object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAction:</Anchor>
+            <NodeRef refid="48"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

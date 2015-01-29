@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCSlider.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCSlider</TokenIdentifier>
+			<Abstract type="html">A CCSlider object is a visual control used to select a single value from a continuous range of values. An indicator, or an handle, notes the current value of the slider and can be moved by the user to change the setting.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+            
+			
+			<NodeRef refid="113"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSlider/setBackground:</TokenIdentifier>
+			<Abstract type="html">The background&apos;s sprite 9 slice.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCSprite9Slice *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSlider/background</TokenIdentifier>
+			<Abstract type="html">The background&apos;s sprite 9 slice.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCSprite9Slice *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSlider/background</TokenIdentifier>
+			<Abstract type="html">The background&apos;s sprite 9 slice.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCSprite9Slice *background</Declaration>
+			
+			
+			<Anchor>//api/name/background</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSlider/setHandle:</TokenIdentifier>
+			<Abstract type="html">The handle&apos;s sprite.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCSprite *handle</Declaration>
+			
+			
+			<Anchor>//api/name/handle</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSlider/handle</TokenIdentifier>
+			<Abstract type="html">The handle&apos;s sprite.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCSprite *handle</Declaration>
+			
+			
+			<Anchor>//api/name/handle</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSlider/handle</TokenIdentifier>
+			<Abstract type="html">The handle&apos;s sprite.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) CCSprite *handle</Declaration>
+			
+			
+			<Anchor>//api/name/handle</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSlider/setSliderValue:</TokenIdentifier>
+			<Abstract type="html">Contains the receiver’s current value. Setting this property causes the
+receiver to redraw itself using the new value.
+If you try to set a value that is below 0.0f or above 1.0f, the minimum
+or maximum value is set instead. The default value of this property is 0.0.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float sliderValue</Declaration>
+			
+			
+			<Anchor>//api/name/sliderValue</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSlider/sliderValue</TokenIdentifier>
+			<Abstract type="html">Contains the receiver’s current value. Setting this property causes the
+receiver to redraw itself using the new value.
+If you try to set a value that is below 0.0f or above 1.0f, the minimum
+or maximum value is set instead. The default value of this property is 0.0.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float sliderValue</Declaration>
+			
+			
+			<Anchor>//api/name/sliderValue</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CCSlider/sliderValue</TokenIdentifier>
+			<Abstract type="html">Contains the receiver’s current value. Setting this property causes the
+receiver to redraw itself using the new value.
+If you try to set a value that is below 0.0f or above 1.0f, the minimum
+or maximum value is set instead. The default value of this property is 0.0.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) float sliderValue</Declaration>
+			
+			
+			<Anchor>//api/name/sliderValue</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSlider/initWithBackground:andHandleImage:</TokenIdentifier>
+			<Abstract type="html">Initializes a new slider with a specified sprite frames for its background and handle.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithBackground:(CCSpriteFrame *)background andHandleImage:(CCSpriteFrame *)handle</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>background</Name>
+					<Abstract type="html">Stretchable background image which represents the track bar for the normal state.</Abstract>
+				</Parameter><Parameter>
+					<Name>handle</Name>
+					<Abstract type="html">Handle image for the normal state.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithBackground:andHandleImage:</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSlider/setBackgroundSpriteFrame:forState:</TokenIdentifier>
+			<Abstract type="html">Sets the background&apos;s sprite frame for the specified state. The sprite frame will be stretched to the preferred size of the label. If set to NULL no background will be drawn.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>- (void)setBackgroundSpriteFrame:(CCSpriteFrame *)spriteFrame forState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>spriteFrame</Name>
+					<Abstract type="html">Sprite frame to use for drawing the background.</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to set the background for.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBackgroundSpriteFrame:forState:</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSlider/backgroundSpriteFrameForState:</TokenIdentifier>
+			<Abstract type="html">Gets the background&apos;s sprite frame for the specified state.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>- (CCSpriteFrame *)backgroundSpriteFrameForState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to get the sprite frame for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Background sprite frame.</Abstract></ReturnValue>
+			<Anchor>//api/name/backgroundSpriteFrameForState:</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSlider/setHandleSpriteFrame:forState:</TokenIdentifier>
+			<Abstract type="html">Sets the handle&apos;s sprite frame for the specified state. If set to NULL no handle will be drawn.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>- (void)setHandleSpriteFrame:(CCSpriteFrame *)spriteFrame forState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>spriteFrame</Name>
+					<Abstract type="html">Sprite frame to use for drawing the handle.</Abstract>
+				</Parameter><Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to set the handle for.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setHandleSpriteFrame:forState:</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCSlider/handleSpriteFrameForState:</TokenIdentifier>
+			<Abstract type="html">Gets the handle&apos;s sprite frame for the specified state.</Abstract>
+			<DeclaredIn>CCSlider.h</DeclaredIn>
+			
+			<Declaration>- (CCSpriteFrame *)handleSpriteFrameForState:(CCControlState)state</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">State to get the sprite frame for.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Handle sprite frame.</Abstract></ReturnValue>
+			<Anchor>//api/name/handleSpriteFrameForState:</Anchor>
+            <NodeRef refid="113"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

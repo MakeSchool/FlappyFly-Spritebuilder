@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCDrawNode.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCDrawNode</TokenIdentifier>
+			<Abstract type="html">CCDrawNode
+Node that draws dots, segments and polygons.
+The geometry will be saved, so primitives does not need to be redrawn for each frame
+Faster than the &quot;drawing primitives&quot; since they it draws everything in one single batch.</Abstract>
+			<DeclaredIn>CCDrawNode.h</DeclaredIn>
+            
+			
+			<NodeRef refid="74"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDrawNode/drawDot:radius:color:</TokenIdentifier>
+			<Abstract type="html">Draw a dot at a position, with a given radius and color.</Abstract>
+			<DeclaredIn>CCDrawNode.h</DeclaredIn>
+			
+			<Declaration>- (void)drawDot:(CGPoint)pos radius:(CGFloat)radius color:(CCColor *)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pos</Name>
+					<Abstract type="html">Dot position.</Abstract>
+				</Parameter><Parameter>
+					<Name>radius</Name>
+					<Abstract type="html">Dot radius.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Dot color.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/drawDot:radius:color:</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDrawNode/drawSegmentFrom:to:radius:color:</TokenIdentifier>
+			<Abstract type="html">Draw a segment with a radius and color.</Abstract>
+			<DeclaredIn>CCDrawNode.h</DeclaredIn>
+			
+			<Declaration>- (void)drawSegmentFrom:(CGPoint)a to:(CGPoint)b radius:(CGFloat)radius color:(CCColor *)color</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>a</Name>
+					<Abstract type="html">Segment starting point.</Abstract>
+				</Parameter><Parameter>
+					<Name>b</Name>
+					<Abstract type="html">Segment end point.</Abstract>
+				</Parameter><Parameter>
+					<Name>radius</Name>
+					<Abstract type="html">Segment radius.</Abstract>
+				</Parameter><Parameter>
+					<Name>color</Name>
+					<Abstract type="html">Segment color.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/drawSegmentFrom:to:radius:color:</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDrawNode/drawPolyWithVerts:count:fillColor:borderWidth:borderColor:</TokenIdentifier>
+			<Abstract type="html">Draw a polygon with a fill color and line color.</Abstract>
+			<DeclaredIn>CCDrawNode.h</DeclaredIn>
+			
+			<Declaration>- (void)drawPolyWithVerts:(const CGPoint *)verts count:(NSUInteger)count fillColor:(CCColor *)fill borderWidth:(CGFloat)width borderColor:(CCColor *)line</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>verts</Name>
+					<Abstract type="html">Array of CGPoints, containing the vertices.</Abstract>
+				</Parameter><Parameter>
+					<Name>count</Name>
+					<Abstract type="html">Number of vertices.</Abstract>
+				</Parameter><Parameter>
+					<Name>fill</Name>
+					<Abstract type="html">Polygon fill color.</Abstract>
+				</Parameter><Parameter>
+					<Name>width</Name>
+					<Abstract type="html">Polygon outline width.</Abstract>
+				</Parameter><Parameter>
+					<Name>line</Name>
+					<Abstract type="html">Polygon outline color.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/drawPolyWithVerts:count:fillColor:borderWidth:borderColor:</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCDrawNode/clear</TokenIdentifier>
+			<Abstract type="html">Clear the geometry in the node&apos;s buffer.</Abstract>
+			<DeclaredIn>CCDrawNode.h</DeclaredIn>
+			
+			<Declaration>- (void)clear</Declaration>
+			
+			
+			<Anchor>//api/name/clear</Anchor>
+            <NodeRef refid="74"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>

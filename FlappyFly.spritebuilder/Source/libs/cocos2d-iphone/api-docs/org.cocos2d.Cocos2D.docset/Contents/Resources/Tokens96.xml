@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/CCNodeMultiplexer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/CCNodeMultiplexer</TokenIdentifier>
+			<Abstract type="html">CCNodeMultiplexer is a CCNode with the ability to multiplex its children.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+            
+			
+			<NodeRef refid="96"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCNodeMultiplexer/nodeWithArray:</TokenIdentifier>
+			<Abstract type="html">Creates a CCNodeMultiplexer with an array of nodes.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+			
+			<Declaration>+ (id)nodeWithArray:(NSArray *)arrayOfNodes</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>arrayOfNodes</Name>
+					<Abstract type="html">Array of nodes.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCNodeMultiplexer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/nodeWithArray:</Anchor>
+            <NodeRef refid="96"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/CCNodeMultiplexer/nodeWithNodes:</TokenIdentifier>
+			<Abstract type="html">Creates a CCMultiplexLayer with one or more nodes using a variable argument list.
+Example:
+@code mux = [CCNodeMultiplexer nodeWithNodes:nodeA, nodeB, nodeC, nil];</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+			
+			<Declaration>+ (id)nodeWithNodes:(CCNode *)node, ...</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>node</Name>
+					<Abstract type="html">List of nodes.</Abstract>
+				</Parameter><Parameter>
+					<Name>...</Name>
+					<Abstract type="html">Nil terminator.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The CCNodeMultiplexer object.</Abstract></ReturnValue>
+			<Anchor>//api/name/nodeWithNodes:</Anchor>
+            <NodeRef refid="96"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNodeMultiplexer/initWithArray:</TokenIdentifier>
+			<Abstract type="html">Initializes a CCNodeMultiplexer with an array of nodes.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithArray:(NSArray *)arrayOfNodes</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>arrayOfNodes</Name>
+					<Abstract type="html">Array of nodes.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">An initialized CCNodeMultiplexer Object.</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithArray:</Anchor>
+            <NodeRef refid="96"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CCNodeMultiplexer/switchTo:</TokenIdentifier>
+			<Abstract type="html">Switches to a certain node indexed by n.</Abstract>
+			<DeclaredIn>CCNodeColor.h</DeclaredIn>
+			
+			<Declaration>- (void)switchTo:(unsigned int)n</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>n</Name>
+					<Abstract type="html">Index of node to switch to.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/switchTo:</Anchor>
+            <NodeRef refid="96"/>
+		</Token>
+		
+        
+	</File>
+</Tokens>
