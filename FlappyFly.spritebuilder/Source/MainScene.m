@@ -3,7 +3,7 @@
 //  PROJECTNAME
 //
 //  Created by Benjamin Encz on 10/10/13.
-//  Copyright (c) 2014 MakeGamesWithUs inc. Free to use for all purposes.
+//  Copyright (c) 2014 MakeSchool inc. Free to use for all purposes.
 //
 
 #import "MainScene.h"
