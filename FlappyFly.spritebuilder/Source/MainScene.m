@@ -67,7 +67,7 @@ typedef NS_ENUM (NSInteger, DrawingOrder) {
 
 #pragma mark - Touch Handling
 
-- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
   if (!_gameOver) {
     [_hero.physicsBody applyImpulse:ccp(0, 400.f)];
     [_hero.physicsBody applyAngularImpulse:10000.f];
