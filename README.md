@@ -1,3 +1,5 @@
+![](https://travis-ci.org/MakeSchool/FlappyFly-Spritebuilder.svg?branch=master)
+
 FlappyFly.spritebuilder
 =======================
 
