@@ -3,7 +3,7 @@
 //  PROJECTNAME
 //
 //  Created by Benjamin Encz on 10/10/13.
-//  Copyright (c) 2014 MakeGamesWithUs inc. Free to use for all purposes.
+//  Copyright (c) 2014 MakeSchool inc. Free to use for all purposes.
 //
 
 #import "MainScene.h"
@@ -67,7 +67,7 @@ typedef NS_ENUM (NSInteger, DrawingOrder) {
 
 #pragma mark - Touch Handling
 
-- (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event {
+- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event {
   if (!_gameOver) {
     [_hero.physicsBody applyImpulse:ccp(0, 400.f)];
     [_hero.physicsBody applyAngularImpulse:10000.f];

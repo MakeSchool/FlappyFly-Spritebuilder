@@ -395,6 +395,7 @@
 				INFOPLIST_FILE = "tremor/tremor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = apportablesdk1.0;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -412,6 +413,7 @@
 				INFOPLIST_FILE = "tremor/tremor-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = apportablesdk1.0;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};

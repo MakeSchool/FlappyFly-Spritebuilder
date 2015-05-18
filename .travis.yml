@@ -1,0 +1,4 @@
+language: objective-c
+
+script:
+  - xctool -project FlappyFly.spritebuilder/FlappyFly.xcodeproj -scheme FlappyFly -sdk iphonesimulator build test CODE_SIGNING_REQUIRED=NO

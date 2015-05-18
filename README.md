@@ -1,8 +1,10 @@
+![](https://travis-ci.org/MakeSchool/FlappyFly-Spritebuilder.svg?branch=master)
+
 FlappyFly.spritebuilder
 =======================
 
 ![image](GamePreview.gif)
 
-Learn how to build a Flappy Bird clone with SpriteBuilder and Cocos2d 3.0
+Learn how to build a Flappy Bird clone with SpriteBuilder and Cocos2d 3.4
 
-Read the full tutorial: https://www.makegameswith.us/gamernews/369/build-your-own-flappy-bird-with-spritebuilder-and
+Read the full tutorial: https://www.makeschool.com/tutorials/learn-to-build-flappy-bird
